@@ -10,11 +10,12 @@ Use this skill whenever creating, remastering, auditing, or managing aesthetic l
 
 ## Core Rules
 
-1. **7clouds Simplicity**: Pure scenic anime clouds at twilight/sunset. No character silhouettes, no ground clutter. Open negative space in the center.
-2. **Couplets**: Strictly $\le 2$ rows per couplet. Never wrap to 3 lines.
-3. **Typography**: Patrick Hand font, pure white text (`&H00FFFFFF`), dark charcoal border (`3.8`), soft drop shadow (`2.2`). Contrast $\ge 10:1$.
-4. **20-Minute Replay Loops**: 6 total playthroughs (1 original + 5 replays) with `Replay [k/5]` chapter cards.
-5. **Slowed + Reverb**: 0.865x tape varispeed, 3s cathedral reverb, 15.5kHz tape shelf warmth.
+1. **7clouds Aesthetics**: High-contrast, scenic landscape or anime sky/ocean (Unsplash style).
+2. **Couplets & Screen Space**: Strictly $\le 2$ rows per couplet. Occupies 35% to 45% screen width. Positioned in lower third (75%–80% down from top, `Alignment: 2`, `MarginV: 180–220px`).
+3. **Typography**: **Edo SZ** (`edosz.ttf` by Vic Fieger) signature brush font in **Sentence case** (or **Patrick Hand** handwritten alternative). Pure white text (`&H00FFFFFF`), soft black outer glow/shadow (`&H35000000` / `&H60000000`, `\blur1.8`).
+4. **Transition Logic**: Complete semantic phrases (word-chunk logic), zero-frame cuts (no fade-ins), and rest cuts (screen empty during pauses). Secondary font: clean sans-serif (Poppins/Montserrat 28–32pt) for intro `Artist - Title (Lyrics)`.
+5. **20-Minute Replay Loops**: 6 total playthroughs (1 original + 5 replays) with `Replay [k/5]` chapter cards.
+6. **Slowed + Reverb**: 0.865x tape varispeed, 3s cathedral reverb, 15.5kHz tape shelf warmth.
 
 ## Step-by-Step Procedure to Add a New Song
 

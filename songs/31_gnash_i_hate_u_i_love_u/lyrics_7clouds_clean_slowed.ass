@@ -1,0 +1,55 @@
+[Script Info]
+Title: gnash - i hate u, i love u (Official 7clouds Edo SZ Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; 1. Core Font: Edo SZ, Sentence case, lower third (78% down = MarginV 200), soft black outer glow & shadow
+Style: SevenCloudsLyric,Edo SZ,62,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,2,160,160,200,1
+; 4. Secondary Font: Poppins SemiBold for Intro Metadata (30pt, lower third MarginV 220)
+Style: SevenCloudsIntro,Poppins SemiBold,30,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,2,160,160,220,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.69,0:00:04.86,SevenCloudsIntro,,0,0,0,,{\blur1.5}gnash - i hate u, i love u (Lyrics)\Nft. olivia o'brien
+Dialogue: 0,0:00:05.55,0:00:09.83,SevenCloudsLyric,,0,0,0,,{\blur1.8}Feeling used, but I'm\nStill missing you
+Dialogue: 0,0:00:10.17,0:00:15.26,SevenCloudsLyric,,0,0,0,,{\blur1.8}And I can't see the end of this\nJust wanna feel your kiss against my lips
+Dialogue: 0,0:00:15.61,0:00:21.39,SevenCloudsLyric,,0,0,0,,{\blur1.8}And now all this time is passing by\nBut I still can't seem to tell you why
+Dialogue: 0,0:00:21.73,0:00:27.17,SevenCloudsLyric,,0,0,0,,{\blur1.8}It hurts me every time I see you\nRealize how much I need you
+Dialogue: 0,0:00:27.75,0:00:33.29,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I love you
+Dialogue: 0,0:00:33.53,0:00:39.31,SevenCloudsLyric,,0,0,0,,{\blur1.8}Don't want to, but I can't put\nNobody else above you
+Dialogue: 0,0:00:39.65,0:00:45.09,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I want you
+Dialogue: 0,0:00:45.43,0:00:51.10,SevenCloudsLyric,,0,0,0,,{\blur1.8}You want her, you need her\nAnd I'll never be her
+Dialogue: 0,0:00:55.26,0:01:01.04,SevenCloudsLyric,,0,0,0,,{\blur1.8}I miss you when I can't sleep\nOr right after coffee, or right when I can't eat
+Dialogue: 0,0:01:01.27,0:01:07.28,SevenCloudsLyric,,0,0,0,,{\blur1.8}I miss you in my front seat\nStill got sand in my sweaters from nights we don't remember
+Dialogue: 0,0:01:07.63,0:01:13.41,SevenCloudsLyric,,0,0,0,,{\blur1.8}Do you miss me like I miss you?\nFucked around and got attached to you
+Dialogue: 0,0:01:13.76,0:01:19.19,SevenCloudsLyric,,0,0,0,,{\blur1.8}Friends can break your heart too, and\nI'm always tired but never of you
+Dialogue: 0,0:01:19.42,0:01:25.09,SevenCloudsLyric,,0,0,0,,{\blur1.8}If I pulled a you on you, you wouldn't like that shit\nI put this reel out, but you wouldn't bite that shit
+Dialogue: 0,0:01:25.20,0:01:31.10,SevenCloudsLyric,,0,0,0,,{\blur1.8}I type a text but then I never mind that shit\nI got these feelings but you never mind that shit
+Dialogue: 0,0:01:31.33,0:01:37.11,SevenCloudsLyric,,0,0,0,,{\blur1.8}Oh oh, keep it on the low\nYou're still in love with me but your friends don't know
+Dialogue: 0,0:01:37.34,0:01:43.12,SevenCloudsLyric,,0,0,0,,{\blur1.8}If you wanted me you would just say so\nAnd if I were you, I would never let me go
+Dialogue: 0,0:01:43.35,0:01:48.90,SevenCloudsLyric,,0,0,0,,{\blur1.8}I don't mean no harm\nI just miss you on my arm
+Dialogue: 0,0:01:49.13,0:01:55.38,SevenCloudsLyric,,0,0,0,,{\blur1.8}Wedding bells were just alarms\nCaution tape around my heart
+Dialogue: 0,0:01:55.72,0:02:01.39,SevenCloudsLyric,,0,0,0,,{\blur1.8}You ever wonder what we could've been?\nYou said you wouldn't and you fucking did
+Dialogue: 0,0:02:01.62,0:02:07.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}Lie to me, lie with me, get your fucking fix\nNow all my drinks and all my feelings are all fucking mixed
+Dialogue: 0,0:02:07.63,0:02:12.95,SevenCloudsLyric,,0,0,0,,{\blur1.8}Always missing people that I shouldn't be missing\nSometimes you gotta burn some bridges just to create some distance
+Dialogue: 0,0:02:13.06,0:02:19.42,SevenCloudsLyric,,0,0,0,,{\blur1.8}I know that I control my thoughts, and I should stop reminiscing\nBut I learned from my dad that it's good to have feelings
+Dialogue: 0,0:02:19.77,0:02:25.09,SevenCloudsLyric,,0,0,0,,{\blur1.8}When love and trust are gone\nI guess this is moving on
+Dialogue: 0,0:02:25.32,0:02:30.87,SevenCloudsLyric,,0,0,0,,{\blur1.8}Everyone I do right does me wrong\nSo every lonely night, I sing this song
+Dialogue: 0,0:02:31.21,0:02:37.23,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I love you
+Dialogue: 0,0:02:37.34,0:02:43.01,SevenCloudsLyric,,0,0,0,,{\blur1.8}Don't want to, but I can't put\nNobody else above you
+Dialogue: 0,0:02:43.24,0:02:49.02,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I want you
+Dialogue: 0,0:02:49.25,0:02:55.14,SevenCloudsLyric,,0,0,0,,{\blur1.8}You want her, you need her\nAnd I'll never be her
+Dialogue: 0,0:02:58.61,0:03:10.52,SevenCloudsLyric,,0,0,0,,{\blur1.8}All alone I watch you watch her\nLike she's the only girl you've ever seen
+Dialogue: 0,0:03:10.75,0:03:22.08,SevenCloudsLyric,,0,0,0,,{\blur1.8}You don't care, you never did\nYou don't give a damn about me
+Dialogue: 0,0:03:22.54,0:03:34.45,SevenCloudsLyric,,0,0,0,,{\blur1.8}Yeah, all alone I watch you watch her\nShe's the only thing you've ever seen
+Dialogue: 0,0:03:34.80,0:03:47.17,SevenCloudsLyric,,0,0,0,,{\blur1.8}How is it you never notice\nThat you are slowly killing me
+Dialogue: 0,0:03:49.60,0:03:55.61,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I love you
+Dialogue: 0,0:03:55.84,0:04:01.39,SevenCloudsLyric,,0,0,0,,{\blur1.8}Don't want to, but I can't put\nNobody else above you
+Dialogue: 0,0:04:01.62,0:04:07.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}I hate you, I love you\nI hate that I want you
+Dialogue: 0,0:04:07.63,0:04:17.23,SevenCloudsLyric,,0,0,0,,{\blur1.8}You want her, you need her\nAnd I'll never be her

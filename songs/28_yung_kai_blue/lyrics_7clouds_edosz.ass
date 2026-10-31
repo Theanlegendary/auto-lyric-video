@@ -1,0 +1,33 @@
+[Script Info]
+Title: yung kai - blue (Official 7clouds Edo SZ Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; Core Font: Edo SZ, Sentence case, lower-third (78% down), soft black outer glow & shadow
+Style: SevenCloudsLyric,Edo SZ,64,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,2,160,160,200,1
+; Secondary Font: Clean Sans-Serif for Intro Metadata (32pt, lower-third)
+Style: SevenCloudsIntro,Poppins SemiBold,32,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,2,160,160,220,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:07.50,SevenCloudsIntro,,0,0,0,,{\blur1.5}yung kai - blue (Lyrics)
+Dialogue: 0,0:00:18.80,0:00:25.50,SevenCloudsLyric,,0,0,0,,{\blur1.8}Your morning eyes\NI could stare like watching stars
+Dialogue: 0,0:00:25.80,0:00:32.60,SevenCloudsLyric,,0,0,0,,{\blur1.8}I could walk you by\NAnd I'll tell without a thought you'd be mine
+Dialogue: 0,0:00:33.20,0:00:39.50,SevenCloudsLyric,,0,0,0,,{\blur1.8}Would you mind if I took your hand tonight?\NKnow you're all that I want this life
+Dialogue: 0,0:00:40.00,0:00:46.80,SevenCloudsLyric,,0,0,0,,{\blur1.8}I'll imagine we fell in love\NI'll nap under moonlight skies with you
+Dialogue: 0,0:00:47.20,0:00:54.00,SevenCloudsLyric,,0,0,0,,{\blur1.8}I think I'll picture us, you with the waves\NThe ocean's colors on your face
+Dialogue: 0,0:00:54.50,0:01:01.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}I'll leave my heart with your air\NSo let me fly with you
+Dialogue: 0,0:01:01.80,0:01:14.20,SevenCloudsLyric,,0,0,0,,{\blur1.8}Will you be forever with me?\NCause you're so blue
+Dialogue: 0,0:01:46.00,0:01:52.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}My love will always stay by you\NI'll keep it safe, so don't you worry a thing
+Dialogue: 0,0:01:52.80,0:02:00.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}I'll tell you I love you more\NIt's stuck with you forever
+Dialogue: 0,0:02:00.80,0:02:07.60,SevenCloudsLyric,,0,0,0,,{\blur1.8}So promise you won't let it go\NI'll trust the universe will always bring me to you
+Dialogue: 0,0:02:08.00,0:02:15.60,SevenCloudsLyric,,0,0,0,,{\blur1.8}I'll imagine we fell in love\NI'll nap under moonlight skies with you
+Dialogue: 0,0:02:16.00,0:02:22.80,SevenCloudsLyric,,0,0,0,,{\blur1.8}I think I'll picture us, you with the waves\NThe ocean's colors on your face
+Dialogue: 0,0:02:23.20,0:02:29.80,SevenCloudsLyric,,0,0,0,,{\blur1.8}I'll leave my heart with your air\NSo let me fly with you
+Dialogue: 0,0:02:30.20,0:02:43.80,SevenCloudsLyric,,0,0,0,,{\blur1.8}Will you be forever with me?\NCause you're so blue

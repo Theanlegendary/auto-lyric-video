@@ -9,18 +9,21 @@ Whenever Antigravity or any AI assistant runs in this project or on this topic, 
 
 ---
 
-## 1. Visual & Typography Standard (7clouds Formula)
-- **Backgrounds**: Scenic anime cumulus clouds at twilight, dawn, or sunset (Makoto Shinkai aesthetic).
-- **Negative Reading Space**: The central 60% of the screen must be clean sky gradients free of human silhouettes, buildings, ground clutter, or text.
-- **Font**: **Patrick Hand** (`fonts/PatrickHand.ttf`) for lyrics and hook titles.
-  - Title Hook Card: 170–200pt, centered (`\pos(960,460)`), fade in/out (`\fad(500,400)`).
-  - Couplet Subtitles: 96–102pt, centered (`\pos(960,490)`), fade in/out (`\fad(200,150)`).
-- **Colors**:
-  - Primary text: Pure White `&H00FFFFFF`
-  - Outline: Deep Charcoal/Navy `&H00101828` with `Outline: 3.8`
-  - Shadow: Soft drop shadow `&H80000000` with `Shadow: 2.2`
-  - Contrast Ratio: Must maintain $\ge 10:1$ contrast against the sky.
-- **Line Limit Rule**: Strictly $\le 2$ rows per couplet. Never wrap to 3 lines. Horizontal margins $> 180$px.
+## 1. Visual & Typography Standard (Authentic 7clouds Formula)
+- **Backgrounds**: High-contrast, high-quality landscape image (Unsplash aesthetic or Makoto Shinkai scenic anime sky/ocean).
+- **Core Font**: **Edo SZ** (`fonts/edosz.ttf` by Vic Fieger). Signature bold, brush-stroke style script font that gives the lyrics an impactful, organic look.
+  - *Alternative/Handwritten option*: **Patrick Hand** (`fonts/PatrickHand.ttf`).
+- **Text Shadow & Glow**: Soft black outer glow / shadow behind pure white text (`&H00FFFFFF`) with `\blur1.8`, `Outline: 3.2`, `Shadow: 2.2` to prevent lyrics from getting lost on changing backgrounds.
+- **Case Logic**: Standard **Sentence case** rather than ALL CAPS, making long lines effortless to read sequentially.
+- **Sizing & Screen Space**:
+  - Main lyric text occupies roughly **35% to 45% of screen width** (scaled 60pt–68pt in 1080p).
+  - Strictly **1 or 2 lines maximum** at any given time. Phrases longer than 4–5 words split into 2 stacked lines.
+  - Positioned vertically in the **lower third** of the viewport (roughly **75% to 80% down from top**, `Alignment: 2`, `MarginV: 180–220px`), clearing timeline seeker and video UI overlays.
+- **Structural Transition Logic**:
+  - **Pacing ("Word-Chunk" Logic)**: Lyrics appear in complete semantic phrases right as the artist begins speaking the first word.
+  - **The "Rest" Cut**: The moment a phrase ends, text **instantly disappears**. Empty screen during pauses and instrumental breaks creates visual breathing room.
+  - **Transitions**: **Zero-frame cuts** (no fade-ins or animations `\fad(0,0)`), snapping precisely onto the audio grid.
+- **Secondary Font**: Clean, highly legible Sans-Serif font (like Montserrat, Arial, or Poppins SemiBold at 28pt–32pt) for intro track metadata: `Artist - Title (Lyrics)`.
 
 ---
 
