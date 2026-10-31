@@ -1,0 +1,342 @@
+[1.74 -> 7.54]  I found the love for me
+     1.74 -   3.02:  I
+     3.02 -   3.44:  found
+     3.44 -   3.60:  the
+     3.60 -   3.98:  love
+     3.98 -   6.40:  for
+     6.40 -   7.54:  me
+[10.00 -> 12.66]  Darling just dive right in
+     9.96 -  10.60:  Darling
+    10.60 -  11.28:  just
+    11.28 -  11.70:  dive
+    11.70 -  12.28:  right
+    12.28 -  12.66:  in
+[12.66 -> 15.84]  Or follow my lead
+    12.66 -  13.60:  Or
+    13.60 -  14.56:  follow
+    14.56 -  15.00:  my
+    15.00 -  15.84:  lead
+[17.00 -> 20.26]  Well I found a girl
+    17.00 -  17.96:  Well
+    17.96 -  18.26:  I
+    18.26 -  18.64:  found
+    18.64 -  18.80:  a
+    18.80 -  20.26:  girl
+[21.00 -> 23.78]  Beautiful and sweet
+    21.00 -  22.12:  Beautiful
+    22.12 -  23.28:  and
+    23.28 -  23.78:  sweet
+[25.00 -> 27.76]  Well I never knew you were
+    24.82 -  25.46:  Well
+    25.46 -  25.74:  I
+    25.74 -  26.04:  never
+    26.04 -  26.68:  knew
+    26.68 -  27.34:  you
+    27.34 -  27.76:  were
+[27.76 -> 30.62]  That someone waiting for me
+    27.76 -  28.20:  That
+    28.20 -  28.82:  someone
+    28.82 -  29.64:  waiting
+    29.64 -  30.14:  for
+    30.14 -  30.62:  me
+[31.76 -> 36.22]  Cause we were just kids when we fell in love
+    31.54 -  32.18:  Cause
+    32.18 -  32.44:  we
+    32.44 -  32.72:  were
+    32.72 -  33.02:  just
+    33.02 -  33.34:  kids
+    33.34 -  33.70:  when
+    33.70 -  33.96:  we
+    33.96 -  34.38:  fell
+    34.38 -  35.46:  in
+    35.46 -  36.22:  love
+[36.76 -> 40.06]  Not knowing what it was
+    36.46 -  37.10:  Not
+    37.10 -  37.68:  knowing
+    37.68 -  38.34:  what
+    38.34 -  39.24:  it
+    39.24 -  40.06:  was
+[40.76 -> 47.26]  I will not give you up this time
+    40.26 -  40.90:  I
+    40.90 -  41.26:  will
+    41.26 -  41.56:  not
+    41.56 -  42.06:  give
+    42.06 -  43.36:  you
+    43.36 -  44.02:  up
+    44.02 -  44.86:  this
+    44.86 -  47.26:  time
+[47.76 -> 51.30]  Darling just kiss me slow
+    47.76 -  48.52:  Darling
+    48.52 -  49.16:  just
+    49.16 -  49.52:  kiss
+    49.52 -  50.32:  me
+    50.32 -  51.30:  slow
+[51.30 -> 55.22]  Your heart is all I own
+    51.30 -  52.20:  Your
+    52.20 -  52.82:  heart
+    52.82 -  52.94:  is
+    52.94 -  53.38:  all
+    53.38 -  54.50:  I
+    54.50 -  55.22:  own
+[55.22 -> 60.34]  And in your eyes you're holding mine
+    55.22 -  56.22:  And
+    56.22 -  56.44:  in
+    56.44 -  56.74:  your
+    56.74 -  57.74:  eyes
+    57.74 -  58.38:  you're
+    58.38 -  59.70:  holding
+    59.70 -  60.34:  mine
+[62.74 -> 68.52]  Baby I'm dancing in the dark
+    62.74 -  63.94:  Baby
+    63.94 -  65.14:  I'm
+    65.14 -  67.02:  dancing
+    67.02 -  67.56:  in
+    67.56 -  68.02:  the
+    68.02 -  68.52:  dark
+[69.22 -> 72.76]  With you between my arms
+    69.22 -  69.96:  With
+    69.96 -  70.34:  you
+    70.34 -  71.18:  between
+    71.18 -  71.84:  my
+    71.84 -  72.76:  arms
+[72.76 -> 76.20]  Barefoot on the grass
+    72.76 -  74.76:  Barefoot
+    74.76 -  75.12:  on
+    75.12 -  75.60:  the
+    75.60 -  76.20:  grass
+[77.22 -> 80.36]  We're listening to our favorite song
+    77.02 -  77.62:  We're
+    77.62 -  78.12:  listening
+    78.12 -  78.74:  to
+    78.74 -  79.34:  our
+    79.34 -  79.78:  favorite
+    79.78 -  80.36:  song
+[80.36 -> 83.52]  When you said you looked at me
+    80.36 -  80.98:  When
+    80.98 -  81.26:  you
+    81.26 -  81.66:  said
+    81.66 -  82.18:  you
+    82.18 -  82.82:  looked
+    82.82 -  83.22:  at
+    83.22 -  83.52:  me
+[83.52 -> 87.48]  I whispered underneath my breath
+    83.52 -  84.48:  I
+    84.48 -  84.86:  whispered
+    84.86 -  86.38:  underneath
+    86.38 -  86.98:  my
+    86.98 -  87.48:  breath
+[87.48 -> 94.76]  You heard it darling you were perfect tonight
+    87.48 -  88.28:  You
+    88.28 -  89.32:  heard
+    89.32 -  90.16:  it
+    90.16 -  90.84:  darling
+    90.84 -  91.36:  you
+    91.36 -  92.10:  were
+    92.10 -  93.80:  perfect
+    93.80 -  94.76:  tonight
+[100.22 -> 103.06]  Well I found a woman
+   100.22 - 101.38:  Well
+   101.38 - 101.52:  I
+   101.52 - 101.96:  found
+   101.96 - 102.18:  a
+   102.18 - 103.06:  woman
+[104.66 -> 107.54]  Stronger than anyone I know
+   104.66 - 105.82:  Stronger
+   105.82 - 105.98:  than
+   105.98 - 106.68:  anyone
+   106.68 - 107.26:  I
+   107.26 - 107.54:  know
+[108.52 -> 112.12]  She shares my dreams I hope that someday
+   108.42 - 109.00:  She
+   109.00 - 109.46:  shares
+   109.46 - 109.68:  my
+   109.68 - 110.14:  dreams
+   110.14 - 110.70:  I
+   110.70 - 111.06:  hope
+   111.06 - 111.58:  that
+   111.58 - 112.12:  someday
+[112.12 -> 114.20]  I'll share her home
+   112.12 - 112.88:  I'll
+   112.88 - 113.12:  share
+   113.12 - 113.60:  her
+   113.60 - 114.20:  home
+[115.52 -> 118.12]  I found the love
+   115.52 - 116.54:  I
+   116.54 - 116.94:  found
+   116.94 - 117.22:  the
+   117.22 - 118.12:  love
+[119.82 -> 123.56]  To carry more than just my secrets
+   119.82 - 120.84:  To
+   120.84 - 121.14:  carry
+   121.14 - 121.60:  more
+   121.60 - 122.06:  than
+   122.06 - 122.56:  just
+   122.56 - 122.98:  my
+   122.98 - 123.56:  secrets
+[124.12 -> 129.84]  To carry love, to carry children of our own
+   124.12 - 124.68:  To
+   124.68 - 124.94:  carry
+   124.94 - 125.46:  love,
+   126.04 - 126.24:  to
+   126.24 - 126.52:  carry
+   126.52 - 127.42:  children
+   127.42 - 128.38:  of
+   128.38 - 128.72:  our
+   128.72 - 129.84:  own
+[129.84 -> 134.82]  We are still kids but we're so in love
+   129.84 - 130.94:  We
+   130.94 - 131.22:  are
+   131.22 - 131.54:  still
+   131.54 - 131.88:  kids
+   131.88 - 132.16:  but
+   132.16 - 132.46:  we're
+   132.46 - 132.80:  so
+   132.80 - 133.88:  in
+   133.88 - 134.82:  love
+[134.82 -> 138.86]  Fighting against all odds
+   134.82 - 135.70:  Fighting
+   135.70 - 137.00:  against
+   137.00 - 137.66:  all
+   137.66 - 138.86:  odds
+[138.86 -> 142.40]  I know it'll be alright
+   138.86 - 139.50:  I
+   139.50 - 139.86:  know
+   139.86 - 140.34:  it'll
+   140.34 - 140.74:  be
+   140.74 - 142.40:  alright
+[142.40 -> 144.82]  It's time
+   142.40 - 143.88:  It's
+   143.88 - 144.82:  time
+[146.86 -> 149.98]  Darling just hold my hand
+   146.42 - 147.12:  Darling
+   147.12 - 147.68:  just
+   147.68 - 148.14:  hold
+   148.14 - 148.94:  my
+   148.94 - 149.98:  hand
+[149.98 -> 153.68]  We're gonna be your man
+   149.98 - 150.62:  We're
+   150.62 - 151.06:  gonna
+   151.06 - 151.90:  be
+   151.90 - 152.78:  your
+   152.78 - 153.68:  man
+[153.68 -> 159.76]  I've seen a future in your eyes
+   153.68 - 154.66:  I've
+   154.66 - 154.92:  seen
+   154.92 - 155.22:  a
+   155.22 - 156.26:  future
+   156.26 - 157.70:  in
+   157.70 - 158.44:  your
+   158.44 - 159.76:  eyes
+[159.76 -> 167.10]  Baby I'm dancing in the dark
+   159.76 - 161.30:  Baby
+   161.30 - 163.40:  I'm
+   163.40 - 165.44:  dancing
+   165.44 - 166.08:  in
+   166.08 - 166.58:  the
+   166.58 - 167.10:  dark
+[167.10 -> 171.24]  With you between my arms
+   167.10 - 168.62:  With
+   168.62 - 168.92:  you
+   168.92 - 169.74:  between
+   169.74 - 170.36:  my
+   170.36 - 171.24:  arms
+[171.24 -> 174.82]  Barefoot on the grass
+   171.24 - 173.22:  Barefoot
+   173.22 - 173.74:  on
+   173.74 - 174.12:  the
+   174.12 - 174.82:  grass
+[174.82 -> 178.90]  We're listening to our favorite song
+   174.82 - 176.20:  We're
+   176.20 - 176.76:  listening
+   176.76 - 177.26:  to
+   177.26 - 177.88:  our
+   177.88 - 178.32:  favorite
+   178.32 - 178.90:  song
+[178.90 -> 182.20]  When I saw you in that dress
+   178.90 - 179.48:  When
+   179.48 - 179.80:  I
+   179.80 - 180.10:  saw
+   180.10 - 180.76:  you
+   180.76 - 181.26:  in
+   181.26 - 181.68:  that
+   181.68 - 182.20:  dress
+[182.20 -> 184.46]  Looking so beautiful
+   182.20 - 183.24:  Looking
+   183.24 - 183.58:  so
+   183.58 - 184.46:  beautiful
+[185.10 -> 188.86]  I don't deserve this
+   184.95 - 185.56:  I
+   185.56 - 186.50:  don't
+   186.50 - 187.56:  deserve
+   187.56 - 188.86:  this
+[188.86 -> 193.24]  Darling you were perfect tonight
+   188.86 - 189.42:  Darling
+   189.42 - 189.98:  you
+   189.98 - 190.58:  were
+   190.58 - 192.34:  perfect
+   192.34 - 193.24:  tonight
+[198.54 -> 199.80]  Darling
+   198.54 - 199.80:  Darling
+[207.50 -> 212.64]  Baby I'm dancing in the dark
+   207.50 - 208.76:  Baby
+   208.76 - 210.02:  I'm
+   210.02 - 210.98:  dancing
+   210.98 - 211.52:  in
+   211.52 - 212.04:  the
+   212.04 - 212.64:  dark
+[212.64 -> 216.90]  With you between my arms
+   212.64 - 213.98:  With
+   213.98 - 214.34:  you
+   214.34 - 215.10:  between
+   215.10 - 216.00:  my
+   216.00 - 216.90:  arms
+[216.90 -> 220.16]  Barefoot on the grass
+   216.90 - 218.80:  Barefoot
+   218.80 - 219.18:  on
+   219.18 - 219.60:  the
+   219.60 - 220.16:  grass
+[221.10 -> 224.38]  We're listening to our favorite song
+   220.97 - 221.60:  We're
+   221.60 - 222.12:  listening
+   222.12 - 222.72:  to
+   222.72 - 223.38:  our
+   223.38 - 223.80:  favorite
+   223.80 - 224.38:  song
+[224.38 -> 227.54]  I have faith in what I see
+   224.38 - 225.06:  I
+   225.06 - 225.34:  have
+   225.34 - 225.78:  faith
+   225.78 - 226.28:  in
+   226.28 - 226.58:  what
+   226.58 - 227.16:  I
+   227.16 - 227.54:  see
+[228.38 -> 231.70]  Now I know I have met an angel
+   227.78 - 228.48:  Now
+   228.48 - 228.78:  I
+   228.78 - 229.10:  know
+   229.10 - 229.70:  I
+   229.70 - 230.06:  have
+   230.06 - 230.42:  met
+   230.42 - 231.00:  an
+   231.00 - 231.70:  angel
+[232.38 -> 237.62]  In person she looks perfect
+   232.20 - 232.90:  In
+   232.90 - 233.78:  person
+   233.78 - 235.02:  she
+   235.02 - 236.16:  looks
+   236.16 - 237.62:  perfect
+[238.38 -> 241.90]  I don't deserve this
+   237.80 - 238.50:  I
+   238.50 - 239.72:  don't
+   239.72 - 241.04:  deserve
+   241.04 - 241.90:  this
+[241.90 -> 246.36]  You look perfect tonight
+   241.90 - 242.80:  You
+   242.80 - 243.68:  look
+   243.68 - 245.32:  perfect
+   245.32 - 246.36:  tonight
+[260.66 -> 263.46]  You look perfect tonight
+   260.66 - 262.06:  You
+   262.06 - 263.46:  look
+   263.46 - 263.46:  perfect
+   263.46 - 263.46:  tonight

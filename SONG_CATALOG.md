@@ -33,3 +33,4 @@
 | **27b**| Glimpse of Us | Joji | Single (3:53) + Slowed Reverb (4:30) | `songs/27_Joji_Glimpse_of_Us` |
 | **28** | blue | yung kai | Single (3:34) **7clouds Remaster** + Slowed (4:08) | `songs/28_yung_kai_blue` |
 | **29** | Chandelier | Sia | Single (3:32) + Slowed Reverb (4:06) | `songs/29_Sia_Chandelier` |
+| **30** | Perfect | Ed Sheeran | Slowed + Reverb **Pink Mode** (5:05) + **Sunset Mode** (5:05) | `songs/30_Ed_Sheeran_Perfect` |
