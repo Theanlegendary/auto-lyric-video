@@ -1,0 +1,185 @@
+1
+00:00:00,542 --> 00:00:13,180
+<i><b>♪ ♪</b></i>
+
+2
+00:00:13,180 --> 00:00:15,849
+<i>♪ Everybody knows my name now ♪</i>
+
+3
+00:00:15,849 --> 00:00:19,019
+<i>♪ But something bout it still feels strange ♪</i>
+
+4
+00:00:19,019 --> 00:00:21,521
+<i>♪ Like looking in a mirror</i>
+<i>Trying to steady yourself ♪</i>
+
+5
+00:00:21,521 --> 00:00:23,523
+<i>♪ And seeing somebody else ♪</i>
+
+6
+00:00:23,523 --> 00:00:24,858
+<i>♪ ♪</i>
+
+7
+00:00:24,858 --> 00:00:27,819
+<i>♪ And everything is not the same now ♪</i>
+
+8
+00:00:27,819 --> 00:00:30,948
+<i>♪ It feels like all our lives have changed ♪</i>
+
+9
+00:00:30,948 --> 00:00:33,659
+<i>♪ Maybe when I’m older it will all come down ♪</i>
+
+10
+00:00:33,659 --> 00:00:35,369
+<i>♪ But it’s killing me now ♪</i>
+
+11
+00:00:35,369 --> 00:00:37,454
+<i>♪ ♪</i>
+
+12
+00:00:37,454 --> 00:00:40,499
+<i>♪ What if you had it all</i>
+
+13
+00:00:40,499 --> 00:00:43,669
+<i>♪ But nobody to call ♪</i>
+
+14
+00:00:43,669 --> 00:00:46,546
+<i>♪ Maybe then you’d know me ♪</i>
+
+15
+00:00:46,546 --> 00:00:49,508
+<i>♪ ♪</i>
+
+16
+00:00:49,508 --> 00:00:52,386
+<i>♪ Cause I’ve had everything ♪</i>
+
+17
+00:00:52,386 --> 00:00:55,597
+<i>♪ But no one’s listening ♪</i>
+
+18
+00:00:55,597 --> 00:00:58,517
+<i>♪ And that’s just fucking lonely ♪</i>
+
+19
+00:00:58,517 --> 00:00:59,393
+<i><b>♪ ♪</b></i>
+
+20
+00:00:59,393 --> 00:01:04,606
+<i>♪ I’m so lo-o-o-onely ♪</i>
+
+21
+00:01:06,066 --> 00:01:09,861
+<i>♪ Lo-o-o-onely ♪</i>
+
+22
+00:01:09,861 --> 00:01:12,948
+<i>♪ ♪</i>
+
+23
+00:01:12,948 --> 00:01:15,742
+<i>♪ Everybody knows my past now ♪</i>
+
+24
+00:01:15,742 --> 00:01:18,787
+<i>♪ Like my house was always made of glass ♪</i>
+
+25
+00:01:18,787 --> 00:01:20,914
+<i>♪ And maybe that’s the price you pay ♪</i>
+
+26
+00:01:20,914 --> 00:01:24,751
+<i>♪ For the money and fame at an early age ♪</i>
+
+27
+00:01:24,751 --> 00:01:27,754
+<i>♪ And everybody saw me sick ♪</i>
+
+28
+00:01:27,754 --> 00:01:30,465
+<i>♪ And it felt like no one gave a shit ♪</i>
+
+29
+00:01:30,465 --> 00:01:32,926
+<i>♪ They criticized the things I did ♪</i>
+
+30
+00:01:32,926 --> 00:01:34,636
+<i>♪ As an idiot kid ♪</i>
+
+31
+00:01:34,636 --> 00:01:37,514
+<i>♪ ♪</i>
+
+32
+00:01:37,514 --> 00:01:40,267
+<i>♪ What if you had it all ♪</i>
+
+33
+00:01:40,267 --> 00:01:43,645
+<i>♪ But nobody to call ♪</i>
+
+34
+00:01:43,645 --> 00:01:45,981
+<i>♪ Maybe then you’d know me ♪</i>
+
+35
+00:01:45,981 --> 00:01:49,401
+<i>♪ ♪</i>
+
+36
+00:01:49,401 --> 00:01:52,362
+<i>♪ Cause I’ve had everything ♪</i>
+
+37
+00:01:52,362 --> 00:01:55,532
+<i>♪ But no one’s listening ♪</i>
+
+38
+00:01:55,532 --> 00:01:58,493
+<i>♪ And that’s just fucking lonely ♪</i>
+
+39
+00:01:58,493 --> 00:01:59,411
+<i>♪ ♪</i>
+
+40
+00:01:59,411 --> 00:02:03,915
+<i>♪ I’m so lo-o-o-onely ♪</i>
+
+41
+00:02:03,915 --> 00:02:06,043
+<i>♪ ♪</i>
+
+42
+00:02:06,043 --> 00:02:11,298
+<i>♪ Lo-o-o-onely ♪</i>
+
+43
+00:02:11,298 --> 00:02:16,011
+<i>♪ I’m so lo-o-o-onely ♪</i>
+
+44
+00:02:16,011 --> 00:02:18,221
+<i>♪ ♪</i>
+
+45
+00:02:18,221 --> 00:02:21,850
+<i>♪ Lo-o-o-onely ♪</i>
+
+46
+00:02:21,850 --> 00:02:27,230
+<i>♪ ♪</i>
+

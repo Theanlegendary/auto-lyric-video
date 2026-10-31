@@ -1,0 +1,32 @@
+[Script Info]
+Title: yung kai - blue (Glowing Pure White Handwritten Edition)
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleGlow,Patrick Hand,200,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H50FFFFFF,1,0,0,0,95,112,2,0,1,3.5,0,5,50,50,50,1
+Style: LyricGlow,Patrick Hand,98,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H50FFFFFF,1,0,0,0,94,112,1,0,1,3.0,0,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:08.50,TitleGlow,,0,0,0,,{\pos(960,460)\fad(500,400)\blur2.5}blue\N{\fs88\fsp6\b0}yung kai
+Dialogue: 0,0:00:18.50,0:00:25.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}Your morning eyes\NI could stare like watching stars
+Dialogue: 0,0:00:25.80,0:00:33.00,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I could walk you by\NAnd I'll tell without a thought you'd be mine
+Dialogue: 0,0:00:33.50,0:00:39.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}Would you mind if I took your hand tonight?\NKnow you're all that I want this life
+Dialogue: 0,0:00:40.00,0:00:47.00,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'll imagine we fell in love\NI'll nap under moonlight skies with you
+Dialogue: 0,0:00:47.20,0:00:54.20,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I think I'll picture us, you with the waves\NThe ocean's colors on your face
+Dialogue: 0,0:00:54.50,0:01:01.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'll leave my heart with your air\NSo let me fly with you
+Dialogue: 0,0:01:01.80,0:01:14.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}Will you be forever with me?\NCause you're so blue
+Dialogue: 0,0:01:15.00,0:01:45.00,TitleGlow,,0,0,0,,{\pos(960,460)\fad(500,400)\blur2.5}blue\N{\fs88\fsp6\b0}yung kai
+Dialogue: 0,0:01:46.00,0:01:52.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}My love will always stay by you\NI'll keep it safe, so don't you worry a thing
+Dialogue: 0,0:01:52.80,0:02:00.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'll tell you I love you more\NIt's stuck with you forever
+Dialogue: 0,0:02:00.80,0:02:07.80,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}So promise you won't let it go\NI'll trust the universe will always bring me to you
+Dialogue: 0,0:02:08.00,0:02:15.80,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'll imagine we fell in love\NI'll nap under moonlight skies with you
+Dialogue: 0,0:02:16.00,0:02:23.00,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I think I'll picture us, you with the waves\NThe ocean's colors on your face
+Dialogue: 0,0:02:23.20,0:02:30.00,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'll leave my heart with your air\NSo let me fly with you
+Dialogue: 0,0:02:30.20,0:02:44.00,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}Will you be forever with me?\NCause you're so blue
+Dialogue: 0,0:02:45.00,0:03:25.00,TitleGlow,,0,0,0,,{\pos(960,460)\fad(500,400)\blur2.5}blue\N{\fs88\fsp6\b0}yung kai

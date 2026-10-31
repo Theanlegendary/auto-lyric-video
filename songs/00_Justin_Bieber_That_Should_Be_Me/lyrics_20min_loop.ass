@@ -1,0 +1,208 @@
+[Script Info]
+Title: Justin Bieber - That Should Be Me (20-Min 5-Time Replay Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title7Clouds,Patrick Hand,170,&H00FFFFFF,&H000000FF,&H00101828,&H80000000,-1,0,0,0,100,100,5,0,1,4.0,2.5,5,180,180,110,1
+Style: Lyric7Clouds,Patrick Hand,96,&H00FFFFFF,&H000000FF,&H00101828,&H80000000,-1,0,0,0,100,100,2,0,1,3.8,2.2,5,180,180,110,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:06.50,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:00:06.80,0:00:12.80,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:00:12.90,0:00:18.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:00:18.60,0:00:22.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:00:22.50,0:00:25.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:00:25.50,0:00:29.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:00:29.10,0:00:32.20,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:00:32.40,0:00:39.10,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:00:39.20,0:00:45.70,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:00:45.80,0:00:52.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:00:52.90,0:01:02.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:01:02.20,0:01:06.50,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:01:06.80,0:01:14.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:01:14.40,0:01:21.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:01:22.00,0:01:28.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:01:28.40,0:01:34.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:01:34.20,0:01:38.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:01:38.20,0:01:44.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:01:44.40,0:01:50.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:01:50.20,0:01:56.50,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:01:56.70,0:02:04.50,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:02:05.00,0:02:11.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:02:12.00,0:02:18.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:02:18.50,0:02:24.50,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:02:24.80,0:02:32.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:02:32.20,0:02:39.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:02:39.20,0:02:46.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:02:46.20,0:02:53.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:02:54.00,0:03:03.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:03:03.50,0:03:13.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:03:13.20,0:03:22.00,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:03:23.00,0:03:34.00,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:03:37.08,0:03:42.98,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber • Replay [1/5]
+Dialogue: 0,0:03:43.28,0:03:49.28,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:03:49.38,0:03:54.88,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:03:55.08,0:03:58.88,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:03:58.98,0:04:01.88,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:04:01.98,0:04:05.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:04:05.58,0:04:08.68,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:04:08.88,0:04:15.58,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:04:15.68,0:04:22.18,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:04:22.28,0:04:29.28,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:04:29.38,0:04:38.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:04:38.68,0:04:42.98,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:04:43.28,0:04:50.68,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:04:50.88,0:04:58.28,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:04:58.48,0:05:04.68,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:05:04.88,0:05:10.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:05:10.68,0:05:14.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:05:14.68,0:05:20.68,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:05:20.88,0:05:26.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:05:26.68,0:05:32.98,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:05:33.18,0:05:40.98,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:05:41.48,0:05:48.28,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:05:48.48,0:05:54.68,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:05:54.98,0:06:00.98,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:06:01.28,0:06:08.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:06:08.68,0:06:15.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:06:15.68,0:06:22.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:06:22.68,0:06:30.28,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:06:30.48,0:06:39.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:06:39.98,0:06:49.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:06:49.68,0:06:58.48,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:06:59.48,0:07:10.48,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:07:13.56,0:07:19.46,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber • Replay [2/5]
+Dialogue: 0,0:07:19.76,0:07:25.76,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:07:25.86,0:07:31.36,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:07:31.56,0:07:35.36,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:07:35.46,0:07:38.36,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:07:38.46,0:07:41.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:07:42.06,0:07:45.16,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:07:45.36,0:07:52.06,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:07:52.16,0:07:58.66,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:07:58.76,0:08:05.76,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:08:05.86,0:08:14.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:08:15.16,0:08:19.46,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:08:19.76,0:08:27.16,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:08:27.36,0:08:34.76,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:08:34.96,0:08:41.16,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:08:41.36,0:08:46.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:08:47.16,0:08:50.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:08:51.16,0:08:57.16,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:08:57.36,0:09:02.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:09:03.16,0:09:09.46,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:09:09.66,0:09:17.46,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:09:17.96,0:09:24.76,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:09:24.96,0:09:31.16,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:09:31.46,0:09:37.46,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:09:37.76,0:09:44.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:09:45.16,0:09:51.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:09:52.16,0:09:58.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:09:59.16,0:10:06.76,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:10:06.96,0:10:15.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:10:16.46,0:10:25.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:10:26.16,0:10:34.96,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:10:35.96,0:10:46.96,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:10:50.04,0:10:55.94,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber • Replay [3/5]
+Dialogue: 0,0:10:56.24,0:11:02.24,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:11:02.34,0:11:07.84,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:11:08.04,0:11:11.84,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:11:11.94,0:11:14.84,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:11:14.94,0:11:18.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:11:18.54,0:11:21.64,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:11:21.84,0:11:28.54,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:11:28.64,0:11:35.14,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:11:35.24,0:11:42.24,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:11:42.34,0:11:51.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:11:51.64,0:11:55.94,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:11:56.24,0:12:03.64,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:12:03.84,0:12:11.24,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:12:11.44,0:12:17.64,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:12:17.84,0:12:23.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:12:23.64,0:12:27.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:12:27.64,0:12:33.64,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:12:33.84,0:12:39.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:12:39.64,0:12:45.94,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:12:46.14,0:12:53.94,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:12:54.44,0:13:01.24,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:13:01.44,0:13:07.64,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:13:07.94,0:13:13.94,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:13:14.24,0:13:21.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:13:21.64,0:13:28.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:13:28.64,0:13:35.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:13:35.64,0:13:43.24,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:13:43.44,0:13:52.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:13:52.94,0:14:02.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:14:02.64,0:14:11.44,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:14:12.44,0:14:23.44,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:14:26.52,0:14:32.42,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber • Replay [4/5]
+Dialogue: 0,0:14:32.72,0:14:38.72,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:14:38.82,0:14:44.32,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:14:44.52,0:14:48.32,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:14:48.42,0:14:51.32,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:14:51.42,0:14:54.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:14:55.02,0:14:58.12,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:14:58.32,0:15:05.02,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:15:05.12,0:15:11.62,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:15:11.72,0:15:18.72,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:15:18.82,0:15:27.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:15:28.12,0:15:32.42,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:15:32.72,0:15:40.12,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:15:40.32,0:15:47.72,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:15:47.92,0:15:54.12,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:15:54.32,0:15:59.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:16:00.12,0:16:03.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:16:04.12,0:16:10.12,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:16:10.32,0:16:15.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:16:16.12,0:16:22.42,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:16:22.62,0:16:30.42,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:16:30.92,0:16:37.72,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:16:37.92,0:16:44.12,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:16:44.42,0:16:50.42,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:16:50.72,0:16:57.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:16:58.12,0:17:04.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:17:05.12,0:17:11.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:17:12.12,0:17:19.72,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:17:19.92,0:17:28.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:17:29.42,0:17:38.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:17:39.12,0:17:47.92,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:17:48.92,0:17:59.92,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:18:03.00,0:18:08.90,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber • Replay [5/5]
+Dialogue: 0,0:18:09.20,0:18:15.20,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}Everybody's laughing in my mind
+Dialogue: 0,0:18:15.30,0:18:20.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Rumors spreading\N'bout this other guy
+Dialogue: 0,0:18:21.00,0:18:24.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Do you do what you did\Nwhen you did with me?
+Dialogue: 0,0:18:24.90,0:18:27.80,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Does he love you\Nthe way I can?
+Dialogue: 0,0:18:27.90,0:18:31.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you forget all the plans\Nthat you made with me?
+Dialogue: 0,0:18:31.50,0:18:34.60,Lyric7Clouds,,0,0,0,,{\pos(960,510)\fad(200,150)}'Cause, baby, I didn't
+Dialogue: 0,0:18:34.80,0:18:41.50,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:18:41.60,0:18:48.10,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:18:48.20,0:18:55.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:18:55.30,0:19:04.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:19:04.60,0:19:08.90,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:19:09.20,0:19:16.60,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}You said you needed a little time\Nfor my mistakes
+Dialogue: 0,0:19:16.80,0:19:24.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's funny how you used that time\Nto have me replaced
+Dialogue: 0,0:19:24.40,0:19:30.60,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Did you think that I wouldn't see you\Nout at the movies?
+Dialogue: 0,0:19:30.80,0:19:36.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}What you doing to me?\NYou're taking him where we used to go
+Dialogue: 0,0:19:36.60,0:19:40.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Now if you're tryna break my heart\NIt's working 'cause you know that...
+Dialogue: 0,0:19:40.60,0:19:46.60,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:19:46.80,0:19:52.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:19:52.60,0:19:58.90,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:19:59.10,0:20:06.90,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:20:07.40,0:20:14.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}I need to know,\Nshould I fight for love or disarm?
+Dialogue: 0,0:20:14.40,0:20:20.60,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}It's getting harder to shield\Nthis pain in my heart
+Dialogue: 0,0:20:20.90,0:20:26.90,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber
+Dialogue: 0,0:20:27.20,0:20:34.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me holding your hand\NThat should be me making you laugh
+Dialogue: 0,0:20:34.60,0:20:41.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, this is so sad\NThat should be me, that should be me
+Dialogue: 0,0:20:41.60,0:20:48.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me feeling your kiss\NThat should be me buying you gifts
+Dialogue: 0,0:20:48.60,0:20:56.20,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}This is so wrong, I can't go on\N'Til you believe that that should be me
+Dialogue: 0,0:20:56.40,0:21:05.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}Holding your hand, that should be me\NThe one making you laugh, oh baby
+Dialogue: 0,0:21:05.90,0:21:15.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me giving you flowers\NThat should be me talking for hours
+Dialogue: 0,0:21:15.60,0:21:24.40,Lyric7Clouds,,0,0,0,,{\pos(960,490)\fad(200,150)}That should be me, that should be me\NOh baby, that should be me
+Dialogue: 0,0:21:25.40,0:21:36.40,Title7Clouds,,0,0,0,,{\pos(960,460)\fad(500,400)}That Should Be Me\N{\fs84\fsp6\b0}Justin Bieber

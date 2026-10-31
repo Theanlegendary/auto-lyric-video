@@ -1,0 +1,57 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: SpotifyTitle,Poppins,135,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,2,0,1,1.5,3.0,5,50,50,50,1
+Style: SpotifyHook,Poppins,82,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+Style: SpotifyVerse,Poppins,72,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:09.93,SpotifyTitle,,0,0,0,,{\pos(960,470)\fad(500,300)}Lonely\N{\fs66\fsp4\b0}Akon
+Dialogue: 0,0:00:10.13,0:00:20.54,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Lonely, I'm Mr. Lonely\NI have nobody for my own
+Dialogue: 0,0:00:20.74,0:00:24.18,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I am so lonely\NI'm Mr. Lonely
+Dialogue: 0,0:00:24.38,0:00:32.29,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Yo, this one here goes out\NTo all my players out there, you know
+Dialogue: 0,0:00:32.49,0:00:38.55,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}That got that one good girl\NWho's always been there, took all the bullshit
+Dialogue: 0,0:00:38.75,0:00:42.79,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Then one day she can't take it no more\NAnd decide to leave, yeah
+Dialogue: 0,0:00:42.99,0:00:48.01,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I woke up in the middle of the night\NAnd I noticed my girl wasn't by my side
+Dialogue: 0,0:00:48.21,0:00:53.35,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Coulda sworn I was dreaming, for her I was feenin'\NSo I had to get up and take a little ride
+Dialogue: 0,0:00:53.55,0:00:58.72,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Backtracking over these few years\NTryna figure out what I did to make it go bad
+Dialogue: 0,0:00:58.92,0:01:03.98,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}'Cause ever since my girl left me\NMy whole life came crashing and I'm so
+Dialogue: 0,0:01:04.18,0:01:08.68,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:01:08.88,0:01:14.34,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, girl)
+Dialogue: 0,0:01:14.54,0:01:19.39,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I'm so lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:01:19.59,0:01:25.44,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, girl)
+Dialogue: 0,0:01:25.64,0:01:30.73,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Can't believe I had a girl like you\NAnd I just let you walk right outta my life
+Dialogue: 0,0:01:30.93,0:01:36.05,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}After all I put you through\NYou still stuck around and stayed by my side
+Dialogue: 0,0:01:36.25,0:01:41.26,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}What really hurt me is I broke your heart\NBaby, you a good girl and I had no right
+Dialogue: 0,0:01:41.46,0:01:46.69,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I really wanna make things right\N'Cause without you in my life, girl, I'm so
+Dialogue: 0,0:01:46.89,0:01:51.18,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:01:51.38,0:01:57.02,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, girl)
+Dialogue: 0,0:01:57.22,0:02:01.87,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I'm so lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:02:02.07,0:02:08.24,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, baby)
+Dialogue: 0,0:02:08.44,0:02:13.31,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Been all about the world, ain't never met a girl\NThat could take the things that you been through
+Dialogue: 0,0:02:13.51,0:02:18.79,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Never thought the day would come where you would run\NAnd I would be out chasing you
+Dialogue: 0,0:02:18.99,0:02:23.95,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}'Cause ain't nowhere in the globe I'd rather be\NAin't no one in the globe I'd rather see
+Dialogue: 0,0:02:24.15,0:02:29.34,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Than the girl of my dreams that made me be\NSo happy, but now so lonely
+Dialogue: 0,0:02:29.54,0:02:34.08,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:02:34.28,0:02:39.79,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, no)
+Dialogue: 0,0:02:39.99,0:02:44.38,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I'm so lonely (So lonely)\NI'm Mr. Lonely (Mr. Lonely)
+Dialogue: 0,0:02:44.58,0:02:50.16,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I have nobody (I have nobody)\NFor my own (To call my own, girl)
+Dialogue: 0,0:02:50.36,0:02:56.22,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Never thought that I'd be alone\NNever thought that I'd be all on my own
+Dialogue: 0,0:02:56.42,0:03:01.43,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I didn't think you'd be gone this long\NI just want you to call my phone
+Dialogue: 0,0:03:01.63,0:03:06.64,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}Stop playing, girl, and come on home\NBaby girl, I didn't mean to shout
+Dialogue: 0,0:03:06.84,0:03:11.70,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I want me and you to work it out\NI'd never wish to ever hurt my baby
+Dialogue: 0,0:03:11.90,0:03:16.52,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}And it's driving me crazy 'cause I'm so\NLonely (So lonely)
+Dialogue: 0,0:03:16.72,0:03:22.19,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I'm Mr. Lonely (Mr. Lonely)\NI have nobody (I have nobody)
+Dialogue: 0,0:03:22.39,0:03:27.27,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}For my own (To call my own, no)\NI'm so lonely (So lonely)
+Dialogue: 0,0:03:27.47,0:03:32.60,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I'm Mr. Lonely (Mr. Lonely)\NI have nobody (I have nobody)
+Dialogue: 0,0:03:32.80,0:03:38.56,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}For my own (To call my own, girl)\NI am so lonely
+Dialogue: 0,0:03:38.76,0:03:44.58,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}So lonely (Lonely)\NSo lonely (So lonely)
+Dialogue: 0,0:03:44.78,0:03:49.89,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Mr. Lonely (Lonely)\NSo lonely (So lonely)
+Dialogue: 0,0:03:50.09,0:03:54.80,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}So lonely (Lonely)\NSo lonely, Mr. Lonely

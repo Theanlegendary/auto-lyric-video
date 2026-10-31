@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade Replay - Always New Backgrounds & 35mm Lofi Grain</title>
+  <style>
+    :root {
+      --bg: #0d0a10;
+      --card-bg: #17111c;
+      --accent: #ff4d8d;
+      --accent-glow: rgba(255, 77, 141, 0.35);
+      --border: #2c2035;
+      --text: #f0e6f2;
+      --text-muted: #a692ab;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(120, 220, 255, 0.15);
+      color: #78dcff;
+      border: 1px solid rgba(120, 220, 255, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 32px;
+      color: #fff;
+      font-weight: 800;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      margin: 0 0 24px 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .tab-btn {
+      background: #201726;
+      border: 1px solid var(--border);
+      color: #dfd0e3;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      text-align: left;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tab-btn:hover {
+      background: #2d1f36;
+      border-color: #4b345a;
+      color: #fff;
+    }
+    .tab-btn.active {
+      background: linear-gradient(135deg, #7c1a4b 0%, #b82b6c 100%);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 6px 20px var(--accent-glow);
+    }
+    .desc-box {
+      background: #1f1524;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ece1ee;
+    }
+    .video-wrapper {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+      background: #000;
+      border: 1px solid #362640;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">✨ 100% Unique Anime Backgrounds • 35mm Lofi Film Grain</span>
+    <h1>Fade Replay — Viral Anime Lyric Videos</h1>
+    <p class="subtitle">Every single song receives its own unique 1080p anime artwork, 2-row couplets, dynamic intro blur timing, and subtle 35mm lofi grain.</p>
+
+    <!-- SLOWED + REVERB PSYCHOLOGY SHOWDOWN BANNER -->
+    <div style="background: linear-gradient(135deg, rgba(160, 100, 255, 0.2), rgba(20, 15, 35, 0.95)); border: 1px solid rgba(180, 120, 255, 0.5); border-radius: 16px; padding: 20px 24px; margin-bottom: 26px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+        <div style="font-weight: 800; font-size: 16px; color: #d8b4fe; display: flex; align-items: center; gap: 10px;">
+          <span>🎧 The Psychology of Slowed + Reverb Brand Showdown</span>
+          <span style="background: #a855f7; color: #fff; font-size: 10px; font-weight: 800; padding: 3px 9px; border-radius: 8px; text-transform: uppercase;">Aesthetic Test</span>
+        </div>
+        <div style="font-size: 12px; color: #cbd5e1; max-width: 680px; line-height: 1.5;">
+          Experience the 3 psychological principles (<strong>Low-Energy Slowness</strong> • <strong>Cathedral Space Isolation</strong> • <strong>Cassette Pitch Dissociation</strong>) on both <em>Sweater Weather</em> and <em>Skyfall</em>!
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <!-- Sweater Weather Pair (Full Song Editions) -->
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+          <span style="font-size: 12px; font-weight: 800; color: #aadcff; min-width: 140px;">🧥 Sweater Weather:</span>
+          <button class="tab-btn active" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(180, 120, 255, 0.85); background: rgba(180, 120, 255, 0.25);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '🧥 <strong>The Neighbourhood — Sweater Weather (Slowed + Reverb Brand Edition • Full 4:35)</strong><br>• <strong>1. Slowness</strong>: 118 BPM slowed to 102 BPM (0.865x), stretching the vocal longing.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating cold, empty coastal bluffs.<br>• <strong>3. Lowered Pitch & Tape Comfort</strong>: -2.5 semitones down, warm cassette tape shelf (15.5kHz), inducing dreamlike dissociation.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
+            ▶ 1. Full Song: Slowed + Reverb (4:35)
+          </button>
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '💿 <strong>The Neighbourhood — Sweater Weather (Original 1.0x Normal Mix • Full 3:57)</strong><br>Standard speed (118 BPM), original pitch, dry studio audio.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
+            ▶ 2. Full Song: Original Normal (3:57)
+          </button>
+        </div>
+
+        <!-- Joji Glimpse of Us Pair -->
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+          <span style="font-size: 12px; font-weight: 800; color: #818cf8; min-width: 140px;">🌧️ Joji Glimpse of Us:</span>
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(129, 140, 248, 0.85); background: rgba(129, 140, 248, 0.25);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '🌧️ <strong>Joji — Glimpse of Us (Slowed + Reverb Brand Edition • Full 4:30)</strong><br>• <strong>1. Slowness</strong>: 85 BPM slowed to 73.5 BPM (0.865x).<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating lonely rain-slicked city ledges.<br>• <strong>3. Cassette Tape Comfort</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
+            ▶ 1. Full Song: Slowed + Reverb (4:30)
+          </button>
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '💿 <strong>Joji — Glimpse of Us (Original 1.0x Mix • Full 3:53)</strong><br>Standard speed (85 BPM), original pitch, dry studio acoustics.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
+            ▶ 2. Full Song: Original Normal (3:53)
+          </button>
+        </div>
+
+                  <!-- yung kai blue 7clouds Remaster -->
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(56, 189, 248, 0.12); padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.4);">
+            <span style="font-size: 12px; font-weight: 800; color: #38bdf8; min-width: 140px;">☁️ yung kai blue (7clouds Style):</span>
+            <button class="tab-btn active" style="width: auto; padding: 8px 16px; margin: 0; border-color: #38bdf8; background: rgba(56, 189, 248, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>yung kai — blue (7clouds Perfect Twilight Remaster • 3:34)</strong><br>• <strong>Visual</strong>: Signature 7clouds twilight anime aesthetic — deep sapphire & indigo clouds with soft moonlight rim glow and twinkling stars (`bg_34`).<br>• <strong>Motion</strong>: Subtle organic camera drift (zoompan) — zero clunky sliding sprites.<br>• <strong>Typography</strong>: Pure white handwriting font (`Patrick Hand`) with dark outline & soft shadow for maximum emotional contrast.<br>• <strong>Audio</strong>: Original 1.0x Full Mix.')">
+              ▶ 7clouds Aesthetic Remaster (3:34) [RECOMMENDED]
+            </button>
+            <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.05); opacity: 0.6;" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '⏮️ <em>Previous Archive: yung kai — blue (Old Slowed + Reverb 4:08)</em>')">
+              ⏮ Archive: Old Slowed (4:08)
+            </button>
+          </div>
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+          <span style="font-size: 12px; font-weight: 800; color: #f43f5e; min-width: 140px;">💎 Sia Chandelier:</span>
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(244, 63, 94, 0.85); background: rgba(244, 63, 94, 0.25);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '💎 <strong>Sia — Chandelier (Slowed + Reverb Brand Edition • Full 4:06)</strong><br>• <strong>1. Slowness</strong>: 0.865x tape varispeed (117 &rarr; 101.2 BPM), stretching out the emotional sorrow.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation simulating a vast ballroom echo.<br>• <strong>3. Cassette Warmth</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Live shimmering golden chandelier prism bokeh lights drifting strictly <em>behind</em> glowing pure white lyrics (`bg_35`).')">
+            ▶ 1. Full Song: Slowed + Reverb (4:06)
+          </button>
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '💿 <strong>Sia — Chandelier (Original 1.0x Mix • Full 3:32)</strong><br>Standard 117 BPM tempo, euphoric electropop beat.<br>• <strong>Visual</strong>: Live shimmering lights and clouds drifting behind lyrics (`bg_35`).')">
+            ▶ 2. Full Song: Original Normal (3:32)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div style="font-size:14px; font-weight:700; color:var(--text-muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.8px;">Full Discography Catalog (Songs 1–28):</div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchOption(this, 'videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4', '🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.')">
+        <span style="font-weight:700;">1. APT.</span>
+        <span style="font-size:11px;opacity:0.8;">Pastel Clouds</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/02_Lady_Gaga_Bruno_Mars_Die_With_A_Smile_Lyric_Video.mp4', '🌙 <strong>2. Die With A Smile</strong> — Lady Gaga & Bruno Mars<br><strong>Artwork</strong>: <em>Deep Indigo Twilight Starry Night</em> with crescent moon.<br>Luminous white typography, emotional acoustic ballad pacing.')">
+        <span style="font-weight:700;">2. Die With A Smile</span>
+        <span style="font-size:11px;opacity:0.8;">Starry Twilight Night</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/03_Taylor_Swift_The_Fate_of_Ophelia_Lyric_Video.mp4', '🌅 <strong>3. The Fate of Ophelia</strong> — Taylor Swift<br><strong>Artwork</strong>: <em>Anime Sunset Rooftop Skyline & Powerlines</em> at golden hour.<br>8.5s sharp unblurred intro card, zero collision 2-row couplets.')">
+        <span style="font-weight:700;">3. The Fate of Ophelia</span>
+        <span style="font-size:11px;opacity:0.8;">Sunset Rooftop Skyline</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/04_HUNTR_X_Golden_Lyric_Video.mp4', '✨ <strong>4. Golden</strong> — HUNTR/X (K-Pop Demon Hunters)<br><strong>Artwork</strong>: <em>Radiant Golden Hour Celestial Overlook</em> with sunbeams piercing amber mist.<br>13s sharp intro card, romanized Korean sing-along lyrics.')">
+        <span style="font-weight:700;">4. Golden</span>
+        <span style="font-size:11px;opacity:0.8;">Golden Celestial Overlook</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/05_Billie_Eilish_BIRDS_OF_A_FEATHER_Pink_Edition_Lyric_Video.mp4?v=official_srt', '🕊️ <strong>5. BIRDS OF A FEATHER (Pink Sky)</strong> — Billie Eilish<br><strong>Artwork</strong>: <em>Clear Pink Sunset Sky & Soaring Birds</em>.<br>Official Interscope studio lyrics & millisecond timestamps.')">
+        <span style="font-weight:700;">5. BIRDS OF A FEATHER</span>
+        <span style="font-size:11px;opacity:0.8;">Pink Sunset Sky</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/06_Sabrina_Carpenter_Espresso_Lyric_Video.mp4', '☕ <strong>6. Espresso</strong> — Sabrina Carpenter<br><strong>Artwork</strong>: <em>Summer Coastal Cafe Terrace</em> (Retro 90s Ghibli/Shinkai aesthetic).<br>Chic sunny iced latte terrace, bold black couplets, playful pop pacing.')">
+        <span style="font-weight:700;">6. Espresso</span>
+        <span style="font-size:11px;opacity:0.8;">Summer Cafe Terrace</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/07_Benson_Boone_Beautiful_Things_Lyric_Video.mp4', '🏔️ <strong>7. Beautiful Things</strong> — Benson Boone<br><strong>Artwork</strong>: <em>Dramatic Mountain Alpine Dawn</em>.<br>Majestic sunbeams piercing morning mountain mist, intense vocal crescendo.')">
+        <span style="font-weight:700;">7. Beautiful Things</span>
+        <span style="font-size:11px;opacity:0.8;">Alpine Mountain Dawn</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/08_Chappell_Roan_Good_Luck_Babe_Lyric_Video.mp4', '🌆 <strong>8. Good Luck, Babe!</strong> — Chappell Roan<br><strong>Artwork</strong>: <em>Retro 80s Neon Twilight Skyline</em>.<br>Vintage sports car overlooking neon city lights, 80s synthwave energy.')">
+        <span style="font-weight:700;">8. Good Luck, Babe!</span>
+        <span style="font-size:11px;opacity:0.8;">80s Neon Twilight</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/09_Teddy_Swims_Lose_Control_Lyric_Video.mp4', '🌸 <strong>9. Lose Control</strong> — Teddy Swims<br><strong>Artwork</strong>: <em>Romantic Cherry Blossom Pathway</em>.<br>Drifting sakura petals in spring light, soulful emotional 2-row couplets.')">
+        <span style="font-weight:700;">9. Lose Control</span>
+        <span style="font-size:11px;opacity:0.8;">Sakura Pathway</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/10_Ruth_B_Dandelions_Lyric_Video.mp4', '🌼 <strong>10. Dandelions</strong> — Ruth B.<br><strong>Artwork</strong>: <em>Romantic Dandelion Sunset Meadow</em>.<br>Breathtaking golden hour meadow with floating dandelion seeds, pure romance.')">
+        <span style="font-weight:700;">10. Dandelions</span>
+        <span style="font-size:11px;opacity:0.8;">Dandelion Sunset Meadow</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/11_Justin_Bieber_Favorite_Girl_Lyric_Video.mp4', '👑 <strong>11. Favorite Girl</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Pastel Sunset Suburban Street & Flowers</em> (Cakes & Eclairs aesthetic).<br>Warm espresso dark couplets, 73M-view nostalgia hit.')">
+        <span style="font-weight:700;">11. Favorite Girl</span>
+        <span style="font-size:11px;opacity:0.8;">Sunset Street & Flowers</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/12_Melanie_Martinez_Play_Date_Lyric_Video.mp4', '🌸 <strong>12. Play Date</strong> — Melanie Martinez<br><strong>Artwork</strong>: <em>Pristine Celestial Anime Night Sky</em>.<br>Puffy chubby cloud typography (Sniglet), deep midnight sapphire stars, 108M-view viral anthem.')">
+        <span style="font-weight:700;">12. Play Date</span>
+        <span style="font-size:11px;opacity:0.8;">Celestial Night Sky</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/13_Stephen_Sanchez_Until_I_Found_You_Lyric_Video.mp4', '💖 <strong>13. Until I Found You</strong> — Stephen Sanchez<br><strong>Artwork</strong>: <em>Clear Pink Aesthetic Sunset & Pine Ridge</em>.<br>Classic doo-wop romantic ballad, warm espresso dark couplets, 145M+ view viral hit.')">
+        <span style="font-weight:700;">13. Until I Found You</span>
+        <span style="font-size:11px;opacity:0.8;">Clear Pink Sunset Sky</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/14_Justin_Bieber_Lonely_Lyric_Video.mp4', '🌧️ <strong>14. Lonely (Official Lyric Video)</strong> — Justin Bieber & benny blanco<br><strong>Artwork</strong>: <em>Cozy Rainy Window City Bokeh</em> (bg_04).<br>Ken Burns dynamic camera drift • Pure white luminous typography • Studio .srt sync.')">
+        <span style="font-weight:700;">14. Lonely (JB)</span>
+        <span style="font-size:11px;opacity:0.8;">Rainy Window Bokeh</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/15_Akon_Lonely_Lyric_Video.mp4', '✨ <strong>15. Lonely (Spotify Starry Twilight Vibe Edition)</strong> — Akon<br><strong>Artwork</strong>: <em>Starry Celestial Night (80%) & Amber Sunset (20%) Solitary Vibe Character</em> (bg_20).<br>Spotify Sentence Case • 50/50 Balanced Couplets • Poppins Bold • Dreamy Glowing Bokeh (radius 10) • Ken Burns Camera Drift • Zero Overlap Holding Sync.')">
+        <span style="font-weight:700;">15. Lonely (Akon)</span>
+        <span style="font-size:11px;opacity:0.8;">80% Night / 20% Sunset Vibe</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/16_Justin_Bieber_Love_Yourself_Lyric_Video.mp4', '✨ <strong>16. Love Yourself (Clean Dark Celestial Sky Edition)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Clean Dark Celestial Starry Night Sky & Solitary Ridge</em> (bg_23).<br>Requested Dark Sky • High Contrast for White Typography • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">16. Love Yourself</span>
+        <span style="font-size:11px;opacity:0.8;">Clean Dark Starry Sky (50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/17_Katy_Perry_The_One_That_Got_Away_Lyric_Video.mp4', '✨ <strong>17. The One That Got Away</strong> — Katy Perry<br><strong>Artwork</strong>: <em>Mustang Coastal Cliff & Radiant Summer Sunset (Radiohead Vibe)</em> (bg_22).<br>Direct Lyric Connection (Mustang to Radiohead) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">17. The One That Got Away</span>
+        <span style="font-size:11px;opacity:0.8;">Mustang Sunset (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/18_Coldplay_Yellow_Lyric_Video.mp4', '✨ <strong>18. Yellow (Studio Zero-Lag Sync Edition)</strong> — Coldplay<br><strong>Artwork</strong>: <em>Coldplay Yellow Celestial Starry Night & Reflective Beach</em> (bg_24).<br>Direct Lyric Connection (Look at the Stars) • Studio-Aligned Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">18. Yellow</span>
+        <span style="font-size:11px;opacity:0.8;">Starry Beach (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/19_Coldplay_A_Sky_Full_of_Stars_Lyric_Video.mp4', '✨ <strong>19. A Sky Full of Stars</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Sapphire Starlit Sky & Solitary Overlook</em> (bg_25).<br>Direct Lyric Connection ('Cause you're a sky full of stars) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">19. A Sky Full of Stars</span>
+        <span style="font-size:11px;opacity:0.8;">Cosmic Sapphire (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/20_Coldplay_Paradise_Lyric_Video.mp4', '✨ <strong>20. Paradise</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Twilight Celestial Dreamscape & Solitary Overlook</em> (bg_26).<br>Direct Lyric Connection (Dreaming of Paradise) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">20. Paradise</span>
+        <span style="font-size:11px;opacity:0.8;">Twilight Dreamscape (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/21_Coldplay_Clocks_Lyric_Video.mp4', '✨ <strong>21. Clocks</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Starlight & Midnight Ocean Bluffs</em> (bg_27).<br>Direct Lyric Connection (Tides to Swim Against) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">21. Clocks</span>
+        <span style="font-size:11px;opacity:0.8;">Cosmic Starlight (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/22_Billie_Eilish_Khalid_lovely_Lyric_Video.mp4', '✨ <strong>22. lovely</strong> — Billie Eilish & Khalid<br><strong>Artwork</strong>: <em>Makoto Shinkai Ethereal Celestial Aurora Lake</em> (bg_28).<br>Direct Lyric Connection (Even if it takes all night) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">22. lovely</span>
+        <span style="font-size:11px;opacity:0.8;">Celestial Aurora Lake (50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/23_OneRepublic_Counting_Stars_Lyric_Video.mp4', '✨ <strong>23. Counting Stars</strong> — OneRepublic<br><strong>Artwork</strong>: <em>Makoto Shinkai Celestial Shooting Star Night & Grassy Ridge</em> (bg_29).<br>Direct Lyric Connection (We\'ll Be Counting Stars) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">23. Counting Stars</span>
+        <span style="font-size:11px;opacity:0.8;">Shooting Stars (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/24_Lord_Huron_The_Night_We_Met_Lyric_Video.mp4', '✨ <strong>24. The Night We Met</strong> — Lord Huron<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Midnight Starlit Sky, Misty Pine Valley & Solitary Ridge Traveler</em> (bg_30).<br>Direct Lyric Connection (Take me back to the night we met) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">24. The Night We Met</span>
+        <span style="font-size:11px;opacity:0.8;">Celestial Ridge (Spotify 50/50)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Normal 1.0x Mix)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em> (88% Clean Reading Area).<br>Full 3:57 Original Studio Mix • Seamless Looping Live Cloud Drift • Patrick Hand 200pt Hook Title • Pure White Starlight Glow (&H00FFFFFF + \blur2.0) • Strictly 2-Row Couplets.')">
+        <span style="font-weight:700;">25. Sweater Weather</span>
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:57)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Slowed + Reverb Brand Edition)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em>.<br>Full 4:35 Master • 0.865x Tape Varispeed (118 &rarr; 102 BPM) • 3.0s Cathedral Reverb • 15.5kHz Analog Tape Warmth • Seamless Looping Cloud Drift • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets.')">
+        <span style="font-weight:700; color:#d8b4fe;">25. Sweater Weather (Slowed)</span>
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:35)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/26_Tom_Odell_Another_Love_Lyric_Video.mp4', '✨ <strong>26. Another Love</strong> — Tom Odell<br><strong>Artwork</strong>: <em>Makoto Shinkai Clear Pink Aesthetic Sunset & Pine Ridge</em> (bg_32).<br>Direct Lyric Connection (All my tears have been used up) • Until I Found You Clean Style • Patrick Hand Large Typography (102-114pt) • 175pt Title Card • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+        <span style="font-weight:700;">26. Another Love</span>
+        <span style="font-size:11px;opacity:0.8;">Pink Sunset (Clean Big Text)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Normal 1.0x Mix)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 3:53 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Cloud Drift.')">
+        <span style="font-weight:700;">27. Glimpse of Us</span>
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:53)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Slowed + Reverb Brand Edition)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 4:30 Master • 0.865x Tape Varispeed (85 &rarr; 73.5 BPM) • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
+        <span style="font-weight:700; color:#d8b4fe;">27. Glimpse of Us (Slowed)</span>
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:30)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>28. blue (7clouds Aesthetic Remaster)</strong> — yung kai<br><strong>Artwork</strong>: <em>7clouds Aesthetic Pastel Dawn Sky</em> (bg_34).<br>Full 3:34 Master • Patrick Hand Hook Title • Crisp White Typography with Dark Border • Strictly 2-Row Couplets • Subtle Clean Zoompan Drift.')">
+          <span style="font-weight:700; color:#38bdf8;">28. blue (7clouds)</span>
+          <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:34)</span>
+        </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>28. blue (Slowed + Reverb Brand Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Makoto Shinkai Dreamy Pastel Dawn Sky & Coastal Overlook</em> (bg_34).<br>Full 4:08 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
+        <span style="font-weight:700; color:#d8b4fe;">28. blue (Slowed)</span>
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:08)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Normal 1.0x Mix)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 3:32 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Clouds & Golden Chandelier Bokeh Lights (Layered Strictly Behind Lyrics).')">
+        <span style="font-weight:700;">29. Chandelier</span>
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:32)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Slowed + Reverb Brand Edition)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 4:06 Master • 0.865x Tape Varispeed (117 &rarr; 101.2 BPM) • 3.0s Cathedral Reverb Hall • -2.5 Semitones Pitch Drop • 15.5kHz Warm Tape Shelf • Live Shimmering Lights Behind Lyrics.')">
+        <span style="font-weight:700; color:#d8b4fe;">29. Chandelier (Slowed)</span>
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:06)</span>
+      </button>
+      <button class="tab-btn" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_Lyric_Video.mp4', '☁️ <strong>00. That Should Be Me (7clouds Aesthetic Master)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>7clouds Twilight Heartbreak Clouds</em>.<br>Full 3:36 Master • Patrick Hand Handwriting Font • Strictly 2-Row Couplets • Pure White Typography with Deep Charcoal Border • High Contrast & Emotional Sky.')">
+        <span style="font-weight:700; color:#38bdf8;">00. That Should Be Me</span>
+        <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:36)</span>
+      </button>
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.15); box-shadow: 0 0 14px rgba(245, 158, 11, 0.25);" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_20Min_5x_Replay_Lyric_Video.mp4', '🔁 <strong>00. That Should Be Me (20+ Minutes • 5 Times Replay Loop Edition)</strong> — Justin Bieber<br><strong>Aesthetic Formula</strong>: <em>Signature 7clouds Twilight Sky + Seamless 5x Replay Loop</em>.<br>Full 21:38 Master • 6 Iterations (1 Original + 5 Continuous Replays) • Replay Index Hook Cards ([1/5] to [5/5]) • Optimized for High YouTube Watch-Time, Study & Sleep Sessions.')">
+        <span style="font-weight:700; color:#fbbf24;">🔁 00. That Should Be Me (20-Min)</span>
+        <span style="font-size:11px;opacity:0.9; color:#fde68a;">5x Replay Loop (21:38)</span>
+      </button>
+    </div>
+
+    <div class="desc-box" id="option-desc">
+      🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.
+    </div>
+
+    <div class="video-wrapper">
+      <video id="player" controls autoplay>
+        <source id="video-source" src="videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    function switchOption(btn, src, desc) {
+      const player = document.getElementById('player');
+      const source = document.getElementById('video-source');
+      const descEl = document.getElementById('option-desc');
+      const buttons = document.querySelectorAll('.tab-btn');
+
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      descEl.innerHTML = desc;
+      source.src = src;
+      player.load();
+      player.play();
+    }
+  </script>
+</body>
+</html>

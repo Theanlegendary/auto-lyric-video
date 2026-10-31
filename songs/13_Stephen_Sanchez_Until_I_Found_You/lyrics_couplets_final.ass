@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Patrick Hand,175,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,1,0,0,0,95,115,3,0,1,2,1,5,50,50,50,1
+Style: Lyric,Patrick Hand,135,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,0,0,0,0,95,115,1,0,1,1.8,0.8,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:07.83,TitleCard,,0,0,0,,{\pos(960,470)\fad(500,400)}UNTIL I FOUND YOU\N{\fs80\fsp4}Stephen Sanchez
+Dialogue: 0,0:00:09.98,0:00:22.65,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}GEORGIA, WRAP ME UP IN ALL YOUR-\NI WANT YOU IN MY ARMS
+Dialogue: 0,0:00:22.70,0:00:33.34,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}OH, LET ME HOLD YOU\NI'LL NEVER LET YOU GO AGAIN LIKE I DID
+Dialogue: 0,0:00:33.39,0:00:44.17,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}OH, I USED TO SAY\N"I WOULD NEVER FALL IN LOVE AGAIN UNTIL I FOUND HER"
+Dialogue: 0,0:00:44.22,0:00:58.18,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I SAID, "I WOULD NEVER FALL UNLESS IT'S YOU I FALL INTO"\NI WAS LOST WITHIN THE DARKNESS, BUT THEN I FOUND HER
+Dialogue: 0,0:00:58.23,0:01:12.43,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I FOUND YOU\NGEORGIA, PULLED ME IN
+Dialogue: 0,0:01:12.48,0:01:24.16,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I ASKED TO LOVE HER ONCE AGAIN\NYOU FELL, I CAUGHT YOU
+Dialogue: 0,0:01:24.21,0:01:34.11,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I'LL NEVER LET YOU GO AGAIN LIKE I DID\NOH, I USED TO SAY
+Dialogue: 0,0:01:34.16,0:01:48.52,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}"I WOULD NEVER FALL IN LOVE AGAIN UNTIL I FOUND HER"\NI SAID, "I WOULD NEVER FALL UNLESS IT'S YOU I FALL INTO"
+Dialogue: 0,0:01:48.57,0:02:00.77,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I WAS LOST WITHIN THE DARKNESS, BUT THEN I FOUND HER\NI FOUND YOU
+Dialogue: 0,0:02:17.06,0:02:31.38,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I WOULD NEVER FALL IN LOVE AGAIN UNTIL I FOUND HER\NI SAID, "I WOULD NEVER FALL UNLESS IT'S YOU I FALL INTO"
+Dialogue: 0,0:02:31.43,0:02:44.13,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I WAS LOST WITHIN THE DARKNESS, BUT THEN I FOUND HER\NI FOUND YOU

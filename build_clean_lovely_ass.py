@@ -1,0 +1,61 @@
+import os
+import sys
+from pathlib import Path
+
+sys.stdout.reconfigure(encoding='utf-8')
+
+song_dir = Path("C:/Users/DELL/.gemini/antigravity/scratch/auto_lyric_video/songs/22_Billie_Eilish_Khalid_lovely")
+ass_path = song_dir / "lyrics_spotify.ass"
+
+events = [
+    # Title
+    ("0:00:04.00", "0:00:18.00", "SpotifyTitle", r"{\pos(960,470)\fad(500,400)}lovely\N{\fs66\fsp4\b0}Billie Eilish & Khalid"),
+    # Verse 1
+    ("0:00:20.80", "0:00:28.00", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}Thought I found a way\NThought I found a way out"),
+    ("0:00:28.20", "0:00:35.40", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}But you never go away\NSo I guess I gotta stay now"),
+    # Chorus 1
+    ("0:00:35.60", "0:00:52.80", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Oh, I hope someday I'll make it out of here\NEven if it takes all night or a hundred years"),
+    ("0:00:53.00", "0:01:10.50", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Need a place to hide, but I can't find one near\NWanna feel alive, outside I can't fight my fear"),
+    # Hook 1
+    ("0:01:10.70", "0:01:19.50", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Isn't it lovely, all alone?\NHeart made of glass, my mind of stone"),
+    ("0:01:19.70", "0:01:30.50", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Tear me to pieces, skin to bone\NHello, welcome home"),
+    # Verse 2
+    ("0:01:31.00", "0:01:39.50", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}Walking out of time\NLooking for a better place"),
+    ("0:01:39.70", "0:01:46.80", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}Something's on my mind\NAlways in my head space"),
+    # Chorus 2
+    ("0:01:47.00", "0:02:03.80", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}But I know someday I'll make it out of here\NEven if it takes all night or a hundred years"),
+    ("0:02:04.00", "0:02:21.00", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Need a place to hide, but I can't find one near\NWanna feel alive, outside I can't fight my fear"),
+    # Hook 2
+    ("0:02:21.20", "0:02:30.00", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Isn't it lovely, all alone?\NHeart made of glass, my mind of stone"),
+    ("0:02:30.20", "0:02:40.00", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Tear me to pieces, skin to bone\NHello, welcome home"),
+    # Outro
+    ("0:02:40.50", "0:02:53.00", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}Woah, yeah\NYeah, ah"),
+    ("0:02:53.20", "0:03:07.00", "SpotifyVerse", r"{\pos(960,490)\fad(200,150)}Woah, woah\NHello, welcome home"),
+    ("0:03:07.20", "0:03:17.00", "SpotifyHook",  r"{\pos(960,490)\fad(200,150)}Hello, welcome home"),
+]
+
+header = """[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: SpotifyTitle,Poppins,135,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,2,0,1,1.5,3.0,5,50,50,50,1
+Style: SpotifyHook,Poppins,82,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+Style: SpotifyVerse,Poppins,72,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+
+lines = [header]
+for start, end, style, text in events:
+    lines.append(f"Dialogue: 0,{start},{end},{style},,0,0,0,,{text}\n")
+
+with open(ass_path, "w", encoding="utf-8") as f:
+    f.writelines(lines)
+
+print(f"Generated clean ASS file with {len(events)} events: {ass_path}")

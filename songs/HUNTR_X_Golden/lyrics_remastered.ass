@@ -1,0 +1,66 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Patrick Hand,185,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,1,0,0,0,95,115,3,0,1,2,1,5,50,50,50,1
+Style: Lyric,Patrick Hand,148,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,0,0,0,0,95,115,1,0,1,1.8,0.8,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:14.62,TitleCard,,0,0,0,,{\pos(960,470)\fad(500,400)}GOLDEN\N{\fs80\fsp4}HUNTR/X
+Dialogue: 0,0:00:14.62,0:00:18.59,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I WAS A GHOST,I WAS ALONE\N(HAH)
+Dialogue: 0,0:00:17.79,0:00:23.23,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}어두워진 (HAH) 압길속에\N(AH)
+Dialogue: 0,0:00:22.43,0:00:26.52,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}GIVEN THE THRONE I DON'T KNOW\N(HAH)
+Dialogue: 0,0:00:25.72,0:00:28.17,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}HOW TO BELIEVE\N(HAH)
+Dialogue: 0,0:00:27.37,0:00:30.69,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I WAS THE QUEEN\NTHAT I'M MEANT TO BE
+Dialogue: 0,0:00:29.89,0:00:34.21,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I LIVED TWO LIVES\NTRIED TO PLAY BOTH SIDES
+Dialogue: 0,0:00:33.41,0:00:37.72,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}BUT I COULDN'T FIND MY OWN PLACE
+Dialogue: 0,0:00:36.92,0:00:42.12,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}CALLED A PROBLEM CHILD\NCAUSE I GOT TOO WILD
+Dialogue: 0,0:00:41.32,0:00:46.02,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}BUT NOW THAT'S HOW I'M GETTING PAID\N끝없이 ON STAGE
+Dialogue: 0,0:00:45.22,0:00:50.30,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I'M DONE HIDIN' NOW I'M SHININ'
+Dialogue: 0,0:00:49.50,0:00:53.99,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LIKE I'M BORN TO BE
+Dialogue: 0,0:00:53.19,0:00:57.86,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WE DREAMIN HARD,WE CAME SO FAR
+Dialogue: 0,0:00:57.06,0:01:01.46,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NOW I BELIEVE
+Dialogue: 0,0:01:00.66,0:01:03.44,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WE'RE GOIN' UP-UP-UP
+Dialogue: 0,0:01:02.64,0:01:04.91,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}IT'S OUR MOMENT
+Dialogue: 0,0:01:04.11,0:01:06.97,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU KNOW TOGETHER WE'RE GLOWING
+Dialogue: 0,0:01:06.17,0:01:09.01,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}GONNA BE,GONNA BE GOLDEN
+Dialogue: 0,0:01:08.21,0:01:11.22,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OH, UP-UP-UP
+Dialogue: 0,0:01:10.42,0:01:12.74,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WITH OUR VOICES
+Dialogue: 0,0:01:11.94,0:01:14.84,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}영원히 깨질 수 없는
+Dialogue: 0,0:01:14.04,0:01:16.81,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}GONNA BE,GONNA BE GOLDEN
+Dialogue: 0,0:01:16.01,0:01:21.55,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OOH, I'M DONE\NHIDIN' NOW I'M SHININ'
+Dialogue: 0,0:01:20.75,0:01:24.98,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LIKE I'M BORN TO BE
+Dialogue: 0,0:01:24.18,0:01:29.13,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OH, OUR TIME, NO FEAR, NO LIES
+Dialogue: 0,0:01:28.33,0:01:34.46,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THAT'S WHO WE'RE BORN TO BE
+Dialogue: 0,0:01:33.66,0:01:39.05,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WAITED SO LONG TO\NBREAK THESE WALLS DOWN
+Dialogue: 0,0:01:38.25,0:01:42.89,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}TO MAKE UP AND FEEL LIKE ME
+Dialogue: 0,0:01:42.09,0:01:46.72,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}PUT THESE PATTERNS ALL\NIN THE PAST NOW
+Dialogue: 0,0:01:45.92,0:01:51.36,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND FINALLY LIVE LIKE\NTHE GIRL THEY ALL SEE
+Dialogue: 0,0:01:50.56,0:01:55.37,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NO MORE HIDING, I'LL BE SHINING
+Dialogue: 0,0:01:54.57,0:01:58.55,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LIKE I'M BORN TO BE
+Dialogue: 0,0:01:57.75,0:02:02.76,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}CAUSE WE ARE HUNTERS\NVOICES STRONG
+Dialogue: 0,0:02:01.96,0:02:06.60,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND I KNOW I BELIEVE
+Dialogue: 0,0:02:05.80,0:02:08.97,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WE'RE GOIN' UP-UP-UP
+Dialogue: 0,0:02:08.17,0:02:10.53,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}IT'S OUR MOMENT
+Dialogue: 0,0:02:09.73,0:02:12.41,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU KNOW TOGETHER WE'RE GLOWING
+Dialogue: 0,0:02:11.61,0:02:14.37,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}GONNA BE, GONNA BE GOLDEN
+Dialogue: 0,0:02:13.57,0:02:16.55,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OH, UP-UP-UP
+Dialogue: 0,0:02:15.75,0:02:18.23,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WITH OUR VOICES
+Dialogue: 0,0:02:17.43,0:02:20.11,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}영원히 깨질 수 없는
+Dialogue: 0,0:02:19.31,0:02:22.45,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}GONNA BE, GONNA BE GOLDEN
+Dialogue: 0,0:02:21.65,0:02:26.91,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OOH, I'M DONE\NHIDIN' NOW I'M SHINING
+Dialogue: 0,0:02:26.11,0:02:30.47,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LIKE I'M BORN TO BE
+Dialogue: 0,0:02:29.67,0:02:34.21,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OH, OUR TIME, NO FEARS, NO LIES
+Dialogue: 0,0:02:33.41,0:02:38.36,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THAT'S WHO WE'RE BORN TO BE
+Dialogue: 0,0:02:37.56,0:02:40.68,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU KNOW WE'RE GONNA BE\NGONNA BE GOLDEN
+Dialogue: 0,0:02:39.88,0:02:42.29,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}WE'RE GONNA BE, GONNA BE
+Dialogue: 0,0:02:41.49,0:02:44.37,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}BORN TO BE,BORN TO BE GLOWIN'
+Dialogue: 0,0:02:43.57,0:02:46.20,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}밝게 빛나는 우린
+Dialogue: 0,0:02:45.40,0:02:50.43,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU KNOW THAT IT'S OUR TIME\NNO FEARS,NO LIES
+Dialogue: 0,0:02:49.63,0:02:54.93,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THAT'S WHO WE'RE BORN TO BE

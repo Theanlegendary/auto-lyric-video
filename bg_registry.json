@@ -1,0 +1,611 @@
+[
+  {
+    "id": "bg_01",
+    "file": "01_makoto_shinkai_clouds.png",
+    "name": "Pastel Cotton-Candy Clouds",
+    "theme": "black",
+    "tags": [
+      "pastel",
+      "clouds",
+      "daytime",
+      "pop",
+      "bright"
+    ],
+    "assigned_to": "01_ROSE_Bruno_Mars_APT"
+  },
+  {
+    "id": "bg_02",
+    "file": "02_lofi_twilight_starry_night.png",
+    "name": "Deep Indigo Starry Twilight Night",
+    "theme": "white",
+    "tags": [
+      "night",
+      "stars",
+      "twilight",
+      "lofi",
+      "ballad",
+      "dark"
+    ],
+    "assigned_to": "02_Lady_Gaga_Bruno_Mars_Die_With_A_Smile"
+  },
+  {
+    "id": "bg_03",
+    "file": "03_anime_rooftop_sunset_skyline.png",
+    "name": "Anime Sunset Rooftop Skyline & Powerlines",
+    "theme": "white",
+    "tags": [
+      "sunset",
+      "rooftop",
+      "golden_hour",
+      "city",
+      "skyline"
+    ],
+    "assigned_to": "03_Taylor_Swift_The_Fate_of_Ophelia"
+  },
+  {
+    "id": "bg_04",
+    "file": "04_lofi_rainy_window_city_night.png",
+    "name": "Cozy Rainy Window City Bokeh",
+    "theme": "white",
+    "tags": [
+      "rain",
+      "window",
+      "night",
+      "city",
+      "lofi",
+      "cozy"
+    ],
+    "assigned_to": "14_Justin_Bieber_Lonely"
+  },
+  {
+    "id": "bg_05",
+    "file": "05_golden_hour_celestial_overlook.png",
+    "name": "Radiant Golden Hour Celestial Overlook",
+    "theme": "black",
+    "tags": [
+      "golden_hour",
+      "sunbeams",
+      "epic",
+      "mountains",
+      "amber"
+    ],
+    "assigned_to": "04_HUNTR_X_Golden"
+  },
+  {
+    "id": "bg_06",
+    "file": "06_coastal_ocean_soaring_birds.png",
+    "name": "Serene Pastel Ocean Beach & Soaring Birds",
+    "theme": "black",
+    "tags": [
+      "ocean",
+      "beach",
+      "birds",
+      "pastel",
+      "indie",
+      "peaceful"
+    ],
+    "assigned_to": "05_Billie_Eilish_BIRDS_OF_A_FEATHER"
+  },
+  {
+    "id": "bg_07",
+    "file": "07_cherry_blossom_spring_pathway.png",
+    "name": "Romantic Cherry Blossom Pathway",
+    "theme": "white",
+    "tags": [
+      "sakura",
+      "spring",
+      "romantic",
+      "blossoms",
+      "soft"
+    ],
+    "assigned_to": "09_Teddy_Swims_Lose_Control"
+  },
+  {
+    "id": "bg_08",
+    "file": "08_summer_coastal_cafe_terrace.png",
+    "name": "Summer Coastal Cafe Terrace",
+    "theme": "black",
+    "tags": [
+      "cafe",
+      "terrace",
+      "summer",
+      "coastal",
+      "pop",
+      "bright"
+    ],
+    "assigned_to": "06_Sabrina_Carpenter_Espresso"
+  },
+  {
+    "id": "bg_09",
+    "file": "09_dramatic_mountain_alpine_dawn.png",
+    "name": "Dramatic Mountain Alpine Dawn",
+    "theme": "white",
+    "tags": [
+      "mountains",
+      "dawn",
+      "sunbeams",
+      "epic",
+      "dramatic"
+    ],
+    "assigned_to": "07_Benson_Boone_Beautiful_Things"
+  },
+  {
+    "id": "bg_10",
+    "file": "10_retro_80s_neon_twilight_skyline.png",
+    "name": "Retro 80s Neon Twilight Skyline",
+    "theme": "white",
+    "tags": [
+      "retro",
+      "80s",
+      "neon",
+      "synthwave",
+      "twilight",
+      "car"
+    ],
+    "assigned_to": "08_Chappell_Roan_Good_Luck_Babe"
+  },
+  {
+    "id": "bg_11",
+    "file": "11_anime_dandelion_wildflower_field.png",
+    "name": "Romantic Dandelion Sunset Meadow",
+    "theme": "white",
+    "tags": [
+      "dandelions",
+      "flowers",
+      "meadow",
+      "sunset",
+      "romantic",
+      "golden_hour",
+      "soft"
+    ],
+    "assigned_to": "10_Ruth_B_Dandelions"
+  },
+  {
+    "id": "bg_12",
+    "file": "12_anime_sunset_street_flower_shop.png",
+    "name": "Pastel Sunset Suburban Street & Flowers",
+    "theme": "black",
+    "tags": [
+      "street",
+      "flowers",
+      "sunset",
+      "golden_hour",
+      "pastel",
+      "pop",
+      "bright",
+      "romantic"
+    ],
+    "assigned_to": "11_Justin_Bieber_Favorite_Girl"
+  },
+  {
+    "id": "bg_13",
+    "file": "13_anime_clean_night_sky_celestial.png",
+    "name": "Pristine Celestial Anime Night Sky",
+    "theme": "cloud",
+    "tags": [
+      "night",
+      "sky",
+      "clean",
+      "stars",
+      "moon",
+      "celestial",
+      "lofi",
+      "cloud"
+    ],
+    "assigned_to": "12_Melanie_Martinez_Play_Date"
+  },
+  {
+    "id": "bg_14",
+    "file": "14_anime_clear_pink_aesthetic_twilight_sky.png",
+    "name": "Clear Pink Aesthetic Sunset & Pine Ridge",
+    "theme": "black",
+    "tags": [
+      "pink",
+      "sunset",
+      "pine",
+      "trees",
+      "clean",
+      "shooting_star",
+      "pastel",
+      "amber",
+      "romantic"
+    ],
+    "assigned_to": "13_Stephen_Sanchez_Until_I_Found_You"
+  },
+  {
+    "id": "bg_15",
+    "file": "15_anime_birds_of_a_feather_pink_sunset_sky.png",
+    "name": "Clear Pink Sunset Sky & Soaring Birds",
+    "theme": "black",
+    "tags": [
+      "pink",
+      "birds",
+      "sunset",
+      "pine",
+      "clean",
+      "pastel",
+      "amber",
+      "romantic",
+      "indie"
+    ],
+    "assigned_to": "05_Billie_Eilish_BIRDS_OF_A_FEATHER_Pink_Edition"
+  },
+  {
+    "id": "bg_16",
+    "file": "16_anime_vibe_pink_twilight_sky.png",
+    "name": "Aesthetic Vibe Sunset Sky & Pine Ridge (Deep Blur)",
+    "theme": "white",
+    "tags": [
+      "pink",
+      "sunset",
+      "vibe",
+      "aesthetic",
+      "lofi",
+      "amber",
+      "pine",
+      "sky"
+    ],
+    "assigned_to": "15_Akon_Lonely_Vibe_Pink_Alt"
+  },
+  {
+    "id": "bg_17",
+    "file": "17_anime_clear_blue_sky_clouds.png",
+    "name": "Makoto Shinkai Clear Blue Anime Sky & Towering Clouds",
+    "theme": "white",
+    "tags": [
+      "blue",
+      "sky",
+      "clouds",
+      "daytime",
+      "anime",
+      "makoto_shinkai",
+      "clean",
+      "bright"
+    ],
+    "assigned_to": "15_Akon_Lonely_Blue_Sky_Daytime_Alt"
+  },
+  {
+    "id": "bg_18",
+    "file": "18_rdr_vegas_clear_orange_sky.png",
+    "name": "Red Dead Vegas Golden Orange Sky",
+    "theme": "white",
+    "tags": [
+      "orange",
+      "sunset",
+      "warm",
+      "desert",
+      "rdr",
+      "vegas",
+      "sky",
+      "clear"
+    ],
+    "assigned_to": "15_Akon_Lonely_RDR_Orange_Alt"
+  },
+  {
+    "id": "bg_19",
+    "file": "19_lonely_guy_desert_sunset_vibe.png",
+    "name": "Solitary Figure Horizon Overlook (Amber Sunset)",
+    "theme": "white",
+    "tags": [
+      "orange",
+      "sunset",
+      "vibe",
+      "character",
+      "silhouette",
+      "desert",
+      "solitary"
+    ],
+    "assigned_to": "15_Akon_Lonely_Vibe_Character_Sunset_Alt"
+  },
+  {
+    "id": "bg_20",
+    "file": "20_lonely_starry_night_sunset_vibe.png",
+    "name": "Starry Celestial Night (80%) & Amber Sunset (20%) Solitary Vibe",
+    "theme": "white",
+    "tags": [
+      "night",
+      "stars",
+      "sunset",
+      "twilight",
+      "celestial",
+      "vibe",
+      "solitary",
+      "makoto_shinkai",
+      "peaceful"
+    ],
+    "assigned_to": "15_Akon_Lonely"
+  },
+  {
+    "id": "bg_21",
+    "file": "21_acoustic_sunset_window_breeze.png",
+    "name": "Sunlit Coastal Terrace & Acoustic Guitar Breeze",
+    "theme": "white",
+    "tags": [
+      "acoustic",
+      "guitar",
+      "sunset",
+      "golden_hour",
+      "window",
+      "breeze",
+      "coastal",
+      "warm",
+      "peaceful",
+      "anime"
+    ],
+    "assigned_to": "16_Justin_Bieber_Love_Yourself_Acoustic_Room_Alt"
+  },
+  {
+    "id": "bg_22",
+    "file": "22_the_one_that_got_away_mustang_cliff_sunset.png",
+    "name": "Mustang Coastal Cliff & Radiant Summer Sunset (Radiohead Vibe)",
+    "theme": "white",
+    "tags": [
+      "mustang",
+      "car",
+      "sunset",
+      "cliff",
+      "ocean",
+      "nostalgia",
+      "bittersweet",
+      "summer",
+      "makoto_shinkai",
+      "katy_perry"
+    ],
+    "assigned_to": "17_Katy_Perry_The_One_That_Got_Away"
+  },
+  {
+    "id": "bg_23",
+    "file": "23_clean_dark_celestial_starry_sky_vibe.png",
+    "name": "Clean Dark Celestial Starry Night Sky & Solitary Ridge",
+    "theme": "white",
+    "tags": [
+      "night",
+      "stars",
+      "celestial",
+      "dark",
+      "clean",
+      "sky",
+      "solitary",
+      "makoto_shinkai",
+      "peaceful"
+    ],
+    "assigned_to": "16_Justin_Bieber_Love_Yourself"
+  },
+  {
+    "id": "bg_24",
+    "file": "24_coldplay_yellow_starry_beach_night.png",
+    "name": "Coldplay Yellow Celestial Starry Night & Reflective Beach",
+    "theme": "white",
+    "tags": [
+      "coldplay",
+      "yellow",
+      "stars",
+      "night",
+      "sky",
+      "beach",
+      "ocean",
+      "solitary",
+      "makoto_shinkai",
+      "celestial"
+    ],
+    "assigned_to": "18_Coldplay_Yellow"
+  },
+  {
+    "id": "bg_25",
+    "file": "25_coldplay_sky_full_of_stars_celestial.png",
+    "name": "Coldplay A Sky Full of Stars Celestial Diamond Night",
+    "theme": "white",
+    "tags": [
+      "coldplay",
+      "stars",
+      "night",
+      "sky",
+      "celestial",
+      "shooting_star",
+      "solitary",
+      "makoto_shinkai",
+      "diamond"
+    ],
+    "assigned_to": "19_Coldplay_A_Sky_Full_of_Stars"
+  },
+  {
+    "id": "bg_26",
+    "file": "26_coldplay_paradise_twilight_dreamscape.png",
+    "name": "Coldplay Paradise Twilight Celestial Dreamscape & Solitary Overlook",
+    "theme": "white",
+    "tags": [
+      "coldplay",
+      "paradise",
+      "twilight",
+      "celestial",
+      "dreamscape",
+      "stars",
+      "moon",
+      "solitary",
+      "makoto_shinkai",
+      "clouds"
+    ],
+    "assigned_to": "20_Coldplay_Paradise"
+  },
+  {
+    "id": "bg_27",
+    "file": "27_coldplay_clocks_cosmic_starlight.png",
+    "name": "Coldplay Clocks Cosmic Starlight & Midnight Ocean Bluffs",
+    "theme": "white",
+    "tags": [
+      "coldplay",
+      "clocks",
+      "cosmic",
+      "starlight",
+      "celestial",
+      "clockwork",
+      "night",
+      "ocean",
+      "tides",
+      "makoto_shinkai",
+      "solitary"
+    ],
+    "assigned_to": "21_Coldplay_Clocks"
+  },
+  {
+    "id": "bg_28",
+    "file": "28_billie_khalid_lovely_aurora_lake.png",
+    "name": "Billie Eilish & Khalid Lovely Ethereal Celestial Aurora Lake",
+    "theme": "white",
+    "tags": [
+      "billie_eilish",
+      "khalid",
+      "lovely",
+      "aurora",
+      "lake",
+      "night",
+      "stars",
+      "frozen",
+      "celestial",
+      "makoto_shinkai",
+      "solitary"
+    ],
+    "assigned_to": "22_Billie_Eilish_Khalid_lovely"
+  },
+  {
+    "id": "bg_29",
+    "file": "29_onerepublic_counting_stars_celestial.png",
+    "name": "OneRepublic Counting Stars Celestial Shooting Star Night",
+    "theme": "white",
+    "tags": [
+      "onerepublic",
+      "counting_stars",
+      "stars",
+      "shooting_star",
+      "meteor",
+      "night",
+      "sky",
+      "celestial",
+      "makoto_shinkai",
+      "solitary"
+    ],
+    "assigned_to": "23_OneRepublic_Counting_Stars"
+  },
+  {
+    "id": "bg_30",
+    "file": "30_lord_huron_the_night_we_met_celestial.png",
+    "name": "Lord Huron The Night We Met Celestial Starlit Mountain Valley",
+    "theme": "white",
+    "tags": [
+      "lord_huron",
+      "the_night_we_met",
+      "night",
+      "sky",
+      "stars",
+      "mountains",
+      "valley",
+      "mist",
+      "traveler",
+      "silhouette",
+      "makoto_shinkai",
+      "solitary"
+    ],
+    "assigned_to": "24_Lord_Huron_The_Night_We_Met"
+  },
+  {
+    "id": "bg_31",
+    "file": "31_the_neighbourhood_sweater_weather_celestial.png",
+    "name": "The Neighbourhood Sweater Weather Celestial Coastal Twilight Overlook",
+    "theme": "white",
+    "tags": [
+      "the_neighbourhood",
+      "sweater_weather",
+      "night",
+      "sky",
+      "stars",
+      "milky_way",
+      "ocean",
+      "coastal",
+      "balcony",
+      "sweater",
+      "autumn",
+      "makoto_shinkai",
+      "solitary"
+    ],
+    "assigned_to": "25_The_Neighbourhood_Sweater_Weather"
+  },
+  {
+    "id": "bg_32",
+    "file": "32_tom_odell_another_love_pastel_sunset.png",
+    "name": "Tom Odell Another Love Clear Pink Aesthetic Sunset & Pine Ridge",
+    "theme": "black",
+    "tags": [
+      "tom_odell",
+      "another_love",
+      "pink",
+      "sunset",
+      "peach",
+      "lavender",
+      "pine",
+      "ridge",
+      "shooting_star",
+      "makoto_shinkai",
+      "solitary",
+      "clean_view"
+    ],
+    "assigned_to": "26_Tom_Odell_Another_Love"
+  },
+  {
+    "id": "bg_33",
+    "file": "33_joji_glimpse_of_us_moody_indigo_sky.png",
+    "name": "Joji Glimpse of Us Moody Indigo Twilight Sky & Solitary Rain Ledge",
+    "theme": "white",
+    "tags": [
+      "joji",
+      "glimpse_of_us",
+      "rain",
+      "piano",
+      "ballad",
+      "moody",
+      "twilight",
+      "sapphire",
+      "indigo",
+      "solitary",
+      "makoto_shinkai"
+    ],
+    "assigned_to": "27_Joji_Glimpse_of_Us"
+  },
+  {
+    "id": "bg_34",
+    "file": "34_yung_kai_blue_pastel_dawn.png",
+    "name": "yung kai blue Dreamy Pastel Dawn Sky & Coastal Overlook",
+    "theme": "white",
+    "tags": [
+      "yung_kai",
+      "blue",
+      "pastel",
+      "dawn",
+      "morning",
+      "stars",
+      "shooting_star",
+      "coastal",
+      "ocean",
+      "solitary",
+      "makoto_shinkai"
+    ],
+    "assigned_to": "28_yung_kai_blue"
+  },
+  {
+    "id": "bg_35",
+    "file": "35_sia_chandelier_celestial_prism.png",
+    "name": "Sia Chandelier Radiant Celestial Prism Bokeh & Penthouse Night Sky",
+    "theme": "white",
+    "tags": [
+      "sia",
+      "chandelier",
+      "golden",
+      "bokeh",
+      "prism",
+      "penthouse",
+      "night_sky",
+      "starlight",
+      "makoto_shinkai"
+    ],
+    "assigned_to": "29_Sia_Chandelier"
+  }
+]

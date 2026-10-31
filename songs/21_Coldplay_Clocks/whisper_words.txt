@@ -1,0 +1,192 @@
+SEGMENT [22.94 -> 24.34]:  Music
+   22.94 -  24.34 :  Music
+SEGMENT [29.24 -> 32.46]:  Let's go out and I can't be safe
+   29.24 -  30.04 :  Let's
+   30.04 -  30.32 :  go
+   30.32 -  30.86 :  out
+   30.86 -  31.18 :  and
+   31.18 -  31.32 :  I
+   31.32 -  31.72 :  can't
+   31.72 -  31.86 :  be
+   31.86 -  32.46 :  safe
+SEGMENT [32.46 -> 36.38]:  Tots that I tried to swim against
+   32.46 -  33.70 :  Tots
+   33.70 -  33.92 :  that
+   33.92 -  34.12 :  I
+   34.12 -  34.58 :  tried
+   34.58 -  34.98 :  to
+   34.98 -  35.28 :  swim
+   35.28 -  36.38 :  against
+SEGMENT [36.38 -> 40.02]:  Pulled me down to pull my knees
+   36.38 -  37.36 :  Pulled
+   37.36 -  37.54 :  me
+   37.54 -  38.24 :  down
+   38.24 -  38.64 :  to
+   38.64 -  38.88 :  pull
+   38.88 -  39.26 :  my
+   39.26 -  40.02 :  knees
+SEGMENT [40.02 -> 44.42]:  Oh, I beg, I beg and please sing him
+   40.02 -  41.02 :  Oh,
+   41.28 -  41.40 :  I
+   41.40 -  41.78 :  beg,
+   42.22 -  42.36 :  I
+   42.36 -  42.62 :  beg
+   42.62 -  42.94 :  and
+   42.94 -  43.46 :  please
+   43.46 -  44.04 :  sing
+   44.04 -  44.42 :  him
+SEGMENT [44.42 -> 47.24]:  Come out of the things I'm saying
+   44.42 -  44.88 :  Come
+   44.88 -  45.62 :  out
+   45.62 -  45.92 :  of
+   45.92 -  46.08 :  the
+   46.08 -  46.24 :  things
+   46.24 -  46.62 :  I'm
+   46.62 -  47.24 :  saying
+SEGMENT [47.24 -> 50.98]:  Shoot an apple off my head
+   47.24 -  48.14 :  Shoot
+   48.14 -  48.92 :  an
+   48.92 -  49.54 :  apple
+   49.54 -  49.96 :  off
+   49.96 -  50.26 :  my
+   50.26 -  50.98 :  head
+SEGMENT [50.98 -> 54.78]:  And I trouble the company name
+   50.98 -  51.20 :  And
+   51.20 -  51.30 :  I
+   51.30 -  52.54 :  trouble
+   52.54 -  53.28 :  the
+   53.28 -  53.80 :  company
+   53.80 -  54.78 :  name
+SEGMENT [54.78 -> 58.02]:  The target's waiting to be taken
+   54.78 -  55.16 :  The
+   55.16 -  56.14 :  target's
+   56.14 -  56.80 :  waiting
+   56.80 -  57.18 :  to
+   57.18 -  57.50 :  be
+   57.50 -  58.02 :  taken
+SEGMENT [58.02 -> 60.56]:  I'm singing you
+   58.02 -  58.44 :  I'm
+   58.44 -  58.78 :  singing
+   58.78 -  60.56 :  you
+SEGMENT [87.86 -> 91.32]:  Confusion never stops
+   87.86 -  89.26 :  Confusion
+   89.26 -  90.26 :  never
+   90.26 -  91.32 :  stops
+SEGMENT [91.32 -> 94.78]:  Closing walls and ticking flags
+   91.32 -  92.40 :  Closing
+   92.40 -  93.26 :  walls
+   93.26 -  93.62 :  and
+   93.62 -  94.02 :  ticking
+   94.02 -  94.78 :  flags
+SEGMENT [94.78 -> 98.70]:  Come back and take your home
+   94.78 -  95.98 :  Come
+   95.98 -  96.82 :  back
+   96.82 -  97.24 :  and
+   97.24 -  97.56 :  take
+   97.56 -  97.98 :  your
+   97.98 -  98.70 :  home
+SEGMENT [98.70 -> 102.76]:  I couldn't stop the cheetah no singing
+   98.70 -  99.06 :  I
+   99.06 -  99.70 :  couldn't
+   99.70 - 100.16 :  stop
+  100.16 - 100.88 :  the
+  100.88 - 101.44 :  cheetah
+  101.44 - 101.88 :  no
+  101.88 - 102.76 :  singing
+SEGMENT [102.76 -> 106.06]:  Come out and pull my seas
+  102.76 - 103.52 :  Come
+  103.52 - 104.40 :  out
+  104.40 - 104.70 :  and
+  104.70 - 104.82 :  pull
+  104.82 - 105.18 :  my
+  105.18 - 106.06 :  seas
+SEGMENT [106.06 -> 108.86]:  Curse me to stop opportunities
+  106.06 - 106.98 :  Curse
+  106.98 - 107.16 :  me
+  107.16 - 107.42 :  to
+  107.42 - 107.98 :  stop
+  107.98 - 108.86 :  opportunities
+SEGMENT [108.86 -> 113.14]:  And I'm a part of the cure
+  108.86 - 109.98 :  And
+  109.98 - 110.96 :  I'm
+  110.96 - 110.96 :  a
+  110.96 - 111.54 :  part
+  111.54 - 112.30 :  of
+  112.30 - 112.54 :  the
+  112.54 - 113.14 :  cure
+SEGMENT [113.14 -> 117.62]:  I am a part of the disease singing
+  113.14 - 113.90 :  I
+  113.90 - 114.16 :  am
+  114.16 - 114.62 :  a
+  114.62 - 115.20 :  part
+  115.20 - 115.72 :  of
+  115.72 - 115.92 :  the
+  115.92 - 116.42 :  disease
+  116.42 - 117.62 :  singing
+SEGMENT [138.62 -> 146.06]:  Oh, you, oh, oh
+  138.62 - 140.02 :  Oh,
+  140.02 - 141.42 :  you,
+  142.68 - 145.12 :  oh,
+  145.68 - 146.38 :  oh
+SEGMENT [176.52 -> 179.32]:  Oh, oh
+  176.52 - 177.92 :  Oh,
+  177.92 - 179.32 :  oh
+SEGMENT [179.32 -> 180.48]:  Nothing else compares
+  179.32 - 179.32 :  Nothing
+  179.32 - 179.74 :  else
+  179.74 - 180.48 :  compares
+SEGMENT [183.78 -> 187.70]:  Oh, nothing else compares
+  183.78 - 185.18 :  Oh,
+  185.18 - 186.58 :  nothing
+  186.58 - 187.00 :  else
+  187.00 - 187.70 :  compares
+SEGMENT [191.06 -> 195.28]:  Oh, nothing else compares
+  191.06 - 192.46 :  Oh,
+  192.62 - 193.98 :  nothing
+  193.98 - 194.44 :  else
+  194.44 - 195.28 :  compares
+SEGMENT [198.58 -> 203.16]:  Oh, nothing else compares
+  198.58 - 199.98 :  Oh,
+  199.98 - 201.38 :  nothing
+  201.38 - 203.16 :  else
+  203.16 - 203.16 :  compares
+SEGMENT [244.88 -> 247.68]:  Oh, nothing else compares
+  244.88 - 246.28 :  Oh,
+  246.28 - 247.68 :  nothing
+  247.68 - 247.68 :  else
+  247.68 - 247.68 :  compares
+SEGMENT [250.90 -> 254.24]:  Oh, where I want to sit
+  250.90 - 251.86 :  Oh,
+  251.86 - 252.82 :  where
+  252.82 - 253.06 :  I
+  253.06 - 253.46 :  want
+  253.46 - 253.96 :  to
+  253.96 - 254.24 :  sit
+SEGMENT [254.24 -> 261.66]:  Oh, where I want to sit
+  254.24 - 255.28 :  Oh,
+  255.68 - 259.48 :  where
+  259.48 - 260.42 :  I
+  260.42 - 260.88 :  want
+  260.88 - 261.34 :  to
+  261.34 - 261.66 :  sit
+SEGMENT [261.66 -> 269.00]:  Oh, where I want to sit
+  261.66 - 262.64 :  Oh,
+  263.00 - 265.02 :  where
+  265.02 - 267.74 :  I
+  267.74 - 268.04 :  want
+  268.04 - 268.62 :  to
+  268.62 - 269.00 :  sit
+SEGMENT [298.82 -> 298.98]:  Oh, where I want to sit
+  298.82 - 298.86 :  Oh,
+  298.86 - 298.90 :  where
+  298.90 - 298.92 :  I
+  298.92 - 298.94 :  want
+  298.94 - 298.96 :  to
+  298.96 - 298.98 :  sit
+SEGMENT [303.40 -> 304.80]:  Oh, where I want to sit
+  303.40 - 304.80 :  Oh,
+  304.80 - 304.80 :  where
+  304.80 - 304.80 :  I
+  304.80 - 304.80 :  want
+  304.80 - 304.80 :  to
+  304.80 - 304.80 :  sit

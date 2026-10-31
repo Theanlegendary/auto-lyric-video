@@ -1,0 +1,220 @@
+[18.86 -> 24.72]  You're morning eyes, I could stare like watch your stars
+    18.86 -  19.74:  You're
+    19.74 -  20.44:  morning
+    20.44 -  21.12:  eyes,
+    22.12 -  22.18:  I
+    22.18 -  22.38:  could
+    22.38 -  22.76:  stare
+    22.76 -  23.60:  like
+    23.60 -  24.04:  watch
+    24.04 -  24.28:  your
+    24.28 -  24.72:  stars
+[25.72 -> 32.12]  I could walk your part and I'll tell without a thought
+    25.72 -  26.78:  I
+    26.78 -  27.06:  could
+    27.06 -  27.48:  walk
+    27.48 -  27.96:  your
+    27.96 -  28.78:  part
+    28.78 -  29.64:  and
+    29.64 -  29.88:  I'll
+    29.88 -  30.16:  tell
+    30.16 -  30.90:  without
+    30.90 -  31.62:  a
+    31.62 -  32.12:  thought
+[32.12 -> 36.36]  To be mine, but you're mine
+    32.12 -  32.88:  To
+    32.88 -  33.54:  be
+    33.54 -  33.96:  mine,
+    33.96 -  35.10:  but
+    35.10 -  36.36:  you're
+    36.36 -  36.36:  mine
+[36.36 -> 39.44]  If I took your hand tonight
+    36.36 -  36.90:  If
+    36.90 -  37.24:  I
+    37.24 -  37.54:  took
+    37.54 -  38.16:  your
+    38.16 -  38.56:  hand
+    38.56 -  39.44:  tonight
+[39.44 -> 45.34]  No, you're all that I want inside
+    39.44 -  40.54:  No,
+    40.68 -  40.98:  you're
+    40.98 -  41.68:  all
+    41.68 -  42.52:  that
+    42.52 -  42.84:  I
+    42.84 -  43.56:  want
+    43.56 -  45.34:  inside
+[47.36 -> 50.72]  I imagine you fell in love
+    47.36 -  48.52:  I
+    48.52 -  48.96:  imagine
+    48.96 -  49.50:  you
+    49.50 -  49.86:  fell
+    49.86 -  50.14:  in
+    50.14 -  50.72:  love
+[50.72 -> 54.02]  A lap under marginalized skies I threw
+    50.72 -  51.18:  A
+    51.18 -  51.42:  lap
+    51.42 -  51.66:  under
+    51.66 -  52.64:  marginalized
+    52.64 -  53.26:  skies
+    53.26 -  53.68:  I
+    53.68 -  54.02:  threw
+[54.72 -> 57.96]  I think I'll picture us through with the rain
+    54.53 -  55.00:  I
+    55.00 -  55.34:  think
+    55.34 -  55.72:  I'll
+    55.72 -  55.96:  picture
+    55.96 -  56.64:  us
+    56.64 -  56.90:  through
+    56.90 -  57.22:  with
+    57.22 -  57.50:  the
+    57.50 -  57.96:  rain
+[57.96 -> 61.64]  The ocean's colors on your face
+    57.96 -  58.58:  The
+    58.58 -  59.42:  ocean's
+    59.42 -  59.76:  colors
+    59.76 -  60.84:  on
+    60.84 -  61.18:  your
+    61.18 -  61.64:  face
+[61.64 -> 65.68]  I'll leave my heart with your head
+    61.64 -  62.62:  I'll
+    62.62 -  62.84:  leave
+    62.84 -  63.08:  my
+    63.08 -  63.58:  heart
+    63.58 -  64.38:  with
+    64.38 -  64.96:  your
+    64.96 -  65.68:  head
+[65.68 -> 69.18]  So let me fly with you
+    65.68 -  66.68:  So
+    66.68 -  67.26:  let
+    67.26 -  67.62:  me
+    67.62 -  68.00:  fly
+    68.00 -  68.54:  with
+    68.54 -  69.18:  you
+[69.72 -> 74.66]  Will you breathe forever with me?
+    69.59 -  70.06:  Will
+    70.06 -  70.40:  you
+    70.40 -  70.84:  breathe
+    70.84 -  72.28:  forever
+    72.28 -  74.18:  with
+    74.18 -  74.66:  me?
+[106.00 -> 109.52]  My love will always stay by
+   106.00 - 107.40:  My
+   107.40 - 107.70:  love
+   107.70 - 108.32:  will
+   108.32 - 109.24:  always
+   109.24 - 109.52:  stay
+   109.52 - 109.52:  by
+[109.52 -> 109.72]  My love will always stay by
+   109.52 - 109.52:  My
+   109.52 - 109.52:  love
+   109.52 - 109.52:  will
+   109.52 - 109.52:  always
+   109.52 - 109.52:  stay
+   109.52 - 110.22:  by
+[110.22 -> 111.28]  You
+   110.22 - 111.28:  You
+[112.82 -> 117.08]  I'll keep it safe so don't you worry
+   112.82 - 113.78:  I'll
+   113.78 - 114.24:  keep
+   114.24 - 114.68:  it
+   114.68 - 115.16:  safe
+   115.16 - 115.64:  so
+   115.64 - 116.38:  don't
+   116.38 - 116.56:  you
+   116.56 - 117.08:  worry
+[117.08 -> 120.78]  I'll tell you I love you more
+   117.08 - 118.48:  I'll
+   118.48 - 118.72:  tell
+   118.72 - 119.10:  you
+   119.10 - 119.38:  I
+   119.38 - 119.74:  love
+   119.74 - 120.28:  you
+   120.28 - 120.78:  more
+[120.78 -> 124.20]  It's stuck with you forever
+   120.78 - 122.18:  It's
+   122.18 - 122.56:  stuck
+   122.56 - 123.04:  with
+   123.04 - 123.42:  you
+   123.42 - 124.20:  forever
+[125.22 -> 128.14]  So promise you won't let it go
+   125.22 - 125.76:  So
+   125.76 - 126.34:  promise
+   126.34 - 126.72:  you
+   126.72 - 127.12:  won't
+   127.12 - 127.48:  let
+   127.48 - 127.66:  it
+   127.66 - 128.14:  go
+[128.14 -> 134.98]  I'll trust the universe will always bring me to you
+   128.14 - 128.94:  I'll
+   128.94 - 129.22:  trust
+   129.22 - 129.48:  the
+   129.48 - 130.30:  universe
+   130.30 - 131.36:  will
+   131.36 - 132.26:  always
+   132.26 - 132.60:  bring
+   132.60 - 132.90:  me
+   132.90 - 133.12:  to
+   133.12 - 134.98:  you
+[136.22 -> 139.22]  I imagine you fell in love
+   136.22 - 137.18:  I
+   137.18 - 137.88:  imagine
+   137.88 - 138.12:  you
+   138.12 - 138.44:  fell
+   138.44 - 138.74:  in
+   138.74 - 139.22:  love
+[139.22 -> 142.62]  A lap under marginalized skies I threw
+   139.22 - 139.76:  A
+   139.76 - 140.00:  lap
+   140.00 - 140.24:  under
+   140.24 - 141.34:  marginalized
+   141.34 - 141.86:  skies
+   141.86 - 142.34:  I
+   142.34 - 142.62:  threw
+[142.62 -> 146.58]  I think I'll picture us through with the rain
+   142.62 - 143.64:  I
+   143.64 - 143.96:  think
+   143.96 - 144.34:  I'll
+   144.34 - 144.68:  picture
+   144.68 - 145.26:  us
+   145.26 - 145.52:  through
+   145.52 - 145.86:  with
+   145.86 - 146.12:  the
+   146.12 - 146.58:  rain
+[146.58 -> 150.24]  The ocean's colors on your face
+   146.58 - 147.18:  The
+   147.18 - 148.06:  ocean's
+   148.06 - 148.40:  colors
+   148.40 - 149.54:  on
+   149.54 - 149.80:  your
+   149.80 - 150.24:  face
+[150.98 -> 154.30]  I'll leave my heart with your head
+   150.72 - 151.20:  I'll
+   151.20 - 151.44:  leave
+   151.44 - 151.72:  my
+   151.72 - 152.16:  heart
+   152.16 - 153.06:  with
+   153.06 - 153.54:  your
+   153.54 - 154.30:  head
+[154.98 -> 157.76]  So let me fly with you
+   154.82 - 155.30:  So
+   155.30 - 155.80:  let
+   155.80 - 156.22:  me
+   156.22 - 156.64:  fly
+   156.64 - 157.18:  with
+   157.18 - 157.76:  you
+[157.76 -> 163.42]  Will you breathe forever with me?
+   157.76 - 158.70:  Will
+   158.70 - 159.02:  you
+   159.02 - 159.56:  breathe
+   159.56 - 160.76:  forever
+   160.76 - 162.80:  with
+   162.80 - 163.42:  me?
+[193.20 -> 194.96]  My love will always stay by
+   193.20 - 194.60:  My
+   194.60 - 194.96:  love
+   194.96 - 194.96:  will
+   194.96 - 194.96:  always
+   194.96 - 194.96:  stay
+   194.96 - 194.96:  by
+[204.44 -> 205.84]  You
+   204.44 - 205.84:  You

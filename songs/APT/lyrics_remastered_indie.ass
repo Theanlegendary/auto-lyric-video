@@ -1,0 +1,63 @@
+[Script Info]
+Title: APT. - ROSA% & Bruno Mars
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,DM Sans,65,&H00222222,&H000000FF,&H5AFFFFFF,&H4DFFFFFF,0,0,0,0,100,100,1.5,0,1,1.0,1.8,5,50,50,50,1
+Style: Watermark,DM Sans,24,&H00222222,&H000000FF,&H5AFFFFFF,&H4DFFFFFF,0,0,0,0,100,100,2.0,0,1,1.0,1.8,3,50,50,50,1
+Style: Lyric,DM Sans,52,&H00222222,&H000000FF,&H5AFFFFFF,&H4DFFFFFF,0,0,0,0,100,100,2.2,0,1,1.0,1.8,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.11,0:00:04.88,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}채영이가 좋아하는 랜덤 게임, 랜덤 게임
+Dialogue: 0,0:00:05.03,0:00:09.64,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}game start\N아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:00:09.84,0:00:12.96,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:00:13.11,0:00:16.10,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:00:16.25,0:00:19.44,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:00:19.59,0:00:22.78,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}kissy face, kissy face sent to your phone, but
+Dialogue: 0,0:00:22.93,0:00:25.81,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}i'm trying to kiss your lips for real (uh-huh, uh-huh)
+Dialogue: 0,0:00:25.96,0:00:29.30,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}red hearts, red hearts, that's what i'm on, yeah
+Dialogue: 0,0:00:29.45,0:00:32.25,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}come give me somethin' i can feel (oh-oh-oh)
+Dialogue: 0,0:00:32.40,0:00:35.48,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you want me like i want you, baby?
+Dialogue: 0,0:00:35.63,0:00:38.61,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you need me like i need you now?
+Dialogue: 0,0:00:38.76,0:00:41.92,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}sleep tomorrow, but tonight go crazy
+Dialogue: 0,0:00:42.07,0:00:45.20,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}all you gotta do is just meet me at the
+Dialogue: 0,0:00:45.35,0:00:48.41,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:00:48.56,0:00:51.55,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:00:51.70,0:00:54.82,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:00:54.97,0:00:57.68,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:00:57.83,0:01:01.15,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}it's whatever, it's whatever, it's whatever you like (whoo)
+Dialogue: 0,0:01:01.30,0:01:03.92,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}turn this 아파트 into a club (uh-huh, uh-huh)
+Dialogue: 0,0:01:04.07,0:01:08.10,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}i'm talking drink,\Ndance, smoke, freak, party all night (come on)
+Dialogue: 0,0:01:08.25,0:01:10.87,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}건배, 건배, girl, what's up? (oh-oh-oh)
+Dialogue: 0,0:01:11.02,0:01:14.05,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you want me like i want you, baby?
+Dialogue: 0,0:01:14.20,0:01:17.20,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you need me like i need you now?
+Dialogue: 0,0:01:17.35,0:01:20.46,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}sleep tomorrow, but tonight go crazy
+Dialogue: 0,0:01:20.61,0:01:23.82,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}all you gotta do is just meet me at the
+Dialogue: 0,0:01:23.97,0:01:26.96,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:01:27.11,0:01:30.21,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:01:30.36,0:01:33.53,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:01:33.68,0:01:36.64,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh
+Dialogue: 0,0:01:36.79,0:01:39.72,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}hey, so now you know the game
+Dialogue: 0,0:01:39.87,0:01:43.05,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}are you ready? 'cause i'm comin' to get you,\Nget you, get you
+Dialogue: 0,0:01:43.20,0:01:48.70,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}hold on, hold on, i'm on my way
+Dialogue: 0,0:01:49.63,0:01:55.13,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}yeah, yeah, yeah, yeah, yeah, i'm on my way
+Dialogue: 0,0:01:56.11,0:02:01.61,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}hold on, hold on, i'm on my way
+Dialogue: 0,0:02:02.51,0:02:08.01,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}yeah, yeah, yeah, yeah, yeah, i'm on my way
+Dialogue: 0,0:02:09.18,0:02:12.05,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you want me like i want you, baby?
+Dialogue: 0,0:02:12.20,0:02:15.20,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}don't you need me like i need you now?
+Dialogue: 0,0:02:15.35,0:02:18.50,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}sleep tomorrow, but tonight go crazy
+Dialogue: 0,0:02:18.65,0:02:21.81,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}all you gotta do is just meet me at the
+Dialogue: 0,0:02:21.96,0:02:25.01,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:02:25.16,0:02:28.34,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh (just meet me at the)
+Dialogue: 0,0:02:28.49,0:02:31.47,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:02:31.62,0:02:34.67,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh (just meet me at the)
+Dialogue: 0,0:02:34.82,0:02:37.88,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:02:38.03,0:02:41.13,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh (just meet me at the)
+Dialogue: 0,0:02:41.28,0:02:44.28,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, 아파트, 아파트
+Dialogue: 0,0:02:44.43,0:02:48.43,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp2.2}아파트, 아파트, uh, uh-huh, uh-huh

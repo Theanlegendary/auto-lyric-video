@@ -1,0 +1,391 @@
+[1.02 -> 4.20]  Party girls, don't get hurt, care for anything
+     1.02 -   1.54:  Party
+     1.54 -   1.84:  girls,
+     2.24 -   2.58:  don't
+     2.58 -   2.78:  get
+     2.78 -   3.14:  hurt,
+     3.38 -   3.44:  care
+     3.44 -   3.66:  for
+     3.66 -   4.20:  anything
+[4.20 -> 8.62]  When when I learn, I push it down, I push it down
+     4.20 -   4.82:  When
+     4.82 -   5.14:  when
+     5.14 -   5.42:  I
+     5.42 -   5.66:  learn,
+     6.06 -   6.22:  I
+     6.22 -   6.52:  push
+     6.52 -   6.74:  it
+     6.74 -   7.12:  down,
+     7.50 -   7.70:  I
+     7.70 -   7.92:  push
+     7.92 -   8.18:  it
+     8.18 -   8.62:  down
+[11.96 -> 15.46]  I'm the one for a good time, car, phone's growing up
+    11.96 -  12.48:  I'm
+    12.48 -  12.58:  the
+    12.58 -  12.84:  one
+    12.84 -  13.12:  for
+    13.12 -  13.26:  a
+    13.26 -  13.52:  good
+    13.52 -  13.82:  time,
+    14.04 -  14.14:  car,
+    14.54 -  14.70:  phone's
+    14.70 -  14.90:  growing
+    14.90 -  15.46:  up
+[15.46 -> 20.06]  Bring my door bare, I feel the love, I feel the love
+    15.46 -  15.84:  Bring
+    15.84 -  16.00:  my
+    16.00 -  16.52:  door
+    16.52 -  16.88:  bare,
+    17.14 -  17.28:  I
+    17.28 -  17.62:  feel
+    17.62 -  17.80:  the
+    17.80 -  18.26:  love,
+    18.52 -  18.74:  I
+    18.74 -  19.04:  feel
+    19.04 -  19.24:  the
+    19.24 -  20.06:  love
+[22.60 -> 25.32]  One, two, three, one, two, three, drink
+    22.60 -  23.12:  One,
+    23.20 -  23.44:  two,
+    23.68 -  23.76:  three,
+    23.98 -  24.12:  one,
+    24.42 -  24.50:  two,
+    24.78 -  24.84:  three,
+    25.00 -  25.32:  drink
+[25.32 -> 28.12]  One, two, three, one, two, three, drink
+    25.32 -  25.94:  One,
+    26.08 -  26.20:  two,
+    26.38 -  26.58:  three,
+    26.58 -  26.90:  one,
+    27.14 -  27.26:  two,
+    27.42 -  27.62:  three,
+    27.80 -  28.12:  drink
+[28.12 -> 30.98]  One, two, three, one, two, three, drink
+    28.12 -  28.60:  One,
+    28.84 -  29.00:  two,
+    29.20 -  29.34:  three,
+    29.46 -  29.64:  one,
+    29.88 -  30.02:  two,
+    30.42 -  30.42:  three,
+    30.42 -  30.98:  drink
+[30.98 -> 33.66]  Two bags, the light goes down
+    30.98 -  31.38:  Two
+    31.38 -  31.92:  bags,
+    32.60 -  32.62:  the
+    32.62 -  32.88:  light
+    32.88 -  33.26:  goes
+    33.26 -  33.66:  down
+[35.48 -> 40.56]  I'm gonna swim from the chandelier
+    35.48 -  36.12:  I'm
+    36.12 -  36.54:  gonna
+    36.54 -  37.14:  swim
+    37.14 -  39.08:  from
+    39.08 -  39.44:  the
+    39.44 -  40.56:  chandelier
+[41.30 -> 43.86]  From the chandelier
+    41.30 -  41.94:  From
+    41.94 -  42.18:  the
+    42.18 -  43.86:  chandelier
+[46.54 -> 50.12]  I'm gonna feel like tomorrow
+    46.54 -  47.18:  I'm
+    47.18 -  47.50:  gonna
+    47.50 -  48.00:  feel
+    48.00 -  49.32:  like
+    49.32 -  50.12:  tomorrow
+[57.18 -> 59.04]  I'm gonna swim from the chandelier
+    57.18 -  58.58:  I'm
+    58.58 -  58.68:  gonna
+    58.68 -  59.04:  swim
+    59.04 -  59.04:  from
+    59.04 -  59.04:  the
+    59.04 -  59.04:  chandelier
+[59.04 -> 61.32]  I'm gonna fly like tomorrow
+    59.04 -  59.04:  I'm
+    59.04 -  59.04:  gonna
+    59.04 -  59.04:  fly
+    59.04 -  60.00:  like
+    60.00 -  61.32:  tomorrow
+[61.32 -> 65.36]  I feel like tomorrow
+    61.32 -  62.18:  I
+    62.18 -  64.00:  feel
+    64.00 -  64.22:  like
+    64.22 -  65.36:  tomorrow
+[67.88 -> 73.82]  I'm gonna swim from the chandelier
+    67.88 -  69.28:  I'm
+    69.28 -  69.60:  gonna
+    69.60 -  70.18:  swim
+    70.18 -  72.08:  from
+    72.08 -  72.52:  the
+    72.52 -  73.82:  chandelier
+[74.62 -> 76.14]  From the chandelier
+    74.34 -  75.04:  From
+    75.04 -  75.28:  the
+    75.28 -  76.14:  chandelier
+[76.80 -> 78.18]  I am gonna fall down
+    76.80 -  77.42:  I
+    77.42 -  77.70:  am
+    77.70 -  77.88:  gonna
+    77.88 -  78.18:  fall
+    78.18 -  78.18:  down
+[79.30 -> 81.74]  Won't look down, won't open my eyes
+    79.30 -  79.92:  Won't
+    79.92 -  80.08:  look
+    80.08 -  80.40:  down,
+    80.74 -  80.90:  won't
+    80.90 -  81.20:  open
+    81.20 -  81.48:  my
+    81.48 -  81.74:  eyes
+[81.74 -> 84.60]  Keep my glass full until morning light
+    81.74 -  82.54:  Keep
+    82.54 -  82.82:  my
+    82.82 -  83.08:  glass
+    83.08 -  83.38:  full
+    83.38 -  83.60:  until
+    83.60 -  84.12:  morning
+    84.12 -  84.60:  light
+[85.14 -> 87.16]  Cause I'm just holding on for tonight
+    85.01 -  85.32:  Cause
+    85.32 -  85.68:  I'm
+    85.68 -  85.82:  just
+    85.82 -  86.24:  holding
+    86.24 -  86.56:  on
+    86.56 -  86.88:  for
+    86.88 -  87.16:  tonight
+[87.16 -> 90.24]  Help me, I'm holding on for dear light
+    87.16 -  88.10:  Help
+    88.10 -  88.44:  me,
+    88.62 -  88.74:  I'm
+    88.74 -  88.96:  holding
+    88.96 -  89.34:  on
+    89.34 -  89.62:  for
+    89.62 -  89.82:  dear
+    89.82 -  90.24:  light
+[90.24 -> 92.92]  Won't look down, won't open my eyes
+    90.24 -  91.02:  Won't
+    91.02 -  91.14:  look
+    91.14 -  91.46:  down,
+    91.90 -  91.96:  won't
+    91.96 -  92.26:  open
+    92.26 -  92.54:  my
+    92.54 -  92.92:  eyes
+[92.92 -> 95.58]  Keep my glass full until morning light
+    92.92 -  93.54:  Keep
+    93.54 -  93.82:  my
+    93.82 -  94.18:  glass
+    94.18 -  94.42:  full
+    94.42 -  94.68:  until
+    94.68 -  95.18:  morning
+    95.18 -  95.58:  light
+[96.14 -> 99.60]  Cause I'm just holding on for tonight
+    96.05 -  96.36:  Cause
+    96.36 -  96.70:  I'm
+    96.70 -  96.84:  just
+    96.84 -  97.14:  holding
+    97.14 -  97.62:  on
+    97.62 -  99.24:  for
+    99.24 -  99.60:  tonight
+[100.14 -> 102.48]  Sun is up, I'm a mess
+   100.14 - 100.62:  Sun
+   100.62 - 100.94:  is
+   100.94 - 101.16:  up,
+   101.68 - 101.84:  I'm
+   101.84 - 101.92:  a
+   101.92 - 102.48:  mess
+[102.48 -> 103.66]  Gotta get out now
+   102.48 - 102.82:  Gotta
+   102.82 - 103.10:  get
+   103.10 - 103.36:  out
+   103.36 - 103.66:  now
+[103.66 -> 106.60]  I gotta run from this, here comes the shade
+   103.66 - 104.10:  I
+   104.10 - 104.24:  gotta
+   104.24 - 104.50:  run
+   104.50 - 104.80:  from
+   104.80 - 105.26:  this,
+   105.48 - 105.54:  here
+   105.54 - 105.98:  comes
+   105.98 - 106.24:  the
+   106.24 - 106.60:  shade
+[106.60 -> 107.96]  Here comes the shade
+   106.60 - 106.88:  Here
+   106.88 - 107.28:  comes
+   107.28 - 107.66:  the
+   107.66 - 107.96:  shade
+[109.52 -> 113.64]  One, two, three, one, two, three, drink
+   109.52 - 110.08:  One,
+   111.54 - 111.72:  two,
+   112.04 - 112.08:  three,
+   112.18 - 112.40:  one,
+   112.66 - 112.76:  two,
+   113.14 - 113.16:  three,
+   113.20 - 113.64:  drink
+[113.64 -> 116.40]  One, two, three, one, two, three, drink
+   113.64 - 114.12:  One,
+   114.30 - 114.48:  two,
+   114.66 - 114.80:  three,
+   114.90 - 115.16:  one,
+   115.40 - 115.54:  two,
+   115.90 - 115.90:  three,
+   116.06 - 116.40:  drink
+[116.40 -> 119.20]  One, two, three, one, two, three, drink
+   116.40 - 116.86:  One,
+   117.14 - 117.26:  two,
+   117.44 - 117.56:  three,
+   117.76 - 117.98:  one,
+   118.16 - 118.30:  two,
+   118.70 - 118.70:  three,
+   118.76 - 119.20:  drink
+[119.20 -> 121.90]  So I'm back, the light goes down
+   119.20 - 119.64:  So
+   119.64 - 120.00:  I'm
+   120.00 - 120.36:  back,
+   120.86 - 120.88:  the
+   120.88 - 121.14:  light
+   121.14 - 121.54:  goes
+   121.54 - 121.90:  down
+[123.70 -> 128.56]  I'm gonna swim from the chandelier
+   123.70 - 124.26:  I'm
+   124.26 - 124.82:  gonna
+   124.82 - 125.46:  swim
+   125.46 - 127.38:  from
+   127.38 - 127.70:  the
+   127.70 - 128.56:  chandelier
+[129.66 -> 131.28]  From the chandelier
+   129.66 - 130.22:  From
+   130.22 - 130.44:  the
+   130.44 - 131.28:  chandelier
+[134.38 -> 137.02]  I'm gonna feel you
+   134.38 - 135.46:  I'm
+   135.46 - 135.78:  gonna
+   135.78 - 136.30:  feel
+   136.30 - 137.02:  you
+[137.02 -> 140.68]  Like tomorrow, closing in tears
+   137.02 - 137.62:  Like
+   137.62 - 138.20:  tomorrow,
+   138.20 - 139.16:  closing
+   139.16 - 139.46:  in
+   139.46 - 140.68:  tears
+[140.68 -> 142.92]  Like a dozen eggs, yeah
+   140.68 - 141.24:  Like
+   141.24 - 141.54:  a
+   141.54 - 141.94:  dozen
+   141.94 - 142.34:  eggs,
+   142.56 - 142.92:  yeah
+[145.26 -> 151.50]  I'm gonna fly like a bird of the night
+   145.26 - 146.34:  I'm
+   146.34 - 146.88:  gonna
+   146.88 - 147.50:  fly
+   147.50 - 148.52:  like
+   148.52 - 149.36:  a
+   149.36 - 150.10:  bird
+   150.10 - 150.52:  of
+   150.52 - 150.70:  the
+   150.70 - 151.50:  night
+[151.50 -> 154.66]  Feel my tears, this is your life
+   151.50 - 152.24:  Feel
+   152.24 - 152.50:  my
+   152.50 - 152.80:  tears,
+   152.80 - 153.20:  this
+   153.20 - 153.36:  is
+   153.36 - 153.60:  your
+   153.60 - 154.66:  life
+[156.00 -> 161.26]  I'm gonna swim from the chandelier
+   156.00 - 157.08:  I'm
+   157.08 - 158.00:  gonna
+   158.00 - 158.50:  swim
+   158.50 - 160.44:  from
+   160.44 - 160.80:  the
+   160.80 - 161.26:  chandelier
+[162.68 -> 165.30]  From this, here, there is
+   162.68 - 163.36:  From
+   163.36 - 163.66:  this,
+   163.76 - 163.84:  here,
+   164.02 - 164.14:  there
+   164.14 - 165.30:  is
+[165.30 -> 167.50]  A golden opportunity light
+   165.30 - 165.64:  A
+   165.64 - 166.32:  golden
+   166.32 - 166.70:  opportunity
+   166.70 - 167.50:  light
+[167.50 -> 170.02]  Won't look down, won't open my eyes
+   167.50 - 168.16:  Won't
+   168.16 - 168.34:  look
+   168.34 - 168.68:  down,
+   169.02 - 169.18:  won't
+   169.18 - 169.34:  open
+   169.34 - 169.78:  my
+   169.78 - 170.02:  eyes
+[170.02 -> 172.88]  Keep my glass full until morning light
+   170.02 - 170.82:  Keep
+   170.82 - 171.10:  my
+   171.10 - 171.36:  glass
+   171.36 - 171.64:  full
+   171.64 - 171.98:  until
+   171.98 - 172.38:  morning
+   172.38 - 172.88:  light
+[172.88 -> 175.46]  Cause I'm just holding on for tonight
+   172.88 - 173.62:  Cause
+   173.62 - 173.98:  I'm
+   173.98 - 174.10:  just
+   174.10 - 174.48:  holding
+   174.48 - 174.86:  on
+   174.86 - 175.14:  for
+   175.14 - 175.46:  tonight
+[176.26 -> 178.60]  Help me, I'm holding on for dear light
+   176.02 - 176.36:  Help
+   176.36 - 176.72:  me,
+   176.82 - 177.02:  I'm
+   177.02 - 177.26:  holding
+   177.26 - 177.62:  on
+   177.62 - 177.90:  for
+   177.90 - 178.08:  dear
+   178.08 - 178.60:  light
+[178.60 -> 181.16]  Won't look down, won't open my eyes
+   178.60 - 179.22:  Won't
+   179.22 - 179.40:  look
+   179.40 - 179.74:  down,
+   180.18 - 180.20:  won't
+   180.20 - 180.56:  open
+   180.56 - 180.84:  my
+   180.84 - 181.16:  eyes
+[181.16 -> 183.88]  Keep my glass full until morning light
+   181.16 - 181.84:  Keep
+   181.84 - 182.10:  my
+   182.10 - 182.44:  glass
+   182.44 - 182.72:  full
+   182.72 - 183.02:  until
+   183.02 - 183.44:  morning
+   183.44 - 183.88:  light
+[183.88 -> 191.24]  Cause I'm just holding on for tonight
+   183.88 - 184.64:  Cause
+   184.64 - 184.98:  I'm
+   184.98 - 185.14:  just
+   185.14 - 185.42:  holding
+   185.42 - 185.86:  on
+   185.86 - 191.24:  for
+   191.24 - 191.24:  tonight
+[191.24 -> 192.06]  Oh, and just holding on for tonight
+   191.24 - 191.48:  Oh,
+   191.48 - 191.48:  and
+   191.48 - 191.48:  just
+   191.48 - 191.48:  holding
+   191.48 - 191.48:  on
+   191.48 - 191.66:  for
+   191.66 - 192.06:  tonight
+[192.06 -> 194.78]  Oh, and just holding on for tonight
+   192.06 - 192.96:  Oh,
+   193.16 - 193.26:  and
+   193.26 - 193.42:  just
+   193.42 - 193.72:  holding
+   193.72 - 194.18:  on
+   194.18 - 194.44:  for
+   194.44 - 194.78:  tonight
+[194.78 -> 207.22]  Oh, and just holding on for tonight
+   194.78 - 195.46:  Oh,
+   195.70 - 195.90:  and
+   195.90 - 197.34:  just
+   197.34 - 199.28:  holding
+   199.28 - 199.68:  on
+   199.68 - 206.84:  for
+   206.84 - 207.22:  tonight

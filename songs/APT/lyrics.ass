@@ -1,0 +1,64 @@
+[Script Info]
+Title: APT. - ROSÉ & Bruno Mars Lyric Video
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Patrick Hand,185,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,1,0,0,0,95,115,3,0,1,2,1,5,50,50,50,1
+Style: Lyric,Patrick Hand,148,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,0,0,0,0,95,115,1,0,1,1.8,0.8,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.50,0:00:04.50,TitleCard,,0,0,0,,{\pos(960,470)\fad(400,300)}APT.\N{\fs80\fsp4}ROSÉ & Bruno Mars
+Dialogue: 0,0:00:00.00,0:00:04.83,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}CHAEYOUNG'S FAVORITE RANDOM GAME\N랜덤 게임
+Dialogue: 0,0:00:04.03,0:00:06.44,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}GAME START
+Dialogue: 0,0:00:05.64,0:00:09.64,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:00:08.84,0:00:12.91,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:00:12.11,0:00:16.05,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:00:15.25,0:00:19.39,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:00:18.59,0:00:22.73,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}KISSY FACE\NKISSY FACE SENT TO YOUR PHONE, BUT
+Dialogue: 0,0:00:21.93,0:00:25.76,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}I'M TRYING TO KISS YOUR LIPS FOR REAL (UH-HUH\NUH-HUH)
+Dialogue: 0,0:00:24.96,0:00:29.25,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}RED HEARTS\NRED HEARTS, THAT'S WHAT I'M ON, YEAH
+Dialogue: 0,0:00:28.45,0:00:32.20,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}COME GIVE ME SOMETHIN'\NI CAN FEEL (OH-OH-OH)
+Dialogue: 0,0:00:31.40,0:00:35.43,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU WANT ME LIKE I WANT YOU\NBABY?
+Dialogue: 0,0:00:34.63,0:00:38.56,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU NEED ME\NLIKE I NEED YOU NOW?
+Dialogue: 0,0:00:37.76,0:00:41.87,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}SLEEP TOMORROW\NBUT TONIGHT GO CRAZY
+Dialogue: 0,0:00:41.07,0:00:45.15,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}ALL YOU GOTTA DO IS\NJUST MEET ME AT THE
+Dialogue: 0,0:00:44.35,0:00:48.36,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:00:47.56,0:00:51.50,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:00:50.70,0:00:54.77,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:00:53.97,0:00:57.63,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:00:56.83,0:01:01.10,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}IT'S WHATEVER\NIT'S WHATEVER, IT'S WHATEVER YOU LIKE (WHOO)
+Dialogue: 0,0:01:00.30,0:01:03.87,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}TURN THIS APATEU INTO A CLUB (UH-HUH\NUH-HUH)
+Dialogue: 0,0:01:03.07,0:01:08.05,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}I'M TALKING DRINK\NDANCE, SMOKE, FREAK, PARTY ALL NIGHT (COME ON)
+Dialogue: 0,0:01:07.25,0:01:10.82,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}건배, 건배, GIRL,\NWHAT'S UP? (OH-OH-OH)
+Dialogue: 0,0:01:10.02,0:01:14.00,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU WANT ME LIKE I WANT YOU\NBABY?
+Dialogue: 0,0:01:13.20,0:01:17.15,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU NEED ME\NLIKE I NEED YOU NOW?
+Dialogue: 0,0:01:16.35,0:01:20.41,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}SLEEP TOMORROW\NBUT TONIGHT GO CRAZY
+Dialogue: 0,0:01:19.61,0:01:23.77,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}ALL YOU GOTTA DO IS\NJUST MEET ME AT THE
+Dialogue: 0,0:01:22.97,0:01:26.91,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:01:26.11,0:01:30.16,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:01:29.36,0:01:33.48,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:01:32.68,0:01:36.59,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH
+Dialogue: 0,0:01:35.79,0:01:39.67,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}HEY, SO NOW\NYOU KNOW THE GAME
+Dialogue: 0,0:01:38.87,0:01:43.00,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}ARE YOU READY? 'CAUSE I'M COMIN' TO GET YOU\NGET YOU, GET YOU
+Dialogue: 0,0:01:42.20,0:01:49.43,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}HOLD ON\NHOLD ON, I'M ON MY WAY
+Dialogue: 0,0:01:48.63,0:01:55.91,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}YEAH, YEAH, YEAH, YEAH,\NYEAH, I'M ON MY WAY
+Dialogue: 0,0:01:55.11,0:02:02.31,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}HOLD ON\NHOLD ON, I'M ON MY WAY
+Dialogue: 0,0:02:01.51,0:02:08.98,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}YEAH, YEAH, YEAH, YEAH,\NYEAH, I'M ON MY WAY
+Dialogue: 0,0:02:08.18,0:02:12.00,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU WANT ME LIKE I WANT YOU\NBABY?
+Dialogue: 0,0:02:11.20,0:02:15.15,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}DON'T YOU NEED ME\NLIKE I NEED YOU NOW?
+Dialogue: 0,0:02:14.35,0:02:18.45,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}SLEEP TOMORROW\NBUT TONIGHT GO CRAZY
+Dialogue: 0,0:02:17.65,0:02:21.76,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}ALL YOU GOTTA DO IS\NJUST MEET ME AT THE
+Dialogue: 0,0:02:20.96,0:02:24.96,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:02:24.16,0:02:28.29,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH (JUST MEET ME AT THE)
+Dialogue: 0,0:02:27.49,0:02:31.42,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:02:30.62,0:02:34.62,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH (JUST MEET ME AT THE)
+Dialogue: 0,0:02:33.82,0:02:37.83,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:02:37.03,0:02:41.08,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH (JUST MEET ME AT THE)
+Dialogue: 0,0:02:40.28,0:02:44.23,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, APATEU, APATEU
+Dialogue: 0,0:02:43.43,0:02:48.73,Lyric,,0,0,0,,{\pos(960,470)\fad(150,150)}APATEU\NAPATEU, UH, UH-HUH, UH-HUH

@@ -1,0 +1,28 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: SpotifyTitle,Poppins,170,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,2,0,1,1.8,3.5,5,50,50,50,1
+Style: SpotifyHook,Poppins,82,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+Style: SpotifyVerse,Poppins,76,&H00FFFFFF,&H000000FF,&H00180B05,&H60100502,1,0,0,0,100,100,1,0,1,1.2,2.5,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:04.00,0:00:23.00,SpotifyTitle,,0,0,0,,{\pos(960,470)\fad(600,450)}The Night We Met\N{\fs84\fsp6\b0}Lord Huron
+Dialogue: 0,0:00:29.70,0:00:42.50,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I am not the only traveler\NWho has not repaid his debt
+Dialogue: 0,0:00:43.20,0:00:56.60,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}I've been searching for a trail to follow again\NTake me back to the night we met
+Dialogue: 0,0:00:57.40,0:01:11.20,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}And then I can tell myself\NWhat the hell I'm supposed to do
+Dialogue: 0,0:01:11.80,0:01:25.50,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}And then I can tell myself\NNot to ride along with you
+Dialogue: 0,0:01:26.80,0:01:31.60,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I had all and then most of you\NSome and now none of you
+Dialogue: 0,0:01:31.90,0:01:44.90,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Take me back to the night we met\NI don't know what I'm supposed to do
+Dialogue: 0,0:01:45.30,0:01:54.20,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Haunted by the ghost of you\NOh, take me back to the night we met
+Dialogue: 0,0:01:55.80,0:02:08.80,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}When the night was full of terror\NAnd your eyes were filled with tears
+Dialogue: 0,0:02:09.80,0:02:23.80,SpotifyVerse,,0,0,0,,{\pos(960,490)\fad(200,150)}When you had not touched me yet\NOh, take me back to the night we met
+Dialogue: 0,0:02:24.80,0:02:29.60,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}I had all and then most of you\NSome and now none of you
+Dialogue: 0,0:02:30.00,0:02:43.00,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Take me back to the night we met\NI don't know what I'm supposed to do
+Dialogue: 0,0:02:43.40,0:02:52.50,SpotifyHook,,0,0,0,,{\pos(960,490)\fad(200,150)}Haunted by the ghost of you\NTake me back to the night we met

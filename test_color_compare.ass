@@ -1,0 +1,16 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: WhiteStyle,Poppins Black,92,&H00FFFFFF,&H000000FF,&H000D1526,&H60050810,1,1,0,0,100,100,1,0,1,1.5,3.0,5,50,50,50,1
+Style: BlackStyle,Poppins Black,92,&H00161424,&H000000FF,&H00FFFFFF,&H40FFFFFF,1,1,0,0,100,100,1,0,1,1.5,2.5,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:05.00,WhiteStyle,,0,0,0,,{\pos(960,490)}LONELY (SO LONELY)\NI'M MR. LONELY (MR. LONELY)
+Dialogue: 0,0:00:05.00,0:00:10.00,BlackStyle,,0,0,0,,{\pos(960,490)}LONELY (SO LONELY)\NI'M MR. LONELY (MR. LONELY)

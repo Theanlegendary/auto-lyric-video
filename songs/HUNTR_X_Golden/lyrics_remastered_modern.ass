@@ -1,0 +1,56 @@
+[Script Info]
+Title: Golden - HUNTR/X (KPop Demon Hunters)
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Inter,67,&H00F2F5F7,&H000000FF,&H50161414,&H66000000,0,0,0,0,100,100,0.2,0,1,1.2,2.0,5,50,50,50,1
+Style: Lyric,Inter,54,&H00F2F5F7,&H000000FF,&H50161414,&H66000000,0,0,0,0,100,100,0.2,0,1,1.2,2.0,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:05.20,TitleCard,,0,0,0,,{\pos(960,518)\fad(450,400)\fsp1.5}Golden\N{\fs31\fsp2.5\c&H00D8D5D0&}Huntr/x (kpop demon hunters)
+Dialogue: 0,0:00:15.62,0:00:18.64,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}I was a ghost,I was alone(hah)
+Dialogue: 0,0:00:18.79,0:00:23.28,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}어두워진 (hah) 압길속에 (ah)
+Dialogue: 0,0:00:23.43,0:00:26.57,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Given the throne I don't know (hah)
+Dialogue: 0,0:00:26.72,0:00:30.69,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}How to believe(hah)\NI was the queen that I'm meant to be
+Dialogue: 0,0:00:30.89,0:00:34.26,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}I lived two lives,tried to play both sides
+Dialogue: 0,0:00:34.41,0:00:37.77,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}But I couldn't find my own place
+Dialogue: 0,0:00:37.92,0:00:42.17,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Called a problem child cause I got too wild
+Dialogue: 0,0:00:42.32,0:00:46.07,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}But now that's how I'm getting paid,끝없이 on stage
+Dialogue: 0,0:00:46.22,0:00:50.35,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}I'm done hidin' now I'm shinin'
+Dialogue: 0,0:00:50.50,0:00:54.04,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Like I'm born to be
+Dialogue: 0,0:00:54.19,0:00:57.91,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}We dreamin hard,we came so far
+Dialogue: 0,0:00:58.06,0:01:01.51,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Now I believe
+Dialogue: 0,0:01:01.66,0:01:04.91,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}We're goin' up-up-up\NIt's our moment
+Dialogue: 0,0:01:05.11,0:01:09.01,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}You know together we're glowing\NGonna be,gonna be golden
+Dialogue: 0,0:01:09.21,0:01:12.74,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Oh, up-up-up\NWith our voices
+Dialogue: 0,0:01:12.94,0:01:16.81,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}영원히 깨질 수 없는\NGonna be,gonna be golden
+Dialogue: 0,0:01:17.01,0:01:21.60,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Ooh, I'm done hidin' now I'm shinin'
+Dialogue: 0,0:01:21.75,0:01:25.03,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Like I'm born to be
+Dialogue: 0,0:01:25.18,0:01:29.18,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Oh, our time, no fear, no lies
+Dialogue: 0,0:01:29.33,0:01:34.51,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}That's who we're born to be
+Dialogue: 0,0:01:34.66,0:01:39.10,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Waited so long to break these walls down
+Dialogue: 0,0:01:39.25,0:01:42.94,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}To make up and feel like me
+Dialogue: 0,0:01:43.09,0:01:46.77,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Put these patterns all in the past now
+Dialogue: 0,0:01:46.92,0:01:51.41,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}And finally live like the girl they all see
+Dialogue: 0,0:01:51.56,0:01:55.42,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}No more hiding, I'll be shining
+Dialogue: 0,0:01:55.57,0:01:58.60,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Like I'm born to be
+Dialogue: 0,0:01:58.75,0:02:02.81,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Cause we are hunters,voices strong
+Dialogue: 0,0:02:02.96,0:02:06.65,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}And I know I believe
+Dialogue: 0,0:02:06.80,0:02:10.53,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}We're goin' up-up-up\NIt's our moment
+Dialogue: 0,0:02:10.73,0:02:14.37,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}You know together we're glowing\NGonna be, gonna be golden
+Dialogue: 0,0:02:14.57,0:02:18.23,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Oh, up-up-up\NWith our voices
+Dialogue: 0,0:02:18.43,0:02:22.45,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}영원히 깨질 수 없는\NGonna be, gonna be golden
+Dialogue: 0,0:02:22.65,0:02:26.96,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Ooh, I'm done hidin' now I'm shining
+Dialogue: 0,0:02:27.11,0:02:30.52,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Like I'm born to be
+Dialogue: 0,0:02:30.67,0:02:34.26,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Oh, our time, no fears, no lies
+Dialogue: 0,0:02:34.41,0:02:38.41,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}That's who we're born to be
+Dialogue: 0,0:02:38.56,0:02:42.29,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}You know we're gonna be,gonna be golden\NWe're gonna be, gonna be
+Dialogue: 0,0:02:42.49,0:02:46.20,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}Born to be,born to be glowin'\N밝게 빛나는 우린
+Dialogue: 0,0:02:46.40,0:02:50.48,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}You know that it's our time,no fears,no lies
+Dialogue: 0,0:02:50.63,0:02:54.63,Lyric,,0,0,0,,{\move(960,660,960,648,0,300)\fad(280,200)\fsp0.2}That's who we're born to be

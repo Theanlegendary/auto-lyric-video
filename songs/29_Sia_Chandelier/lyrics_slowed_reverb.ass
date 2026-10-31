@@ -1,0 +1,47 @@
+[Script Info]
+Title: Sia - Chandelier (Official Fade Replay Lyric Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleGlow,Patrick Hand,170,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H80000000,-1,0,0,0,100,100,6,0,1,3.5,0,5,180,180,110,1
+Style: LyricGlow,Patrick Hand,98,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H80000000,-1,0,0,0,100,100,2,0,1,3.0,0,5,180,180,110,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:04.86,TitleGlow,,0,0,0,,{\pos(960,340)\fad(300,200)\blur2.5}Chandelier\N{\fs80\fsp5\b0}Sia
+Dialogue: 0,0:00:01.18,0:00:04.86,LyricGlow,,0,0,0,,{\pos(960,640)\fad(200,150)\blur2.0}Party girls don't get hurt\NCan't feel anything, when will I learn
+Dialogue: 0,0:00:04.86,0:00:09.97,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}I push it down, push it down
+Dialogue: 0,0:00:13.83,0:00:19.51,LyricGlow,,0,0,0,,{\pos(960,490)\fad(200,150)\blur2.0}I'm the one "for a good time call"\NPhone's blowin' up, ringin' my doorbell
+Dialogue: 0,0:00:19.82,0:00:23.19,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}I feel the love, feel the love
+Dialogue: 0,0:00:26.13,0:00:29.27,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}1, 2, 3, 1, 2, 3, drink\N1, 2, 3, 1, 2, 3, drink
+Dialogue: 0,0:00:29.27,0:00:32.51,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}1, 2, 3, 1, 2, 3, drink\N1, 2, 3, 1, 2, 3, drink
+Dialogue: 0,0:00:32.51,0:00:38.91,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}1, 2, 3, 1, 2, 3, drink\NThrow 'em back, 'til I lose count
+Dialogue: 0,0:00:41.02,0:00:50.71,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna swing from the chandelier\NFrom the chandelier
+Dialogue: 0,0:00:53.80,0:01:03.58,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna live like tomorrow doesn't exist\NLike it doesn't exist
+Dialogue: 0,0:01:04.58,0:01:16.88,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna fly like a bird through the night\NFeel my tears as they dry
+Dialogue: 0,0:01:18.47,0:01:28.02,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna swing from the chandelier\NFrom the chandelier
+Dialogue: 0,0:01:28.79,0:01:34.50,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}And I'm holding on for dear life\NWon't look down, won't open my eyes
+Dialogue: 0,0:01:34.50,0:01:40.76,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Keep my glass full until morning light\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:01:40.76,0:01:47.42,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Help me, I'm holding on for dear life\NWon't look down, won't open my eyes
+Dialogue: 0,0:01:47.42,0:01:55.14,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Keep my glass full until morning light\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:01:55.77,0:02:00.81,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Sun is up, I'm a mess\NGotta get out now, gotta run from this
+Dialogue: 0,0:02:00.81,0:02:05.43,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Here comes the shame, here comes the shame
+Dialogue: 0,0:02:06.61,0:02:14.57,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}1, 2, 3, 1, 2, 3, drink\N1, 2, 3, 1, 2, 3, drink
+Dialogue: 0,0:02:14.57,0:02:21.62,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}1, 2, 3, 1, 2, 3, drink\NThrow 'em back, 'til I lose count
+Dialogue: 0,0:02:23.01,0:02:31.77,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna swing from the chandelier\NFrom the chandelier
+Dialogue: 0,0:02:35.35,0:02:45.32,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna live like tomorrow doesn't exist\NLike it doesn't exist
+Dialogue: 0,0:02:47.93,0:02:58.80,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna fly like a bird through the night\NFeel my tears as they dry
+Dialogue: 0,0:03:00.35,0:03:11.10,LyricGlow,,0,0,0,,{\pos(960,490)\fad(250,200)\blur2.0}I'm gonna swing from the chandelier\NFrom the chandelier
+Dialogue: 0,0:03:11.10,0:03:16.55,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}And I'm holding on for dear life\NWon't look down, won't open my eyes
+Dialogue: 0,0:03:16.55,0:03:22.84,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Keep my glass full until morning light\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:03:23.49,0:03:29.43,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Help me, I'm holding on for dear life\NWon't look down, won't open my eyes
+Dialogue: 0,0:03:29.43,0:03:37.34,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}Keep my glass full until morning light\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:03:37.34,0:03:45.18,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,150)\blur2.0}On for tonight\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:03:45.18,0:03:59.56,LyricGlow,,0,0,0,,{\pos(960,490)\fad(150,200)\blur2.0}On for tonight\N'Cause I'm just holding on for tonight
+Dialogue: 0,0:03:59.88,0:04:05.83,TitleGlow,,0,0,0,,{\pos(960,460)\fad(400,500)\blur2.5}Chandelier\N{\fs88\fsp6\b0}Sia

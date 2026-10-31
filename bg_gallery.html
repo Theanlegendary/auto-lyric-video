@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade Replay — Anime Artwork & Background Collection</title>
+  <style>
+    :root {
+      --bg: #0c0910;
+      --card-bg: #16101d;
+      --card-hover: #22182d;
+      --accent: #ff4d8d;
+      --accent-glow: rgba(255, 77, 141, 0.4);
+      --border: #2c2035;
+      --text: #f0e6f2;
+      --text-muted: #a692ab;
+      --available: #00e676;
+      --assigned: #b388ff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 30px 40px;
+      line-height: 1.5;
+    }
+    header {
+      max-width: 1400px;
+      margin: 0 auto 30px auto;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff 0%, #ff80b5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: #1b1322;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover {
+      background: #281c33;
+      color: #fff;
+      border-color: #4c3461;
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+    .grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #553a6e;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+    .img-wrap {
+      width: 100%;
+      height: 190px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      background: #000;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .card:hover .img-wrap img {
+      transform: scale(1.05);
+    }
+    .badge-id {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(12, 9, 16, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+    }
+    .badge-status {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+    }
+    .status-available {
+      background: rgba(0, 230, 118, 0.2);
+      border: 1px solid var(--available);
+      color: var(--available);
+    }
+    .status-assigned {
+      background: rgba(179, 136, 255, 0.2);
+      border: 1px solid var(--assigned);
+      color: var(--assigned);
+    }
+    .card-body {
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .card-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .tag {
+      background: #1f1629;
+      color: #bfa8c7;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .pick-btn {
+      margin-top: auto;
+      background: #251b30;
+      border: 1px solid #3d2b4f;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .pick-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+    /* Lightbox Modal */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      cursor: zoom-out;
+    }
+    .lightbox.active {
+      display: flex;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+      border: 1px solid #332040;
+    }
+    .lightbox-caption {
+      position: absolute;
+      bottom: 25px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      background: rgba(20, 14, 25, 0.85);
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1px solid #4a325a;
+    }
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00e676;
+      color: #0c0910;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 230, 118, 0.3);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      pointer-events: none;
+      z-index: 2000;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Artwork & Background Collection</h1>
+      <p class="subtitle">15 Dedicated High-Resolution Anime Visuals for Fade Replay • Click any artwork to preview in full screen</p>
+    </div>
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterBgs('all', this)">All (15)</button>
+      <button class="filter-btn" onclick="filterBgs('available', this)">Available / Pickable (1)</button>
+      <button class="filter-btn" onclick="filterBgs('pink', this)">Pink & Sunset Skies (5)</button>
+      <button class="filter-btn" onclick="filterBgs('night', this)">Night & Twilight (3)</button>
+      <button class="filter-btn" onclick="filterBgs('nature', this)">Nature & Scenery (6)</button>
+    </div>
+  </header>
+
+  <div class="grid" id="bg-grid">
+    <!-- Populated by JavaScript -->
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Full Preview">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <div class="toast" id="toast">Copied Background ID to clipboard!</div>
+
+  <script>
+    const backgrounds = [
+      {
+        id: "bg_15",
+        file: "stock_anime_bgs/15_anime_birds_of_a_feather_pink_sunset_sky.png",
+        name: "Clear Pink Sunset Sky & Soaring Birds",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "05. Billie Eilish — BIRDS OF A FEATHER",
+        tags: ["pink", "sunset", "birds", "clean", "pastel", "romantic"],
+        category: "pink"
+      },
+      {
+        id: "bg_14",
+        file: "stock_anime_bgs/14_anime_clear_pink_aesthetic_twilight_sky.png",
+        name: "Clear Pink Aesthetic Sunset & Pine Ridge",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "13. Stephen Sanchez — Until I Found You",
+        tags: ["pink", "sunset", "pine", "trees", "clean", "shooting_star", "aesthetic"],
+        category: "pink"
+      },
+      {
+        id: "bg_13",
+        file: "stock_anime_bgs/13_anime_clean_night_sky_celestial.png",
+        name: "Pristine Celestial Anime Night Sky",
+        theme: "CLOUD (Sniglet ExtraBold Bubbly)",
+        assigned: "12. Melanie Martinez — Play Date",
+        tags: ["night", "sky", "clean", "stars", "crescent_moon", "celestial", "cloud"],
+        category: "night"
+      },
+      {
+        id: "bg_12",
+        file: "stock_anime_bgs/12_anime_sunset_street_flower_shop.png",
+        name: "Pastel Sunset Suburban Street & Flowers",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "11. Justin Bieber — Favorite Girl",
+        tags: ["street", "flowers", "sunset", "golden_hour", "pastel", "cherry_blossoms"],
+        category: "pink"
+      },
+      {
+        id: "bg_11",
+        file: "stock_anime_bgs/11_anime_dandelion_wildflower_field.png",
+        name: "Romantic Dandelion Sunset Meadow",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "10. Ruth B. — Dandelions",
+        tags: ["dandelions", "meadow", "sunset", "golden_hour", "romantic", "seeds"],
+        category: "nature"
+      },
+      {
+        id: "bg_10",
+        file: "stock_anime_bgs/10_retro_80s_neon_twilight_skyline.png",
+        name: "Retro 80s Neon Twilight Skyline",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "08. Chappell Roan — Good Luck, Babe!",
+        tags: ["retro", "80s", "neon", "synthwave", "twilight", "vintage_car"],
+        category: "night"
+      },
+      {
+        id: "bg_09",
+        file: "stock_anime_bgs/09_dramatic_mountain_alpine_dawn.png",
+        name: "Dramatic Mountain Alpine Dawn",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "07. Benson Boone — Beautiful Things",
+        tags: ["mountains", "alpine", "dawn", "sunbeams", "dramatic", "epic"],
+        category: "nature"
+      },
+      {
+        id: "bg_08",
+        file: "stock_anime_bgs/08_summer_coastal_cafe_terrace.png",
+        name: "Summer Coastal Cafe Terrace",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "06. Sabrina Carpenter — Espresso",
+        tags: ["cafe", "terrace", "summer", "coastal", "iced_latte", "bright"],
+        category: "nature"
+      },
+      {
+        id: "bg_07",
+        file: "stock_anime_bgs/07_cherry_blossom_spring_pathway.png",
+        name: "Romantic Cherry Blossom Pathway",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "09. Teddy Swims — Lose Control",
+        tags: ["sakura", "cherry_blossoms", "spring", "romantic", "sunlight"],
+        category: "nature"
+      },
+      {
+        id: "bg_06",
+        file: "stock_anime_bgs/06_coastal_ocean_soaring_birds.png",
+        name: "Serene Pastel Ocean Beach & Soaring Birds",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "Stock Reserve / Alternative",
+        tags: ["ocean", "beach", "birds", "pastel", "seafoam", "indie"],
+        category: "nature"
+      },
+      {
+        id: "bg_05",
+        file: "stock_anime_bgs/05_golden_hour_celestial_overlook.png",
+        name: "Radiant Golden Hour Celestial Overlook",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "04. HUNTR/X — Golden",
+        tags: ["golden_hour", "sunbeams", "epic", "mountains", "amber_mist"],
+        category: "nature"
+      },
+      {
+        id: "bg_04",
+        file: "stock_anime_bgs/04_lofi_rainy_window_city_night.png",
+        name: "Cozy Rainy Window City Bokeh",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: null,
+        tags: ["rain", "window", "night", "city", "lofi", "cozy", "droplets"],
+        category: "available"
+      },
+      {
+        id: "bg_03",
+        file: "stock_anime_bgs/03_anime_rooftop_sunset_skyline.png",
+        name: "Anime Sunset Rooftop Skyline & Powerlines",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "03. Taylor Swift — The Fate of Ophelia",
+        tags: ["sunset", "rooftop", "golden_hour", "city", "powerlines", "skyline"],
+        category: "pink"
+      },
+      {
+        id: "bg_02",
+        file: "stock_anime_bgs/02_lofi_twilight_starry_night.png",
+        name: "Deep Indigo Starry Twilight Night",
+        theme: "WHITE (Pure White with Glow)",
+        assigned: "02. Lady Gaga & Bruno Mars — Die With A Smile",
+        tags: ["night", "stars", "twilight", "crescent_moon", "dark_blue", "lofi"],
+        category: "night"
+      },
+      {
+        id: "bg_01",
+        file: "stock_anime_bgs/01_makoto_shinkai_clouds.png",
+        name: "Pastel Cotton-Candy Clouds",
+        theme: "BLACK (Patrick Hand Dark Espresso)",
+        assigned: "01. ROSÉ & Bruno Mars — APT.",
+        tags: ["pastel", "cotton_candy", "clouds", "daytime", "pop", "bright"],
+        category: "pink"
+      }
+    ];
+
+    function renderGrid(items) {
+      const grid = document.getElementById('bg-grid');
+      grid.innerHTML = items.map(bg => {
+        const isAvail = bg.assigned === null;
+        const statusClass = isAvail ? 'status-available' : 'status-assigned';
+        const statusText = isAvail ? '● UNASSIGNED / READY' : `In Use: ${bg.assigned}`;
+        
+        return `
+          <div class="card" data-id="${bg.id}">
+            <div class="img-wrap" onclick="openLightbox('${bg.file}', '${bg.id}: ${bg.name}')">
+              <img src="${bg.file}" alt="${bg.name}" loading="lazy">
+              <div class="badge-id">${bg.id.toUpperCase()}</div>
+              <div class="badge-status ${statusClass}">${statusText}</div>
+            </div>
+            <div class="card-body">
+              <div class="card-title">${bg.name}</div>
+              <div class="card-meta">
+                <div><strong>Theme</strong>: ${bg.theme}</div>
+                <div><strong>File</strong>: <code>${bg.file.split('/').pop()}</code></div>
+              </div>
+              <div class="tags">
+                ${bg.tags.map(t => `<span class="tag">#${t}</span>`).join('')}
+              </div>
+              <button class="pick-btn" onclick="copyId('${bg.id}', '${bg.name}')">
+                📌 Copy ${bg.id.toUpperCase()} for Next Song
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function filterBgs(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      if (cat === 'all') {
+        renderGrid(backgrounds);
+      } else if (cat === 'available') {
+        renderGrid(backgrounds.filter(b => b.assigned === null));
+      } else {
+        renderGrid(backgrounds.filter(b => b.category === cat || b.tags.includes(cat)));
+      }
+    }
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    function copyId(id, name) {
+      navigator.clipboard.writeText(`${id} (${name})`);
+      const toast = document.getElementById('toast');
+      toast.innerText = `Copied ${id.toUpperCase()} (${name})!`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    // Initial render
+    renderGrid(backgrounds);
+  </script>
+</body>
+</html>

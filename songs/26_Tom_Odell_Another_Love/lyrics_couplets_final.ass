@@ -1,0 +1,37 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Patrick Hand,175,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,1,0,0,0,95,115,3,0,1,2,1,5,50,50,50,1
+Style: Chorus,Patrick Hand,114,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,0,0,0,0,95,115,1,0,1,2.0,1.0,5,50,50,50,1
+Style: Lyric,Patrick Hand,102,&H00151515,&H000000FF,&H00FFFFFF,&H30000000,0,0,0,0,95,115,1,0,1,1.8,0.8,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:03.00,0:00:18.00,TitleCard,,0,0,0,,{\pos(960,470)\fad(500,400)}Another Love\N{\fs84\fsp4\b0}Tom Odell
+Dialogue: 0,0:00:20.50,0:00:29.20,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I wanna take you somewhere so you know I care\NBut it's so cold and I don't know where
+Dialogue: 0,0:00:29.40,0:00:39.50,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I brought you daffodils on a pretty string\NBut they won't flower like they did last spring
+Dialogue: 0,0:00:41.00,0:00:50.00,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}And I wanna kiss you, make you feel alright\NI'm just so tired to share my nights
+Dialogue: 0,0:00:50.20,0:01:01.50,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I wanna cry and I wanna love\NBut all my tears have been used up
+Dialogue: 0,0:01:01.80,0:01:10.00,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:01:10.20,0:01:18.20,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:01:18.50,0:01:27.50,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:01:28.00,0:01:53.50,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}Oh-oh, oh\NOh-oh, oh-oh
+Dialogue: 0,0:01:54.00,0:02:02.30,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}And if somebody hurts you, I wanna fight\NBut my hand's been broken one too many times
+Dialogue: 0,0:02:02.50,0:02:10.20,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}So I'll use my voice, I'll be so rude\NWords, they always win, but I know I'll lose
+Dialogue: 0,0:02:10.50,0:02:18.20,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}And I'd sing a song that'd be just ours\NBut I sang 'em all to another heart
+Dialogue: 0,0:02:18.50,0:02:26.00,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}And I wanna cry, I wanna learn to love\NBut all my tears have been used up
+Dialogue: 0,0:02:26.20,0:02:34.00,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:02:34.20,0:02:41.80,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:02:42.00,0:02:51.50,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:02:52.00,0:03:12.50,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}Oh, need a love now\NMy heart is thinking of
+Dialogue: 0,0:03:12.70,0:03:20.50,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}I wanna sing a song that'd be just ours\NBut I sang 'em all to another heart
+Dialogue: 0,0:03:20.70,0:03:28.00,Lyric,,0,0,0,,{\pos(960,490)\fad(180,120)}And I wanna cry, I wanna fall in love\NBut all my tears have been used up
+Dialogue: 0,0:03:28.20,0:03:36.00,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:03:36.20,0:03:43.50,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up
+Dialogue: 0,0:03:43.80,0:03:56.50,Chorus,,0,0,0,,{\pos(960,490)\fad(180,120)}On another love, another love\NAll my tears have been used up

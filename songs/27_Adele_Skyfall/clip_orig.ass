@@ -1,0 +1,19 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleGlow,Patrick Hand,190,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H50FFFFFF,1,0,0,0,95,112,2,0,1,3.5,0,5,50,50,50,1
+Style: LyricGlow,Patrick Hand,102,&H00FFFFFF,&H000000FF,&H30FFFFFF,&H50FFFFFF,1,0,0,0,94,112,1,0,1,3.0,0,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.40,TitleGlow,,0,0,0,,{\pos(960,460)ad(200,200)lur2.5}Skyfall\N{\fs84\fsp6\b0}Adele • Original 1.0x (Standard Mix)
+Dialogue: 0,0:00:02.40,0:00:09.20,LyricGlow,,0,0,0,,{\pos(960,490)ad(200,150)lur2.0}Let the sky fall\NWhen it crumbles
+Dialogue: 0,0:00:09.40,0:00:15.00,LyricGlow,,0,0,0,,{\pos(960,490)ad(200,150)lur2.0}We will stand tall\NFace it all together
+Dialogue: 0,0:00:15.20,0:00:21.80,LyricGlow,,0,0,0,,{\pos(960,490)ad(200,150)lur2.0}Let the sky fall\NWhen it crumbles
+Dialogue: 0,0:00:22.00,0:00:29.00,LyricGlow,,0,0,0,,{\pos(960,490)ad(200,200)lur2.0}We will stand tall\NFace it all together at Skyfall

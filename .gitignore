@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Large rendered video outputs
+# Note: Full MP4 renders total ~5.5GB and exceed GitHub's 100MB file limit.
+# All videos can be re-rendered on demand using `python songs/<song>/render_*.py`
+*.mp4
+/videos/*.mp4
+videos/*.mp4
+
+# Keep the directory structure
+!/videos/.gitkeep
+
+# Environment variables & local secrets
+.env
+.env.local
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary outputs & logs
+test_acceptance_output/
+temp/
+tmp/
+*.log

@@ -1,0 +1,155 @@
+SEGMENT [60.00 -> 67.58]:  Eu não sei, eu não sei, eu não sei
+   60.00 -  60.16 :  Eu
+   60.16 -  60.16 :  não
+   60.16 -  62.96 :  sei,
+   66.40 -  66.66 :  eu
+   66.66 -  67.08 :  não
+   67.08 -  67.08 :  sei,
+   67.08 -  67.14 :  eu
+   67.14 -  67.14 :  não
+   67.14 -  67.58 :  sei
+SEGMENT [67.58 -> 70.76]:  Eu não sei, eu não sei, eu não sei
+   67.58 -  67.58 :  Eu
+   67.58 -  67.58 :  não
+   67.58 -  67.58 :  sei,
+   67.58 -  67.58 :  eu
+   67.58 -  67.58 :  não
+   67.58 -  67.58 :  sei,
+   67.58 -  70.76 :  eu
+   70.76 -  70.76 :  não
+   70.76 -  70.76 :  sei
+SEGMENT [71.70 -> 76.56]:  Lizando e lovelho, oi, oi, oi, oi
+   71.70 -  72.46 :  Lizando
+   72.46 -  72.62 :  e
+   72.62 -  73.50 :  lovelho,
+   74.40 -  74.66 :  oi,
+   74.82 -  75.52 :  oi,
+   75.52 -  76.16 :  oi,
+   76.54 -  76.56 :  oi
+SEGMENT [76.56 -> 80.50]:  Me de glas, meu mind, eu estou em tempo
+   76.56 -  76.62 :  Me
+   76.62 -  76.76 :  de
+   76.76 -  77.20 :  glas,
+   77.40 -  77.56 :  meu
+   77.56 -  78.38 :  mind,
+   78.38 -  78.52 :  eu
+   78.52 -  78.98 :  estou
+   78.98 -  79.42 :  em
+   79.42 -  80.50 :  tempo
+SEGMENT [80.50 -> 83.46]:  Me de peças, skin a bone
+   80.50 -  80.76 :  Me
+   80.76 -  80.86 :  de
+   80.86 -  81.68 :  peças,
+   82.64 -  82.86 :  skin
+   82.86 -  83.04 :  a
+   83.04 -  83.46 :  bone
+SEGMENT [84.48 -> 87.76]:  Hala, oi, oi, oi, oi, oi
+   84.48 -  85.24 :  Hala,
+   86.00 -  86.46 :  oi,
+   86.70 -  86.74 :  oi,
+   86.86 -  86.92 :  oi,
+   86.92 -  87.34 :  oi,
+   87.38 -  87.76 :  oi
+SEGMENT [91.36 -> 93.90]:  Walking out of time
+   91.36 -  92.76 :  Walking
+   92.76 -  93.20 :  out
+   93.20 -  93.50 :  of
+   93.50 -  93.90 :  time
+SEGMENT [95.46 -> 98.54]:  Looking for better place
+   95.46 -  96.86 :  Looking
+   96.86 -  97.24 :  for
+   97.24 -  97.86 :  better
+   97.86 -  98.54 :  place
+SEGMENT [99.96 -> 103.36]:  Something's on my mind
+   99.96 - 101.36 :  Something's
+  101.36 - 101.44 :  on
+  101.44 - 101.64 :  my
+  101.64 - 103.36 :  mind
+SEGMENT [103.36 -> 106.88]:  Always in my space
+  103.36 - 105.34 :  Always
+  105.34 - 105.66 :  in
+  105.66 - 105.92 :  my
+  105.92 - 106.88 :  space
+SEGMENT [106.88 -> 109.22]:  But I know someday
+  106.88 - 107.80 :  But
+  107.80 - 108.00 :  I
+  108.00 - 108.26 :  know
+  108.26 - 109.22 :  someday
+SEGMENT [110.00 -> 112.66]:  I'll make it
+  110.00 - 110.98 :  I'll
+  110.98 - 111.74 :  make
+  111.74 - 112.66 :  it
+SEGMENT [112.66 -> 118.40]:  I'll love feeling if it takes
+  112.66 - 114.34 :  I'll
+  114.34 - 114.98 :  love
+  114.98 - 115.96 :  feeling
+  115.96 - 116.72 :  if
+  116.72 - 117.28 :  it
+  117.28 - 118.40 :  takes
+SEGMENT [118.40 -> 124.18]:  Oh, I know someday
+  118.40 - 119.10 :  Oh,
+  119.18 - 119.80 :  I
+  119.80 - 120.74 :  know
+  120.74 - 124.18 :  somedayたое,
+SEGMENT [124.28 -> 127.30]: たое, oito feliz
+  124.28 - 124.56 :  oito
+  124.56 - 125.04 :  feliz
+  125.04 - 126.60 :  Cockey
+  126.60 - 127.30 :  a
+SEGMENT [127.30 -> 130.54]:  Cockey a não
+  127.30 - 127.92 :  não
+  127.92 - 129.32 :  can't
+  129.32 - 130.54 :  find
+SEGMENT [130.54 -> 133.16]:  can't find anything
+  130.54 - 132.26 :  anything
+  132.26 - 132.84 :  One
+  132.84 - 133.16 :  I've
+SEGMENT [133.16 -> 135.94]:  One I've filmed
+  133.16 - 133.66 :  filmed
+  133.66 - 135.94 :  I'm
+  135.94 - 135.94 :  all
+SEGMENT [135.94 -> 138.18]:  I'm all sunshine
+  135.94 - 136.72 :  sunshine
+  136.72 - 137.62 :  I
+  137.62 - 138.18 :  can't
+SEGMENT [138.18 -> 141.80]:  I can't find my fears
+  138.18 - 138.64 :  find
+  138.64 - 139.78 :  my
+  139.78 - 141.62 :  fears
+  141.62 - 142.32 :  Lizando
+SEGMENT [143.42 -> 147.20]:  Lizando e lovelho, oi, oi, oi, oi
+  143.42 - 143.58 :  e
+  143.58 - 144.30 :  lovelho,
+  144.80 - 145.50 :  oi,
+  145.68 - 145.70 :  oi,
+  145.70 - 146.24 :  oi,
+  146.24 - 147.20 :  oi
+SEGMENT [147.20 -> 150.54]:  Me desclarei as minhas estonhas
+  147.20 - 147.48 :  Me
+  147.48 - 148.22 :  desclarei
+  148.22 - 148.34 :  as
+  148.34 - 148.72 :  minhas
+  148.72 - 150.54 :  estonhas
+SEGMENT [150.54 -> 153.46]:  Te desclarei as minhas estonhas
+  150.54 - 151.06 :  Te
+  151.06 - 151.68 :  desclarei
+  151.68 - 151.92 :  as
+  151.92 - 151.92 :  minhas
+  151.92 - 153.46 :  estonhas
+SEGMENT [153.46 -> 154.56]:  Esquina a bona
+  153.46 - 153.88 :  Esquina
+  153.88 - 154.18 :  a
+  154.18 - 154.56 :  bona
+SEGMENT [155.40 -> 159.20]:  Hala, o alcone a bona
+  155.40 - 156.20 :  Hala,
+  157.06 - 157.22 :  o
+  157.22 - 157.90 :  alcone
+  157.90 - 158.40 :  a
+  158.40 - 159.20 :  bona
+SEGMENT [188.30 -> 195.32]:  Um noco, um noco, um noco.
+  188.30 - 189.70 :  Um
+  189.70 - 191.10 :  noco,
+  191.64 - 191.66 :  um
+  191.66 - 193.20 :  noco,
+  193.20 - 193.46 :  um
+  193.46 - 195.32 :  noco.

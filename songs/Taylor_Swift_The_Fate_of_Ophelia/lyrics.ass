@@ -1,0 +1,94 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TitleCard,Patrick Hand,185,&H00FFFFFF,&H000000FF,&H00121018,&H80000000,1,0,0,0,95,115,3,0,1,2.5,2,5,50,50,50,1
+Style: Lyric,Patrick Hand,148,&H00FFFFFF,&H000000FF,&H00121018,&H80000000,0,0,0,0,95,115,1,0,1,2.2,1.5,5,50,50,50,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:04.50,TitleCard,,0,0,0,,{\pos(960,470)\fad(500,400)}THE FATE OF OPHELIA\N{\fs80\fsp4}Taylor Swift
+Dialogue: 0,0:00:10.05,0:00:13.15,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I HEARD YOU CALLING
+Dialogue: 0,0:00:12.35,0:00:14.95,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ON THE MEGAPHONE
+Dialogue: 0,0:00:14.15,0:00:20.78,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU WANNA SEE\NME ALL ALONE
+Dialogue: 0,0:00:19.98,0:00:22.52,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AS LEGEND\NHAS IT YOU
+Dialogue: 0,0:00:21.72,0:00:24.42,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ARE QUITE THE PYRO
+Dialogue: 0,0:00:23.62,0:00:28.33,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU LIGHT THE MATCH\NTO WATCH IT BLOW
+Dialogue: 0,0:00:27.53,0:00:32.48,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND IF YOU'D\NNEVER COME FOR ME
+Dialogue: 0,0:00:31.68,0:00:35.93,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I MIGHT'VE DROWNED\NIN THE MELANCHOLY
+Dialogue: 0,0:00:35.13,0:00:40.70,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I SWORE MY LOYALTY TO ME\NMYSELF AND I
+Dialogue: 0,0:00:39.90,0:00:46.52,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}RIGHT BEFORE YOU\NLIT MY SKY UP
+Dialogue: 0,0:00:45.72,0:00:47.43,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ALL THAT TIME
+Dialogue: 0,0:00:46.63,0:00:49.68,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I SAT ALONE\NIN MY TOWER
+Dialogue: 0,0:00:48.88,0:00:51.67,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU WERE JUST\NHONING YOUR POWERS
+Dialogue: 0,0:00:50.87,0:00:56.25,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NOW I CAN SEE\NIT ALL (SEE IT ALL)
+Dialogue: 0,0:00:55.45,0:00:57.49,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LATE ONE NIGHT
+Dialogue: 0,0:00:56.69,0:00:59.53,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU DUG ME OUT\NOF MY GRAVE AND
+Dialogue: 0,0:00:58.73,0:01:01.67,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}SAVED MY HEART\NFROM THE FATE OF
+Dialogue: 0,0:01:00.87,0:01:05.06,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OPHELIA
+Dialogue: 0,0:01:04.26,0:01:06.55,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}KEEP IT ONE HUNDRED
+Dialogue: 0,0:01:05.75,0:01:09.34,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ON THE LAND\NTHE SEA, THE SKY
+Dialogue: 0,0:01:08.54,0:01:11.35,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}PLEDGE ALLEGIANCE\NTO YOUR HANDS
+Dialogue: 0,0:01:10.55,0:01:13.24,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOUR TEAM\NYOUR VIBES
+Dialogue: 0,0:01:12.44,0:01:15.30,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}DON'T CARE WHERE\NTHE HELL YOU BEEN
+Dialogue: 0,0:01:14.50,0:01:16.86,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}'CAUSE NOW YOU'RE MINE
+Dialogue: 0,0:01:16.06,0:01:18.87,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}IT'S 'BOUT TO\NBE THE SLEEPLESS NIGHT
+Dialogue: 0,0:01:18.07,0:01:21.81,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU'VE BEEN DREAMING OF
+Dialogue: 0,0:01:21.01,0:01:26.38,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THE FATE OF OPHELIA
+Dialogue: 0,0:01:25.58,0:01:30.35,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THE ELDEST DAUGHTER\NOF A NOBLEMAN
+Dialogue: 0,0:01:29.55,0:01:35.31,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OPHELIA LIVED IN FANTASY
+Dialogue: 0,0:01:34.51,0:01:39.93,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}BUT LOVE WAS A\NCOLD BED FULL OF SCORPIONS
+Dialogue: 0,0:01:39.13,0:01:43.91,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THE VENOM\NSTOLE HER SANITY
+Dialogue: 0,0:01:43.11,0:01:47.67,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND IF YOU'D\NNEVER COME FOR ME
+Dialogue: 0,0:01:46.87,0:01:51.69,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I MIGHT'VE\NLINGERED IN PURGATORY
+Dialogue: 0,0:01:50.89,0:01:56.19,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU WRAP AROUND ME LIKE A CHAIN\NA CROWN, A VINE
+Dialogue: 0,0:01:55.39,0:02:01.99,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}PULLING ME\NINTO THE FIRE
+Dialogue: 0,0:02:01.19,0:02:03.22,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ALL THAT TIME
+Dialogue: 0,0:02:02.42,0:02:05.23,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I SAT ALONE\NIN MY TOWER
+Dialogue: 0,0:02:04.43,0:02:07.18,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU WERE JUST\NHONING YOUR POWERS
+Dialogue: 0,0:02:06.38,0:02:11.45,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NOW I CAN SEE\NIT ALL (SEE IT ALL)
+Dialogue: 0,0:02:10.65,0:02:12.94,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LATE ONE NIGHT
+Dialogue: 0,0:02:12.14,0:02:15.00,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU DUG ME OUT\NOF MY GRAVE AND
+Dialogue: 0,0:02:14.20,0:02:16.99,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}SAVED MY HEART\NFROM THE FATE OF
+Dialogue: 0,0:02:16.19,0:02:20.63,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OPHELIA
+Dialogue: 0,0:02:19.83,0:02:21.98,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}KEEP IT ONE HUNDRED
+Dialogue: 0,0:02:21.18,0:02:24.75,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ON THE LAND\NTHE SEA, THE SKY
+Dialogue: 0,0:02:23.95,0:02:26.92,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}PLEDGE ALLEGIANCE\NTO YOUR HANDS
+Dialogue: 0,0:02:26.12,0:02:28.51,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOUR TEAM\NYOUR VIBES
+Dialogue: 0,0:02:27.71,0:02:30.62,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}DON'T CARE WHERE\NTHE HELL YOU BEEN
+Dialogue: 0,0:02:29.82,0:02:32.39,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}'CAUSE NOW YOU'RE MINE
+Dialogue: 0,0:02:31.59,0:02:34.48,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}IT'S 'BOUT TO\NBE THE SLEEPLESS NIGHT
+Dialogue: 0,0:02:33.68,0:02:37.35,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU'VE BEEN DREAMING OF
+Dialogue: 0,0:02:36.55,0:02:39.44,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THE FATE OF OPHELIA
+Dialogue: 0,0:02:38.64,0:02:41.42,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}'TIS LOCKED\NINSIDE MY MEMORY
+Dialogue: 0,0:02:40.62,0:02:43.45,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND ONLY YOU\NPOSSESS THE KEY
+Dialogue: 0,0:02:42.65,0:02:45.60,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NO LONGER\NDROWNING AND DECEIVED
+Dialogue: 0,0:02:44.80,0:02:47.38,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ALL BECAUSE YOU\NCAME FOR ME
+Dialogue: 0,0:02:46.58,0:02:49.36,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LOCKED INSIDE MY MEMORY
+Dialogue: 0,0:02:48.56,0:02:51.18,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}AND ONLY YOU\NPOSSESS THE KEY
+Dialogue: 0,0:02:50.38,0:02:53.24,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NO LONGER\NDROWNING AND DECEIVED
+Dialogue: 0,0:02:52.44,0:02:58.18,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ALL BECAUSE YOU\NCAME FOR ME
+Dialogue: 0,0:02:57.38,0:02:59.32,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ALL THAT TIME
+Dialogue: 0,0:02:58.52,0:03:01.25,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}I SAT ALONE\NIN MY TOWER
+Dialogue: 0,0:03:00.45,0:03:03.26,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU WERE JUST\NHONING YOUR POWERS
+Dialogue: 0,0:03:02.46,0:03:07.81,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}NOW I CAN SEE IT\NALL (I CAN SEE IT ALL)
+Dialogue: 0,0:03:07.01,0:03:09.05,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}LATE ONE NIGHT
+Dialogue: 0,0:03:08.25,0:03:11.05,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU DUG ME OUT\NOF MY GRAVE AND
+Dialogue: 0,0:03:10.25,0:03:13.13,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}SAVED MY HEART\NFROM THE FATE OF
+Dialogue: 0,0:03:12.33,0:03:16.78,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OPHELIA
+Dialogue: 0,0:03:15.98,0:03:17.94,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}KEEP IT ONE HUNDRED
+Dialogue: 0,0:03:17.14,0:03:20.89,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}ON THE LAND\NTHE SEA, THE SKY
+Dialogue: 0,0:03:20.09,0:03:23.02,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}PLEDGE ALLEGIANCE\NTO YOUR HANDS
+Dialogue: 0,0:03:22.22,0:03:24.84,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOUR TEAM\NYOUR VIBES
+Dialogue: 0,0:03:24.04,0:03:26.98,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}DON'T CARE WHERE\NTHE HELL YOU BEEN
+Dialogue: 0,0:03:26.18,0:03:28.45,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}'CAUSE NOW YOU'RE MINE
+Dialogue: 0,0:03:27.65,0:03:30.53,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}IT'S 'BOUT TO\NBE THE SLEEPLESS NIGHT
+Dialogue: 0,0:03:29.73,0:03:33.43,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU'VE BEEN DREAMING OF
+Dialogue: 0,0:03:32.63,0:03:37.18,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}THE FATE OF OPHELIA
+Dialogue: 0,0:03:36.38,0:03:40.25,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}YOU SAVED MY HEART\NFROM THE FATE OF
+Dialogue: 0,0:03:39.45,0:03:44.75,Lyric,,0,0,0,,{\pos(960,480)\fad(150,150)}OPHELIA

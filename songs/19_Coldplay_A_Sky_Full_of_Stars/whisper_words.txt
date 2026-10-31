@@ -1,0 +1,222 @@
+SEGMENT [22.70 -> 28.62]:  I'm going to give you my heart
+   22.70 -  24.10 :  I'm
+   24.10 -  25.50 :  going
+   25.50 -  25.72 :  to
+   25.72 -  26.56 :  give
+   26.56 -  27.22 :  you
+   27.22 -  27.48 :  my
+   27.48 -  28.62 :  heart
+SEGMENT [32.16 -> 37.24]:  Cause you're a sky, cause you're a sky full of stars
+   32.16 -  32.96 :  Cause
+   32.96 -  33.28 :  you're
+   33.28 -  33.48 :  a
+   33.48 -  33.86 :  sky,
+   33.86 -  34.82 :  cause
+   34.82 -  35.22 :  you're
+   35.22 -  35.38 :  a
+   35.38 -  36.04 :  sky
+   36.04 -  36.80 :  full
+   36.80 -  37.12 :  of
+   37.12 -  37.24 :  stars
+SEGMENT [40.02 -> 44.06]:  Cause you're light up the path
+   40.02 -  40.82 :  Cause
+   40.82 -  41.20 :  you're
+   41.20 -  41.96 :  light
+   41.96 -  42.66 :  up
+   42.66 -  43.72 :  the
+   43.72 -  44.06 :  path
+SEGMENT [47.40 -> 52.74]:  Now don't care, go on and tell me you're put
+   47.40 -  48.36 :  Now
+   48.36 -  48.60 :  don't
+   48.60 -  49.36 :  care,
+   50.10 -  50.28 :  go
+   50.28 -  50.54 :  on
+   50.54 -  50.80 :  and
+   50.80 -  51.32 :  tell
+   51.32 -  52.18 :  me
+   52.18 -  52.56 :  you're
+   52.56 -  52.74 :  put
+SEGMENT [55.68 -> 59.16]:  Now don't care if you're put
+   55.68 -  56.64 :  Now
+   56.64 -  57.60 :  don't
+   57.60 -  57.60 :  care
+   57.60 -  57.98 :  if
+   57.98 -  59.16 :  you're
+   59.16 -  59.16 :  put
+SEGMENT [62.74 -> 68.38]:  Cause in the sky, cause in the sky full of stars
+   62.74 -  63.70 :  Cause
+   63.70 -  63.98 :  in
+   63.98 -  64.14 :  the
+   64.14 -  64.58 :  sky,
+   64.58 -  65.62 :  cause
+   65.62 -  65.86 :  in
+   65.86 -  66.02 :  the
+   66.02 -  66.76 :  sky
+   66.76 -  67.56 :  full
+   67.56 -  67.80 :  of
+   67.80 -  68.38 :  stars
+SEGMENT [68.38 -> 78.38]:  Cause in the sky full of stars
+   68.38 -  68.38 :  Cause
+   68.38 -  69.26 :  in
+   69.26 -  69.34 :  the
+   69.34 -  70.02 :  sky
+   70.02 -  72.22 :  full
+   72.22 -  75.40 :  of
+   75.40 -  78.38 :  stars
+SEGMENT [100.96 -> 106.92]:  Cause you're a sky, cause you're a sky full of stars
+  100.96 - 102.16 :  Cause
+  102.16 - 102.42 :  you're
+  102.42 - 102.60 :  a
+  102.60 - 103.00 :  sky,
+  103.00 - 103.98 :  cause
+  103.98 - 104.32 :  you're
+  104.32 - 104.56 :  a
+  104.56 - 105.06 :  sky
+  105.06 - 105.96 :  full
+  105.96 - 106.26 :  of
+  106.26 - 106.92 :  stars
+SEGMENT [108.58 -> 112.56]:  I won't die in your heart
+  108.58 - 109.78 :  I
+  109.78 - 110.28 :  won't
+  110.28 - 110.90 :  die
+  110.90 - 111.80 :  in
+  111.80 - 111.96 :  your
+  111.96 - 112.56 :  heart
+SEGMENT [116.38 -> 122.80]:  Cause you get light up the more it gets dark
+  115.90 - 116.50 :  Cause
+  116.50 - 117.70 :  you
+  117.70 - 117.94 :  get
+  117.94 - 118.58 :  light
+  118.58 - 119.40 :  up
+  119.40 - 119.76 :  the
+  119.76 - 120.10 :  more
+  120.10 - 121.34 :  it
+  121.34 - 121.62 :  gets
+  121.62 - 122.80 :  dark
+SEGMENT [123.80 -> 129.08]:  I'm going to give you my heart
+  123.80 - 125.16 :  I'm
+  125.16 - 125.44 :  going
+  125.44 - 125.58 :  to
+  125.58 - 126.44 :  give
+  126.44 - 127.10 :  you
+  127.10 - 127.34 :  my
+  127.34 - 129.08 :  heart
+SEGMENT [131.48 -> 137.18]:  Now don't care, go on and tell me you're put
+  131.48 - 132.80 :  Now
+  132.80 - 133.06 :  don't
+  133.06 - 133.64 :  care,
+  133.64 - 134.78 :  go
+  134.78 - 135.04 :  on
+  135.04 - 135.30 :  and
+  135.30 - 135.60 :  tell
+  135.60 - 136.66 :  me
+  136.66 - 137.04 :  you're
+  137.04 - 137.18 :  put
+SEGMENT [139.80 -> 144.44]:  Now don't care if you're put
+  139.80 - 140.50 :  Now
+  140.50 - 141.68 :  don't
+  141.68 - 141.80 :  care
+  141.80 - 142.52 :  if
+  142.52 - 143.36 :  you're
+  143.36 - 144.44 :  put
+SEGMENT [144.44 -> 148.24]:  Now don't care if you're put
+  144.44 - 145.10 :  Now
+  145.10 - 145.20 :  don't
+  145.20 - 147.24 :  care
+  147.24 - 148.10 :  if
+  148.10 - 148.24 :  you're
+  148.24 - 148.24 :  put
+SEGMENT [148.24 -> 152.80]:  Cause in the sky, cause in the sky full of stars
+  148.24 - 148.24 :  Cause
+  148.24 - 148.46 :  in
+  148.46 - 148.56 :  the
+  148.56 - 149.06 :  sky,
+  149.06 - 150.14 :  cause
+  150.14 - 150.36 :  in
+  150.36 - 150.50 :  the
+  150.50 - 151.16 :  sky
+  151.16 - 152.06 :  full
+  152.06 - 152.40 :  of
+  152.40 - 152.80 :  stars
+SEGMENT [152.80 -> 158.70]:  I won't die in your heart
+  152.80 - 153.48 :  I
+  153.48 - 153.58 :  won't
+  153.58 - 153.70 :  die
+  153.70 - 154.22 :  in
+  154.22 - 158.42 :  your
+  158.42 - 158.70 :  heart
+SEGMENT [160.02 -> 166.36]:  I won't die in your heart
+  160.02 - 161.06 :  I
+  161.06 - 161.90 :  won't
+  161.90 - 161.90 :  die
+  161.90 - 161.90 :  in
+  161.90 - 165.38 :  your
+  165.38 - 166.36 :  heart
+SEGMENT [184.02 -> 186.76]:  Cause in the sky, cause in the sky full of stars
+  184.02 - 185.42 :  Cause
+  185.42 - 186.76 :  in
+  186.76 - 186.76 :  the
+  186.76 - 186.76 :  sky,
+  186.76 - 186.76 :  cause
+  186.76 - 186.76 :  in
+  186.76 - 186.76 :  the
+  186.76 - 186.76 :  sky
+  186.76 - 186.76 :  full
+  186.76 - 186.76 :  of
+  186.76 - 186.76 :  stars
+SEGMENT [186.76 -> 187.90]:  Cause you're a sky full of stars
+  186.76 - 186.76 :  Cause
+  186.76 - 186.76 :  you're
+  186.76 - 186.76 :  a
+  186.76 - 186.82 :  sky
+  186.82 - 186.82 :  full
+  186.82 - 186.82 :  of
+  186.82 - 187.90 :  stars
+SEGMENT [187.90 -> 204.34]:  Cause you're a sky full of stars
+  187.90 - 187.90 :  Cause
+  187.90 - 187.90 :  you're
+  187.90 - 187.90 :  a
+  187.90 - 204.32 :  sky
+  204.32 - 204.32 :  full
+  204.32 - 204.32 :  of
+  204.32 - 204.34 :  stars
+SEGMENT [216.36 -> 221.90]:  Cause you're a sky full of stars
+  216.36 - 217.18 :  Cause
+  217.18 - 217.86 :  you're
+  217.86 - 217.98 :  a
+  217.98 - 217.98 :  sky
+  217.98 - 221.04 :  full
+  221.04 - 221.10 :  of
+  221.10 - 221.90 :  stars
+SEGMENT [221.90 -> 223.78]:  Cause you're a sky full of stars
+  221.90 - 222.46 :  Cause
+  222.46 - 222.72 :  you're
+  222.72 - 222.78 :  a
+  222.78 - 223.36 :  sky
+  223.36 - 223.54 :  full
+  223.54 - 223.54 :  of
+  223.54 - 223.78 :  stars
+SEGMENT [223.78 -> 234.32]:  Cause you're a sky full of stars
+  223.78 - 223.78 :  Cause
+  223.78 - 223.78 :  you're
+  223.78 - 223.78 :  a
+  223.78 - 223.78 :  sky
+  223.78 - 223.90 :  full
+  223.90 - 234.32 :  of
+  234.32 - 234.32 :  stars
+SEGMENT [261.50 -> 264.30]:  Cause you're a sky full of stars
+  261.50 - 262.90 :  Cause
+  262.90 - 264.30 :  you're
+  264.30 - 264.30 :  a
+  264.30 - 264.30 :  sky
+  264.30 - 264.30 :  full
+  264.30 - 264.30 :  of
+  264.30 - 264.30 :  stars
+SEGMENT [264.32 -> 266.52]:  Cause you're a sky full of stars
+  264.32 - 266.52 :  Cause
+  266.52 - 266.52 :  you're
+  266.52 - 266.52 :  a
+  266.52 - 266.52 :  sky
+  266.52 - 266.52 :  full
+  266.52 - 266.52 :  of
+  266.52 - 266.52 :  stars

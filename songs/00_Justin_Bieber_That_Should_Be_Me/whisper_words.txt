@@ -1,0 +1,441 @@
+[7.12 -> 10.40]  Everybody's laughing in my mind
+     7.12 -   7.84:  Everybody's
+     7.84 -   8.24:  laughing
+     8.24 -   8.98:  in
+     8.98 -   9.26:  my
+     9.26 -  10.40:  mind
+[12.92 -> 16.78]  Rumors spreading about this other guy
+    12.92 -  13.64:  Rumors
+    13.64 -  14.28:  spreading
+    14.28 -  14.92:  about
+    14.92 -  15.40:  this
+    15.40 -  15.88:  other
+    15.88 -  16.78:  guy
+[19.00 -> 22.22]  Do you do what you did when you did with me?
+    18.68 -  19.04:  Do
+    19.04 -  19.40:  you
+    19.40 -  19.78:  do
+    19.78 -  20.50:  what
+    20.50 -  20.60:  you
+    20.60 -  20.94:  did
+    20.94 -  21.28:  when
+    21.28 -  21.46:  you
+    21.46 -  21.68:  did
+    21.68 -  21.96:  with
+    21.96 -  22.22:  me?
+[22.46 -> 25.02]  Does he love you the way I can?
+    22.46 -  22.58:  Does
+    22.58 -  22.88:  he
+    22.88 -  23.36:  love
+    23.36 -  23.86:  you
+    23.86 -  24.00:  the
+    24.00 -  24.32:  way
+    24.32 -  24.60:  I
+    24.60 -  25.02:  can?
+[25.68 -> 29.12]  Did you forget all the men that you made with me?
+    25.68 -  25.70:  Did
+    25.70 -  25.94:  you
+    25.94 -  26.52:  forget
+    26.52 -  27.32:  all
+    27.32 -  27.42:  the
+    27.42 -  27.78:  men
+    27.78 -  28.14:  that
+    28.14 -  28.30:  you
+    28.30 -  28.54:  made
+    28.54 -  28.78:  with
+    28.78 -  29.12:  me?
+[29.12 -> 32.06]  Cause baby I did it
+    29.12 -  30.04:  Cause
+    30.04 -  30.42:  baby
+    30.42 -  31.24:  I
+    31.24 -  31.70:  did
+    31.70 -  32.06:  it
+[32.06 -> 35.66]  There should be me holding your hand
+    32.06 -  32.82:  There
+    32.82 -  33.10:  should
+    33.10 -  33.40:  be
+    33.40 -  33.76:  me
+    33.76 -  34.62:  holding
+    34.62 -  35.08:  your
+    35.08 -  35.66:  hand
+[35.66 -> 39.06]  There should be me making you laugh
+    35.66 -  36.28:  There
+    36.28 -  36.54:  should
+    36.54 -  36.84:  be
+    36.84 -  37.22:  me
+    37.22 -  38.10:  making
+    38.10 -  38.48:  you
+    38.48 -  39.06:  laugh
+[39.06 -> 42.46]  There should be me, this is so sad
+    39.06 -  39.68:  There
+    39.68 -  39.94:  should
+    39.94 -  40.26:  be
+    40.26 -  40.60:  me,
+    40.60 -  41.46:  this
+    41.46 -  41.66:  is
+    41.66 -  41.94:  so
+    41.94 -  42.46:  sad
+[42.46 -> 45.68]  There should be me, there should be me
+    42.46 -  43.10:  There
+    43.10 -  43.34:  should
+    43.34 -  43.68:  be
+    43.68 -  44.00:  me,
+    44.72 -  44.84:  there
+    44.84 -  45.06:  should
+    45.06 -  45.38:  be
+    45.38 -  45.68:  me
+[45.68 -> 49.28]  There should be me feeling your kiss
+    45.68 -  46.50:  There
+    46.50 -  46.76:  should
+    46.76 -  47.08:  be
+    47.08 -  47.48:  me
+    47.48 -  48.32:  feeling
+    48.32 -  48.80:  your
+    48.80 -  49.28:  kiss
+[49.28 -> 52.84]  There should be me fighting new gifts
+    49.28 -  49.98:  There
+    49.98 -  50.22:  should
+    50.22 -  50.52:  be
+    50.52 -  51.18:  me
+    51.18 -  51.80:  fighting
+    51.80 -  52.24:  new
+    52.24 -  52.84:  gifts
+[52.84 -> 56.36]  This is so wrong, I can't go on
+    52.84 -  53.42:  This
+    53.42 -  53.70:  is
+    53.70 -  53.96:  so
+    53.96 -  54.48:  wrong,
+    54.48 -  55.14:  I
+    55.14 -  55.80:  can't
+    55.80 -  55.80:  go
+    55.80 -  56.36:  on
+[56.36 -> 60.98]  Do you believe that there should be me?
+    56.36 -  56.88:  Do
+    56.88 -  57.12:  you
+    57.12 -  57.68:  believe
+    57.68 -  59.16:  that
+    59.16 -  59.48:  there
+    59.48 -  59.88:  should
+    59.88 -  60.32:  be
+    60.32 -  60.98:  me?
+[62.86 -> 65.18]  There should be me
+    62.86 -  63.66:  There
+    63.66 -  63.96:  should
+    63.96 -  64.26:  be
+    64.26 -  65.18:  me
+[66.92 -> 71.56]  You said you needed a little time for my mistakes
+    66.92 -  67.72:  You
+    67.72 -  67.98:  said
+    67.98 -  68.18:  you
+    68.18 -  68.56:  needed
+    68.56 -  68.86:  a
+    68.86 -  69.12:  little
+    69.12 -  69.90:  time
+    69.90 -  70.30:  for
+    70.30 -  70.62:  my
+    70.62 -  71.56:  mistakes
+[73.88 -> 78.60]  It's funny how you used that time to have me replaced
+    73.88 -  74.68:  It's
+    74.68 -  74.94:  funny
+    74.94 -  75.30:  how
+    75.30 -  75.50:  you
+    75.50 -  75.80:  used
+    75.80 -  76.02:  that
+    76.02 -  76.46:  time
+    76.46 -  76.46:  to
+    76.46 -  77.22:  have
+    77.22 -  77.50:  me
+    77.50 -  78.60:  replaced
+[79.82 -> 84.44]  Did you think that I wouldn't see you out at the movies
+    79.82 -  80.62:  Did
+    80.62 -  81.08:  you
+    81.08 -  81.62:  think
+    81.62 -  82.16:  that
+    82.16 -  82.32:  I
+    82.32 -  82.76:  wouldn't
+    82.76 -  82.96:  see
+    82.96 -  83.20:  you
+    83.20 -  83.50:  out
+    83.50 -  83.90:  at
+    83.90 -  84.02:  the
+    84.02 -  84.44:  movies
+[84.44 -> 88.40]  What you're doing to me, you're taking him ways to go
+    84.44 -  85.12:  What
+    85.12 -  85.36:  you're
+    85.36 -  85.72:  doing
+    85.72 -  85.92:  to
+    85.92 -  86.28:  me,
+    86.52 -  86.62:  you're
+    86.62 -  87.04:  taking
+    87.04 -  87.30:  him
+    87.30 -  87.76:  ways
+    87.76 -  88.08:  to
+    88.08 -  88.40:  go
+[88.40 -> 91.22]  Now if you're trying to break my heart
+    88.40 -  89.20:  Now
+    89.20 -  89.42:  if
+    89.42 -  89.60:  you're
+    89.60 -  89.90:  trying
+    89.90 -  90.06:  to
+    90.06 -  90.38:  break
+    90.38 -  90.74:  my
+    90.74 -  91.22:  heart
+[91.22 -> 93.40]  It's working cause you know
+    91.22 -  91.86:  It's
+    91.86 -  92.20:  working
+    92.20 -  92.76:  cause
+    92.76 -  93.04:  you
+    93.04 -  93.40:  know
+[93.40 -> 97.36]  That that should be me holding your hand
+    93.40 -  94.30:  That
+    94.30 -  94.56:  that
+    94.56 -  94.82:  should
+    94.82 -  95.14:  be
+    95.14 -  95.48:  me
+    95.48 -  96.32:  holding
+    96.32 -  96.76:  your
+    96.76 -  97.36:  hand
+[97.36 -> 100.66]  There should be me making you laugh
+    97.36 -  97.96:  There
+    97.96 -  98.22:  should
+    98.22 -  98.50:  be
+    98.50 -  98.86:  me
+    98.86 -  99.82:  making
+    99.82 - 100.16:  you
+   100.16 - 100.66:  laugh
+[100.66 -> 104.22]  There should be me, this is so sad
+   100.66 - 101.36:  There
+   101.36 - 101.64:  should
+   101.64 - 101.96:  be
+   101.96 - 102.28:  me,
+   102.28 - 103.18:  this
+   103.18 - 103.34:  is
+   103.34 - 103.64:  so
+   103.64 - 104.22:  sad
+[104.22 -> 107.46]  There should be me, there should be me
+   104.22 - 104.76:  There
+   104.76 - 105.06:  should
+   105.06 - 105.38:  be
+   105.38 - 105.74:  me,
+   106.16 - 106.54:  there
+   106.54 - 106.80:  should
+   106.80 - 107.08:  be
+   107.08 - 107.46:  me
+[107.46 -> 111.02]  There should be me feeling your kiss
+   107.46 - 108.22:  There
+   108.22 - 108.48:  should
+   108.48 - 108.84:  be
+   108.84 - 109.16:  me
+   109.16 - 110.00:  feeling
+   110.00 - 110.48:  your
+   110.48 - 111.02:  kiss
+[111.02 -> 114.64]  That should be me, buying new gifts
+   111.02 - 111.70:  That
+   111.70 - 111.96:  should
+   111.96 - 112.28:  be
+   112.28 - 112.62:  me,
+   113.30 - 113.64:  buying
+   113.64 - 114.00:  new
+   114.00 - 114.64:  gifts
+[114.64 -> 117.96]  This is so wrong, I can't go on
+   114.64 - 115.14:  This
+   115.14 - 115.46:  is
+   115.46 - 115.72:  so
+   115.72 - 116.12:  wrong,
+   116.12 - 116.88:  I
+   116.88 - 117.52:  can't
+   117.52 - 117.52:  go
+   117.52 - 117.96:  on
+[117.96 -> 122.76]  Do you believe that there should be me?
+   117.96 - 118.50:  Do
+   118.50 - 118.80:  you
+   118.80 - 119.38:  believe
+   119.38 - 121.20:  that
+   121.20 - 121.20:  there
+   121.20 - 121.66:  should
+   121.66 - 122.06:  be
+   122.06 - 122.76:  me?
+[122.76 -> 127.62]  There should be me, I need to know should I fight for love
+   122.76 - 122.76:  There
+   122.76 - 122.76:  should
+   122.76 - 122.76:  be
+   122.76 - 122.76:  me,
+   123.04 - 123.38:  I
+   123.38 - 123.70:  need
+   123.70 - 124.16:  to
+   124.16 - 124.62:  know
+   124.62 - 124.94:  should
+   124.94 - 125.50:  I
+   125.50 - 125.88:  fight
+   125.88 - 126.80:  for
+   126.80 - 127.62:  love
+[127.62 -> 141.00]  Or guess on, it's getting harder to shield
+   127.62 - 128.46:  Or
+   128.46 - 128.88:  guess
+   128.88 - 129.40:  on,
+   130.10 - 130.34:  it's
+   130.34 - 130.96:  getting
+   130.96 - 131.56:  harder
+   131.56 - 141.00:  to
+   141.00 - 141.00:  shield
+[143.50 -> 147.12]  That should be me holding your hand
+   143.50 - 144.30:  That
+   144.30 - 144.54:  should
+   144.54 - 144.88:  be
+   144.88 - 145.18:  me
+   145.18 - 146.04:  holding
+   146.04 - 146.50:  your
+   146.50 - 147.12:  hand
+[147.12 -> 150.40]  There should be me making you laugh
+   147.12 - 147.70:  There
+   147.70 - 147.94:  should
+   147.94 - 148.26:  be
+   148.26 - 148.60:  me
+   148.60 - 149.44:  making
+   149.44 - 149.94:  you
+   149.94 - 150.40:  laugh
+[151.00 -> 153.96]  There should be me, this is so sad
+   150.70 - 151.10:  There
+   151.10 - 151.38:  should
+   151.38 - 151.72:  be
+   151.72 - 152.04:  me,
+   152.06 - 152.84:  this
+   152.84 - 153.08:  is
+   153.08 - 153.34:  so
+   153.34 - 153.96:  sad
+[153.96 -> 157.24]  There should be me, there should be me
+   153.96 - 154.52:  There
+   154.52 - 154.82:  should
+   154.82 - 155.16:  be
+   155.16 - 155.48:  me,
+   156.12 - 156.24:  there
+   156.24 - 156.52:  should
+   156.52 - 156.88:  be
+   156.88 - 157.24:  me
+[157.24 -> 160.76]  There should be me feeling your kiss
+   157.24 - 157.92:  There
+   157.92 - 158.20:  should
+   158.20 - 158.54:  be
+   158.54 - 159.20:  me
+   159.20 - 159.72:  feeling
+   159.72 - 160.26:  your
+   160.26 - 160.76:  kiss
+[160.76 -> 164.10]  That should be me buying new gifts
+   160.76 - 161.40:  That
+   161.40 - 161.64:  should
+   161.64 - 162.04:  be
+   162.04 - 162.72:  me
+   162.72 - 163.20:  buying
+   163.20 - 163.66:  new
+   163.66 - 164.10:  gifts
+[164.10 -> 167.58]  This is so wrong, I can't go on
+   164.10 - 164.86:  This
+   164.86 - 165.14:  is
+   165.14 - 165.42:  so
+   165.42 - 165.86:  wrong,
+   166.26 - 166.56:  I
+   166.56 - 167.28:  can't
+   167.28 - 167.28:  go
+   167.28 - 167.58:  on
+[167.58 -> 172.14]  Do you believe that there should be me?
+   167.58 - 168.32:  Do
+   168.32 - 168.52:  you
+   168.52 - 169.12:  believe
+   169.12 - 170.66:  that
+   170.66 - 170.88:  there
+   170.88 - 171.32:  should
+   171.32 - 171.74:  be
+   171.74 - 172.14:  me?
+[174.54 -> 178.98]  Holding your hand, there should be me
+   174.54 - 175.42:  Holding
+   175.42 - 175.74:  your
+   175.74 - 176.36:  hand,
+   177.76 - 177.76:  there
+   177.76 - 178.08:  should
+   178.08 - 178.62:  be
+   178.62 - 178.98:  me
+[179.58 -> 182.76]  No one making you laugh, oh baby
+   179.24 - 179.68:  No
+   179.68 - 180.10:  one
+   180.10 - 180.48:  making
+   180.48 - 180.92:  you
+   180.92 - 181.54:  laugh,
+   181.56 - 182.16:  oh
+   182.16 - 182.76:  baby
+[183.58 -> 187.46]  Oh, there should be me, yeah
+   183.36 - 183.80:  Oh,
+   184.42 - 184.64:  there
+   184.64 - 184.96:  should
+   184.96 - 185.48:  be
+   185.48 - 185.88:  me,
+   186.00 - 187.46:  yeah
+[187.46 -> 191.30]  There should be me giving you love
+   187.46 - 188.80:  There
+   188.80 - 189.14:  should
+   189.14 - 189.46:  be
+   189.46 - 189.84:  me
+   189.84 - 190.68:  giving
+   190.68 - 190.98:  you
+   190.98 - 191.30:  love
+[191.30 -> 195.34]  There should be me, talking for hours
+   191.30 - 191.40:  There
+   191.40 - 191.78:  should
+   191.78 - 192.34:  be
+   192.34 - 192.78:  me,
+   192.78 - 194.16:  talking
+   194.16 - 194.44:  for
+   194.44 - 195.34:  hours
+[195.34 -> 198.18]  This is so wrong, this is so sad
+   195.34 - 195.80:  This
+   195.80 - 196.00:  is
+   196.00 - 196.60:  so
+   196.60 - 196.66:  wrong,
+   196.66 - 197.42:  this
+   197.42 - 197.74:  is
+   197.74 - 198.00:  so
+   198.00 - 198.18:  sad
+[198.18 -> 205.00]  This is so wrong, I need to know
+   198.18 - 198.20:  This
+   198.20 - 198.78:  is
+   198.78 - 198.78:  so
+   198.78 - 199.50:  wrong,
+   199.50 - 200.78:  I
+   200.78 - 201.04:  need
+   201.04 - 201.04:  to
+   201.04 - 205.00:  know
+[205.00 -> 209.28]  This is so wrong, I need to know
+   205.00 - 205.06:  This
+   205.06 - 205.60:  is
+   205.60 - 205.68:  so
+   205.68 - 206.26:  wrong,
+   206.26 - 206.68:  I
+   206.68 - 206.68:  need
+   206.68 - 207.86:  to
+   207.86 - 209.28:  know
+[209.28 -> 211.10]  This is so wrong, I need to know
+   209.28 - 209.92:  This
+   209.92 - 209.92:  is
+   209.92 - 209.92:  so
+   209.92 - 209.92:  wrong,
+   209.92 - 209.92:  I
+   209.92 - 211.10:  need
+   211.10 - 211.10:  to
+   211.10 - 211.10:  know
+[211.10 -> 214.92]  This is so wrong, I need to know
+   211.10 - 211.38:  This
+   211.38 - 211.38:  is
+   211.38 - 211.38:  so
+   211.38 - 211.38:  wrong,
+   211.38 - 212.02:  I
+   212.02 - 212.80:  need
+   212.80 - 214.72:  to
+   214.72 - 214.92:  know
+[214.92 -> 216.42]  This is so wrong, I need to know
+   214.92 - 214.92:  This
+   214.92 - 214.96:  is
+   214.96 - 216.42:  so
+   216.42 - 216.42:  wrong,
+   216.42 - 216.42:  I
+   216.42 - 216.42:  need
+   216.42 - 216.42:  to
+   216.42 - 216.42:  know
