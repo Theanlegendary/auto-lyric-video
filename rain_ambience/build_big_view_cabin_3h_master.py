@@ -8,10 +8,11 @@ def main():
     out_dir = r"C:\Users\DELL\.gemini\antigravity\scratch\auto_lyric_video\videos"
     os.makedirs(out_dir, exist_ok=True)
     
-    opt_1min = os.path.join(out_dir, "big_view_cabin_night_1min_optimized.mp4")
+    # Generate both the 1-minute preview and the full 3-hour master
+    sample_1min = os.path.join(out_dir, "real_nature_wide_forest_cabin_night_1min_sample.mp4")
     master_3h = os.path.join(out_dir, "our_rain_big_view_cabin_night_3h_master.mp4")
 
-    # Step 1: Render optimized 60s seamless loop at YouTube-optimized sleep bitrate
+    # Step 1: Render 60s seamless loop at YouTube-optimized sleep bitrate
     # 10s forward + 10s reverse x 3 = 60.0s seamless ping-pong loop
     # Deep midnight blue grade + soft mist bloom + vignette
     filter_complex = (
@@ -31,23 +32,24 @@ def main():
         "-filter_complex", filter_complex,
         "-map", "[night_wide]",
         "-map", "1:a",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "21",
-        "-maxrate", "1200k", "-bufsize", "2400k",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "23",
+        "-maxrate", "950k", "-bufsize", "1900k",
         "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "128k",
         "-t", "60.0",
-        opt_1min
+        "-movflags", "+faststart",
+        sample_1min
     ]
 
-    print("Step 1: Rendering optimized 60-second seamless loop for Big View Cabin at Night...")
+    print("Step 1: Rendering 60-second seamless loop for Big View Cabin at Night...")
     sys.stdout.flush()
     p1 = subprocess.run(cmd_opt, capture_output=True, text=True)
     if p1.returncode != 0:
         print("Error in Step 1:", p1.stderr[-500:])
         sys.exit(1)
     
-    sz_1m = os.path.getsize(opt_1min)
-    print(f"Optimized 1-minute loop size: {sz_1m / (1024*1024):.2f} MB")
+    sz_1m = os.path.getsize(sample_1min)
+    print(f"1-minute sample loop created: {sz_1m / (1024*1024):.2f} MB")
     sys.stdout.flush()
 
     # Step 2: Stream-copy concatenate 180 loops into 3-Hour Master Video
@@ -55,7 +57,7 @@ def main():
     concat_txt = os.path.join(out_dir, "concat_big_view_3h.txt")
     with open(concat_txt, "w", encoding="utf-8") as f:
         for _ in range(180):
-            f.write(f"file '{opt_1min}'\n")
+            f.write(f"file '{sample_1min}'\n")
 
     cmd_concat = [
         "ffmpeg", "-y",
