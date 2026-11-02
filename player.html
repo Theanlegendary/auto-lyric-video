@@ -1,3081 +1,3109 @@
-<!DOCTYPE html>
-
-
-
-<html lang="en">
-
-
-
-<head>
-
-
-
-  <meta charset="UTF-8">
-
-
-
-  <title>Fade Replay - Always New Backgrounds & 35mm Lofi Grain</title>
-
-
-
-  <style>
-
-
-
-    :root {
-
-
-
-      --bg: #0d0a10;
-
-
-
-      --card-bg: #17111c;
-
-
-
-      --accent: #ff4d8d;
-
-
-
-      --accent-glow: rgba(255, 77, 141, 0.35);
-
-
-
-      --border: #2c2035;
-
-
-
-      --text: #f0e6f2;
-
-
-
-      --text-muted: #a692ab;
-
-
-
-    }
-
-
-
-    * { box-sizing: border-box; }
-
-
-
-    body {
-
-
-
-      margin: 0;
-
-
-
-      padding: 30px 20px;
-
-
-
-      background: var(--bg);
-
-
-
-      color: var(--text);
-
-
-
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-
-
-
-      display: flex;
-
-
-
-      flex-direction: column;
-
-
-
-      align-items: center;
-
-
-
-    }
-
-
-
-    .container {
-
-
-
-      max-width: 1100px;
-
-
-
-      width: 100%;
-
-
-
-      background: var(--card-bg);
-
-
-
-      border: 1px solid var(--border);
-
-
-
-      border-radius: 20px;
-
-
-
-      padding: 30px;
-
-
-
-      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
-
-
-
-    }
-
-
-
-    .badge {
-
-
-
-      display: inline-block;
-
-
-
-      background: rgba(120, 220, 255, 0.15);
-
-
-
-      color: #78dcff;
-
-
-
-      border: 1px solid rgba(120, 220, 255, 0.3);
-
-
-
-      padding: 6px 14px;
-
-
-
-      border-radius: 20px;
-
-
-
-      font-size: 13px;
-
-
-
-      font-weight: 700;
-
-
-
-      letter-spacing: 0.8px;
-
-
-
-      text-transform: uppercase;
-
-
-
-      margin-bottom: 12px;
-
-
-
-    }
-
-
-
-    h1 {
-
-
-
-      margin: 0 0 8px 0;
-
-
-
-      font-size: 32px;
-
-
-
-      color: #fff;
-
-
-
-      font-weight: 800;
-
-
-
-    }
-
-
-
-    p.subtitle {
-
-
-
-      color: var(--text-muted);
-
-
-
-      margin: 0 0 24px 0;
-
-
-
-      font-size: 15px;
-
-
-
-      line-height: 1.5;
-
-
-
-    }
-
-
-
-    .tabs {
-
-
-
-      display: grid;
-
-
-
-      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-
-
-
-      gap: 10px;
-
-
-
-      margin-bottom: 20px;
-
-
-
-    }
-
-
-
-    .tab-btn {
-
-
-
-      background: #201726;
-
-
-
-      border: 1px solid var(--border);
-
-
-
-      color: #dfd0e3;
-
-
-
-      padding: 12px 14px;
-
-
-
-      border-radius: 12px;
-
-
-
-      font-size: 13px;
-
-
-
-      cursor: pointer;
-
-
-
-      font-weight: 600;
-
-
-
-      text-align: left;
-
-
-
-      transition: all 0.2s ease;
-
-
-
-      display: flex;
-
-
-
-      flex-direction: column;
-
-
-
-      gap: 4px;
-
-
-
-    }
-
-
-
-    .tab-btn:hover {
-
-
-
-      background: #2d1f36;
-
-
-
-      border-color: #4b345a;
-
-
-
-      color: #fff;
-
-
-
-    }
-
-
-
-    .tab-btn.active {
-
-
-
-      background: linear-gradient(135deg, #7c1a4b 0%, #b82b6c 100%);
-
-
-
-      border-color: var(--accent);
-
-
-
-      color: #fff;
-
-
-
-      box-shadow: 0 6px 20px var(--accent-glow);
-
-
-
-    }
-
-
-
-    .desc-box {
-
-
-
-      background: #1f1524;
-
-
-
-      border-left: 4px solid var(--accent);
-
-
-
-      padding: 14px 18px;
-
-
-
-      border-radius: 0 12px 12px 0;
-
-
-
-      margin-bottom: 20px;
-
-
-
-      font-size: 14px;
-
-
-
-      line-height: 1.5;
-
-
-
-      color: #ece1ee;
-
-
-
-    }
-
-
-
-    .video-wrapper {
-
-
-
-      position: relative;
-
-
-
-      border-radius: 16px;
-
-
-
-      overflow: hidden;
-
-
-
-      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
-
-
-
-      background: #000;
-
-
-
-      border: 1px solid #362640;
-
-
-
-    }
-
-
-
-    video {
-
-
-
-      width: 100%;
-
-
-
-      height: auto;
-
-
-
-      display: block;
-
-
-
-      outline: none;
-
-
-
-    }
-
-
-
-  </style>
-
-
-
-</head>
-
-
-
-<body>
-
-
-
-  <div class="container">
-
-
-
-    <span class="badge">✨ 100% Unique Anime Backgrounds • 35mm Lofi Film Grain</span>
-
-
-
-    <h1>Fade Replay — Viral Anime Lyric Videos</h1>
-
-
-
-    <p class="subtitle">Every single song receives its own unique 1080p anime artwork, 2-row couplets, dynamic intro blur timing, and subtle 35mm lofi grain.</p>
-
-
-
-
-
-
-
-    <!-- SLOWED + REVERB PSYCHOLOGY SHOWDOWN BANNER -->
-
-
-
-    <div style="background: linear-gradient(135deg, rgba(160, 100, 255, 0.2), rgba(20, 15, 35, 0.95)); border: 1px solid rgba(180, 120, 255, 0.5); border-radius: 16px; padding: 20px 24px; margin-bottom: 26px;">
-
-
-
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
-
-
-
-        <div style="font-weight: 800; font-size: 16px; color: #d8b4fe; display: flex; align-items: center; gap: 10px;">
-
-
-
-          <span>🎧 The Psychology of Slowed + Reverb Brand Showdown</span>
-
-
-
-          <span style="background: #a855f7; color: #fff; font-size: 10px; font-weight: 800; padding: 3px 9px; border-radius: 8px; text-transform: uppercase;">Aesthetic Test</span>
-
-
-
-        </div>
-
-
-
-        <div style="font-size: 12px; color: #cbd5e1; max-width: 680px; line-height: 1.5;">
-
-
-
-          Experience the 3 psychological principles (<strong>Low-Energy Slowness</strong> • <strong>Cathedral Space Isolation</strong> • <strong>Cassette Pitch Dissociation</strong>) on both <em>Sweater Weather</em> and <em>Skyfall</em>!
-
-
-
-        </div>
-
-
-
-      </div>
-
-
-
-
-
-
-
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-
-
-
-        <!-- 3-HOUR PREMIER MASTER: BIG NATURE VIEW RAIN AT NIGHT -->
-
-
-
-        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(52, 211, 153, 0.5); padding: 8px 12px; border-radius: 10px;">
-
-
-
-          <span style="font-size: 12px; font-weight: 800; color: #34d399; min-width: 140px;">🌌 3-HOUR MASTER:</span>
-
-
-
-          <button class="tab-btn active" style="width: auto; padding: 8px 16px; margin: 0; border-color: #10b981; background: rgba(16, 185, 129, 0.35); box-shadow: 0 0 16px rgba(16, 185, 129, 0.5);" onclick="switchOption(this, 'videos/our_rain_big_view_cabin_night_3h_master.mp4', '🌌 <strong>3-HOUR PREMIER MASTER: Big Nature View Rainforest Cabin Rain at Night (10,800s Full Master)</strong><br>• <strong>Visual</strong>: Wide-angle panoramic 1080p landscape view of cozy cabin in mountain rainforest at night. Deep midnight blue palette, soft vignette, zero screen glare for sleep.<br>• <strong>Audio</strong>: Binaural rain on tin roof + distant rolling thunder.<br>• <strong>Monetization</strong>: 100% Commercial license (Pexels CC0) + clean binaural audio. 100% safe for YouTube Partner Program.')">
-
-
-
-            ▶ 🌌 Full 3-Hour Master Video (10,800s • 1080p)
-
-
-
-          </button>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/real_nature_wide_forest_cabin_night_1min_sample.mp4', '🌧️ <strong>1-Minute Preview Sample: Big Nature View Rainforest Cabin Rain at Night</strong><br>60-second ping-pong seamless loop sample.')">
-
-
-
-            ▶ 1-Min Sample Preview
-
-
-
-          </button>
-
-
-
-        </div>
-
-
-
-        <!-- Sweater Weather Pair (Full Song Editions) -->
-
-
-
-        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
-
-
-
-          <span style="font-size: 12px; font-weight: 800; color: #aadcff; min-width: 140px;">🧥 Sweater Weather:</span>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(180, 120, 255, 0.85); background: rgba(180, 120, 255, 0.25);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '🧥 <strong>The Neighbourhood — Sweater Weather (Slowed + Reverb Brand Edition • Full 4:35)</strong><br>• <strong>1. Slowness</strong>: 118 BPM slowed to 102 BPM (0.865x), stretching the vocal longing.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating cold, empty coastal bluffs.<br>• <strong>3. Lowered Pitch & Tape Comfort</strong>: -2.5 semitones down, warm cassette tape shelf (15.5kHz), inducing dreamlike dissociation.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
-
-
-
-            ▶ 1. Full Song: Slowed + Reverb (4:35)
-
-
-
-          </button>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '💿 <strong>The Neighbourhood — Sweater Weather (Original 1.0x Normal Mix • Full 3:57)</strong><br>Standard speed (118 BPM), original pitch, dry studio audio.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
-
-
-
-            ▶ 2. Full Song: Original Normal (3:57)
-
-
-
-          </button>
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <!-- Joji Glimpse of Us Pair -->
-
-
-
-        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
-
-
-
-          <span style="font-size: 12px; font-weight: 800; color: #818cf8; min-width: 140px;">🌧️ Joji Glimpse of Us:</span>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(129, 140, 248, 0.85); background: rgba(129, 140, 248, 0.25);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '🌧️ <strong>Joji — Glimpse of Us (Slowed + Reverb Brand Edition • Full 4:30)</strong><br>• <strong>1. Slowness</strong>: 85 BPM slowed to 73.5 BPM (0.865x).<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating lonely rain-slicked city ledges.<br>• <strong>3. Cassette Tape Comfort</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
-
-
-
-            ▶ 1. Full Song: Slowed + Reverb (4:30)
-
-
-
-          </button>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '💿 <strong>Joji — Glimpse of Us (Original 1.0x Mix • Full 3:53)</strong><br>Standard speed (85 BPM), original pitch, dry studio acoustics.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
-
-
-
-            ▶ 2. Full Song: Original Normal (3:53)
-
-
-
-          </button>
-
-
-
-        </div>
-
-
-
-
-
-
-
-                  <!-- yung kai blue 7clouds Remaster -->
-
-
-
-          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(56, 189, 248, 0.12); padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.4);">
-
-
-
-            <span style="font-size: 12px; font-weight: 800; color: #38bdf8; min-width: 140px;">☁️ yung kai blue (7clouds Style):</span>
-
-
-
-            <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: #38bdf8; background: rgba(56, 189, 248, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>yung kai — blue (7clouds Perfect Twilight Remaster • 3:34)</strong><br>• <strong>Visual</strong>: Signature 7clouds twilight anime aesthetic — deep sapphire & indigo clouds with soft moonlight rim glow and twinkling stars (`bg_34`).<br>• <strong>Motion</strong>: Subtle organic camera drift (zoompan) — zero clunky sliding sprites.<br>• <strong>Typography</strong>: Pure white handwriting font (`Patrick Hand`) with dark outline & soft shadow for maximum emotional contrast.<br>• <strong>Audio</strong>: Original 1.0x Full Mix.')">
-
-
-
-              ▶ 7clouds Aesthetic Remaster (3:34) [RECOMMENDED]
-
-
-
-            </button>
-
-
-
-            <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.05); opacity: 0.6;" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '⏮️ <em>Previous Archive: yung kai — blue (Old Slowed + Reverb 4:08)</em>')">
-
-
-
-              ⏮ Archive: Old Slowed (4:08)
-
-
-
-            </button>
-
-
-
-      <button class="tab-btn" style="border-color: #38bdf8; background: rgba(56, 189, 248, 0.15); box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);" onclick="switchOption(this, 'videos/28_yung_kai_blue_7clouds_EdoSZ_Lyric_Video.mp4', '🌊 <strong>28. blue (Official 7clouds Edo SZ Edition)</strong> — yung kai<br><strong>Authentic Formula</strong>: <em>Edo SZ Brush Script Font • Sentence Case • Lower-Third 78% Placement • Soft Black Outer Glow • Zero-Frame Hard Cuts • Rest-Cut Instrumental Breathing Room</em>.<br>Full 3:34 Master • 4K Soft Sea Ocean Wave Aesthetic • 35-45% Screen Width • Pure White Luminous Typography.')">
-
-
-
-        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (Edo SZ 7clouds)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Authentic Formula (3:34)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #0284c7; background: rgba(2, 132, 199, 0.18); box-shadow: 0 0 16px rgba(2, 132, 199, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>28. blue (80% Sky • 20% Sea • Blue Filter Vibe Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Exact 80% Open Cyan Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter.<br>Full 3:34 Master • Authentic 7clouds Edo SZ Formula • Sentence Case • Lower-Third Clearance • Soft Black Outer Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (80% Sky / 20% Sea)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Blue Filter Vibe (3:34)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.18); box-shadow: 0 0 16px rgba(6, 182, 212, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>30. Perfect (80% Sky • 20% Sea • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>Exact 80% Vast Azure Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter & Authentic 7clouds Edo SZ Brush Script.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • 3.0s Cathedral Hall • Sentence Case • Lower-Third Clearance (78% Down) • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Pauses.')">
-
-
-
-        <span style="font-weight:700; color:#22d3ee;">🌊 30. Perfect (80% Sky / 20% Sea)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #ec4899; background: rgba(236, 72, 153, 0.18); box-shadow: 0 0 16px rgba(236, 72, 153, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Cotton-Candy Clouds • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.18); box-shadow: 0 0 16px rgba(249, 115, 22, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Amber Dusk • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Warm Golden-Amber Dusk Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <!-- 70M-VIEW DANNY LOUIS TIN ROOF STYLE SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.30); box-shadow: 0 0 24px rgba(245, 158, 11, 0.60); border-width: 2px;" onclick="switchOption(this, 'videos/tin_roof_rain_forest_danny_louis_style.mp4', '⛈️ <strong>Viral 70M-View Style: Heavy Rain on Tin Roof in Foggy Rainforest</strong> (Danny Louis Replica)<br><strong>Camera POV</strong>: <em>Underneath Weathered Tin Roof Overhang looking out at Misty Murky Rainforest — Zero \'Rain Inside\' Issue</em>.<br><strong>Visual FX</strong>: <em>Active Water Streams & Droplets Cascading off Corrugated Metal Roof Eaves + Rain Pouring Across Forest</em>.<br><strong>Acoustics</strong>: <em>Authentic Metallic Tin Roof Clatter + Deep Rolling Thunder Growls</em> • <strong>100% Seamless Looping</strong>.')">
-
-
-
-        <span style="font-weight:900; color:#fbbf24;">⛈️ 70M-View Style: Tin Roof Rain</span>
-
-
-
-        <span style="font-size:11px;opacity:0.95; color:#fde68a;">Danny Louis Replica (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-      <!-- ANIMATED RAIN & LIGHT THUNDER HERO SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #10b981; background: rgba(16, 185, 129, 0.25); box-shadow: 0 0 20px rgba(16, 185, 129, 0.50); border-width: 2px;" onclick="switchOption(this, 'videos/cozy_forest_light_rain_thunder_animated_loop.mp4', '🌲🌧️ <strong>Featured Master: Cozy Forest Cabin (Active Animated Rain & Light Thunder • 1:00 Loop)</strong><br><strong>Visuals</strong>: <em>Active Animated Falling Rain Streaks + Window Glass Trickling Rivulets + Synchronized Distant Lightning Flash + Lush Misty Pine Forest</em>.<br><strong>Audio</strong>: <em>Gentle Light Rain Patter + Soothing Soft Pine Drizzle + 2 Mellow Low-Frequency Rolling Thunder Rumbles</em> • <strong>100% Mathematically Seamless Equal-Power Loop</strong>.<br>Full 1080p 60fps Master • Deep Sleep, Focus & Relax Sanctuary.')">
-
-
-
-        <span style="font-weight:800; color:#34d399;">🌲🌧️ Forest Cabin (Animated Rain)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.95; color:#a7f3d0;">Light Rain + Thunder (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-      <!-- RAIN AMBIENCE SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #6366f1; background: rgba(99, 102, 241, 0.22); box-shadow: 0 0 16px rgba(99, 102, 241, 0.40);" onclick="switchOption(this, 'videos/rain_bedroom_1min_loop_sample.mp4', '🌧️ <strong>Sample A: Cozy Bedroom at Night (Rain on Window & Distant Thunder)</strong><br><strong>Audio Engineering</strong>: <em>3D Spatial Binaural Rain</em> • Delicate Droplet Taps on Glass • Soothing Steady Downpour • Low-Frequency Cinematic Rolling Thunder • <strong>100% Seamless Equal-Power Loop (Zero Clicks / Zero Volume Dips)</strong>.<br>Full 1080p Master • Lo-Fi Bedroom Lamp Aesthetic • Perfect for Sleep, Studying & Night Relaxation.')">
-
-
-
-        <span style="font-weight:700; color:#818cf8;">🌧️ Rain: Cozy Bedroom</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#c7d2fe;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.22); box-shadow: 0 0 16px rgba(6, 182, 212, 0.40);" onclick="switchOption(this, 'videos/rain_coffeeshop_1min_loop_sample.mp4', '☕ <strong>Sample B: Late Night Tokyo Coffee Shop (Rain on Glass & Neon Bokeh)</strong><br><strong>Audio Engineering</strong>: <em>Warm Indoor Acoustic Rain</em> • Soft Raindrops on Awning • Low-Pass Interior Filter • Warm 130Hz Room Resonance • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Steaming Coffee Mug & Blurred Rainy Tokyo Street Neon • Ultimate Coding / Focus Vibe.')">
-
-
-
-        <span style="font-weight:700; color:#22d3ee;">☕ Rain: Tokyo Cafe</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.22); box-shadow: 0 0 16px rgba(245, 158, 11, 0.40);" onclick="switchOption(this, 'videos/rain_cabin_1min_loop_sample.mp4', '🔥 <strong>Sample C: Forest Wooden Cabin (Rain on Tin Roof & Crackling Fireplace)</strong><br><strong>Audio Engineering</strong>: <em>Cozy Hearth & Nature Soundscape</em> • Dense Rain Pattering on Pine Needles & Tin Roof • Authentic Burning Log Ember Crackles & Micro-Pops • Warm Fireplace Low Rumble • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Stone Fireplace Glow & Rainy Evergreen Forest Sanctuary.')">
-
-
-
-        <span style="font-weight:700; color:#fbbf24;">🔥 Rain: Forest Cabin</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fde68a;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-
-
-
-
-          </div>
-
-
-
-<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
-
-
-
-          <span style="font-size: 12px; font-weight: 800; color: #f43f5e; min-width: 140px;">💎 Sia Chandelier:</span>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(244, 63, 94, 0.85); background: rgba(244, 63, 94, 0.25);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '💎 <strong>Sia — Chandelier (Slowed + Reverb Brand Edition • Full 4:06)</strong><br>• <strong>1. Slowness</strong>: 0.865x tape varispeed (117 &rarr; 101.2 BPM), stretching out the emotional sorrow.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation simulating a vast ballroom echo.<br>• <strong>3. Cassette Warmth</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Live shimmering golden chandelier prism bokeh lights drifting strictly <em>behind</em> glowing pure white lyrics (`bg_35`).')">
-
-
-
-            ▶ 1. Full Song: Slowed + Reverb (4:06)
-
-
-
-          </button>
-
-
-
-          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '💿 <strong>Sia — Chandelier (Original 1.0x Mix • Full 3:32)</strong><br>Standard 117 BPM tempo, euphoric electropop beat.<br>• <strong>Visual</strong>: Live shimmering lights and clouds drifting behind lyrics (`bg_35`).')">
-
-
-
-            ▶ 2. Full Song: Original Normal (3:32)
-
-
-
-          </button>
-
-
-
-        </div>
-
-
-
-      </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <div style="font-size:14px; font-weight:700; color:var(--text-muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.8px;">Full Discography Catalog (Songs 1–28):</div>
-
-
-
-    <div class="tabs">
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4', '🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.')">
-
-
-
-        <span style="font-weight:700;">1. APT.</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Pastel Clouds</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/02_Lady_Gaga_Bruno_Mars_Die_With_A_Smile_Lyric_Video.mp4', '🌙 <strong>2. Die With A Smile</strong> — Lady Gaga & Bruno Mars<br><strong>Artwork</strong>: <em>Deep Indigo Twilight Starry Night</em> with crescent moon.<br>Luminous white typography, emotional acoustic ballad pacing.')">
-
-
-
-        <span style="font-weight:700;">2. Die With A Smile</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Starry Twilight Night</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/03_Taylor_Swift_The_Fate_of_Ophelia_Lyric_Video.mp4', '🌅 <strong>3. The Fate of Ophelia</strong> — Taylor Swift<br><strong>Artwork</strong>: <em>Anime Sunset Rooftop Skyline & Powerlines</em> at golden hour.<br>8.5s sharp unblurred intro card, zero collision 2-row couplets.')">
-
-
-
-        <span style="font-weight:700;">3. The Fate of Ophelia</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Sunset Rooftop Skyline</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/04_HUNTR_X_Golden_Lyric_Video.mp4', '✨ <strong>4. Golden</strong> — HUNTR/X (K-Pop Demon Hunters)<br><strong>Artwork</strong>: <em>Radiant Golden Hour Celestial Overlook</em> with sunbeams piercing amber mist.<br>13s sharp intro card, romanized Korean sing-along lyrics.')">
-
-
-
-        <span style="font-weight:700;">4. Golden</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Golden Celestial Overlook</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/05_Billie_Eilish_BIRDS_OF_A_FEATHER_Pink_Edition_Lyric_Video.mp4?v=official_srt', '🕊️ <strong>5. BIRDS OF A FEATHER (Pink Sky)</strong> — Billie Eilish<br><strong>Artwork</strong>: <em>Clear Pink Sunset Sky & Soaring Birds</em>.<br>Official Interscope studio lyrics & millisecond timestamps.')">
-
-
-
-        <span style="font-weight:700;">5. BIRDS OF A FEATHER</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Pink Sunset Sky</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/06_Sabrina_Carpenter_Espresso_Lyric_Video.mp4', '☕ <strong>6. Espresso</strong> — Sabrina Carpenter<br><strong>Artwork</strong>: <em>Summer Coastal Cafe Terrace</em> (Retro 90s Ghibli/Shinkai aesthetic).<br>Chic sunny iced latte terrace, bold black couplets, playful pop pacing.')">
-
-
-
-        <span style="font-weight:700;">6. Espresso</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Summer Cafe Terrace</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/07_Benson_Boone_Beautiful_Things_Lyric_Video.mp4', '🏔️ <strong>7. Beautiful Things</strong> — Benson Boone<br><strong>Artwork</strong>: <em>Dramatic Mountain Alpine Dawn</em>.<br>Majestic sunbeams piercing morning mountain mist, intense vocal crescendo.')">
-
-
-
-        <span style="font-weight:700;">7. Beautiful Things</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Alpine Mountain Dawn</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/08_Chappell_Roan_Good_Luck_Babe_Lyric_Video.mp4', '🌆 <strong>8. Good Luck, Babe!</strong> — Chappell Roan<br><strong>Artwork</strong>: <em>Retro 80s Neon Twilight Skyline</em>.<br>Vintage sports car overlooking neon city lights, 80s synthwave energy.')">
-
-
-
-        <span style="font-weight:700;">8. Good Luck, Babe!</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">80s Neon Twilight</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/09_Teddy_Swims_Lose_Control_Lyric_Video.mp4', '🌸 <strong>9. Lose Control</strong> — Teddy Swims<br><strong>Artwork</strong>: <em>Romantic Cherry Blossom Pathway</em>.<br>Drifting sakura petals in spring light, soulful emotional 2-row couplets.')">
-
-
-
-        <span style="font-weight:700;">9. Lose Control</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Sakura Pathway</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/10_Ruth_B_Dandelions_Lyric_Video.mp4', '🌼 <strong>10. Dandelions</strong> — Ruth B.<br><strong>Artwork</strong>: <em>Romantic Dandelion Sunset Meadow</em>.<br>Breathtaking golden hour meadow with floating dandelion seeds, pure romance.')">
-
-
-
-        <span style="font-weight:700;">10. Dandelions</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Dandelion Sunset Meadow</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/11_Justin_Bieber_Favorite_Girl_Lyric_Video.mp4', '👑 <strong>11. Favorite Girl</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Pastel Sunset Suburban Street & Flowers</em> (Cakes & Eclairs aesthetic).<br>Warm espresso dark couplets, 73M-view nostalgia hit.')">
-
-
-
-        <span style="font-weight:700;">11. Favorite Girl</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Sunset Street & Flowers</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/12_Melanie_Martinez_Play_Date_Lyric_Video.mp4', '🌸 <strong>12. Play Date</strong> — Melanie Martinez<br><strong>Artwork</strong>: <em>Pristine Celestial Anime Night Sky</em>.<br>Puffy chubby cloud typography (Sniglet), deep midnight sapphire stars, 108M-view viral anthem.')">
-
-
-
-        <span style="font-weight:700;">12. Play Date</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Celestial Night Sky</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/13_Stephen_Sanchez_Until_I_Found_You_Lyric_Video.mp4', '💖 <strong>13. Until I Found You</strong> — Stephen Sanchez<br><strong>Artwork</strong>: <em>Clear Pink Aesthetic Sunset & Pine Ridge</em>.<br>Classic doo-wop romantic ballad, warm espresso dark couplets, 145M+ view viral hit.')">
-
-
-
-        <span style="font-weight:700;">13. Until I Found You</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Clear Pink Sunset Sky</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/14_Justin_Bieber_Lonely_Lyric_Video.mp4', '🌧️ <strong>14. Lonely (Official Lyric Video)</strong> — Justin Bieber & benny blanco<br><strong>Artwork</strong>: <em>Cozy Rainy Window City Bokeh</em> (bg_04).<br>Ken Burns dynamic camera drift • Pure white luminous typography • Studio .srt sync.')">
-
-
-
-        <span style="font-weight:700;">14. Lonely (JB)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Rainy Window Bokeh</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/15_Akon_Lonely_Lyric_Video.mp4', '✨ <strong>15. Lonely (Spotify Starry Twilight Vibe Edition)</strong> — Akon<br><strong>Artwork</strong>: <em>Starry Celestial Night (80%) & Amber Sunset (20%) Solitary Vibe Character</em> (bg_20).<br>Spotify Sentence Case • 50/50 Balanced Couplets • Poppins Bold • Dreamy Glowing Bokeh (radius 10) • Ken Burns Camera Drift • Zero Overlap Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">15. Lonely (Akon)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">80% Night / 20% Sunset Vibe</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/16_Justin_Bieber_Love_Yourself_Lyric_Video.mp4', '✨ <strong>16. Love Yourself (Clean Dark Celestial Sky Edition)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Clean Dark Celestial Starry Night Sky & Solitary Ridge</em> (bg_23).<br>Requested Dark Sky • High Contrast for White Typography • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">16. Love Yourself</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Clean Dark Starry Sky (50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/17_Katy_Perry_The_One_That_Got_Away_Lyric_Video.mp4', '✨ <strong>17. The One That Got Away</strong> — Katy Perry<br><strong>Artwork</strong>: <em>Mustang Coastal Cliff & Radiant Summer Sunset (Radiohead Vibe)</em> (bg_22).<br>Direct Lyric Connection (Mustang to Radiohead) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">17. The One That Got Away</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Mustang Sunset (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/18_Coldplay_Yellow_Lyric_Video.mp4', '✨ <strong>18. Yellow (Studio Zero-Lag Sync Edition)</strong> — Coldplay<br><strong>Artwork</strong>: <em>Coldplay Yellow Celestial Starry Night & Reflective Beach</em> (bg_24).<br>Direct Lyric Connection (Look at the Stars) • Studio-Aligned Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">18. Yellow</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Starry Beach (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/19_Coldplay_A_Sky_Full_of_Stars_Lyric_Video.mp4', '✨ <strong>19. A Sky Full of Stars</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Sapphire Starlit Sky & Solitary Overlook</em> (bg_25).<br>Direct Lyric Connection ('Cause you're a sky full of stars) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">19. A Sky Full of Stars</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Cosmic Sapphire (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/20_Coldplay_Paradise_Lyric_Video.mp4', '✨ <strong>20. Paradise</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Twilight Celestial Dreamscape & Solitary Overlook</em> (bg_26).<br>Direct Lyric Connection (Dreaming of Paradise) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">20. Paradise</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Twilight Dreamscape (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/21_Coldplay_Clocks_Lyric_Video.mp4', '✨ <strong>21. Clocks</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Starlight & Midnight Ocean Bluffs</em> (bg_27).<br>Direct Lyric Connection (Tides to Swim Against) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">21. Clocks</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Cosmic Starlight (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/22_Billie_Eilish_Khalid_lovely_Lyric_Video.mp4', '✨ <strong>22. lovely</strong> — Billie Eilish & Khalid<br><strong>Artwork</strong>: <em>Makoto Shinkai Ethereal Celestial Aurora Lake</em> (bg_28).<br>Direct Lyric Connection (Even if it takes all night) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">22. lovely</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Celestial Aurora Lake (50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/23_OneRepublic_Counting_Stars_Lyric_Video.mp4', '✨ <strong>23. Counting Stars</strong> — OneRepublic<br><strong>Artwork</strong>: <em>Makoto Shinkai Celestial Shooting Star Night & Grassy Ridge</em> (bg_29).<br>Direct Lyric Connection (We\'ll Be Counting Stars) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">23. Counting Stars</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Shooting Stars (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/24_Lord_Huron_The_Night_We_Met_Lyric_Video.mp4', '✨ <strong>24. The Night We Met</strong> — Lord Huron<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Midnight Starlit Sky, Misty Pine Valley & Solitary Ridge Traveler</em> (bg_30).<br>Direct Lyric Connection (Take me back to the night we met) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">24. The Night We Met</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Celestial Ridge (Spotify 50/50)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Normal 1.0x Mix)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em> (88% Clean Reading Area).<br>Full 3:57 Original Studio Mix • Seamless Looping Live Cloud Drift • Patrick Hand 200pt Hook Title • Pure White Starlight Glow (&H00FFFFFF + \blur2.0) • Strictly 2-Row Couplets.')">
-
-
-
-        <span style="font-weight:700;">25. Sweater Weather</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:57)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Slowed + Reverb Brand Edition)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em>.<br>Full 4:35 Master • 0.865x Tape Varispeed (118 &rarr; 102 BPM) • 3.0s Cathedral Reverb • 15.5kHz Analog Tape Warmth • Seamless Looping Cloud Drift • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets.')">
-
-
-
-        <span style="font-weight:700; color:#d8b4fe;">25. Sweater Weather (Slowed)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:35)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/26_Tom_Odell_Another_Love_Lyric_Video.mp4', '✨ <strong>26. Another Love</strong> — Tom Odell<br><strong>Artwork</strong>: <em>Makoto Shinkai Clear Pink Aesthetic Sunset & Pine Ridge</em> (bg_32).<br>Direct Lyric Connection (All my tears have been used up) • Until I Found You Clean Style • Patrick Hand Large Typography (102-114pt) • 175pt Title Card • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
-
-
-
-        <span style="font-weight:700;">26. Another Love</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Pink Sunset (Clean Big Text)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Normal 1.0x Mix)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 3:53 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Cloud Drift.')">
-
-
-
-        <span style="font-weight:700;">27. Glimpse of Us</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:53)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Slowed + Reverb Brand Edition)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 4:30 Master • 0.865x Tape Varispeed (85 &rarr; 73.5 BPM) • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
-
-
-
-        <span style="font-weight:700; color:#d8b4fe;">27. Glimpse of Us (Slowed)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:30)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>28. blue (7clouds Aesthetic Remaster)</strong> — yung kai<br><strong>Artwork</strong>: <em>7clouds Aesthetic Pastel Dawn Sky</em> (bg_34).<br>Full 3:34 Master • Patrick Hand Hook Title • Crisp White Typography with Dark Border • Strictly 2-Row Couplets • Subtle Clean Zoompan Drift.')">
-
-
-
-          <span style="font-weight:700; color:#38bdf8;">28. blue (7clouds)</span>
-
-
-
-          <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:34)</span>
-
-
-
-        </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>28. blue (Slowed + Reverb Brand Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Makoto Shinkai Dreamy Pastel Dawn Sky & Coastal Overlook</em> (bg_34).<br>Full 4:08 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
-
-
-
-        <span style="font-weight:700; color:#d8b4fe;">28. blue (Slowed)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:08)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #38bdf8; background: rgba(56, 189, 248, 0.15); box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);" onclick="switchOption(this, 'videos/28_yung_kai_blue_7clouds_EdoSZ_Lyric_Video.mp4', '🌊 <strong>28. blue (Official 7clouds Edo SZ Edition)</strong> — yung kai<br><strong>Authentic Formula</strong>: <em>Edo SZ Brush Script Font • Sentence Case • Lower-Third 78% Placement • Soft Black Outer Glow • Zero-Frame Hard Cuts • Rest-Cut Instrumental Breathing Room</em>.<br>Full 3:34 Master • 4K Soft Sea Ocean Wave Aesthetic • 35-45% Screen Width • Pure White Luminous Typography.')">
-
-
-
-        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (Edo SZ 7clouds)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Authentic Formula (3:34)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #0284c7; background: rgba(2, 132, 199, 0.18); box-shadow: 0 0 16px rgba(2, 132, 199, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>28. blue (80% Sky • 20% Sea • Blue Filter Vibe Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Exact 80% Open Cyan Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter.<br>Full 3:34 Master • Authentic 7clouds Edo SZ Formula • Sentence Case • Lower-Third Clearance • Soft Black Outer Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (80% Sky / 20% Sea)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Blue Filter Vibe (3:34)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.18); box-shadow: 0 0 16px rgba(6, 182, 212, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>30. Perfect (80% Sky • 20% Sea • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>Exact 80% Vast Azure Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter & Authentic 7clouds Edo SZ Brush Script.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • 3.0s Cathedral Hall • Sentence Case • Lower-Third Clearance (78% Down) • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Pauses.')">
-
-
-
-        <span style="font-weight:700; color:#22d3ee;">🌊 30. Perfect (80% Sky / 20% Sea)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #ec4899; background: rgba(236, 72, 153, 0.18); box-shadow: 0 0 16px rgba(236, 72, 153, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Cotton-Candy Clouds • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.18); box-shadow: 0 0 16px rgba(249, 115, 22, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Amber Dusk • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Warm Golden-Amber Dusk Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
-
-
-
-        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Edo SZ • Slowed (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <!-- 70M-VIEW DANNY LOUIS TIN ROOF STYLE SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.30); box-shadow: 0 0 24px rgba(245, 158, 11, 0.60); border-width: 2px;" onclick="switchOption(this, 'videos/tin_roof_rain_forest_danny_louis_style.mp4', '⛈️ <strong>Viral 70M-View Style: Heavy Rain on Tin Roof in Foggy Rainforest</strong> (Danny Louis Replica)<br><strong>Camera POV</strong>: <em>Underneath Weathered Tin Roof Overhang looking out at Misty Murky Rainforest — Zero \'Rain Inside\' Issue</em>.<br><strong>Visual FX</strong>: <em>Active Water Streams & Droplets Cascading off Corrugated Metal Roof Eaves + Rain Pouring Across Forest</em>.<br><strong>Acoustics</strong>: <em>Authentic Metallic Tin Roof Clatter + Deep Rolling Thunder Growls</em> • <strong>100% Seamless Looping</strong>.')">
-
-
-
-        <span style="font-weight:900; color:#fbbf24;">⛈️ 70M-View Style: Tin Roof Rain</span>
-
-
-
-        <span style="font-size:11px;opacity:0.95; color:#fde68a;">Danny Louis Replica (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-      <!-- ANIMATED RAIN & LIGHT THUNDER HERO SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #10b981; background: rgba(16, 185, 129, 0.25); box-shadow: 0 0 20px rgba(16, 185, 129, 0.50); border-width: 2px;" onclick="switchOption(this, 'videos/cozy_forest_light_rain_thunder_animated_loop.mp4', '🌲🌧️ <strong>Featured Master: Cozy Forest Cabin (Active Animated Rain & Light Thunder • 1:00 Loop)</strong><br><strong>Visuals</strong>: <em>Active Animated Falling Rain Streaks + Window Glass Trickling Rivulets + Synchronized Distant Lightning Flash + Lush Misty Pine Forest</em>.<br><strong>Audio</strong>: <em>Gentle Light Rain Patter + Soothing Soft Pine Drizzle + 2 Mellow Low-Frequency Rolling Thunder Rumbles</em> • <strong>100% Mathematically Seamless Equal-Power Loop</strong>.<br>Full 1080p 60fps Master • Deep Sleep, Focus & Relax Sanctuary.')">
-
-
-
-        <span style="font-weight:800; color:#34d399;">🌲🌧️ Forest Cabin (Animated Rain)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.95; color:#a7f3d0;">Light Rain + Thunder (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-      <!-- RAIN AMBIENCE SHOWCASE -->
-
-
-
-      <button class="tab-btn" style="border-color: #6366f1; background: rgba(99, 102, 241, 0.22); box-shadow: 0 0 16px rgba(99, 102, 241, 0.40);" onclick="switchOption(this, 'videos/rain_bedroom_1min_loop_sample.mp4', '🌧️ <strong>Sample A: Cozy Bedroom at Night (Rain on Window & Distant Thunder)</strong><br><strong>Audio Engineering</strong>: <em>3D Spatial Binaural Rain</em> • Delicate Droplet Taps on Glass • Soothing Steady Downpour • Low-Frequency Cinematic Rolling Thunder • <strong>100% Seamless Equal-Power Loop (Zero Clicks / Zero Volume Dips)</strong>.<br>Full 1080p Master • Lo-Fi Bedroom Lamp Aesthetic • Perfect for Sleep, Studying & Night Relaxation.')">
-
-
-
-        <span style="font-weight:700; color:#818cf8;">🌧️ Rain: Cozy Bedroom</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#c7d2fe;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.22); box-shadow: 0 0 16px rgba(6, 182, 212, 0.40);" onclick="switchOption(this, 'videos/rain_coffeeshop_1min_loop_sample.mp4', '☕ <strong>Sample B: Late Night Tokyo Coffee Shop (Rain on Glass & Neon Bokeh)</strong><br><strong>Audio Engineering</strong>: <em>Warm Indoor Acoustic Rain</em> • Soft Raindrops on Awning • Low-Pass Interior Filter • Warm 130Hz Room Resonance • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Steaming Coffee Mug & Blurred Rainy Tokyo Street Neon • Ultimate Coding / Focus Vibe.')">
-
-
-
-        <span style="font-weight:700; color:#22d3ee;">☕ Rain: Tokyo Cafe</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.22); box-shadow: 0 0 16px rgba(245, 158, 11, 0.40);" onclick="switchOption(this, 'videos/rain_cabin_1min_loop_sample.mp4', '🔥 <strong>Sample C: Forest Wooden Cabin (Rain on Tin Roof & Crackling Fireplace)</strong><br><strong>Audio Engineering</strong>: <em>Cozy Hearth & Nature Soundscape</em> • Dense Rain Pattering on Pine Needles & Tin Roof • Authentic Burning Log Ember Crackles & Micro-Pops • Warm Fireplace Low Rumble • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Stone Fireplace Glow & Rainy Evergreen Forest Sanctuary.')">
-
-
-
-        <span style="font-weight:700; color:#fbbf24;">🔥 Rain: Forest Cabin</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fde68a;">Seamless Loop (1:00)</span>
-
-
-
-      </button>
-
-
-
-
-
-
-
-
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Normal 1.0x Mix)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 3:32 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Clouds & Golden Chandelier Bokeh Lights (Layered Strictly Behind Lyrics).')">
-
-
-
-        <span style="font-weight:700;">29. Chandelier</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:32)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Slowed + Reverb Brand Edition)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 4:06 Master • 0.865x Tape Varispeed (117 &rarr; 101.2 BPM) • 3.0s Cathedral Reverb Hall • -2.5 Semitones Pitch Drop • 15.5kHz Warm Tape Shelf • Live Shimmering Lights Behind Lyrics.')">
-
-
-
-        <span style="font-weight:700; color:#d8b4fe;">29. Chandelier (Slowed)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:06)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_Lyric_Video.mp4', '☁️ <strong>00. That Should Be Me (7clouds Aesthetic Master)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>7clouds Twilight Heartbreak Clouds</em>.<br>Full 3:36 Master • Patrick Hand Handwriting Font • Strictly 2-Row Couplets • Pure White Typography with Deep Charcoal Border • High Contrast & Emotional Sky.')">
-
-
-
-        <span style="font-weight:700; color:#38bdf8;">00. That Should Be Me</span>
-
-
-
-        <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:36)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.15); box-shadow: 0 0 14px rgba(245, 158, 11, 0.25);" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_20Min_5x_Replay_Lyric_Video.mp4', '🔁 <strong>00. That Should Be Me (20+ Minutes • 5 Times Replay Loop Edition)</strong> — Justin Bieber<br><strong>Aesthetic Formula</strong>: <em>Signature 7clouds Twilight Sky + Seamless 5x Replay Loop</em>.<br>Full 21:38 Master • 6 Iterations (1 Original + 5 Continuous Replays) • Replay Index Hook Cards ([1/5] to [5/5]) • Optimized for High YouTube Watch-Time, Study & Sleep Sessions.')">
-
-
-
-        <span style="font-weight:700; color:#fbbf24;">🔁 00. That Should Be Me (20-Min)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fde68a;">5x Replay Loop (21:38)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f472b6; background: rgba(244, 114, 182, 0.15); box-shadow: 0 0 14px rgba(244, 114, 182, 0.25);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Mode Edition • Slowed + Reverb)</strong> — Ed Sheeran<br><strong>Artwork</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> (bg_30_pink).<br>Full 5:05 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb Hall • 15.5kHz Warm Tape Shelf • Patrick Hand 2-Row Couplets • Pure Romantic Pink Aesthetic.')">
-
-
-
-        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Slowed + Reverb (5:05)</span>
-
-
-
-      </button>
-
-
-
-      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.15); box-shadow: 0 0 14px rgba(249, 115, 22, 0.25);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Mode Edition • Slowed + Reverb)</strong> — Ed Sheeran<br><strong>Artwork</strong>: <em>7clouds Warm Golden-Amber & Coral Dusk Clouds</em> (bg_30_sunset).<br>Full 5:05 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb Hall • 15.5kHz Warm Tape Shelf • Patrick Hand 2-Row Couplets • Deep Nostalgic Golden Hour.')">
-
-
-
-        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
-
-
-
-        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Slowed + Reverb (5:05)</span>
-
-
-
-      </button>
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <div class="desc-box" id="option-desc">
-
-
-
-      🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <div class="video-wrapper">
-
-
-
-      <video id="player" controls autoplay>
-
-
-
-        <source id="video-source" src="videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4" type="video/mp4">
-
-
-
-        Your browser does not support the video tag.
-
-
-
-      </video>
-
-
-
-    </div>
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <script>
-
-
-
-    function switchOption(btn, src, desc) {
-
-
-
-      const player = document.getElementById('player');
-
-
-
-      const source = document.getElementById('video-source');
-
-
-
-      const descEl = document.getElementById('option-desc');
-
-
-
-      const buttons = document.querySelectorAll('.tab-btn');
-
-
-
-
-
-
-
-      buttons.forEach(b => b.classList.remove('active'));
-
-
-
-      btn.classList.add('active');
-
-
-
-
-
-
-
-      descEl.innerHTML = desc;
-
-
-
-      source.src = src;
-
-
-
-      player.load();
-
-
-
-      player.play();
-
-
-
-    }
-
-
-
-  </script>
-
-
-
-
-
-
-
-    <div id="tab-real-nature-rain" class="tab-content">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>🌧️ Real Live-Action Tin Roof Rain with Distant Thunder (Danny Louis 70M Formula)</h2>
-
-
-
-            <p class="desc">1080p Real live-action camera footage with forward + reverse ping-pong loop (100% zero jump-cut seam), cinematic contrast boost (eq=contrast=1.22), deep rainforest blacks, and 60-second seamless binaural tin roof rain & rolling thunder loop.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop preload="metadata">
-
-
-
-                    <source src="videos/real_nature_tin_roof_rain_seamless_loop.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            <div class="specs-grid">
-
-
-
-                <div class="spec-item"><strong>Footage:</strong> Real Nature (Pexels 1080p live-action)</div>
-
-
-
-                <div class="spec-item"><strong>Loop Technique:</strong> 30s Forward + 30s Reverse Ping-Pong (Zero Seam)</div>
-
-
-
-                <div class="spec-item"><strong>Grading:</strong> Contrast 1.22, Brightness -0.04, Saturation 1.18</div>
-
-
-
-                <div class="spec-item"><strong>Audio:</strong> Binaural Tin Roof Clatter + Sub-80Hz Thunder</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-our-rain-tin-roof" class="tab-content" style="display:none;">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>🌧️ OUR RAIN: Heavy Rain on Stale Tin Roof in Murky Forest (Danny Louis 70M Formula)</h2>
-
-
-
-            <p class="desc">1080p Real live-action footage of rain pouring and spraying on corrugated tin roof in a foggy forest. Engineered with a 30s forward + 30s reverse ping-pong loop (100% zero jump cut seam), boosted contrast (1.28x) with rich murky forest blacks, and paired with seamless 60-second binaural tin roof rain & rolling thunder loop.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop autoplay muted preload="auto" poster="thumbnail/our_rain_thumbnail_7clouds_style.png">
-
-
-
-                    <source src="videos/our_tin_roof_rain_seamless_loop.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails for Our Rain Video (191M & 164M CTR Formulas)</h3>
-
-
-
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Brush Stencil Style)</h4>
-
-
-
-                    <img src="thumbnail/our_rain_thumbnail_7clouds_style.png" style="width:100%; border-radius:6px;" alt="7clouds style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Center aligned</p>
-
-
-
-                </div>
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Tall Bold Sans Style)</h4>
-
-
-
-                    <img src="thumbnail/our_rain_thumbnail_latinhype_style.png" style="width:100%; border-radius:6px;" alt="LatinHype style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D solid cut-out | Upper-center aligned</p>
-
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Visual Source:</strong> Real Corrugated Tin Roof Overhang in Murky Rainforest</div>
-
-
-
-                <div class="spec-item"><strong>Loop Precision:</strong> 30.0s Fwd + 30.0s Rev (Zero Seam Artifacts)</div>
-
-
-
-                <div class="spec-item"><strong>Grading:</strong> Contrast 1.28 • Brightness -0.03 • Saturation 1.22</div>
-
-
-
-                <div class="spec-item"><strong>Audio Mastering:</strong> Binaural Tin Roof Clatter + Sub-80Hz Rolling Thunder</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-real-nature-70m-sound" class="tab-content" style="display:none;">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>🌧️ Real Live Camera: Tin Roof Rain with Authentic 70M-View Channel Sound</h2>
-
-
-
-            <p class="desc">100% Real live-action camera footage of heavy rain pouring and dripping off corrugated tin roof eaves overlooking a lush green forest with dreamy natural bokeh. Graded with deep cinematic contrast, engineered with a 60-second seamless ping-pong loop (zero jump cut seam), and paired with the <strong>authentic 70M-view Danny Louis rain on stale tin roof & deep thunder channel audio</strong>.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop autoplay muted preload="auto" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
-
-
-
-                    <source src="videos/real_nature_tin_roof_rain_70m_channel_sound.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails for Our Real Nature Video (191M & 164M CTR Formulas)</h3>
-
-
-
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
-
-
-
-                    <img src="thumbnail/real_nature_rain_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: Crisp White | Shadow: Multi-layer Gaussian blur | High Contrast</p>
-
-
-
-                </div>
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
-
-
-
-                    <img src="thumbnail/real_nature_rain_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: Crisp White | Shadow: Sharp 3D Solid Cut-Out | Mobile Pop</p>
-
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Visuals:</strong> 100% Real Live-Action Camera (Corrugated Tin Roof in Forest Rain)</div>
-
-
-
-                <div class="spec-item"><strong>Sound Source:</strong> Authentic 70M-View Danny Louis Tin Roof Rain & Growling Thunder</div>
-
-
-
-                <div class="spec-item"><strong>Loop Math:</strong> 15s Fwd + 15s Rev x 2 (Zero Jump Cut Seams)</div>
-
-
-
-                <div class="spec-item"><strong>Grading:</strong> Contrast 1.26 • Brightness -0.04 • Saturation 1.22</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-monetizable-rain-sample" class="tab-content" style="display:none;">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>✨ 🛡️ 100% Monetizable Master: Real Nature Tin Roof Rain (Soft Mist Bloom)</h2>
-
-
-
-            <p class="desc">100% Safe for YouTube Partner Program (YPP) Monetization. Built using real commercial-licensed live camera footage of rain pouring on a tin roof in the forest, softened with a dreamy cinematic mist bloom filter, deep contrast, and paired with clean, uncopyrighted binaural tin roof rain & rolling thunder audio. Ready to be scaled to 3h / 5h with zero re-encoding.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop autoplay muted preload="auto" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
-
-
-
-                    <source src="videos/monetizable_cozy_tin_roof_rain_1min_sample.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Monetization Status:</strong> 100% Safe (No Content ID, No Reused Content Flag)</div>
-
-
-
-                <div class="spec-item"><strong>Atmosphere:</strong> Soft Mist Bloom + High Contrast Bokeh (Cozy & Deep)</div>
-
-
-
-                <div class="spec-item"><strong>Loop Precision:</strong> 15s Fwd + 15s Rev x 2 (Zero Seam, 100% Continuous)</div>
-
-
-
-                <div class="spec-item"><strong>3h/5h Scaling:</strong> Stream copy ready (takes &lt;45s to generate 3h video)</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-3h-master-rain" class="tab-content" style="display:none;">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>🌧️ ⏳ 3-HOUR MASTER: Heavy Rain on Tin Roof in Murky Forest (Ready for YouTube Upload)</h2>
-
-
-
-            <p class="desc"><strong>Full 3 Hours (10,800 seconds)</strong>. 100% Real live camera footage, softened with cinematic mist bloom, rich contrast, and paired with clean uncopyrighted binaural tin roof rain & distant rolling thunder. Guaranteed zero Content ID claims, 100% safe for YouTube Partner Program ad revenue.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop preload="metadata" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
-
-
-
-                    <source src="videos/our_rain_cozy_tin_roof_3h_master.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <h3 style="margin-top:25px; color:#00e5ff;">🚀 YouTube Copy-Paste Upload Kit (Optimized for 10M+ Views)</h3>
-
-
-
-            <div style="background:#131a24; padding:20px; border-radius:10px; border:1px solid #233144; margin-top:15px; font-family:monospace; font-size:13px; color:#e0e6ed;">
-
-
-
-                <p><strong style="color:#ffd700;">VIDEO TITLE:</strong><br>
-
-
-
-                Rain on Stale Tin Roof in Murky Forest for Sleeping • Heavy Rain & Thunder Sounds (3 Hours)</p>
-
-
-
-                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
-
-
-
-                <p><strong style="color:#ffd700;">DESCRIPTION:</strong><br>
-
-
-
-                Goodbye insomnia! Fall into deep, uninterrupted sleep with authentic heavy rain pouring on a stale tin roof in a foggy murky forest at night. Relaxing acoustic clatter paired with low-frequency rolling thunder designed to cure sleeplessness, reduce anxiety, and help you study.<br><br>
-
-
-
-                ⏱️ TIMESTAMPS:<br>
-
-
-
-                00:00:00 - Heavy Rain on Tin Roof<br>
-
-
-
-                01:00:00 - Deep Sleep & Rolling Thunder<br>
-
-
-
-                02:00:00 - Forest Rain Ambience<br>
-
-
-
-                03:00:00 - Waking Refreshed<br><br>
-
-
-
-                🎧 Headphones recommended for binaural relaxation.</p>
-
-
-
-                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
-
-
-
-                <p><strong style="color:#ffd700;">SEARCH TAGS:</strong><br>
-
-
-
-                rain on tin roof, heavy rain and thunder, rain sounds for sleeping, tin roof rain, sleep sounds, insomnia relief, rain in forest, rain sounds, fall asleep fast, cozy rain, 3 hours rain, ambient rain, white noise, study sounds, deep sleep rain, thunderstorm sounds, relaxing rain</p>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Duration:</strong> Exactly 3 Hours, 0 Minutes, 0 Seconds (323,820 frames)</div>
-
-
-
-                <div class="spec-item"><strong>File Size:</strong> 2.00 GB (Fast YouTube upload)</div>
-
-
-
-                <div class="spec-item"><strong>Resolution & FPS:</strong> 1080p Full HD (1920x1080 @ 30fps)</div>
-
-
-
-                <div class="spec-item"><strong>Audio Fidelity:</strong> 48kHz Stereo AAC (Seamless 60s binaural loop)</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-night-edition-rain" class="tab-content" style="display:none;">
-
-
-
-        <div class="video-card">
-
-
-
-            <h2>🌙 🌧️ NIGHT FOCUS: Heavy Rain on Tin Roof at Night (Dark Screen for Sleep)</h2>
-
-
-
-            <p class="desc">Engineered specifically for dark bedrooms and deep insomnia relief. Real live camera footage graded into a deep midnight blue palette with glistening silver raindrops streaming down from the roof eaves. Zero bright daylight glare to protect your melatonin and circadian rhythm.</p>
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video controls loop autoplay muted preload="auto" poster="thumbnail/night_rain_thumb_7clouds.jpg">
-
-
-
-                    <source src="videos/real_nature_tin_roof_night_1min_sample.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Night-Optimized Viral Thumbnails (High CTR in YouTube Dark Mode)</h3>
-
-
-
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
-
-
-
-                    <img src="thumbnail/night_rain_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds Night Style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Midnight Atmosphere</p>
-
-
-
-                </div>
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
-
-
-
-                    <img src="thumbnail/night_rain_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype Night Style">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D Solid Cut-Out | Dark Mode Pop</p>
-
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Visual Atmosphere:</strong> Deep Midnight Blue Moonlit Trees & Silver Raindrops</div>
-
-
-
-                <div class="spec-item"><strong>Eye Comfort:</strong> Low Luminance (No Glare, Safe for Bedroom Screens)</div>
-
-
-
-                <div class="spec-item"><strong>Loop Precision:</strong> 10s Fwd + 10s Rev x 3 = 60.0s (Zero Seam Ping-Pong)</div>
-
-
-
-                <div class="spec-item"><strong>Audio Mastering:</strong> Binaural Tin Roof Clatter + Deep Distant Thunder</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <div id="tab-big-view-cabin-rain" class="tab-content" style="display:block;">
-
-
-
-        <div class="video-card">
-
-
-
-            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
-
-
-
-                <h2 style="margin:0;">🏡 🌌 🌧️ 3-HOUR PREMIER MASTER: Cozy Rainforest Cabin Rain at Night</h2>
-
-
-
-                <span style="background:rgba(16,185,129,0.25); color:#34d399; border:1px solid #10b981; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800; text-transform:uppercase;">100% Monetizable • 3 Hours (10,800s)</span>
-
-
-
-            </div>
-
-
-
-            <p class="desc">A wide-angle panoramic landscape view of a cozy cabin nestled deep in a misty tropical rainforest with rain pouring across the canopy and metal roof. Graded into a soothing midnight blue palette for dark bedrooms, insomnia relief, and deep focus. 100% Commercial live camera footage + clean binaural rain and thunder audio. Zero Content ID claims, 100% safe to monetize on YouTube.</p>
-
-
-
-            
-
-
-
-            <!-- Duration / Sample Switcher -->
-
-
-
-            <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
-
-
-
-                <button class="tab-btn active" style="width:auto; padding:8px 18px; border-color:#10b981; background:rgba(16,185,129,0.3);" onclick="document.getElementById('big-view-player').src='videos/our_rain_big_view_cabin_night_3h_master.mp4'; document.getElementById('big-view-player').play();">
-
-
-
-                    ▶ Play Full 3-Hour Master (10,800s • 1.69 GB)
-
-
-
-                </button>
-
-
-
-                <button class="tab-btn" style="width:auto; padding:8px 18px; border-color:rgba(255,255,255,0.3); background:rgba(255,255,255,0.06);" onclick="document.getElementById('big-view-player').src='videos/real_nature_wide_forest_cabin_night_1min_sample.mp4'; document.getElementById('big-view-player').play();">
-
-
-
-                    ▶ Play 1-Minute Preview Loop
-
-
-
-                </button>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="video-wrapper">
-
-
-
-                <video id="big-view-player" controls preload="metadata" poster="thumbnail/wide_cabin_night_thumb_7clouds.jpg">
-
-
-
-                    <source src="videos/our_rain_big_view_cabin_night_3h_master.mp4" type="video/mp4">
-
-
-
-                    Your browser does not support the video tag.
-
-
-
-                </video>
-
-
-
-            </div>
-
-
-
-            
-
-
-
-            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails (191M & 164M High CTR Formulas)</h3>
-
-
-
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
-
-
-
-                    <img src="thumbnail/wide_cabin_night_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds Wide Cabin">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Wide Nature Vista | <a href="thumbnail/wide_cabin_night_thumb_7clouds.jpg" download style="color:#38bdf8;">Download JPG</a></p>
-
-
-
-                </div>
-
-
-
-                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
-
-
-
-                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
-
-
-
-                    <img src="thumbnail/wide_cabin_night_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype Wide Cabin">
-
-
-
-                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D Solid Cut-Out | Dark Mode Pop | <a href="thumbnail/wide_cabin_night_thumb_latinhype.jpg" download style="color:#38bdf8;">Download JPG</a></p>
-
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <!-- YouTube Copy-Paste Upload Kit -->
-
-
-
-            <h3 style="margin-top:25px; color:#ffd700;">🚀 YouTube Copy-Paste Upload Kit (Ready to Monetize)</h3>
-
-
-
-            <div style="background:#131a24; padding:20px; border-radius:10px; border:1px solid #233144; margin-top:15px; font-family:monospace; font-size:13px; color:#e0e6ed; line-height:1.6;">
-
-
-
-                <p><strong style="color:#ffd700;">VIDEO TITLE:</strong><br>
-
-
-
-                Rain on Cozy Cabin in Murky Rainforest at Night • Heavy Rain & Thunder Sounds for Sleep (3 Hours)</p>
-
-
-
-                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
-
-
-
-                <p><strong style="color:#ffd700;">DESCRIPTION:</strong><br>
-
-
-
-                Fall asleep in minutes and cure insomnia with tranquil heavy rain falling on a secluded cozy cabin tucked deep inside a foggy mountain rainforest at night. Wide panoramic nature vista graded in deep midnight blue to prevent screen glare, accompanied by gentle binaural roof rain and distant rolling thunder.<br><br>
-
-
-
-                Perfect for: Deep sleep, studying, insomnia relief, anxiety reduction, meditation, and relaxing background noise.<br><br>
-
-
-
-                ⏱️ TIMESTAMPS:<br>
-
-
-
-                00:00:00 - Rainforest Rain at Secluded Cabin<br>
-
-
-
-                01:00:00 - Deep Sleep & Distant Rolling Thunder<br>
-
-
-
-                02:00:00 - Midnight Canopy Downpour<br>
-
-
-
-                02:59:00 - Waking Up Refreshed<br><br>
-
-
-
-                🎧 Headphones recommended for full binaural immersion.<br>
-
-
-
-                ✨ 100% Commercial Licensed live-action footage & original audio design.</p>
-
-
-
-                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
-
-
-
-                <p><strong style="color:#ffd700;">SEARCH TAGS:</strong><br>
-
-
-
-                rain on cabin, rain sounds for sleep, cozy cabin rain, heavy rain at night, rain on tin roof, rain sounds, sleep sounds, insomnia relief, rain in rainforest, 3 hours rain, ambient rain, white noise for sleeping, study sounds, deep sleep rain, rain and thunder sounds, cabin ambience</p>
-
-
-
-            </div>
-
-
-
-
-
-
-
-            <div class="specs-grid" style="margin-top:20px;">
-
-
-
-                <div class="spec-item"><strong>Duration:</strong> Exactly 3 Hours, 0 Minutes, 0 Seconds (10,800s • 270,000 frames)</div>
-
-
-
-                <div class="spec-item"><strong>File Size:</strong> 1.69 GB (1730 MB • Fast YouTube Upload)</div>
-
-
-
-                <div class="spec-item"><strong>Resolution & FPS:</strong> 1080p Full HD (1920x1080 @ 25fps)</div>
-
-
-
-                <div class="spec-item"><strong>Audio Fidelity:</strong> 48kHz Stereo AAC 128 kbps (Binaural Tin Roof & Thunder)</div>
-
-
-
-                <div class="spec-item"><strong>Monetization Status:</strong> 100% Safe (CC0 Footage + Binaural Foley • Zero Reused Content)</div>
-
-
-
-                <div class="spec-item"><strong>Eye Comfort:</strong> Midnight Blue Low-Luminance (Zero Glare for Insomnia)</div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-    <!-- CHOOSE YOUR PURE NATURE LOOK SHOWCASE -->
-
-    <div id="tab-choose-pure-nature" class="tab-content" style="display:block; margin-top:35px;">
-
-        <div class="video-card" style="border: 2px solid #00e5ff; box-shadow: 0 0 30px rgba(0, 229, 255, 0.25);">
-
-            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
-
-                <h2 style="margin:0; color:#00e5ff;">🌲 🏔️ 🌧️ CHOOSE YOUR PURE NATURE LOOK (100% Wild Nature • Zero Buildings)</h2>
-
-                <span style="background:rgba(0,229,255,0.2); color:#00e5ff; border:1px solid #00e5ff; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800; text-transform:uppercase;">Visual Selector Catalog</span>
-
-            </div>
-
-            <p class="desc">Which pure wild nature look do you want for our next long sleep video? All options are 100% real live-action camera footage, color-graded into our signature <strong>Midnight Indigo Dark Mode</strong> for insomnia relief, zero screen glare, and 100% monetization safety.</p>
-
-
-
-            <!-- Full Contact Sheet -->
-
-            <div style="background:#111722; padding:15px; border-radius:12px; border:1px solid #233144; margin-bottom:25px;">
-
-                <h4 style="color:#ffd700; margin-top:0; margin-bottom:10px;">📊 Side-by-Side Comparison Grid (All Options Graded for Night):</h4>
-
-                <img src="thumbnail/nature_options/contact_sheet_pure_nature_night_graded.jpg" style="width:100%; border-radius:8px; border:1px solid #334460;" alt="Pure Nature Comparison Grid">
-
-            </div>
-
-
-
-            <!-- Option Cards Grid -->
-
-            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
-
-                <!-- OPTION 1 -->
-
-                <div style="background:#141c28; border:2px solid #38bdf8; border-radius:12px; overflow:hidden; padding:15px;">
-
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-
-                        <span style="font-weight:800; color:#38bdf8; font-size:15px;">🌟 OPTION 1: Alpine Mountain Lake</span>
-
-                        <span style="background:rgba(56,189,248,0.25); color:#7dd3fc; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">RECOMMENDED</span>
-
-                    </div>
-
-                    <img src="thumbnail/nature_options/pure_nature_night_5174040.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Alpine Lake Rain">
-                    <button class="tab-btn" style="width:100%; margin:8px 0 12px 0; background:linear-gradient(135deg, #0284c7, #0369a1); border-color:#38bdf8; color:#fff; font-weight:700; text-align:center; padding:10px; cursor:pointer;" onclick="const p=document.getElementById('big-view-player'); p.src='videos/pure_nature_option1_alpine_lake_night_1min.mp4'; p.play(); p.scrollIntoView({behavior:'smooth', block:'center'});">
-                        ▶ Watch Option 1 Video Preview (1-Min Loop)
-                    </button>
-
-                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
-
-                        • <strong>Scene</strong>: Epic granite mountain peaks flanking a vast pine valley with heavy rain creating thousands of soothing ripples across crystal lake water.<br>
-
-                        • <strong>Vibe</strong>: 100% Pure wilderness vista, ultra-peaceful, zero buildings.<br>
-
-                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐⭐ (Most soothing for dark bedrooms).
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- OPTION 2 -->
-
-                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
-
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-
-                        <span style="font-weight:800; color:#a78bfa; font-size:15px;">OPTION 2: Flooded Ancient Forest</span>
-
-                        <span style="background:rgba(167,139,250,0.25); color:#c4b5fd; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">DEEP MYSTERY</span>
-
-                    </div>
-
-                    <img src="thumbnail/nature_options/pure_nature_night_9934612.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Flooded Forest Rain">
-
-                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
-
-                        • <strong>Scene</strong>: Ancient mossy trees standing in calm, mist-shrouded forest water with heavy rain pattering onto the water surface.<br>
-
-                        • <strong>Vibe</strong>: Secluded deep woodland sanctuary, rich reflections, mysterious tranquility.<br>
-
-                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐⭐ (Hypnotic water ripples).
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- OPTION 3 -->
-
-                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
-
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-
-                        <span style="font-weight:800; color:#34d399; font-size:15px;">OPTION 3: Misty Evergreen Pine Ridge</span>
-
-                        <span style="background:rgba(52,211,153,0.25); color:#6ee7b7; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">PACIFIC RAIN</span>
-
-                    </div>
-
-                    <img src="thumbnail/nature_options/pure_nature_night_10766175.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Misty Pine Ridge">
-
-                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
-
-                        • <strong>Scene</strong>: Endless mountain pines shrouded in drifting fog with torrential rain streaming down through giant pine needles.<br>
-
-                        • <strong>Vibe</strong>: Mountain storm, dense wilderness, organic pine forest downpour.<br>
-
-                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐ (Intense cozy mountain atmosphere).
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- OPTION 4 -->
-
-                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
-
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-
-                        <span style="font-weight:800; color:#fbbf24; font-size:15px;">OPTION 4: Tropical Rainforest Ridge</span>
-
-                        <span style="background:rgba(251,191,36,0.25); color:#fde68a; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">MONSOON</span>
-
-                    </div>
-
-                    <img src="thumbnail/nature_options/pure_nature_night_9353501.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Rainforest Canopy">
-
-                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
-
-                        • <strong>Scene</strong>: High mountain ridge overlooking an endless rolling sea of tropical jungle trees in heavy monsoon rain.<br>
-
-                        • <strong>Vibe</strong>: Expansive rainforest horizon, wild jungle canopy.<br>
-
-                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐ (Vast open landscape).
-
-                    </p>
-
-                </div>
-
-
-
-                <!-- OPTION 5 -->
-
-                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
-
-                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-
-                        <span style="font-weight:800; color:#f472b6; font-size:15px;">OPTION 5: Secluded Cabin in Rainforest</span>
-
-                        <span style="background:rgba(244,114,182,0.25); color:#fbcfe8; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">CURRENT 3H MASTER</span>
-
-                    </div>
-
-                    <img src="thumbnail/nature_options/pure_nature_night_12717007.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Secluded Cabin">
-                    <button class="tab-btn" style="width:100%; margin:8px 0 12px 0; background:linear-gradient(135deg, #db2777, #9d174d); border-color:#f472b6; color:#fff; font-weight:700; text-align:center; padding:10px; cursor:pointer;" onclick="const p=document.getElementById('big-view-player'); p.src='videos/real_nature_wide_forest_cabin_night_1min_sample.mp4'; p.play(); p.scrollIntoView({behavior:'smooth', block:'center'});">
-                        ▶ Watch Option 5 Video Preview (1-Min Loop)
-                    </button>
-
-                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
-
-                        • <strong>Scene</strong>: Secluded mountain cabin with metal roof nestled in lush banana trees and tropical foliage in midnight rain.<br>
-
-                        • <strong>Vibe</strong>: Cozy shelter, tin roof acoustic clatter + rolling thunder.<br>
-
-                        • <strong>Status</strong>: Ready now! (Full 3-Hour master already rendered above).
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-</body>
-
-
-
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+  <meta charset="UTF-8">
+
+
+
+  <title>Fade Replay - Always New Backgrounds & 35mm Lofi Grain</title>
+
+
+
+  <style>
+
+
+
+    :root {
+
+
+
+      --bg: #0d0a10;
+
+
+
+      --card-bg: #17111c;
+
+
+
+      --accent: #ff4d8d;
+
+
+
+      --accent-glow: rgba(255, 77, 141, 0.35);
+
+
+
+      --border: #2c2035;
+
+
+
+      --text: #f0e6f2;
+
+
+
+      --text-muted: #a692ab;
+
+
+
+    }
+
+
+
+    * { box-sizing: border-box; }
+
+
+
+    body {
+
+
+
+      margin: 0;
+
+
+
+      padding: 30px 20px;
+
+
+
+      background: var(--bg);
+
+
+
+      color: var(--text);
+
+
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+
+
+      display: flex;
+
+
+
+      flex-direction: column;
+
+
+
+      align-items: center;
+
+
+
+    }
+
+
+
+    .container {
+
+
+
+      max-width: 1100px;
+
+
+
+      width: 100%;
+
+
+
+      background: var(--card-bg);
+
+
+
+      border: 1px solid var(--border);
+
+
+
+      border-radius: 20px;
+
+
+
+      padding: 30px;
+
+
+
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+
+
+
+    }
+
+
+
+    .badge {
+
+
+
+      display: inline-block;
+
+
+
+      background: rgba(120, 220, 255, 0.15);
+
+
+
+      color: #78dcff;
+
+
+
+      border: 1px solid rgba(120, 220, 255, 0.3);
+
+
+
+      padding: 6px 14px;
+
+
+
+      border-radius: 20px;
+
+
+
+      font-size: 13px;
+
+
+
+      font-weight: 700;
+
+
+
+      letter-spacing: 0.8px;
+
+
+
+      text-transform: uppercase;
+
+
+
+      margin-bottom: 12px;
+
+
+
+    }
+
+
+
+    h1 {
+
+
+
+      margin: 0 0 8px 0;
+
+
+
+      font-size: 32px;
+
+
+
+      color: #fff;
+
+
+
+      font-weight: 800;
+
+
+
+    }
+
+
+
+    p.subtitle {
+
+
+
+      color: var(--text-muted);
+
+
+
+      margin: 0 0 24px 0;
+
+
+
+      font-size: 15px;
+
+
+
+      line-height: 1.5;
+
+
+
+    }
+
+
+
+    .tabs {
+
+
+
+      display: grid;
+
+
+
+      grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+
+
+
+      gap: 10px;
+
+
+
+      margin-bottom: 20px;
+
+
+
+    }
+
+
+
+    .tab-btn {
+
+
+
+      background: #201726;
+
+
+
+      border: 1px solid var(--border);
+
+
+
+      color: #dfd0e3;
+
+
+
+      padding: 12px 14px;
+
+
+
+      border-radius: 12px;
+
+
+
+      font-size: 13px;
+
+
+
+      cursor: pointer;
+
+
+
+      font-weight: 600;
+
+
+
+      text-align: left;
+
+
+
+      transition: all 0.2s ease;
+
+
+
+      display: flex;
+
+
+
+      flex-direction: column;
+
+
+
+      gap: 4px;
+
+
+
+    }
+
+
+
+    .tab-btn:hover {
+
+
+
+      background: #2d1f36;
+
+
+
+      border-color: #4b345a;
+
+
+
+      color: #fff;
+
+
+
+    }
+
+
+
+    .tab-btn.active {
+
+
+
+      background: linear-gradient(135deg, #7c1a4b 0%, #b82b6c 100%);
+
+
+
+      border-color: var(--accent);
+
+
+
+      color: #fff;
+
+
+
+      box-shadow: 0 6px 20px var(--accent-glow);
+
+
+
+    }
+
+
+
+    .desc-box {
+
+
+
+      background: #1f1524;
+
+
+
+      border-left: 4px solid var(--accent);
+
+
+
+      padding: 14px 18px;
+
+
+
+      border-radius: 0 12px 12px 0;
+
+
+
+      margin-bottom: 20px;
+
+
+
+      font-size: 14px;
+
+
+
+      line-height: 1.5;
+
+
+
+      color: #ece1ee;
+
+
+
+    }
+
+
+
+    .video-wrapper {
+
+
+
+      position: relative;
+
+
+
+      border-radius: 16px;
+
+
+
+      overflow: hidden;
+
+
+
+      box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+
+
+
+      background: #000;
+
+
+
+      border: 1px solid #362640;
+
+
+
+    }
+
+
+
+    video {
+
+
+
+      width: 100%;
+
+
+
+      height: auto;
+
+
+
+      display: block;
+
+
+
+      outline: none;
+
+
+
+    }
+
+
+
+  </style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+  <div class="container">
+
+
+
+    <span class="badge">✨ 100% Unique Anime Backgrounds • 35mm Lofi Film Grain</span>
+
+
+
+    <h1>Fade Replay — Viral Anime Lyric Videos</h1>
+
+
+
+    <p class="subtitle">Every single song receives its own unique 1080p anime artwork, 2-row couplets, dynamic intro blur timing, and subtle 35mm lofi grain.</p>
+
+
+
+
+
+
+
+    <!-- SLOWED + REVERB PSYCHOLOGY SHOWDOWN BANNER -->
+
+
+
+    <div style="background: linear-gradient(135deg, rgba(160, 100, 255, 0.2), rgba(20, 15, 35, 0.95)); border: 1px solid rgba(180, 120, 255, 0.5); border-radius: 16px; padding: 20px 24px; margin-bottom: 26px;">
+
+
+
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+
+
+
+        <div style="font-weight: 800; font-size: 16px; color: #d8b4fe; display: flex; align-items: center; gap: 10px;">
+
+
+
+          <span>🎧 The Psychology of Slowed + Reverb Brand Showdown</span>
+
+
+
+          <span style="background: #a855f7; color: #fff; font-size: 10px; font-weight: 800; padding: 3px 9px; border-radius: 8px; text-transform: uppercase;">Aesthetic Test</span>
+
+
+
+        </div>
+
+
+
+        <div style="font-size: 12px; color: #cbd5e1; max-width: 680px; line-height: 1.5;">
+
+
+
+          Experience the 3 psychological principles (<strong>Low-Energy Slowness</strong> • <strong>Cathedral Space Isolation</strong> • <strong>Cassette Pitch Dissociation</strong>) on both <em>Sweater Weather</em> and <em>Skyfall</em>!
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+
+
+
+        <!-- 3-HOUR PREMIER MASTER: BIG NATURE VIEW RAIN AT NIGHT -->
+
+
+
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(52, 211, 153, 0.5); padding: 8px 12px; border-radius: 10px;">
+
+
+
+          <span style="font-size: 12px; font-weight: 800; color: #34d399; min-width: 140px;">🌌 3-HOUR MASTER:</span>
+
+
+
+          <button class="tab-btn active" style="width: auto; padding: 8px 16px; margin: 0; border-color: #10b981; background: rgba(16, 185, 129, 0.35); box-shadow: 0 0 16px rgba(16, 185, 129, 0.5);" onclick="switchOption(this, 'videos/our_rain_big_view_cabin_night_3h_master.mp4', '🌌 <strong>3-HOUR PREMIER MASTER: Big Nature View Rainforest Cabin Rain at Night (10,800s Full Master)</strong><br>• <strong>Visual</strong>: Wide-angle panoramic 1080p landscape view of cozy cabin in mountain rainforest at night. Deep midnight blue palette, soft vignette, zero screen glare for sleep.<br>• <strong>Audio</strong>: Binaural rain on tin roof + distant rolling thunder.<br>• <strong>Monetization</strong>: 100% Commercial license (Pexels CC0) + clean binaural audio. 100% safe for YouTube Partner Program.')">
+
+
+
+            ▶ 🌌 Full 3-Hour Master Video (10,800s • 1080p)
+
+
+
+          </button>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/real_nature_wide_forest_cabin_night_1min_sample.mp4', '🌧️ <strong>1-Minute Preview Sample: Big Nature View Rainforest Cabin Rain at Night</strong><br>60-second ping-pong seamless loop sample.')">
+
+
+
+            ▶ 1-Min Sample Preview
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+        <!-- Sweater Weather Pair (Full Song Editions) -->
+
+
+
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+
+
+
+          <span style="font-size: 12px; font-weight: 800; color: #aadcff; min-width: 140px;">🧥 Sweater Weather:</span>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(180, 120, 255, 0.85); background: rgba(180, 120, 255, 0.25);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '🧥 <strong>The Neighbourhood — Sweater Weather (Slowed + Reverb Brand Edition • Full 4:35)</strong><br>• <strong>1. Slowness</strong>: 118 BPM slowed to 102 BPM (0.865x), stretching the vocal longing.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating cold, empty coastal bluffs.<br>• <strong>3. Lowered Pitch & Tape Comfort</strong>: -2.5 semitones down, warm cassette tape shelf (15.5kHz), inducing dreamlike dissociation.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
+
+
+
+            ▶ 1. Full Song: Slowed + Reverb (4:35)
+
+
+
+          </button>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '💿 <strong>The Neighbourhood — Sweater Weather (Original 1.0x Normal Mix • Full 3:57)</strong><br>Standard speed (118 BPM), original pitch, dry studio audio.<br>• <strong>Visual</strong>: Living Color Clouds & Minimal Horizon, looping cloud drift, Patrick Hand 200pt title, glowing pure white text.')">
+
+
+
+            ▶ 2. Full Song: Original Normal (3:57)
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Joji Glimpse of Us Pair -->
+
+
+
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+
+
+
+          <span style="font-size: 12px; font-weight: 800; color: #818cf8; min-width: 140px;">🌧️ Joji Glimpse of Us:</span>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(129, 140, 248, 0.85); background: rgba(129, 140, 248, 0.25);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '🌧️ <strong>Joji — Glimpse of Us (Slowed + Reverb Brand Edition • Full 4:30)</strong><br>• <strong>1. Slowness</strong>: 85 BPM slowed to 73.5 BPM (0.865x).<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation tail simulating lonely rain-slicked city ledges.<br>• <strong>3. Cassette Tape Comfort</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
+
+
+
+            ▶ 1. Full Song: Slowed + Reverb (4:30)
+
+
+
+          </button>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '💿 <strong>Joji — Glimpse of Us (Original 1.0x Mix • Full 3:53)</strong><br>Standard speed (85 BPM), original pitch, dry studio acoustics.<br>• <strong>Visual</strong>: Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge (`bg_33`).')">
+
+
+
+            ▶ 2. Full Song: Original Normal (3:53)
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+
+
+
+
+                  <!-- yung kai blue 7clouds Remaster -->
+
+
+
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(56, 189, 248, 0.12); padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(56, 189, 248, 0.4);">
+
+
+
+            <span style="font-size: 12px; font-weight: 800; color: #38bdf8; min-width: 140px;">☁️ yung kai blue (7clouds Style):</span>
+
+
+
+            <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: #38bdf8; background: rgba(56, 189, 248, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>yung kai — blue (7clouds Perfect Twilight Remaster • 3:34)</strong><br>• <strong>Visual</strong>: Signature 7clouds twilight anime aesthetic — deep sapphire & indigo clouds with soft moonlight rim glow and twinkling stars (`bg_34`).<br>• <strong>Motion</strong>: Subtle organic camera drift (zoompan) — zero clunky sliding sprites.<br>• <strong>Typography</strong>: Pure white handwriting font (`Patrick Hand`) with dark outline & soft shadow for maximum emotional contrast.<br>• <strong>Audio</strong>: Original 1.0x Full Mix.')">
+
+
+
+              ▶ 7clouds Aesthetic Remaster (3:34) [RECOMMENDED]
+
+
+
+            </button>
+
+
+
+            <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.05); opacity: 0.6;" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '⏮️ <em>Previous Archive: yung kai — blue (Old Slowed + Reverb 4:08)</em>')">
+
+
+
+              ⏮ Archive: Old Slowed (4:08)
+
+
+
+            </button>
+
+
+
+      <button class="tab-btn" style="border-color: #38bdf8; background: rgba(56, 189, 248, 0.15); box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);" onclick="switchOption(this, 'videos/28_yung_kai_blue_7clouds_EdoSZ_Lyric_Video.mp4', '🌊 <strong>28. blue (Official 7clouds Edo SZ Edition)</strong> — yung kai<br><strong>Authentic Formula</strong>: <em>Edo SZ Brush Script Font • Sentence Case • Lower-Third 78% Placement • Soft Black Outer Glow • Zero-Frame Hard Cuts • Rest-Cut Instrumental Breathing Room</em>.<br>Full 3:34 Master • 4K Soft Sea Ocean Wave Aesthetic • 35-45% Screen Width • Pure White Luminous Typography.')">
+
+
+
+        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (Edo SZ 7clouds)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Authentic Formula (3:34)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #0284c7; background: rgba(2, 132, 199, 0.18); box-shadow: 0 0 16px rgba(2, 132, 199, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>28. blue (80% Sky • 20% Sea • Blue Filter Vibe Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Exact 80% Open Cyan Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter.<br>Full 3:34 Master • Authentic 7clouds Edo SZ Formula • Sentence Case • Lower-Third Clearance • Soft Black Outer Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (80% Sky / 20% Sea)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Blue Filter Vibe (3:34)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.18); box-shadow: 0 0 16px rgba(6, 182, 212, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>30. Perfect (80% Sky • 20% Sea • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>Exact 80% Vast Azure Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter & Authentic 7clouds Edo SZ Brush Script.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • 3.0s Cathedral Hall • Sentence Case • Lower-Third Clearance (78% Down) • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Pauses.')">
+
+
+
+        <span style="font-weight:700; color:#22d3ee;">🌊 30. Perfect (80% Sky / 20% Sea)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #ec4899; background: rgba(236, 72, 153, 0.18); box-shadow: 0 0 16px rgba(236, 72, 153, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Cotton-Candy Clouds • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.18); box-shadow: 0 0 16px rgba(249, 115, 22, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Amber Dusk • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Warm Golden-Amber Dusk Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <!-- 70M-VIEW DANNY LOUIS TIN ROOF STYLE SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.30); box-shadow: 0 0 24px rgba(245, 158, 11, 0.60); border-width: 2px;" onclick="switchOption(this, 'videos/tin_roof_rain_forest_danny_louis_style.mp4', '⛈️ <strong>Viral 70M-View Style: Heavy Rain on Tin Roof in Foggy Rainforest</strong> (Danny Louis Replica)<br><strong>Camera POV</strong>: <em>Underneath Weathered Tin Roof Overhang looking out at Misty Murky Rainforest — Zero \'Rain Inside\' Issue</em>.<br><strong>Visual FX</strong>: <em>Active Water Streams & Droplets Cascading off Corrugated Metal Roof Eaves + Rain Pouring Across Forest</em>.<br><strong>Acoustics</strong>: <em>Authentic Metallic Tin Roof Clatter + Deep Rolling Thunder Growls</em> • <strong>100% Seamless Looping</strong>.')">
+
+
+
+        <span style="font-weight:900; color:#fbbf24;">⛈️ 70M-View Style: Tin Roof Rain</span>
+
+
+
+        <span style="font-size:11px;opacity:0.95; color:#fde68a;">Danny Louis Replica (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+      <!-- ANIMATED RAIN & LIGHT THUNDER HERO SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #10b981; background: rgba(16, 185, 129, 0.25); box-shadow: 0 0 20px rgba(16, 185, 129, 0.50); border-width: 2px;" onclick="switchOption(this, 'videos/cozy_forest_light_rain_thunder_animated_loop.mp4', '🌲🌧️ <strong>Featured Master: Cozy Forest Cabin (Active Animated Rain & Light Thunder • 1:00 Loop)</strong><br><strong>Visuals</strong>: <em>Active Animated Falling Rain Streaks + Window Glass Trickling Rivulets + Synchronized Distant Lightning Flash + Lush Misty Pine Forest</em>.<br><strong>Audio</strong>: <em>Gentle Light Rain Patter + Soothing Soft Pine Drizzle + 2 Mellow Low-Frequency Rolling Thunder Rumbles</em> • <strong>100% Mathematically Seamless Equal-Power Loop</strong>.<br>Full 1080p 60fps Master • Deep Sleep, Focus & Relax Sanctuary.')">
+
+
+
+        <span style="font-weight:800; color:#34d399;">🌲🌧️ Forest Cabin (Animated Rain)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.95; color:#a7f3d0;">Light Rain + Thunder (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+      <!-- RAIN AMBIENCE SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #6366f1; background: rgba(99, 102, 241, 0.22); box-shadow: 0 0 16px rgba(99, 102, 241, 0.40);" onclick="switchOption(this, 'videos/rain_bedroom_1min_loop_sample.mp4', '🌧️ <strong>Sample A: Cozy Bedroom at Night (Rain on Window & Distant Thunder)</strong><br><strong>Audio Engineering</strong>: <em>3D Spatial Binaural Rain</em> • Delicate Droplet Taps on Glass • Soothing Steady Downpour • Low-Frequency Cinematic Rolling Thunder • <strong>100% Seamless Equal-Power Loop (Zero Clicks / Zero Volume Dips)</strong>.<br>Full 1080p Master • Lo-Fi Bedroom Lamp Aesthetic • Perfect for Sleep, Studying & Night Relaxation.')">
+
+
+
+        <span style="font-weight:700; color:#818cf8;">🌧️ Rain: Cozy Bedroom</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#c7d2fe;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.22); box-shadow: 0 0 16px rgba(6, 182, 212, 0.40);" onclick="switchOption(this, 'videos/rain_coffeeshop_1min_loop_sample.mp4', '☕ <strong>Sample B: Late Night Tokyo Coffee Shop (Rain on Glass & Neon Bokeh)</strong><br><strong>Audio Engineering</strong>: <em>Warm Indoor Acoustic Rain</em> • Soft Raindrops on Awning • Low-Pass Interior Filter • Warm 130Hz Room Resonance • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Steaming Coffee Mug & Blurred Rainy Tokyo Street Neon • Ultimate Coding / Focus Vibe.')">
+
+
+
+        <span style="font-weight:700; color:#22d3ee;">☕ Rain: Tokyo Cafe</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.22); box-shadow: 0 0 16px rgba(245, 158, 11, 0.40);" onclick="switchOption(this, 'videos/rain_cabin_1min_loop_sample.mp4', '🔥 <strong>Sample C: Forest Wooden Cabin (Rain on Tin Roof & Crackling Fireplace)</strong><br><strong>Audio Engineering</strong>: <em>Cozy Hearth & Nature Soundscape</em> • Dense Rain Pattering on Pine Needles & Tin Roof • Authentic Burning Log Ember Crackles & Micro-Pops • Warm Fireplace Low Rumble • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Stone Fireplace Glow & Rainy Evergreen Forest Sanctuary.')">
+
+
+
+        <span style="font-weight:700; color:#fbbf24;">🔥 Rain: Forest Cabin</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fde68a;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: rgba(0, 0, 0, 0.25); padding: 8px 12px; border-radius: 10px;">
+
+
+
+          <span style="font-size: 12px; font-weight: 800; color: #f43f5e; min-width: 140px;">💎 Sia Chandelier:</span>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(244, 63, 94, 0.85); background: rgba(244, 63, 94, 0.25);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '💎 <strong>Sia — Chandelier (Slowed + Reverb Brand Edition • Full 4:06)</strong><br>• <strong>1. Slowness</strong>: 0.865x tape varispeed (117 &rarr; 101.2 BPM), stretching out the emotional sorrow.<br>• <strong>2. Cathedral Space</strong>: 3.0s reverberation simulating a vast ballroom echo.<br>• <strong>3. Cassette Warmth</strong>: -2.5 semitones pitch drop, warm 15.5kHz tape shelf.<br>• <strong>Visual</strong>: Live shimmering golden chandelier prism bokeh lights drifting strictly <em>behind</em> glowing pure white lyrics (`bg_35`).')">
+
+
+
+            ▶ 1. Full Song: Slowed + Reverb (4:06)
+
+
+
+          </button>
+
+
+
+          <button class="tab-btn" style="width: auto; padding: 8px 16px; margin: 0; border-color: rgba(255, 255, 255, 0.4); background: rgba(255, 255, 255, 0.08);" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '💿 <strong>Sia — Chandelier (Original 1.0x Mix • Full 3:32)</strong><br>Standard 117 BPM tempo, euphoric electropop beat.<br>• <strong>Visual</strong>: Live shimmering lights and clouds drifting behind lyrics (`bg_35`).')">
+
+
+
+            ▶ 2. Full Song: Original Normal (3:32)
+
+
+
+          </button>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div style="font-size:14px; font-weight:700; color:var(--text-muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:0.8px;">Full Discography Catalog (Songs 1–28):</div>
+
+
+
+    <div class="tabs">
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4', '🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.')">
+
+
+
+        <span style="font-weight:700;">1. APT.</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Pastel Clouds</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/02_Lady_Gaga_Bruno_Mars_Die_With_A_Smile_Lyric_Video.mp4', '🌙 <strong>2. Die With A Smile</strong> — Lady Gaga & Bruno Mars<br><strong>Artwork</strong>: <em>Deep Indigo Twilight Starry Night</em> with crescent moon.<br>Luminous white typography, emotional acoustic ballad pacing.')">
+
+
+
+        <span style="font-weight:700;">2. Die With A Smile</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Starry Twilight Night</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/03_Taylor_Swift_The_Fate_of_Ophelia_Lyric_Video.mp4', '🌅 <strong>3. The Fate of Ophelia</strong> — Taylor Swift<br><strong>Artwork</strong>: <em>Anime Sunset Rooftop Skyline & Powerlines</em> at golden hour.<br>8.5s sharp unblurred intro card, zero collision 2-row couplets.')">
+
+
+
+        <span style="font-weight:700;">3. The Fate of Ophelia</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Sunset Rooftop Skyline</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/04_HUNTR_X_Golden_Lyric_Video.mp4', '✨ <strong>4. Golden</strong> — HUNTR/X (K-Pop Demon Hunters)<br><strong>Artwork</strong>: <em>Radiant Golden Hour Celestial Overlook</em> with sunbeams piercing amber mist.<br>13s sharp intro card, romanized Korean sing-along lyrics.')">
+
+
+
+        <span style="font-weight:700;">4. Golden</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Golden Celestial Overlook</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/05_Billie_Eilish_BIRDS_OF_A_FEATHER_Pink_Edition_Lyric_Video.mp4?v=official_srt', '🕊️ <strong>5. BIRDS OF A FEATHER (Pink Sky)</strong> — Billie Eilish<br><strong>Artwork</strong>: <em>Clear Pink Sunset Sky & Soaring Birds</em>.<br>Official Interscope studio lyrics & millisecond timestamps.')">
+
+
+
+        <span style="font-weight:700;">5. BIRDS OF A FEATHER</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Pink Sunset Sky</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/06_Sabrina_Carpenter_Espresso_Lyric_Video.mp4', '☕ <strong>6. Espresso</strong> — Sabrina Carpenter<br><strong>Artwork</strong>: <em>Summer Coastal Cafe Terrace</em> (Retro 90s Ghibli/Shinkai aesthetic).<br>Chic sunny iced latte terrace, bold black couplets, playful pop pacing.')">
+
+
+
+        <span style="font-weight:700;">6. Espresso</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Summer Cafe Terrace</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/07_Benson_Boone_Beautiful_Things_Lyric_Video.mp4', '🏔️ <strong>7. Beautiful Things</strong> — Benson Boone<br><strong>Artwork</strong>: <em>Dramatic Mountain Alpine Dawn</em>.<br>Majestic sunbeams piercing morning mountain mist, intense vocal crescendo.')">
+
+
+
+        <span style="font-weight:700;">7. Beautiful Things</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Alpine Mountain Dawn</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/08_Chappell_Roan_Good_Luck_Babe_Lyric_Video.mp4', '🌆 <strong>8. Good Luck, Babe!</strong> — Chappell Roan<br><strong>Artwork</strong>: <em>Retro 80s Neon Twilight Skyline</em>.<br>Vintage sports car overlooking neon city lights, 80s synthwave energy.')">
+
+
+
+        <span style="font-weight:700;">8. Good Luck, Babe!</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">80s Neon Twilight</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/09_Teddy_Swims_Lose_Control_Lyric_Video.mp4', '🌸 <strong>9. Lose Control</strong> — Teddy Swims<br><strong>Artwork</strong>: <em>Romantic Cherry Blossom Pathway</em>.<br>Drifting sakura petals in spring light, soulful emotional 2-row couplets.')">
+
+
+
+        <span style="font-weight:700;">9. Lose Control</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Sakura Pathway</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/10_Ruth_B_Dandelions_Lyric_Video.mp4', '🌼 <strong>10. Dandelions</strong> — Ruth B.<br><strong>Artwork</strong>: <em>Romantic Dandelion Sunset Meadow</em>.<br>Breathtaking golden hour meadow with floating dandelion seeds, pure romance.')">
+
+
+
+        <span style="font-weight:700;">10. Dandelions</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Dandelion Sunset Meadow</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/11_Justin_Bieber_Favorite_Girl_Lyric_Video.mp4', '👑 <strong>11. Favorite Girl</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Pastel Sunset Suburban Street & Flowers</em> (Cakes & Eclairs aesthetic).<br>Warm espresso dark couplets, 73M-view nostalgia hit.')">
+
+
+
+        <span style="font-weight:700;">11. Favorite Girl</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Sunset Street & Flowers</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/12_Melanie_Martinez_Play_Date_Lyric_Video.mp4', '🌸 <strong>12. Play Date</strong> — Melanie Martinez<br><strong>Artwork</strong>: <em>Pristine Celestial Anime Night Sky</em>.<br>Puffy chubby cloud typography (Sniglet), deep midnight sapphire stars, 108M-view viral anthem.')">
+
+
+
+        <span style="font-weight:700;">12. Play Date</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Celestial Night Sky</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/13_Stephen_Sanchez_Until_I_Found_You_Lyric_Video.mp4', '💖 <strong>13. Until I Found You</strong> — Stephen Sanchez<br><strong>Artwork</strong>: <em>Clear Pink Aesthetic Sunset & Pine Ridge</em>.<br>Classic doo-wop romantic ballad, warm espresso dark couplets, 145M+ view viral hit.')">
+
+
+
+        <span style="font-weight:700;">13. Until I Found You</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Clear Pink Sunset Sky</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/14_Justin_Bieber_Lonely_Lyric_Video.mp4', '🌧️ <strong>14. Lonely (Official Lyric Video)</strong> — Justin Bieber & benny blanco<br><strong>Artwork</strong>: <em>Cozy Rainy Window City Bokeh</em> (bg_04).<br>Ken Burns dynamic camera drift • Pure white luminous typography • Studio .srt sync.')">
+
+
+
+        <span style="font-weight:700;">14. Lonely (JB)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Rainy Window Bokeh</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/15_Akon_Lonely_Lyric_Video.mp4', '✨ <strong>15. Lonely (Spotify Starry Twilight Vibe Edition)</strong> — Akon<br><strong>Artwork</strong>: <em>Starry Celestial Night (80%) & Amber Sunset (20%) Solitary Vibe Character</em> (bg_20).<br>Spotify Sentence Case • 50/50 Balanced Couplets • Poppins Bold • Dreamy Glowing Bokeh (radius 10) • Ken Burns Camera Drift • Zero Overlap Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">15. Lonely (Akon)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">80% Night / 20% Sunset Vibe</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/16_Justin_Bieber_Love_Yourself_Lyric_Video.mp4', '✨ <strong>16. Love Yourself (Clean Dark Celestial Sky Edition)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>Clean Dark Celestial Starry Night Sky & Solitary Ridge</em> (bg_23).<br>Requested Dark Sky • High Contrast for White Typography • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">16. Love Yourself</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Clean Dark Starry Sky (50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/17_Katy_Perry_The_One_That_Got_Away_Lyric_Video.mp4', '✨ <strong>17. The One That Got Away</strong> — Katy Perry<br><strong>Artwork</strong>: <em>Mustang Coastal Cliff & Radiant Summer Sunset (Radiohead Vibe)</em> (bg_22).<br>Direct Lyric Connection (Mustang to Radiohead) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">17. The One That Got Away</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Mustang Sunset (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/18_Coldplay_Yellow_Lyric_Video.mp4', '✨ <strong>18. Yellow (Studio Zero-Lag Sync Edition)</strong> — Coldplay<br><strong>Artwork</strong>: <em>Coldplay Yellow Celestial Starry Night & Reflective Beach</em> (bg_24).<br>Direct Lyric Connection (Look at the Stars) • Studio-Aligned Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">18. Yellow</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Starry Beach (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/19_Coldplay_A_Sky_Full_of_Stars_Lyric_Video.mp4', '✨ <strong>19. A Sky Full of Stars</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Sapphire Starlit Sky & Solitary Overlook</em> (bg_25).<br>Direct Lyric Connection ('Cause you're a sky full of stars) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">19. A Sky Full of Stars</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Cosmic Sapphire (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/20_Coldplay_Paradise_Lyric_Video.mp4', '✨ <strong>20. Paradise</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Twilight Celestial Dreamscape & Solitary Overlook</em> (bg_26).<br>Direct Lyric Connection (Dreaming of Paradise) • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">20. Paradise</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Twilight Dreamscape (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/21_Coldplay_Clocks_Lyric_Video.mp4', '✨ <strong>21. Clocks</strong> — Coldplay<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Starlight & Midnight Ocean Bluffs</em> (bg_27).<br>Direct Lyric Connection (Tides to Swim Against) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">21. Clocks</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Cosmic Starlight (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/22_Billie_Eilish_Khalid_lovely_Lyric_Video.mp4', '✨ <strong>22. lovely</strong> — Billie Eilish & Khalid<br><strong>Artwork</strong>: <em>Makoto Shinkai Ethereal Celestial Aurora Lake</em> (bg_28).<br>Direct Lyric Connection (Even if it takes all night) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">22. lovely</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Celestial Aurora Lake (50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/23_OneRepublic_Counting_Stars_Lyric_Video.mp4', '✨ <strong>23. Counting Stars</strong> — OneRepublic<br><strong>Artwork</strong>: <em>Makoto Shinkai Celestial Shooting Star Night & Grassy Ridge</em> (bg_29).<br>Direct Lyric Connection (We\'ll Be Counting Stars) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">23. Counting Stars</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Shooting Stars (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/24_Lord_Huron_The_Night_We_Met_Lyric_Video.mp4', '✨ <strong>24. The Night We Met</strong> — Lord Huron<br><strong>Artwork</strong>: <em>Makoto Shinkai Cosmic Midnight Starlit Sky, Misty Pine Valley & Solitary Ridge Traveler</em> (bg_30).<br>Direct Lyric Connection (Take me back to the night we met) • Hooked Title Intro (170pt) • Studio Zero-Lag Vocal Timing • Spotify Poppins Bold • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">24. The Night We Met</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Celestial Ridge (Spotify 50/50)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Normal 1.0x Mix)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em> (88% Clean Reading Area).<br>Full 3:57 Original Studio Mix • Seamless Looping Live Cloud Drift • Patrick Hand 200pt Hook Title • Pure White Starlight Glow (&H00FFFFFF + \blur2.0) • Strictly 2-Row Couplets.')">
+
+
+
+        <span style="font-weight:700;">25. Sweater Weather</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:57)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/25_The_Neighbourhood_Sweater_Weather_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>25. Sweater Weather (Slowed + Reverb Brand Edition)</strong> — The Neighbourhood<br><strong>Artwork</strong>: <em>Makoto Shinkai Living Sapphire & Violet Color Cloud Sky with Minimal Dark Pine Horizon</em>.<br>Full 4:35 Master • 0.865x Tape Varispeed (118 &rarr; 102 BPM) • 3.0s Cathedral Reverb • 15.5kHz Analog Tape Warmth • Seamless Looping Cloud Drift • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets.')">
+
+
+
+        <span style="font-weight:700; color:#d8b4fe;">25. Sweater Weather (Slowed)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:35)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/26_Tom_Odell_Another_Love_Lyric_Video.mp4', '✨ <strong>26. Another Love</strong> — Tom Odell<br><strong>Artwork</strong>: <em>Makoto Shinkai Clear Pink Aesthetic Sunset & Pine Ridge</em> (bg_32).<br>Direct Lyric Connection (All my tears have been used up) • Until I Found You Clean Style • Patrick Hand Large Typography (102-114pt) • 175pt Title Card • 50/50 Balanced Couplets • Dreamy Bokeh (radius 10) • Ken Burns Camera Drift • Zero Collision Holding Sync.')">
+
+
+
+        <span style="font-weight:700;">26. Another Love</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Pink Sunset (Clean Big Text)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Normal 1.0x Mix)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 3:53 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Cloud Drift.')">
+
+
+
+        <span style="font-weight:700;">27. Glimpse of Us</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:53)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/27_Joji_Glimpse_of_Us_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>27. Glimpse of Us (Slowed + Reverb Brand Edition)</strong> — Joji<br><strong>Artwork</strong>: <em>Makoto Shinkai Moody Indigo Twilight Sky & Solitary Rain Ledge</em> (bg_33).<br>Full 4:30 Master • 0.865x Tape Varispeed (85 &rarr; 73.5 BPM) • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
+
+
+
+        <span style="font-weight:700; color:#d8b4fe;">27. Glimpse of Us (Slowed)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:30)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Lyric_Video.mp4', '☁️ <strong>28. blue (7clouds Aesthetic Remaster)</strong> — yung kai<br><strong>Artwork</strong>: <em>7clouds Aesthetic Pastel Dawn Sky</em> (bg_34).<br>Full 3:34 Master • Patrick Hand Hook Title • Crisp White Typography with Dark Border • Strictly 2-Row Couplets • Subtle Clean Zoompan Drift.')">
+
+
+
+          <span style="font-weight:700; color:#38bdf8;">28. blue (7clouds)</span>
+
+
+
+          <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:34)</span>
+
+
+
+        </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/28_yung_kai_blue_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>28. blue (Slowed + Reverb Brand Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Makoto Shinkai Dreamy Pastel Dawn Sky & Coastal Overlook</em> (bg_34).<br>Full 4:08 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb • 15.5kHz Tape Warmth • Patrick Hand 200pt Hook Title • Strictly 2-Row Couplets.')">
+
+
+
+        <span style="font-weight:700; color:#d8b4fe;">28. blue (Slowed)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:08)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #38bdf8; background: rgba(56, 189, 248, 0.15); box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);" onclick="switchOption(this, 'videos/28_yung_kai_blue_7clouds_EdoSZ_Lyric_Video.mp4', '🌊 <strong>28. blue (Official 7clouds Edo SZ Edition)</strong> — yung kai<br><strong>Authentic Formula</strong>: <em>Edo SZ Brush Script Font • Sentence Case • Lower-Third 78% Placement • Soft Black Outer Glow • Zero-Frame Hard Cuts • Rest-Cut Instrumental Breathing Room</em>.<br>Full 3:34 Master • 4K Soft Sea Ocean Wave Aesthetic • 35-45% Screen Width • Pure White Luminous Typography.')">
+
+
+
+        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (Edo SZ 7clouds)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Authentic Formula (3:34)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #0284c7; background: rgba(2, 132, 199, 0.18); box-shadow: 0 0 16px rgba(2, 132, 199, 0.35);" onclick="switchOption(this, 'videos/28_yung_kai_blue_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>28. blue (80% Sky • 20% Sea • Blue Filter Vibe Edition)</strong> — yung kai<br><strong>Artwork</strong>: <em>Exact 80% Open Cyan Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter.<br>Full 3:34 Master • Authentic 7clouds Edo SZ Formula • Sentence Case • Lower-Third Clearance • Soft Black Outer Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#38bdf8;">🌊 28. blue (80% Sky / 20% Sea)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#bae6fd;">Blue Filter Vibe (3:34)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.18); box-shadow: 0 0 16px rgba(6, 182, 212, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_80Sky_20Sea_BlueFilter_Lyric_Video.mp4', '🌊 <strong>30. Perfect (80% Sky • 20% Sea • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>Exact 80% Vast Azure Sky & 20% Low Horizon Turquoise Ocean Waves</em> with Dreamy Cool Blue Aesthetic Filter & Authentic 7clouds Edo SZ Brush Script.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • 3.0s Cathedral Hall • Sentence Case • Lower-Third Clearance (78% Down) • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Instrumental Pauses.')">
+
+
+
+        <span style="font-weight:700; color:#22d3ee;">🌊 30. Perfect (80% Sky / 20% Sea)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #ec4899; background: rgba(236, 72, 153, 0.18); box-shadow: 0 0 16px rgba(236, 72, 153, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Cotton-Candy Clouds • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.18); box-shadow: 0 0 16px rgba(249, 115, 22, 0.35);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Amber Dusk • Authentic 7clouds Edo SZ Edition)</strong> — Ed Sheeran<br><strong>Artwork & Typography</strong>: <em>7clouds Warm Golden-Amber Dusk Clouds</em> with Authentic Edo SZ Brush Script in Sentence Case.<br>Full 5:05 Master • Slowed + Reverb (0.865x) • Lower-Third 78% Down • Soft Black Glow & Shadow • Zero-Frame Cuts • Rest-Cut Breathing Room.')">
+
+
+
+        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Edo SZ • Slowed (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <!-- 70M-VIEW DANNY LOUIS TIN ROOF STYLE SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.30); box-shadow: 0 0 24px rgba(245, 158, 11, 0.60); border-width: 2px;" onclick="switchOption(this, 'videos/tin_roof_rain_forest_danny_louis_style.mp4', '⛈️ <strong>Viral 70M-View Style: Heavy Rain on Tin Roof in Foggy Rainforest</strong> (Danny Louis Replica)<br><strong>Camera POV</strong>: <em>Underneath Weathered Tin Roof Overhang looking out at Misty Murky Rainforest — Zero \'Rain Inside\' Issue</em>.<br><strong>Visual FX</strong>: <em>Active Water Streams & Droplets Cascading off Corrugated Metal Roof Eaves + Rain Pouring Across Forest</em>.<br><strong>Acoustics</strong>: <em>Authentic Metallic Tin Roof Clatter + Deep Rolling Thunder Growls</em> • <strong>100% Seamless Looping</strong>.')">
+
+
+
+        <span style="font-weight:900; color:#fbbf24;">⛈️ 70M-View Style: Tin Roof Rain</span>
+
+
+
+        <span style="font-size:11px;opacity:0.95; color:#fde68a;">Danny Louis Replica (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+      <!-- ANIMATED RAIN & LIGHT THUNDER HERO SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #10b981; background: rgba(16, 185, 129, 0.25); box-shadow: 0 0 20px rgba(16, 185, 129, 0.50); border-width: 2px;" onclick="switchOption(this, 'videos/cozy_forest_light_rain_thunder_animated_loop.mp4', '🌲🌧️ <strong>Featured Master: Cozy Forest Cabin (Active Animated Rain & Light Thunder • 1:00 Loop)</strong><br><strong>Visuals</strong>: <em>Active Animated Falling Rain Streaks + Window Glass Trickling Rivulets + Synchronized Distant Lightning Flash + Lush Misty Pine Forest</em>.<br><strong>Audio</strong>: <em>Gentle Light Rain Patter + Soothing Soft Pine Drizzle + 2 Mellow Low-Frequency Rolling Thunder Rumbles</em> • <strong>100% Mathematically Seamless Equal-Power Loop</strong>.<br>Full 1080p 60fps Master • Deep Sleep, Focus & Relax Sanctuary.')">
+
+
+
+        <span style="font-weight:800; color:#34d399;">🌲🌧️ Forest Cabin (Animated Rain)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.95; color:#a7f3d0;">Light Rain + Thunder (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+      <!-- RAIN AMBIENCE SHOWCASE -->
+
+
+
+      <button class="tab-btn" style="border-color: #6366f1; background: rgba(99, 102, 241, 0.22); box-shadow: 0 0 16px rgba(99, 102, 241, 0.40);" onclick="switchOption(this, 'videos/rain_bedroom_1min_loop_sample.mp4', '🌧️ <strong>Sample A: Cozy Bedroom at Night (Rain on Window & Distant Thunder)</strong><br><strong>Audio Engineering</strong>: <em>3D Spatial Binaural Rain</em> • Delicate Droplet Taps on Glass • Soothing Steady Downpour • Low-Frequency Cinematic Rolling Thunder • <strong>100% Seamless Equal-Power Loop (Zero Clicks / Zero Volume Dips)</strong>.<br>Full 1080p Master • Lo-Fi Bedroom Lamp Aesthetic • Perfect for Sleep, Studying & Night Relaxation.')">
+
+
+
+        <span style="font-weight:700; color:#818cf8;">🌧️ Rain: Cozy Bedroom</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#c7d2fe;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #06b6d4; background: rgba(6, 182, 212, 0.22); box-shadow: 0 0 16px rgba(6, 182, 212, 0.40);" onclick="switchOption(this, 'videos/rain_coffeeshop_1min_loop_sample.mp4', '☕ <strong>Sample B: Late Night Tokyo Coffee Shop (Rain on Glass & Neon Bokeh)</strong><br><strong>Audio Engineering</strong>: <em>Warm Indoor Acoustic Rain</em> • Soft Raindrops on Awning • Low-Pass Interior Filter • Warm 130Hz Room Resonance • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Steaming Coffee Mug & Blurred Rainy Tokyo Street Neon • Ultimate Coding / Focus Vibe.')">
+
+
+
+        <span style="font-weight:700; color:#22d3ee;">☕ Rain: Tokyo Cafe</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#a5f3fc;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.22); box-shadow: 0 0 16px rgba(245, 158, 11, 0.40);" onclick="switchOption(this, 'videos/rain_cabin_1min_loop_sample.mp4', '🔥 <strong>Sample C: Forest Wooden Cabin (Rain on Tin Roof & Crackling Fireplace)</strong><br><strong>Audio Engineering</strong>: <em>Cozy Hearth & Nature Soundscape</em> • Dense Rain Pattering on Pine Needles & Tin Roof • Authentic Burning Log Ember Crackles & Micro-Pops • Warm Fireplace Low Rumble • <strong>100% Seamless Equal-Power Loop</strong>.<br>Full 1080p Master • Stone Fireplace Glow & Rainy Evergreen Forest Sanctuary.')">
+
+
+
+        <span style="font-weight:700; color:#fbbf24;">🔥 Rain: Forest Cabin</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fde68a;">Seamless Loop (1:00)</span>
+
+
+
+      </button>
+
+
+
+
+
+
+
+
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Normal 1.0x Mix)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 3:32 Master • Patrick Hand 200pt Hook Title • Glowing Pure White Typography • Strictly 2-Row Couplets • Seamless Looping Live Clouds & Golden Chandelier Bokeh Lights (Layered Strictly Behind Lyrics).')">
+
+
+
+        <span style="font-weight:700;">29. Chandelier</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8;">Normal 1.0x (3:32)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/29_Sia_Chandelier_Slowed_Reverb_Lyric_Video.mp4', '✨ <strong>29. Chandelier (Slowed + Reverb Brand Edition)</strong> — Sia<br><strong>Artwork</strong>: <em>Radiant Celestial Prism Bokeh & Penthouse Night Sky</em> (bg_35).<br>Full 4:06 Master • 0.865x Tape Varispeed (117 &rarr; 101.2 BPM) • 3.0s Cathedral Reverb Hall • -2.5 Semitones Pitch Drop • 15.5kHz Warm Tape Shelf • Live Shimmering Lights Behind Lyrics.')">
+
+
+
+        <span style="font-weight:700; color:#d8b4fe;">29. Chandelier (Slowed)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8; color:#e9d5ff;">Slowed + Reverb (4:06)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_Lyric_Video.mp4', '☁️ <strong>00. That Should Be Me (7clouds Aesthetic Master)</strong> — Justin Bieber<br><strong>Artwork</strong>: <em>7clouds Twilight Heartbreak Clouds</em>.<br>Full 3:36 Master • Patrick Hand Handwriting Font • Strictly 2-Row Couplets • Pure White Typography with Deep Charcoal Border • High Contrast & Emotional Sky.')">
+
+
+
+        <span style="font-weight:700; color:#38bdf8;">00. That Should Be Me</span>
+
+
+
+        <span style="font-size:11px;opacity:0.8; color:#7dd3fc;">Normal 1.0x (3:36)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f59e0b; background: rgba(245, 158, 11, 0.15); box-shadow: 0 0 14px rgba(245, 158, 11, 0.25);" onclick="switchOption(this, 'videos/00_Justin_Bieber_That_Should_Be_Me_20Min_5x_Replay_Lyric_Video.mp4', '🔁 <strong>00. That Should Be Me (20+ Minutes • 5 Times Replay Loop Edition)</strong> — Justin Bieber<br><strong>Aesthetic Formula</strong>: <em>Signature 7clouds Twilight Sky + Seamless 5x Replay Loop</em>.<br>Full 21:38 Master • 6 Iterations (1 Original + 5 Continuous Replays) • Replay Index Hook Cards ([1/5] to [5/5]) • Optimized for High YouTube Watch-Time, Study & Sleep Sessions.')">
+
+
+
+        <span style="font-weight:700; color:#fbbf24;">🔁 00. That Should Be Me (20-Min)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fde68a;">5x Replay Loop (21:38)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f472b6; background: rgba(244, 114, 182, 0.15); box-shadow: 0 0 14px rgba(244, 114, 182, 0.25);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Pink_Edition_Lyric_Video.mp4', '🌸 <strong>30. Perfect (Pink Mode Edition • Slowed + Reverb)</strong> — Ed Sheeran<br><strong>Artwork</strong>: <em>7clouds Pastel Pink Cotton-Candy Twilight Clouds</em> (bg_30_pink).<br>Full 5:05 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb Hall • 15.5kHz Warm Tape Shelf • Patrick Hand 2-Row Couplets • Pure Romantic Pink Aesthetic.')">
+
+
+
+        <span style="font-weight:700; color:#f472b6;">🌸 30. Perfect (Pink Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fbcfe8;">Slowed + Reverb (5:05)</span>
+
+
+
+      </button>
+
+
+
+      <button class="tab-btn" style="border-color: #f97316; background: rgba(249, 115, 22, 0.15); box-shadow: 0 0 14px rgba(249, 115, 22, 0.25);" onclick="switchOption(this, 'videos/30_Ed_Sheeran_Perfect_Slowed_Reverb_Sunset_Edition_Lyric_Video.mp4', '🌅 <strong>30. Perfect (Sunset Mode Edition • Slowed + Reverb)</strong> — Ed Sheeran<br><strong>Artwork</strong>: <em>7clouds Warm Golden-Amber & Coral Dusk Clouds</em> (bg_30_sunset).<br>Full 5:05 Master • 0.865x Tape Varispeed • 3.0s Cathedral Reverb Hall • 15.5kHz Warm Tape Shelf • Patrick Hand 2-Row Couplets • Deep Nostalgic Golden Hour.')">
+
+
+
+        <span style="font-weight:700; color:#fb923c;">🌅 30. Perfect (Sunset Mode)</span>
+
+
+
+        <span style="font-size:11px;opacity:0.9; color:#fed7aa;">Slowed + Reverb (5:05)</span>
+
+
+
+      </button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="desc-box" id="option-desc">
+
+
+
+      🌸 <strong>1. APT.</strong> — ROSÉ & Bruno Mars<br><strong>Artwork</strong>: <em>Fluffy Cotton-Candy Pastel Clouds</em> (Makoto Shinkai style).<br>High-contrast black typography, APATEU sing-along.
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="video-wrapper">
+
+
+
+      <video id="player" controls autoplay>
+
+
+
+        <source id="video-source" src="videos/01_ROSE_Bruno_Mars_APT_Lyric_Video.mp4" type="video/mp4">
+
+
+
+        Your browser does not support the video tag.
+
+
+
+      </video>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <script>
+
+
+
+    function switchOption(btn, src, desc) {
+
+
+
+      const player = document.getElementById('player');
+
+
+
+      const source = document.getElementById('video-source');
+
+
+
+      const descEl = document.getElementById('option-desc');
+
+
+
+      const buttons = document.querySelectorAll('.tab-btn');
+
+
+
+
+
+
+
+      buttons.forEach(b => b.classList.remove('active'));
+
+
+
+      btn.classList.add('active');
+
+
+
+
+
+
+
+      descEl.innerHTML = desc;
+
+
+
+      source.src = src;
+
+
+
+      player.load();
+
+
+
+      player.play();
+
+
+
+    }
+
+
+
+  </script>
+
+
+
+
+
+
+
+    <div id="tab-real-nature-rain" class="tab-content">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>🌧️ Real Live-Action Tin Roof Rain with Distant Thunder (Danny Louis 70M Formula)</h2>
+
+
+
+            <p class="desc">1080p Real live-action camera footage with forward + reverse ping-pong loop (100% zero jump-cut seam), cinematic contrast boost (eq=contrast=1.22), deep rainforest blacks, and 60-second seamless binaural tin roof rain & rolling thunder loop.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop preload="metadata">
+
+
+
+                    <source src="videos/real_nature_tin_roof_rain_seamless_loop.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            <div class="specs-grid">
+
+
+
+                <div class="spec-item"><strong>Footage:</strong> Real Nature (Pexels 1080p live-action)</div>
+
+
+
+                <div class="spec-item"><strong>Loop Technique:</strong> 30s Forward + 30s Reverse Ping-Pong (Zero Seam)</div>
+
+
+
+                <div class="spec-item"><strong>Grading:</strong> Contrast 1.22, Brightness -0.04, Saturation 1.18</div>
+
+
+
+                <div class="spec-item"><strong>Audio:</strong> Binaural Tin Roof Clatter + Sub-80Hz Thunder</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-our-rain-tin-roof" class="tab-content" style="display:none;">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>🌧️ OUR RAIN: Heavy Rain on Stale Tin Roof in Murky Forest (Danny Louis 70M Formula)</h2>
+
+
+
+            <p class="desc">1080p Real live-action footage of rain pouring and spraying on corrugated tin roof in a foggy forest. Engineered with a 30s forward + 30s reverse ping-pong loop (100% zero jump cut seam), boosted contrast (1.28x) with rich murky forest blacks, and paired with seamless 60-second binaural tin roof rain & rolling thunder loop.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop autoplay muted preload="auto" poster="thumbnail/our_rain_thumbnail_7clouds_style.png">
+
+
+
+                    <source src="videos/our_tin_roof_rain_seamless_loop.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails for Our Rain Video (191M & 164M CTR Formulas)</h3>
+
+
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Brush Stencil Style)</h4>
+
+
+
+                    <img src="thumbnail/our_rain_thumbnail_7clouds_style.png" style="width:100%; border-radius:6px;" alt="7clouds style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Center aligned</p>
+
+
+
+                </div>
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Tall Bold Sans Style)</h4>
+
+
+
+                    <img src="thumbnail/our_rain_thumbnail_latinhype_style.png" style="width:100%; border-radius:6px;" alt="LatinHype style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D solid cut-out | Upper-center aligned</p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Visual Source:</strong> Real Corrugated Tin Roof Overhang in Murky Rainforest</div>
+
+
+
+                <div class="spec-item"><strong>Loop Precision:</strong> 30.0s Fwd + 30.0s Rev (Zero Seam Artifacts)</div>
+
+
+
+                <div class="spec-item"><strong>Grading:</strong> Contrast 1.28 • Brightness -0.03 • Saturation 1.22</div>
+
+
+
+                <div class="spec-item"><strong>Audio Mastering:</strong> Binaural Tin Roof Clatter + Sub-80Hz Rolling Thunder</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-real-nature-70m-sound" class="tab-content" style="display:none;">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>🌧️ Real Live Camera: Tin Roof Rain with Authentic 70M-View Channel Sound</h2>
+
+
+
+            <p class="desc">100% Real live-action camera footage of heavy rain pouring and dripping off corrugated tin roof eaves overlooking a lush green forest with dreamy natural bokeh. Graded with deep cinematic contrast, engineered with a 60-second seamless ping-pong loop (zero jump cut seam), and paired with the <strong>authentic 70M-view Danny Louis rain on stale tin roof & deep thunder channel audio</strong>.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop autoplay muted preload="auto" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
+
+
+
+                    <source src="videos/real_nature_tin_roof_rain_70m_channel_sound.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails for Our Real Nature Video (191M & 164M CTR Formulas)</h3>
+
+
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
+
+
+
+                    <img src="thumbnail/real_nature_rain_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: Crisp White | Shadow: Multi-layer Gaussian blur | High Contrast</p>
+
+
+
+                </div>
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
+
+
+
+                    <img src="thumbnail/real_nature_rain_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: Crisp White | Shadow: Sharp 3D Solid Cut-Out | Mobile Pop</p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Visuals:</strong> 100% Real Live-Action Camera (Corrugated Tin Roof in Forest Rain)</div>
+
+
+
+                <div class="spec-item"><strong>Sound Source:</strong> Authentic 70M-View Danny Louis Tin Roof Rain & Growling Thunder</div>
+
+
+
+                <div class="spec-item"><strong>Loop Math:</strong> 15s Fwd + 15s Rev x 2 (Zero Jump Cut Seams)</div>
+
+
+
+                <div class="spec-item"><strong>Grading:</strong> Contrast 1.26 • Brightness -0.04 • Saturation 1.22</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-monetizable-rain-sample" class="tab-content" style="display:none;">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>✨ 🛡️ 100% Monetizable Master: Real Nature Tin Roof Rain (Soft Mist Bloom)</h2>
+
+
+
+            <p class="desc">100% Safe for YouTube Partner Program (YPP) Monetization. Built using real commercial-licensed live camera footage of rain pouring on a tin roof in the forest, softened with a dreamy cinematic mist bloom filter, deep contrast, and paired with clean, uncopyrighted binaural tin roof rain & rolling thunder audio. Ready to be scaled to 3h / 5h with zero re-encoding.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop autoplay muted preload="auto" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
+
+
+
+                    <source src="videos/monetizable_cozy_tin_roof_rain_1min_sample.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Monetization Status:</strong> 100% Safe (No Content ID, No Reused Content Flag)</div>
+
+
+
+                <div class="spec-item"><strong>Atmosphere:</strong> Soft Mist Bloom + High Contrast Bokeh (Cozy & Deep)</div>
+
+
+
+                <div class="spec-item"><strong>Loop Precision:</strong> 15s Fwd + 15s Rev x 2 (Zero Seam, 100% Continuous)</div>
+
+
+
+                <div class="spec-item"><strong>3h/5h Scaling:</strong> Stream copy ready (takes &lt;45s to generate 3h video)</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-3h-master-rain" class="tab-content" style="display:none;">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>🌧️ ⏳ 3-HOUR MASTER: Heavy Rain on Tin Roof in Murky Forest (Ready for YouTube Upload)</h2>
+
+
+
+            <p class="desc"><strong>Full 3 Hours (10,800 seconds)</strong>. 100% Real live camera footage, softened with cinematic mist bloom, rich contrast, and paired with clean uncopyrighted binaural tin roof rain & distant rolling thunder. Guaranteed zero Content ID claims, 100% safe for YouTube Partner Program ad revenue.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop preload="metadata" poster="thumbnail/real_nature_rain_thumb_7clouds.jpg">
+
+
+
+                    <source src="videos/our_rain_cozy_tin_roof_3h_master.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <h3 style="margin-top:25px; color:#00e5ff;">🚀 YouTube Copy-Paste Upload Kit (Optimized for 10M+ Views)</h3>
+
+
+
+            <div style="background:#131a24; padding:20px; border-radius:10px; border:1px solid #233144; margin-top:15px; font-family:monospace; font-size:13px; color:#e0e6ed;">
+
+
+
+                <p><strong style="color:#ffd700;">VIDEO TITLE:</strong><br>
+
+
+
+                Rain on Stale Tin Roof in Murky Forest for Sleeping • Heavy Rain & Thunder Sounds (3 Hours)</p>
+
+
+
+                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
+
+
+
+                <p><strong style="color:#ffd700;">DESCRIPTION:</strong><br>
+
+
+
+                Goodbye insomnia! Fall into deep, uninterrupted sleep with authentic heavy rain pouring on a stale tin roof in a foggy murky forest at night. Relaxing acoustic clatter paired with low-frequency rolling thunder designed to cure sleeplessness, reduce anxiety, and help you study.<br><br>
+
+
+
+                ⏱️ TIMESTAMPS:<br>
+
+
+
+                00:00:00 - Heavy Rain on Tin Roof<br>
+
+
+
+                01:00:00 - Deep Sleep & Rolling Thunder<br>
+
+
+
+                02:00:00 - Forest Rain Ambience<br>
+
+
+
+                03:00:00 - Waking Refreshed<br><br>
+
+
+
+                🎧 Headphones recommended for binaural relaxation.</p>
+
+
+
+                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
+
+
+
+                <p><strong style="color:#ffd700;">SEARCH TAGS:</strong><br>
+
+
+
+                rain on tin roof, heavy rain and thunder, rain sounds for sleeping, tin roof rain, sleep sounds, insomnia relief, rain in forest, rain sounds, fall asleep fast, cozy rain, 3 hours rain, ambient rain, white noise, study sounds, deep sleep rain, thunderstorm sounds, relaxing rain</p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Duration:</strong> Exactly 3 Hours, 0 Minutes, 0 Seconds (323,820 frames)</div>
+
+
+
+                <div class="spec-item"><strong>File Size:</strong> 2.00 GB (Fast YouTube upload)</div>
+
+
+
+                <div class="spec-item"><strong>Resolution & FPS:</strong> 1080p Full HD (1920x1080 @ 30fps)</div>
+
+
+
+                <div class="spec-item"><strong>Audio Fidelity:</strong> 48kHz Stereo AAC (Seamless 60s binaural loop)</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-night-edition-rain" class="tab-content" style="display:none;">
+
+
+
+        <div class="video-card">
+
+
+
+            <h2>🌙 🌧️ NIGHT FOCUS: Heavy Rain on Tin Roof at Night (Dark Screen for Sleep)</h2>
+
+
+
+            <p class="desc">Engineered specifically for dark bedrooms and deep insomnia relief. Real live camera footage graded into a deep midnight blue palette with glistening silver raindrops streaming down from the roof eaves. Zero bright daylight glare to protect your melatonin and circadian rhythm.</p>
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video controls loop autoplay muted preload="auto" poster="thumbnail/night_rain_thumb_7clouds.jpg">
+
+
+
+                    <source src="videos/real_nature_tin_roof_night_1min_sample.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Night-Optimized Viral Thumbnails (High CTR in YouTube Dark Mode)</h3>
+
+
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
+
+
+
+                    <img src="thumbnail/night_rain_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds Night Style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Midnight Atmosphere</p>
+
+
+
+                </div>
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
+
+
+
+                    <img src="thumbnail/night_rain_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype Night Style">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D Solid Cut-Out | Dark Mode Pop</p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Visual Atmosphere:</strong> Deep Midnight Blue Moonlit Trees & Silver Raindrops</div>
+
+
+
+                <div class="spec-item"><strong>Eye Comfort:</strong> Low Luminance (No Glare, Safe for Bedroom Screens)</div>
+
+
+
+                <div class="spec-item"><strong>Loop Precision:</strong> 10s Fwd + 10s Rev x 3 = 60.0s (Zero Seam Ping-Pong)</div>
+
+
+
+                <div class="spec-item"><strong>Audio Mastering:</strong> Binaural Tin Roof Clatter + Deep Distant Thunder</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tab-big-view-cabin-rain" class="tab-content" style="display:block;">
+
+
+
+        <div class="video-card">
+
+
+
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+
+
+
+                <h2 style="margin:0;">🏡 🌌 🌧️ 3-HOUR PREMIER MASTER: Cozy Rainforest Cabin Rain at Night</h2>
+
+
+
+                <span style="background:rgba(16,185,129,0.25); color:#34d399; border:1px solid #10b981; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800; text-transform:uppercase;">100% Monetizable • 3 Hours (10,800s)</span>
+
+
+
+            </div>
+
+
+
+            <p class="desc">A wide-angle panoramic landscape view of a cozy cabin nestled deep in a misty tropical rainforest with rain pouring across the canopy and metal roof. Graded into a soothing midnight blue palette for dark bedrooms, insomnia relief, and deep focus. 100% Commercial live camera footage + clean binaural rain and thunder audio. Zero Content ID claims, 100% safe to monetize on YouTube.</p>
+
+
+
+            
+
+
+
+            <!-- Duration / Sample Switcher -->
+
+
+
+            <div style="display:flex; gap:10px; margin-bottom:15px; flex-wrap:wrap;">
+
+
+
+                <button class="tab-btn active" style="width:auto; padding:8px 18px; border-color:#10b981; background:rgba(16,185,129,0.3);" onclick="document.getElementById('big-view-player').src='videos/our_rain_big_view_cabin_night_3h_master.mp4'; document.getElementById('big-view-player').play();">
+
+
+
+                    ▶ Play Full 3-Hour Master (10,800s • 1.69 GB)
+
+
+
+                </button>
+
+
+
+                <button class="tab-btn" style="width:auto; padding:8px 18px; border-color:rgba(255,255,255,0.3); background:rgba(255,255,255,0.06);" onclick="document.getElementById('big-view-player').src='videos/real_nature_wide_forest_cabin_night_1min_sample.mp4'; document.getElementById('big-view-player').play();">
+
+
+
+                    ▶ Play 1-Minute Preview Loop
+
+
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="video-wrapper">
+
+
+
+                <video id="big-view-player" controls preload="metadata" poster="thumbnail/wide_cabin_night_thumb_7clouds.jpg">
+
+
+
+                    <source src="videos/our_rain_big_view_cabin_night_3h_master.mp4" type="video/mp4">
+
+
+
+                    Your browser does not support the video tag.
+
+
+
+                </video>
+
+
+
+            </div>
+
+
+
+            
+
+
+
+            <h3 style="margin-top:25px; color:#00e5ff;">🎯 Viral Thumbnails (191M & 164M High CTR Formulas)</h3>
+
+
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#ffd700; margin-bottom:8px;">191M Formula (7clouds Edo SZ Brush Style)</h4>
+
+
+
+                    <img src="thumbnail/wide_cabin_night_thumb_7clouds.jpg" style="width:100%; border-radius:6px;" alt="7clouds Wide Cabin">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Edo SZ</strong> | Fill: White | Shadow: Multi-layer Gaussian blur | Wide Nature Vista | <a href="thumbnail/wide_cabin_night_thumb_7clouds.jpg" download style="color:#38bdf8;">Download JPG</a></p>
+
+
+
+                </div>
+
+
+
+                <div style="background:#161d27; padding:15px; border-radius:10px; border:1px solid #2a3749;">
+
+
+
+                    <h4 style="color:#00e5ff; margin-bottom:8px;">164M Formula (LatinHype Bebas Neue Style)</h4>
+
+
+
+                    <img src="thumbnail/wide_cabin_night_thumb_latinhype.jpg" style="width:100%; border-radius:6px;" alt="LatinHype Wide Cabin">
+
+
+
+                    <p style="font-size:13px; color:#aaa; margin-top:8px;">Font: <strong>Bebas Neue</strong> | Fill: White | Shadow: Sharp 3D Solid Cut-Out | Dark Mode Pop | <a href="thumbnail/wide_cabin_night_thumb_latinhype.jpg" download style="color:#38bdf8;">Download JPG</a></p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- YouTube Copy-Paste Upload Kit -->
+
+
+
+            <h3 style="margin-top:25px; color:#ffd700;">🚀 YouTube Copy-Paste Upload Kit (Ready to Monetize)</h3>
+
+
+
+            <div style="background:#131a24; padding:20px; border-radius:10px; border:1px solid #233144; margin-top:15px; font-family:monospace; font-size:13px; color:#e0e6ed; line-height:1.6;">
+
+
+
+                <p><strong style="color:#ffd700;">VIDEO TITLE:</strong><br>
+
+
+
+                Rain on Cozy Cabin in Murky Rainforest at Night • Heavy Rain & Thunder Sounds for Sleep (3 Hours)</p>
+
+
+
+                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
+
+
+
+                <p><strong style="color:#ffd700;">DESCRIPTION:</strong><br>
+
+
+
+                Fall asleep in minutes and cure insomnia with tranquil heavy rain falling on a secluded cozy cabin tucked deep inside a foggy mountain rainforest at night. Wide panoramic nature vista graded in deep midnight blue to prevent screen glare, accompanied by gentle binaural roof rain and distant rolling thunder.<br><br>
+
+
+
+                Perfect for: Deep sleep, studying, insomnia relief, anxiety reduction, meditation, and relaxing background noise.<br><br>
+
+
+
+                ⏱️ TIMESTAMPS:<br>
+
+
+
+                00:00:00 - Rainforest Rain at Secluded Cabin<br>
+
+
+
+                01:00:00 - Deep Sleep & Distant Rolling Thunder<br>
+
+
+
+                02:00:00 - Midnight Canopy Downpour<br>
+
+
+
+                02:59:00 - Waking Up Refreshed<br><br>
+
+
+
+                🎧 Headphones recommended for full binaural immersion.<br>
+
+
+
+                ✨ 100% Commercial Licensed live-action footage & original audio design.</p>
+
+
+
+                <hr style="border:0; border-top:1px solid #233144; margin:12px 0;">
+
+
+
+                <p><strong style="color:#ffd700;">SEARCH TAGS:</strong><br>
+
+
+
+                rain on cabin, rain sounds for sleep, cozy cabin rain, heavy rain at night, rain on tin roof, rain sounds, sleep sounds, insomnia relief, rain in rainforest, 3 hours rain, ambient rain, white noise for sleeping, study sounds, deep sleep rain, rain and thunder sounds, cabin ambience</p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="specs-grid" style="margin-top:20px;">
+
+
+
+                <div class="spec-item"><strong>Duration:</strong> Exactly 3 Hours, 0 Minutes, 0 Seconds (10,800s • 270,000 frames)</div>
+
+
+
+                <div class="spec-item"><strong>File Size:</strong> 1.69 GB (1730 MB • Fast YouTube Upload)</div>
+
+
+
+                <div class="spec-item"><strong>Resolution & FPS:</strong> 1080p Full HD (1920x1080 @ 25fps)</div>
+
+
+
+                <div class="spec-item"><strong>Audio Fidelity:</strong> 48kHz Stereo AAC 128 kbps (Binaural Tin Roof & Thunder)</div>
+
+
+
+                <div class="spec-item"><strong>Monetization Status:</strong> 100% Safe (CC0 Footage + Binaural Foley • Zero Reused Content)</div>
+
+
+
+                <div class="spec-item"><strong>Eye Comfort:</strong> Midnight Blue Low-Luminance (Zero Glare for Insomnia)</div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- CHOOSE YOUR PURE NATURE LOOK SHOWCASE -->
+
+    <div id="tab-choose-pure-nature" class="tab-content" style="display:block; margin-top:35px;">
+
+        <div class="video-card" style="border: 2px solid #00e5ff; box-shadow: 0 0 30px rgba(0, 229, 255, 0.25);">
+
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+
+                <h2 style="margin:0; color:#00e5ff;">🌲 🏔️ 🌧️ CHOOSE YOUR PURE NATURE LOOK (100% Wild Nature • Zero Buildings)</h2>
+
+                <span style="background:rgba(0,229,255,0.2); color:#00e5ff; border:1px solid #00e5ff; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:800; text-transform:uppercase;">Visual Selector Catalog</span>
+
+            </div>
+
+            <p class="desc">Which pure wild nature look do you want for our next long sleep video? All options are 100% real live-action camera footage, color-graded into our signature <strong>Midnight Indigo Dark Mode</strong> for insomnia relief, zero screen glare, and 100% monetization safety.</p>
+
+
+
+            <!-- Full Contact Sheet -->
+
+            <div style="background:#111722; padding:15px; border-radius:12px; border:1px solid #233144; margin-bottom:25px;">
+
+                <h4 style="color:#ffd700; margin-top:0; margin-bottom:10px;">📊 Side-by-Side Comparison Grid (All Options Graded for Night):</h4>
+
+                <img src="thumbnail/nature_options/contact_sheet_pure_nature_night_graded.jpg" style="width:100%; border-radius:8px; border:1px solid #334460;" alt="Pure Nature Comparison Grid">
+
+            </div>
+
+
+
+            <!-- Option Cards Grid -->
+
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px;">
+
+                <!-- OPTION 1 -->
+
+                <div style="background:#141c28; border:2px solid #38bdf8; border-radius:12px; overflow:hidden; padding:15px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+
+                        <span style="font-weight:800; color:#38bdf8; font-size:15px;">🌟 OPTION 1: Alpine Mountain Lake</span>
+
+                        <span style="background:rgba(56,189,248,0.25); color:#7dd3fc; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">RECOMMENDED</span>
+
+                    </div>
+
+                    <img src="thumbnail/nature_options/pure_nature_night_5174040.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Alpine Lake Rain">
+                    <button class="tab-btn" style="width:100%; margin:8px 0 12px 0; background:linear-gradient(135deg, #0284c7, #0369a1); border-color:#38bdf8; color:#fff; font-weight:700; text-align:center; padding:10px; cursor:pointer;" onclick="const p=document.getElementById('big-view-player'); p.src='videos/pure_nature_option1_alpine_lake_night_1min.mp4'; p.play(); p.scrollIntoView({behavior:'smooth', block:'center'});">
+                        ▶ Watch Option 1 Video Preview (1-Min Loop)
+                    </button>
+
+                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
+
+                        • <strong>Scene</strong>: Epic granite mountain peaks flanking a vast pine valley with heavy rain creating thousands of soothing ripples across crystal lake water.<br>
+
+                        • <strong>Vibe</strong>: 100% Pure wilderness vista, ultra-peaceful, zero buildings.<br>
+
+                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐⭐ (Most soothing for dark bedrooms).
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- OPTION 2 -->
+
+                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+
+                        <span style="font-weight:800; color:#a78bfa; font-size:15px;">OPTION 2: Flooded Ancient Forest</span>
+
+                        <span style="background:rgba(167,139,250,0.25); color:#c4b5fd; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">DEEP MYSTERY</span>
+
+                    </div>
+
+                    <img src="thumbnail/nature_options/pure_nature_night_9934612.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Flooded Forest Rain">
+
+                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
+
+                        • <strong>Scene</strong>: Ancient mossy trees standing in calm, mist-shrouded forest water with heavy rain pattering onto the water surface.<br>
+
+                        • <strong>Vibe</strong>: Secluded deep woodland sanctuary, rich reflections, mysterious tranquility.<br>
+
+                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐⭐ (Hypnotic water ripples).
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- OPTION 3 -->
+
+                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+
+                        <span style="font-weight:800; color:#34d399; font-size:15px;">OPTION 3: Misty Evergreen Pine Ridge</span>
+
+                        <span style="background:rgba(52,211,153,0.25); color:#6ee7b7; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">PACIFIC RAIN</span>
+
+                    </div>
+
+                    <img src="thumbnail/nature_options/pure_nature_night_10766175.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Misty Pine Ridge">
+
+                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
+
+                        • <strong>Scene</strong>: Endless mountain pines shrouded in drifting fog with torrential rain streaming down through giant pine needles.<br>
+
+                        • <strong>Vibe</strong>: Mountain storm, dense wilderness, organic pine forest downpour.<br>
+
+                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐ (Intense cozy mountain atmosphere).
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- OPTION 4 -->
+
+                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+
+                        <span style="font-weight:800; color:#fbbf24; font-size:15px;">OPTION 4: Tropical Rainforest Ridge</span>
+
+                        <span style="background:rgba(251,191,36,0.25); color:#fde68a; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">MONSOON</span>
+
+                    </div>
+
+                    <img src="thumbnail/nature_options/pure_nature_night_9353501.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Rainforest Canopy">
+
+                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
+
+                        • <strong>Scene</strong>: High mountain ridge overlooking an endless rolling sea of tropical jungle trees in heavy monsoon rain.<br>
+
+                        • <strong>Vibe</strong>: Expansive rainforest horizon, wild jungle canopy.<br>
+
+                        • <strong>Sleep Rating</strong>: ⭐⭐⭐⭐ (Vast open landscape).
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- OPTION 5 -->
+
+                <div style="background:#141c28; border:1px solid #2a3749; border-radius:12px; overflow:hidden; padding:15px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+
+                        <span style="font-weight:800; color:#f472b6; font-size:15px;">OPTION 5: Secluded Cabin in Rainforest</span>
+
+                        <span style="background:rgba(244,114,182,0.25); color:#fbcfe8; font-size:10px; font-weight:800; padding:3px 8px; border-radius:6px;">CURRENT 3H MASTER</span>
+
+                    </div>
+
+                    <img src="thumbnail/nature_options/pure_nature_night_12717007.jpg" style="width:100%; border-radius:8px; margin-bottom:10px;" alt="Secluded Cabin">
+                    <button class="tab-btn" style="width:100%; margin:8px 0 12px 0; background:linear-gradient(135deg, #db2777, #9d174d); border-color:#f472b6; color:#fff; font-weight:700; text-align:center; padding:10px; cursor:pointer;" onclick="const p=document.getElementById('big-view-player'); p.src='videos/real_nature_wide_forest_cabin_night_1min_sample.mp4'; p.play(); p.scrollIntoView({behavior:'smooth', block:'center'});">
+                        ▶ Watch Option 5 Video Preview (1-Min Loop)
+                    </button>
+
+                    <p style="font-size:13px; color:#cbd5e1; line-height:1.5; margin:0;">
+
+                        • <strong>Scene</strong>: Secluded mountain cabin with metal roof nestled in lush banana trees and tropical foliage in midnight rain.<br>
+
+                        • <strong>Vibe</strong>: Cozy shelter, tin roof acoustic clatter + rolling thunder.<br>
+
+                        • <strong>Status</strong>: Ready now! (Full 3-Hour master already rendered above).
+
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- MAGICAL FIREFLIES SPECIAL SHOWCASE -->
+            <div style="margin-top:30px; background:linear-gradient(135deg, rgba(20, 25, 45, 0.95), rgba(15, 20, 35, 0.95)); border:2px solid #fbbf24; border-radius:14px; padding:20px; box-shadow:0 0 25px rgba(251, 191, 36, 0.25);">
+                <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                    <h3 style="margin:0; color:#ffd700; font-size:18px;">✨ 🪲 🌧️ SPECIAL EDITION: Rain in Nature with Glowing Bioluminescent Fireflies</h3>
+                    <span style="background:rgba(251,191,36,0.25); color:#fde68a; border:1px solid #fbbf24; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:800; text-transform:uppercase;">Viral YouTube Concept</span>
+                </div>
+                <p style="font-size:14px; color:#e2e8f0; line-height:1.6; margin-bottom:15px;">
+                    Combining peaceful heavy rain with hundreds of warm, hypnotic golden & emerald glowing fireflies floating through the dark trees and reflecting on calm water ripples.
+                </p>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:15px;">
+                    <div style="background:#0f1520; padding:12px; border-radius:10px; border:1px solid #28374d;">
+                        <h4 style="color:#38bdf8; margin:0 0 8px 0;">Firefly Look A: Flooded Ancient Forest (Most Magical)</h4>
+                        <img src="thumbnail/nature_options/fireflies_flooded_forest.jpg" style="width:100%; border-radius:6px;" alt="Fireflies Flooded Forest">
+                        <p style="font-size:12px; color:#cbd5e1; margin:8px 0 0 0;">Glowing fireflies hovering above water ripples with reflections between ancient mossy trees.</p>
+                    </div>
+                    <div style="background:#0f1520; padding:12px; border-radius:10px; border:1px solid #28374d;">
+                        <h4 style="color:#a78bfa; margin:0 0 8px 0;">Firefly Look B: Alpine Mountain Lake</h4>
+                        <img src="thumbnail/nature_options/fireflies_alpine_lake.jpg" style="width:100%; border-radius:6px;" alt="Fireflies Alpine Lake">
+                        <p style="font-size:12px; color:#cbd5e1; margin:8px 0 0 0;">Luminous fireflies dancing across the wide mountain lake surface with dark pine valley.</p>
+                    </div>
+                    <div style="background:#0f1520; padding:12px; border-radius:10px; border:1px solid #28374d;">
+                        <h4 style="color:#f472b6; margin:0 0 8px 0;">Firefly Look C: Rainforest Cabin Sanctuary</h4>
+                        <img src="thumbnail/nature_options/fireflies_rainforest_cabin.jpg" style="width:100%; border-radius:6px;" alt="Fireflies Rainforest Cabin">
+                        <p style="font-size:12px; color:#cbd5e1; margin:8px 0 0 0;">Hypnotic golden glowing orbs drifting through the banana leaves and canopy around the cabin.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+
 </html>
