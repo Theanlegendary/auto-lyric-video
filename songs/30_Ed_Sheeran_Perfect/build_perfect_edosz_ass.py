@@ -9,15 +9,13 @@ song_dir = Path(r"C:\Users\DELL\.gemini\antigravity\scratch\auto_lyric_video\son
 # Strict 7clouds logic:
 # 1. Edo SZ brush font in Sentence case
 # 2. <= 2 lines maximum
-# 3. Lower third (78% down), center aligned
+# 3. Main lyrics in lower third (78% down), center aligned
 # 4. Zero-frame cuts, instantaneous snapping
 # 5. Rest cuts (screen empty during pauses)
+# 6. Intro Hero Title Hook: Placed in the MIDDLE, Big & Bold (Edo SZ 150pt + Poppins 42pt) like 31_gnash!
 couplets_1x = [
-    # Intro Metadata Hook (Poppins SemiBold 32pt)
-    ("0:00:01.00", "0:00:07.50", "Ed Sheeran - Perfect (Lyrics)", "", "Intro"),
-
     # Verse 1
-    ("0:00:07.80", "0:00:13.50", "I found a love for me,", "Darling, just dive right in", "Lyric"),
+    ("0:00:08.00", "0:00:13.50", "I found a love for me,", "Darling, just dive right in", "Lyric"),
     ("0:00:13.60", "0:00:16.50", "And follow my lead", "", "Lyric"),
     # [Rest cut from 16.50s to 17.00s]
     ("0:00:17.00", "0:00:24.00", "Well, I found a girl,", "Beautiful and sweet", "Lyric"),
@@ -92,41 +90,47 @@ PlayResY: 1080
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-; Core Font: Edo SZ, Sentence case, lower-third (78% down), soft black outer glow & shadow
+; 1. Hero Title: Middle screen (Alignment=5, pos 960,450), Big Edo SZ 150pt
+Style: HeroTitle,Edo SZ,150,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,2.0,0,1,4.5,3.0,5,160,160,100,1
+; 2. Hero Subtitle: Middle screen (Alignment=5, pos 960,560), Poppins SemiBold 42pt
+Style: HeroSub,Poppins SemiBold,42,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,6.0,0,1,2.5,2.0,5,160,160,100,1
+; 3. Main Lyrics: Lower-third (Alignment=2, MarginV=240, 78% down), Edo SZ 56pt
 Style: SevenCloudsLyric,Edo SZ,56,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,2,160,160,240,1
-; Secondary Font: Clean Sans-Serif for Intro Metadata (32pt, lower-third)
-Style: SevenCloudsIntro,Poppins SemiBold,32,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,2,160,160,260,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     events = []
+    
+    # 1. Big Hero Title in the MIDDLE (0.6s to 7.8s)
+    s_intro = sec_to_time(0.60 / speed_ratio)
+    e_intro = sec_to_time(7.80 / speed_ratio)
+    events.append(f"Dialogue: 0,{s_intro},{e_intro},HeroTitle,,0,0,0,,{{\\pos(960,450)\\blur2.2}}PERFECT\n")
+    events.append(f"Dialogue: 0,{s_intro},{e_intro},HeroSub,,0,0,0,,{{\\pos(960,560)\\blur1.8}}ED SHEERAN\n")
+
+    # 2. Main Lyrics
     for s_str, e_str, l1, l2, kind in couplets_1x:
         s_sec = time_to_sec(s_str) / speed_ratio
         e_sec = time_to_sec(e_str) / speed_ratio
         s_out = sec_to_time(s_sec)
         e_out = sec_to_time(e_sec)
 
-        if kind == "Intro":
-            style_name = "SevenCloudsIntro"
-            text = f"{{\\blur1.5}}{l1}"
+        style_name = "SevenCloudsLyric"
+        if l2:
+            text = f"{{\\blur1.8}}{l1}\\N{l2}"
         else:
-            style_name = "SevenCloudsLyric"
-            if l2:
-                text = f"{{\\blur1.8}}{l1}\\N{l2}"
-            else:
-                text = f"{{\\blur1.8}}{l1}"
+            text = f"{{\\blur1.8}}{l1}"
         
         events.append(f"Dialogue: 0,{s_out},{e_out},{style_name},,0,0,0,,{text}\n")
 
     return header + "".join(events)
 
 # 1. Slowed + Reverb ASS (R = 0.865)
-slowed_ass = generate_ass(speed_ratio=0.865, title_tag="Slowed + Reverb • Authentic 7clouds Edo SZ")
+slowed_ass = generate_ass(speed_ratio=0.865, title_tag="Slowed + Reverb • Hero Title Middle")
 (song_dir / "lyrics_edosz_slowed.ass").write_text(slowed_ass, encoding="utf-8")
-print(f"Generated lyrics_edosz_slowed.ass (Slowed + Reverb, R=0.865)")
+print(f"Generated lyrics_edosz_slowed.ass (Slowed + Reverb with Hero Title in Middle)")
 
 # 2. Original 1.0x ASS
-normal_ass = generate_ass(speed_ratio=1.0, title_tag="Original 1.0x • Authentic 7clouds Edo SZ")
+normal_ass = generate_ass(speed_ratio=1.0, title_tag="Original 1.0x • Hero Title Middle")
 (song_dir / "lyrics_edosz_normal.ass").write_text(normal_ass, encoding="utf-8")
-print(f"Generated lyrics_edosz_normal.ass (Original 1.0x)")
+print(f"Generated lyrics_edosz_normal.ass (Original 1.0x with Hero Title in Middle)")
