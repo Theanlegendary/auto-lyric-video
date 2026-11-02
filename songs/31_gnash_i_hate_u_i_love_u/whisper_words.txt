@@ -1,0 +1,605 @@
+[0.00 -> 5.00]  Feeling used, but I'm still missing you and I can't
+     0.00 -   0.88:  Feeling
+     0.88 -   1.22:  used,
+     1.78 -   2.04:  but
+     2.04 -   2.34:  I'm
+     2.34 -   3.02:  still
+     3.02 -   3.38:  missing
+     3.38 -   4.02:  you
+     4.02 -   4.40:  and
+     4.40 -   4.56:  I
+     4.56 -   5.00:  can't
+[5.64 -> 8.60]  See the end of this, just wanna feel your kiss
+     5.64 -   5.94:  See
+     5.94 -   6.30:  the
+     6.30 -   6.66:  end
+     6.66 -   6.82:  of
+     6.82 -   7.04:  this,
+     7.40 -   7.50:  just
+     7.50 -   7.68:  wanna
+     7.68 -   8.00:  feel
+     8.00 -   8.28:  your
+     8.28 -   8.60:  kiss
+[8.60 -> 12.54]  Against my lips and now all this time is passing by
+     8.60 -   9.16:  Against
+     9.16 -   9.62:  my
+     9.62 -   9.84:  lips
+     9.84 -  10.14:  and
+    10.14 -  10.36:  now
+    10.36 -  10.66:  all
+    10.66 -  10.82:  this
+    10.82 -  11.12:  time
+    11.12 -  11.74:  is
+    11.74 -  12.02:  passing
+    12.02 -  12.54:  by
+[12.54 -> 18.18]  But I still can't seem to tell you why it hurts me every time I see you
+    12.54 -  13.14:  But
+    13.14 -  13.30:  I
+    13.30 -  13.52:  still
+    13.52 -  14.00:  can't
+    14.00 -  14.16:  seem
+    14.16 -  14.40:  to
+    14.40 -  14.68:  tell
+    14.68 -  14.96:  you
+    14.96 -  15.24:  why
+    15.24 -  15.68:  it
+    15.68 -  15.92:  hurts
+    15.92 -  16.24:  me
+    16.24 -  16.82:  every
+    16.82 -  17.26:  time
+    17.26 -  17.46:  I
+    17.46 -  17.72:  see
+    17.72 -  18.18:  you
+[18.18 -> 20.96]  Realize how much I need you
+    18.18 -  19.06:  Realize
+    19.06 -  19.54:  how
+    19.54 -  19.86:  much
+    19.86 -  20.20:  I
+    20.20 -  20.42:  need
+    20.42 -  20.96:  you
+[22.58 -> 25.50]  I hate you, I love you
+    22.58 -  23.22:  I
+    23.22 -  23.74:  hate
+    23.74 -  24.16:  you,
+    24.58 -  24.74:  I
+    24.74 -  25.04:  love
+    25.04 -  25.50:  you
+[25.50 -> 29.34]  I hate that I love you, don't want to
+    25.50 -  26.06:  I
+    26.06 -  26.42:  hate
+    26.42 -  26.84:  that
+    26.84 -  27.28:  I
+    27.28 -  27.74:  love
+    27.74 -  28.10:  you,
+    28.22 -  28.66:  don't
+    28.66 -  29.00:  want
+    29.00 -  29.34:  to
+[29.34 -> 33.34]  But I can't put nobody else above you
+    29.34 -  29.64:  But
+    29.64 -  29.90:  I
+    29.90 -  30.52:  can't
+    30.52 -  30.70:  put
+    30.70 -  31.26:  nobody
+    31.26 -  32.18:  else
+    32.18 -  32.72:  above
+    32.72 -  33.34:  you
+[33.34 -> 35.92]  I hate you, I love you
+    33.34 -  33.70:  I
+    33.70 -  34.18:  hate
+    34.18 -  34.64:  you,
+    34.98 -  35.14:  I
+    35.14 -  35.58:  love
+    35.58 -  35.92:  you
+[35.92 -> 41.10]  I hate that I want to, you want her, you need her
+    35.92 -  36.38:  I
+    36.38 -  36.88:  hate
+    36.88 -  37.28:  that
+    37.28 -  37.76:  I
+    37.76 -  38.08:  want
+    38.08 -  38.48:  to,
+    38.94 -  38.98:  you
+    38.98 -  39.46:  want
+    39.46 -  39.80:  her,
+    40.08 -  40.22:  you
+    40.22 -  40.64:  need
+    40.64 -  41.10:  her
+[41.10 -> 43.68]  And I'll never be her
+    41.10 -  41.62:  And
+    41.62 -  42.22:  I'll
+    42.22 -  42.70:  never
+    42.70 -  43.28:  be
+    43.28 -  43.68:  her
+[46.16 -> 48.14]  I miss you and I can't sleep
+    46.16 -  46.88:  I
+    46.88 -  47.06:  miss
+    47.06 -  47.26:  you
+    47.26 -  47.44:  and
+    47.44 -  47.54:  I
+    47.54 -  47.90:  can't
+    47.90 -  48.14:  sleep
+[48.14 -> 51.96]  But right after coffee, right when I can't eat
+    48.14 -  49.48:  But
+    49.48 -  49.72:  right
+    49.72 -  50.06:  after
+    50.06 -  50.38:  coffee,
+    50.74 -  50.98:  right
+    50.98 -  51.24:  when
+    51.24 -  51.46:  I
+    51.46 -  51.74:  can't
+    51.74 -  51.96:  eat
+[51.96 -> 53.38]  I miss you in my front seat
+    51.96 -  52.20:  I
+    52.20 -  52.38:  miss
+    52.38 -  52.56:  you
+    52.56 -  52.68:  in
+    52.68 -  52.80:  my
+    52.80 -  53.00:  front
+    53.00 -  53.38:  seat
+[54.08 -> 56.96]  Still got ten of my sweaters from nights we don't remember
+    54.08 -  54.52:  Still
+    54.52 -  54.74:  got
+    54.74 -  54.96:  ten
+    54.96 -  55.18:  of
+    55.18 -  55.36:  my
+    55.36 -  55.84:  sweaters
+    55.84 -  56.08:  from
+    56.08 -  56.24:  nights
+    56.24 -  56.44:  we
+    56.44 -  56.62:  don't
+    56.62 -  56.96:  remember
+[57.44 -> 59.54]  Do you miss me like I miss you?
+    57.44 -  57.88:  Do
+    57.88 -  58.04:  you
+    58.04 -  58.24:  miss
+    58.24 -  58.50:  me
+    58.50 -  58.78:  like
+    58.78 -  58.98:  I
+    58.98 -  59.20:  miss
+    59.20 -  59.54:  you?
+[60.16 -> 62.10]  Fucked around and got attached to you
+    60.16 -  60.60:  Fucked
+    60.60 -  60.84:  around
+    60.84 -  61.04:  and
+    61.04 -  61.22:  got
+    61.22 -  61.46:  attached
+    61.46 -  61.88:  to
+    61.88 -  62.10:  you
+[63.00 -> 64.84]  Friends can break your heart too
+    63.00 -  63.44:  Friends
+    63.44 -  63.72:  can
+    63.72 -  63.98:  break
+    63.98 -  64.22:  your
+    64.22 -  64.46:  heart
+    64.46 -  64.84:  too
+[64.84 -> 67.46]  And I'm always tired, but never of you
+    64.84 -  65.26:  And
+    65.26 -  65.56:  I'm
+    65.56 -  65.80:  always
+    65.80 -  66.10:  tired,
+    66.10 -  66.56:  but
+    66.56 -  66.84:  never
+    66.84 -  67.28:  of
+    67.28 -  67.46:  you
+[67.46 -> 70.44]  If I pulled you, you wondered you wouldn't like that shit
+    67.46 -  67.92:  If
+    67.92 -  68.12:  I
+    68.12 -  68.34:  pulled
+    68.34 -  68.52:  you,
+    68.72 -  68.82:  you
+    68.82 -  68.94:  wondered
+    68.94 -  69.40:  you
+    69.40 -  69.70:  wouldn't
+    69.70 -  69.90:  like
+    69.90 -  70.16:  that
+    70.16 -  70.44:  shit
+[70.44 -> 73.02]  I put this real out, but you wouldn't bite that shit
+    70.44 -  70.62:  I
+    70.62 -  70.82:  put
+    70.82 -  71.08:  this
+    71.08 -  71.32:  real
+    71.32 -  71.54:  out,
+    71.54 -  71.72:  but
+    71.72 -  71.92:  you
+    71.92 -  72.28:  wouldn't
+    72.28 -  72.42:  bite
+    72.42 -  72.72:  that
+    72.72 -  73.02:  shit
+[73.02 -> 75.62]  I type of text, but then I never mind that shit
+    73.02 -  73.24:  I
+    73.24 -  73.42:  type
+    73.42 -  73.66:  of
+    73.66 -  73.88:  text,
+    74.10 -  74.14:  but
+    74.14 -  74.34:  then
+    74.34 -  74.54:  I
+    74.54 -  74.80:  never
+    74.80 -  75.14:  mind
+    75.14 -  75.36:  that
+    75.36 -  75.62:  shit
+[75.62 -> 78.24]  I got these feelings, but you never mind that shit
+    75.62 -  75.82:  I
+    75.82 -  76.02:  got
+    76.02 -  76.28:  these
+    76.28 -  76.52:  feelings,
+    76.56 -  76.96:  but
+    76.96 -  77.14:  you
+    77.14 -  77.34:  never
+    77.34 -  77.72:  mind
+    77.72 -  77.94:  that
+    77.94 -  78.24:  shit
+[78.24 -> 81.74]  Oh, keep it on the low, you still in love with me
+    78.24 -  78.48:  Oh,
+    79.62 -  79.72:  keep
+    79.72 -  79.92:  it
+    79.92 -  80.06:  on
+    80.06 -  80.22:  the
+    80.22 -  80.46:  low,
+    80.76 -  80.82:  you
+    80.82 -  81.02:  still
+    81.02 -  81.18:  in
+    81.18 -  81.42:  love
+    81.42 -  81.52:  with
+    81.52 -  81.74:  me
+[81.74 -> 83.08]  But your friends don't know
+    81.74 -  82.00:  But
+    82.00 -  82.12:  your
+    82.12 -  82.42:  friends
+    82.42 -  82.84:  don't
+    82.84 -  83.08:  know
+[83.08 -> 85.68]  If you wanted me, you'll just say so
+    83.08 -  83.62:  If
+    83.62 -  83.82:  you
+    83.82 -  84.10:  wanted
+    84.10 -  84.40:  me,
+    84.54 -  84.76:  you'll
+    84.76 -  85.04:  just
+    85.04 -  85.32:  say
+    85.32 -  85.68:  so
+[85.68 -> 88.28]  And if I were you, I would never let me go
+    85.68 -  86.10:  And
+    86.10 -  86.26:  if
+    86.26 -  86.52:  I
+    86.52 -  86.70:  were
+    86.70 -  86.94:  you,
+    87.00 -  87.20:  I
+    87.20 -  87.32:  would
+    87.32 -  87.50:  never
+    87.50 -  87.84:  let
+    87.84 -  87.96:  me
+    87.96 -  88.28:  go
+[88.28 -> 91.92]  I don't mean no, I might just miss you
+    88.28 -  88.88:  I
+    88.88 -  89.30:  don't
+    89.30 -  89.58:  mean
+    89.58 -  89.98:  no,
+    90.42 -  90.58:  I
+    90.58 -  90.84:  might
+    90.84 -  91.30:  just
+    91.30 -  91.54:  miss
+    91.54 -  91.92:  you
+[91.92 -> 95.36]  On my arm, wedding bells were just alarms
+    91.92 -  92.24:  On
+    92.24 -  92.54:  my
+    92.54 -  93.10:  arm,
+    93.40 -  93.76:  wedding
+    93.76 -  94.14:  bells
+    94.14 -  94.46:  were
+    94.46 -  94.90:  just
+    94.90 -  95.36:  alarms
+[95.36 -> 98.38]  Caution tape around my heart
+    95.36 -  96.36:  Caution
+    96.36 -  96.78:  tape
+    96.78 -  97.36:  around
+    97.36 -  97.76:  my
+    97.76 -  98.38:  heart
+[99.00 -> 101.10]  You ever wonder what we could have been
+    99.00 -  99.52:  You
+    99.52 -  99.76:  ever
+    99.76 - 100.04:  wonder
+   100.04 - 100.30:  what
+   100.30 - 100.40:  we
+   100.40 - 100.60:  could
+   100.60 - 100.74:  have
+   100.74 - 101.10:  been
+[101.74 -> 103.66]  You said you wouldn't and you fucking did
+   101.74 - 102.04:  You
+   102.04 - 102.26:  said
+   102.26 - 102.40:  you
+   102.40 - 102.74:  wouldn't
+   102.74 - 102.86:  and
+   102.86 - 103.00:  you
+   103.00 - 103.26:  fucking
+   103.26 - 103.66:  did
+[104.30 -> 106.86]  Lie to me, lie with me, get your fucking fix
+   104.30 - 104.82:  Lie
+   104.82 - 105.14:  to
+   105.14 - 105.36:  me,
+   105.46 - 105.54:  lie
+   105.54 - 105.82:  with
+   105.82 - 106.02:  me,
+   106.12 - 106.16:  get
+   106.16 - 106.30:  your
+   106.30 - 106.68:  fucking
+   106.68 - 106.86:  fix
+[106.86 -> 109.48]  Now I'm a drink, so now my feelings are all fucking mixed
+   106.86 - 107.32:  Now
+   107.32 - 107.48:  I'm
+   107.48 - 107.58:  a
+   107.58 - 107.74:  drink,
+   107.86 - 107.94:  so
+   107.94 - 108.06:  now
+   108.06 - 108.18:  my
+   108.18 - 108.50:  feelings
+   108.50 - 108.76:  are
+   108.76 - 108.88:  all
+   108.88 - 109.14:  fucking
+   109.14 - 109.48:  mixed
+[109.48 -> 111.52]  Always missing people that I shouldn't be missing
+   109.48 - 109.88:  Always
+   109.88 - 110.06:  missing
+   110.06 - 110.42:  people
+   110.42 - 110.70:  that
+   110.70 - 110.84:  I
+   110.84 - 111.18:  shouldn't
+   111.18 - 111.32:  be
+   111.32 - 111.52:  missing
+[111.52 -> 114.16]  Sometimes you gotta burn some bridges just to create some distance
+   111.52 - 112.06:  Sometimes
+   112.06 - 112.22:  you
+   112.22 - 112.40:  gotta
+   112.40 - 112.68:  burn
+   112.68 - 112.82:  some
+   112.82 - 113.02:  bridges
+   113.02 - 113.32:  just
+   113.32 - 113.48:  to
+   113.48 - 113.74:  create
+   113.74 - 113.96:  some
+   113.96 - 114.16:  distance
+[114.16 -> 116.94]  I know that I control my thoughts and I should stop reminiscing
+   114.16 - 114.46:  I
+   114.46 - 114.64:  know
+   114.64 - 114.80:  that
+   114.80 - 114.96:  I
+   114.96 - 115.20:  control
+   115.20 - 115.42:  my
+   115.42 - 115.64:  thoughts
+   115.64 - 115.84:  and
+   115.84 - 115.94:  I
+   115.94 - 116.04:  should
+   116.04 - 116.34:  stop
+   116.34 - 116.94:  reminiscing
+[116.94 -> 119.60]  But I learned from my dad that it's good to have feelings
+   116.94 - 117.16:  But
+   117.16 - 117.36:  I
+   117.36 - 117.56:  learned
+   117.56 - 117.80:  from
+   117.80 - 118.02:  my
+   118.02 - 118.22:  dad
+   118.22 - 118.48:  that
+   118.48 - 118.72:  it's
+   118.72 - 118.90:  good
+   118.90 - 119.08:  to
+   119.08 - 119.26:  have
+   119.26 - 119.60:  feelings
+[119.60 -> 120.98]  When love and trust occur
+   119.60 - 119.94:  When
+   119.94 - 120.24:  love
+   120.24 - 120.42:  and
+   120.42 - 120.64:  trust
+   120.64 - 120.98:  occur
+[121.80 -> 123.72]  I guess this is moving on
+   121.80 - 122.32:  I
+   122.32 - 122.50:  guess
+   122.50 - 122.76:  this
+   122.76 - 122.96:  is
+   122.96 - 123.42:  moving
+   123.42 - 123.72:  on
+[124.88 -> 127.30]  Everyone I do right does me wrong
+   124.88 - 125.40:  Everyone
+   125.40 - 125.90:  I
+   125.90 - 126.10:  do
+   126.10 - 126.44:  right
+   126.44 - 126.80:  does
+   126.80 - 127.02:  me
+   127.02 - 127.30:  wrong
+[127.30 -> 129.90]  So every lonely night I sing this song
+   127.30 - 127.70:  So
+   127.70 - 128.08:  every
+   128.08 - 128.32:  lonely
+   128.32 - 128.78:  night
+   128.78 - 129.10:  I
+   129.10 - 129.32:  sing
+   129.32 - 129.56:  this
+   129.56 - 129.90:  song
+[129.90 -> 132.44]  I hate you, I love you
+   129.90 - 130.24:  I
+   130.24 - 130.68:  hate
+   130.68 - 131.14:  you,
+   131.56 - 131.68:  I
+   131.68 - 131.90:  love
+   131.90 - 132.44:  you
+[132.44 -> 134.48]  I hate that I love you
+   132.44 - 132.88:  I
+   132.88 - 133.36:  hate
+   133.36 - 133.76:  that
+   133.76 - 134.26:  I
+   134.26 - 134.48:  love
+   134.48 - 134.74:  you
+[135.14 -> 138.48]  Don't want to, but I can't put nobody else
+   135.14 - 135.66:  Don't
+   135.66 - 135.94:  want
+   135.94 - 136.30:  to,
+   136.58 - 136.62:  but
+   136.62 - 136.86:  I
+   136.86 - 137.52:  can't
+   137.52 - 137.68:  put
+   137.68 - 138.20:  nobody
+   138.20 - 138.48:  else
+[138.48 -> 140.30]  above you
+   138.48 - 139.78:  above
+   139.78 - 140.30:  you
+[140.30 -> 142.86]  I hate you, I love you
+   140.30 - 140.72:  I
+   140.72 - 141.16:  hate
+   141.16 - 141.62:  you,
+   141.90 - 142.10:  I
+   142.10 - 142.48:  love
+   142.48 - 142.86:  you
+[142.86 -> 145.50]  I hate that I want you
+   142.86 - 143.40:  I
+   143.40 - 143.88:  hate
+   143.88 - 144.26:  that
+   144.26 - 144.68:  I
+   144.68 - 145.06:  want
+   145.06 - 145.50:  you
+[145.50 -> 148.04]  You want her, you need her
+   145.50 - 145.94:  You
+   145.94 - 146.42:  want
+   146.42 - 146.70:  her,
+   147.10 - 147.18:  you
+   147.18 - 147.62:  need
+   147.62 - 148.04:  her
+[148.04 -> 150.64]  And I'll never be her
+   148.04 - 148.60:  And
+   148.60 - 149.16:  I'll
+   149.16 - 149.64:  never
+   149.64 - 150.22:  be
+   150.22 - 150.64:  her
+[153.24 -> 156.70]  All alone, I want you to hurt
+   153.24 - 154.08:  All
+   154.08 - 154.48:  alone,
+   154.64 - 155.08:  I
+   155.08 - 155.44:  want
+   155.44 - 155.76:  you
+   155.76 - 156.04:  to
+   156.04 - 156.70:  hurt
+[156.70 -> 161.42]  Like she's the only girl you've ever seen
+   156.70 - 158.32:  Like
+   158.32 - 158.76:  she's
+   158.76 - 158.94:  the
+   158.94 - 159.32:  only
+   159.32 - 160.04:  girl
+   160.04 - 160.44:  you've
+   160.44 - 160.78:  ever
+   160.78 - 161.42:  seen
+[163.36 -> 166.46]  You don't care, you'll never be
+   163.36 - 164.20:  You
+   164.20 - 164.90:  don't
+   164.90 - 165.18:  care,
+   165.30 - 165.56:  you'll
+   165.56 - 165.88:  never
+   165.88 - 166.46:  be
+[168.58 -> 172.70]  But you don't give a damn about me
+   168.58 - 169.50:  But
+   169.50 - 169.70:  you
+   169.70 - 170.14:  don't
+   170.14 - 170.42:  give
+   170.42 - 170.66:  a
+   170.66 - 171.22:  damn
+   171.22 - 171.78:  about
+   171.78 - 172.70:  me
+[173.64 -> 177.44]  Yeah, all alone, I want you to hurt
+   173.64 - 174.56:  Yeah,
+   174.56 - 175.18:  all
+   175.18 - 175.32:  alone,
+   175.32 - 175.96:  I
+   175.96 - 176.32:  want
+   176.32 - 176.58:  you
+   176.58 - 176.88:  to
+   176.88 - 177.44:  hurt
+[178.70 -> 182.32]  She's the only thing you ever seen
+   178.70 - 179.62:  She's
+   179.62 - 179.82:  the
+   179.82 - 180.28:  only
+   180.28 - 180.86:  thing
+   180.86 - 181.22:  you
+   181.22 - 181.56:  ever
+   181.56 - 182.32:  seen
+[184.42 -> 187.64]  How is it you never noticed
+   184.42 - 185.34:  How
+   185.34 - 185.80:  is
+   185.80 - 186.02:  it
+   186.02 - 186.30:  you
+   186.30 - 186.80:  never
+   186.80 - 187.64:  noticed
+[189.28 -> 192.96]  That you were slowly killing me
+   189.28 - 190.20:  That
+   190.20 - 190.58:  you
+   190.58 - 190.92:  were
+   190.92 - 191.36:  slowly
+   191.36 - 191.92:  killing
+   191.92 - 192.96:  me
+[197.30 -> 200.26]  I hate you, I love you
+   197.30 - 198.16:  I
+   198.16 - 198.58:  hate
+   198.58 - 198.96:  you,
+   199.30 - 199.52:  I
+   199.52 - 199.70:  love
+   199.70 - 200.26:  you
+[200.26 -> 202.88]  I hate that I love you
+   200.26 - 200.80:  I
+   200.80 - 201.24:  hate
+   201.24 - 201.60:  that
+   201.60 - 202.08:  I
+   202.08 - 202.30:  love
+   202.30 - 202.88:  you
+[202.88 -> 208.12]  Don't want to, but I can't put nobody else above you
+   202.88 - 203.46:  Don't
+   203.46 - 203.78:  want
+   203.78 - 204.12:  to,
+   204.42 - 204.44:  but
+   204.44 - 204.70:  I
+   204.70 - 205.32:  can't
+   205.32 - 205.52:  put
+   205.52 - 206.02:  nobody
+   206.02 - 207.00:  else
+   207.00 - 207.46:  above
+   207.46 - 208.12:  you
+[208.12 -> 210.72]  I hate you, I love you
+   208.12 - 208.54:  I
+   208.54 - 208.98:  hate
+   208.98 - 209.42:  you,
+   209.74 - 209.92:  I
+   209.92 - 210.38:  love
+   210.38 - 210.72:  you
+[210.72 -> 213.34]  I hate that I want you
+   210.72 - 211.20:  I
+   211.20 - 211.68:  hate
+   211.68 - 212.06:  that
+   212.06 - 212.56:  I
+   212.56 - 212.88:  want
+   212.88 - 213.34:  you
+[213.34 -> 215.86]  You want her, you need her
+   213.34 - 213.80:  You
+   213.80 - 214.22:  want
+   214.22 - 214.60:  her,
+   214.84 - 215.00:  you
+   215.00 - 215.38:  need
+   215.38 - 215.86:  her
+[215.86 -> 218.46]  And I'll never be her
+   215.86 - 216.42:  And
+   216.42 - 216.94:  I'll
+   216.94 - 217.44:  never
+   217.44 - 218.06:  be
+   218.06 - 218.46:  her
+[226.46 -> 226.60]  I hate that I love you
+   226.46 - 226.48:  I
+   226.48 - 226.48:  hate
+   226.48 - 226.48:  that
+   226.48 - 226.56:  I
+   226.56 - 226.60:  love
+   226.60 - 226.60:  you
+[226.60 -> 226.74]  I hate that I love you
+   226.60 - 226.60:  I
+   226.60 - 226.60:  hate
+   226.60 - 226.60:  that
+   226.60 - 226.66:  I
+   226.66 - 226.66:  love
+   226.66 - 226.74:  you
+[226.74 -> 226.92]  I hate that I love you
+   226.74 - 226.76:  I
+   226.76 - 226.92:  hate
+   226.92 - 226.92:  that
+   226.92 - 226.92:  I
+   226.92 - 226.92:  love
+   226.92 - 226.92:  you

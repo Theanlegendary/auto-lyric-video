@@ -1,0 +1,62 @@
+[Script Info]
+Title: gnash - i hate u, i love u (Official 7clouds Edo SZ - Whisper Synced 53% Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; 1. Core Font: Edo SZ, Sentence case, 53% screen position (Alignment=5, pos 960,572), soft black outer glow & shadow
+Style: SevenCloudsLyric,Edo SZ,60,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,5,160,160,100,1
+; 4. Secondary Font: Poppins SemiBold for Intro Metadata (30pt, centered at 53%)
+Style: SevenCloudsIntro,Poppins SemiBold,30,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,5,160,160,100,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:05.20,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Feeling used, but I\'m\nStill missing you
+Dialogue: 0,0:00:08.60,0:00:12.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}And I can't see the end of this\nJust wanna feel your kiss against my lips
+Dialogue: 0,0:00:12.54,0:00:18.10,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}And now all this time is passing by\nBut I still can't seem to tell you why
+Dialogue: 0,0:00:18.18,0:00:21.80,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}It hurts me every time I see you\nRealize how much I need you
+Dialogue: 0,0:00:22.58,0:00:25.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:00:25.50,0:00:29.30,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I love you\nDon't want to
+Dialogue: 0,0:00:29.34,0:00:33.30,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}But I can't put\nNobody else above you
+Dialogue: 0,0:00:33.34,0:00:35.90,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:00:35.92,0:00:41.10,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I want you\nYou want her, you need her
+Dialogue: 0,0:00:41.10,0:00:44.20,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}And I'll never be her
+Dialogue: 0,0:00:46.16,0:00:51.90,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I miss you when I can't sleep\nOr right after coffee, or right when I can't eat
+Dialogue: 0,0:00:51.96,0:00:57.00,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I miss you in my front seat\nStill got sand in my sweaters from nights we don't remember
+Dialogue: 0,0:00:57.44,0:01:02.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Do you miss me like I miss you?\nFucked around and got attached to you
+Dialogue: 0,0:01:03.00,0:01:07.40,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Friends can break your heart too, and\nI'm always tired but never of you
+Dialogue: 0,0:01:07.46,0:01:13.00,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}If I pulled a you on you, you wouldn't like that shit\nI put this reel out, but you wouldn't bite that shit
+Dialogue: 0,0:01:13.02,0:01:18.20,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I type a text but then I never mind that shit\nI got these feelings but you never mind that shit
+Dialogue: 0,0:01:18.24,0:01:23.08,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Oh oh, keep it on the low\nYou're still in love with me but your friends don't know
+Dialogue: 0,0:01:23.08,0:01:28.28,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}If you wanted me you would just say so\nAnd if I were you, I would never let me go
+Dialogue: 0,0:01:28.28,0:01:33.30,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I don't mean no harm\nI just miss you on my arm
+Dialogue: 0,0:01:33.40,0:01:38.40,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Wedding bells were just alarms\nCaution tape around my heart
+Dialogue: 0,0:01:39.00,0:01:43.66,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}You ever wonder what we could've been?\nYou said you wouldn't and you fucking did
+Dialogue: 0,0:01:44.30,0:01:49.48,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Lie to me, lie with me, get your fucking fix\nNow all my drinks and all my feelings are all fucking mixed
+Dialogue: 0,0:01:49.48,0:01:54.16,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Always missing people that I shouldn't be missing\nSometimes you gotta burn some bridges just to create some distance
+Dialogue: 0,0:01:54.16,0:01:59.60,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I know that I control my thoughts, and I should stop reminiscing\nBut I learned from my dad that it's good to have feelings
+Dialogue: 0,0:01:59.60,0:02:04.20,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}When love and trust are gone\nI guess this is moving on
+Dialogue: 0,0:02:04.88,0:02:09.90,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Everyone I do right does me wrong\nSo every lonely night, I sing this song
+Dialogue: 0,0:02:09.90,0:02:12.44,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:02:12.44,0:02:15.10,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I love you
+Dialogue: 0,0:02:15.14,0:02:20.30,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Don't want to, but I can't put\nNobody else above you
+Dialogue: 0,0:02:20.30,0:02:22.86,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:02:22.86,0:02:25.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I want you
+Dialogue: 0,0:02:25.50,0:02:28.04,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}You want her, you need her
+Dialogue: 0,0:02:28.04,0:02:31.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}And I'll never be her
+Dialogue: 0,0:02:33.24,0:02:42.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}All alone I watch you watch her\nLike she's the only girl you've ever seen
+Dialogue: 0,0:02:43.36,0:02:53.00,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}You don't care, you never did\nYou don't give a damn about me
+Dialogue: 0,0:02:53.64,0:03:03.00,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Yeah, all alone I watch you watch her\nShe's the only thing you've ever seen
+Dialogue: 0,0:03:04.42,0:03:14.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}How is it you never notice\nThat you are slowly killing me
+Dialogue: 0,0:03:17.30,0:03:20.26,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:03:20.26,0:03:22.88,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I love you
+Dialogue: 0,0:03:22.88,0:03:28.12,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}Don't want to, but I can't put\nNobody else above you
+Dialogue: 0,0:03:28.12,0:03:30.72,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate you, I love you
+Dialogue: 0,0:03:30.72,0:03:33.34,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}I hate that I want you
+Dialogue: 0,0:03:33.34,0:03:35.86,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}You want her, you need her
+Dialogue: 0,0:03:35.86,0:03:42.50,SevenCloudsLyric,,0,0,0,,{\pos(960,572)\blur1.8}And I'll never be her

@@ -1,0 +1,49 @@
+[Script Info]
+Title: Ed Sheeran - Perfect (Slowed + Reverb • Authentic 7clouds Edo SZ)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; Core Font: Edo SZ, Sentence case, lower-third (78% down), soft black outer glow & shadow
+Style: SevenCloudsLyric,Edo SZ,56,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,2,160,160,240,1
+; Secondary Font: Clean Sans-Serif for Intro Metadata (32pt, lower-third)
+Style: SevenCloudsIntro,Poppins SemiBold,32,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,2,160,160,260,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.16,0:00:08.67,SevenCloudsIntro,,0,0,0,,{\blur1.5}Ed Sheeran - Perfect (Lyrics)
+Dialogue: 0,0:00:09.02,0:00:15.61,SevenCloudsLyric,,0,0,0,,{\blur1.8}I found a love for me,\NDarling, just dive right in
+Dialogue: 0,0:00:15.72,0:00:19.08,SevenCloudsLyric,,0,0,0,,{\blur1.8}And follow my lead
+Dialogue: 0,0:00:19.65,0:00:27.75,SevenCloudsLyric,,0,0,0,,{\blur1.8}Well, I found a girl,\NBeautiful and sweet
+Dialogue: 0,0:00:28.67,0:00:35.61,SevenCloudsLyric,,0,0,0,,{\blur1.8}Oh, I never knew you were the someone\NWaiting for me
+Dialogue: 0,0:00:36.72,0:00:42.08,SevenCloudsLyric,,0,0,0,,{\blur1.8}'Cause we were just kids\NWhen we fell in love
+Dialogue: 0,0:00:42.43,0:00:54.68,SevenCloudsLyric,,0,0,0,,{\blur1.8}Not knowing what it was,\NI will not give you up this time
+Dialogue: 0,0:00:55.14,0:01:03.82,SevenCloudsLyric,,0,0,0,,{\blur1.8}Darling, just kiss me slow,\NYour heart is all I own
+Dialogue: 0,0:01:03.82,0:01:10.29,SevenCloudsLyric,,0,0,0,,{\blur1.8}And in your eyes,\NYou're holding mine
+Dialogue: 0,0:01:12.37,0:01:24.16,SevenCloudsLyric,,0,0,0,,{\blur1.8}Baby, I'm dancing in the dark\NWith you between my arms
+Dialogue: 0,0:01:24.16,0:01:32.95,SevenCloudsLyric,,0,0,0,,{\blur1.8}Barefoot on the grass,\NListening to our favorite song
+Dialogue: 0,0:01:32.95,0:01:41.16,SevenCloudsLyric,,0,0,0,,{\blur1.8}When you said you looked a mess,\NI whispered underneath my breath
+Dialogue: 0,0:01:41.16,0:01:50.40,SevenCloudsLyric,,0,0,0,,{\blur1.8}But you heard it, darling,\NYou look perfect tonight
+Dialogue: 0,0:01:55.84,0:02:04.62,SevenCloudsLyric,,0,0,0,,{\blur1.8}Well, I found a woman,\NStronger than anyone I know
+Dialogue: 0,0:02:04.86,0:02:12.95,SevenCloudsLyric,,0,0,0,,{\blur1.8}She shares my dreams,\NI hope that someday I'll share her home
+Dialogue: 0,0:02:13.29,0:02:18.50,SevenCloudsLyric,,0,0,0,,{\blur1.8}I found a lover,\NTo carry more than just my secrets
+Dialogue: 0,0:02:18.50,0:02:23.58,SevenCloudsLyric,,0,0,0,,{\blur1.8}To carry love,\NTo carry children of our own
+Dialogue: 0,0:02:23.58,0:02:34.34,SevenCloudsLyric,,0,0,0,,{\blur1.8}We are still kids, but we're so in love\NFighting against all odds
+Dialogue: 0,0:02:34.68,0:02:41.27,SevenCloudsLyric,,0,0,0,,{\blur1.8}I know we'll be alright this time
+Dialogue: 0,0:02:42.43,0:02:50.52,SevenCloudsLyric,,0,0,0,,{\blur1.8}Darling, just hold my hand,\NBe my girl, I'll be your man
+Dialogue: 0,0:02:50.64,0:02:59.77,SevenCloudsLyric,,0,0,0,,{\blur1.8}I see my future in your eyes
+Dialogue: 0,0:03:04.74,0:03:17.69,SevenCloudsLyric,,0,0,0,,{\blur1.8}Baby, I'm dancing in the dark\NWith you between my arms
+Dialogue: 0,0:03:17.69,0:03:26.36,SevenCloudsLyric,,0,0,0,,{\blur1.8}Barefoot on the grass,\NListening to our favorite song
+Dialogue: 0,0:03:26.36,0:03:34.45,SevenCloudsLyric,,0,0,0,,{\blur1.8}When I saw you in that dress,\NLooking so beautiful
+Dialogue: 0,0:03:34.45,0:03:46.01,SevenCloudsLyric,,0,0,0,,{\blur1.8}I don't deserve this, darling,\NYou look perfect tonight
+Dialogue: 0,0:03:50.64,0:04:10.29,SevenCloudsLyric,,0,0,0,,{\blur1.8}Baby, I'm dancing in the dark\NWith you between my arms
+Dialogue: 0,0:04:10.29,0:04:19.19,SevenCloudsLyric,,0,0,0,,{\blur1.8}Barefoot on the grass,\NListening to our favorite song
+Dialogue: 0,0:04:19.19,0:04:30.52,SevenCloudsLyric,,0,0,0,,{\blur1.8}I have faith in what I see,\NNow I know I have met an angel in person
+Dialogue: 0,0:04:30.52,0:04:36.88,SevenCloudsLyric,,0,0,0,,{\blur1.8}And she looks perfect,\NI don't deserve this
+Dialogue: 0,0:04:36.88,0:04:44.39,SevenCloudsLyric,,0,0,0,,{\blur1.8}You look perfect tonight
+Dialogue: 0,0:04:58.84,0:05:05.20,SevenCloudsLyric,,0,0,0,,{\blur1.8}You look perfect tonight

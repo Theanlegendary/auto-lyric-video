@@ -1,0 +1,21 @@
+[Script Info]
+Title: yung kai - blue (80% Sky 20% Sea Blue Filter Edition)
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+; Edo SZ, Sentence case, floating above low horizon (MarginV: 250 = Y: 830)
+Style: SevenCloudsLyric,Edo SZ,64,&H00FFFFFF,&H000000FF,&H35000000,&H60000000,0,0,0,0,100,100,1.5,0,1,3.2,2.2,2,160,160,250,1
+; Poppins SemiBold for Intro Metadata
+Style: SevenCloudsIntro,Poppins SemiBold,32,&H00FFFFFF,&H000000FF,&H40000000,&H60000000,0,0,0,0,100,100,3.0,0,1,2.0,1.5,2,160,160,270,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:07.50,SevenCloudsIntro,,0,0,0,,{\blur1.5}yung kai - blue (Lyrics)
+Dialogue: 0,0:00:18.80,0:00:25.50,SevenCloudsLyric,,0,0,0,,{\blur1.8}Your morning eyes\NI could stare like watching stars
+Dialogue: 0,0:00:47.20,0:00:54.00,SevenCloudsLyric,,0,0,0,,{\blur1.8}I think I'll picture us, you with the waves\NThe ocean's colors on your face
